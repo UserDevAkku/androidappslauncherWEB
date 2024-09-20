@@ -251,7 +251,7 @@ input[type="checkbox"]:checked{
 .pl-points{
   display: inline;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 15px;
+  font-size: 12px;
 color: #292929;
 font-weight: bold;
 }
