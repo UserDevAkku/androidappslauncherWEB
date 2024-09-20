@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
  .note-sdk{
   text-align: center;
   margin-top: 5px;
-  color: white;
+  color: yellow;
   font-size: 20px;
   text-transform: capitalize;
   font-family: Georgia, 'Times New Roman', Times, serif;
