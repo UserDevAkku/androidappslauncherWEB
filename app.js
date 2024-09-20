@@ -18,10 +18,11 @@ const termuxLink=document.querySelector("#termux-link")
 const phoneChecked=(phone)=>{
     if(phone.checked)
         {
-        phone.style.boxShadow="0 0 2px 2px #013220 inset"
+        phone.style.boxShadow="0 0 2px 2px greenyellow inset"
         phoneYes.innerText="yes";
         phoneYes.style.color="#013220"
-        
+        phone.style.height="15px";
+        phone.style.width="15px";
     }
     else
     {
@@ -41,6 +42,8 @@ const pcChecked=(pc)=>{
         pc.style.boxShadow="0 0 2px 2px #013220 inset"
         pcYes.innerText="yes";
         pcYes.style.color="#013220"
+        pc.style.height="15px";
+        pc.style.width="15px";
     }
     else
     {
@@ -59,6 +62,8 @@ const usbChecked=(usb)=>{
         usb.style.boxShadow="0 0 2px 2px #013220 inset"
         usbYes.innerText="yes";
         usbYes.style.color="#013220"
+        usb.style.height="15px";
+        usb.style.width="15px";
     }
     else
     {
@@ -80,6 +85,8 @@ const sdkChecked=(sdk)=>{
        sdkYes.innerText="yes";
         sdkYes.style.color="#013220"
         sdkLink.style.display="none"
+        sdk.style.height="15px";
+        sdk.style.width="15px";
     }
     else
     {
@@ -107,6 +114,8 @@ const termuxChecked=(termux)=>{
         termux.style.boxShadow="none";
         termuxYes.innerText="no";
         termuxYes.style.color="red"
+        termux.style.height="15px";
+        termux.style.width="15px";
     }
 }
 termux.addEventListener("click",()=>{
@@ -170,6 +179,8 @@ const pl_version=document.querySelector("#pl-ver")
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
         pl_dl.style.boxShadow = "0 0 2px 2px #013220 inset";
+        pl_dl.style.height="15px";
+        pl_dl.style.width="15px";
     } else {
         pl_dl.style.boxShadow = "none";
     }
@@ -182,6 +193,8 @@ pl_dl.addEventListener("click", () => {
 const extractChecked = (pl_extract) => {
     if (pl_extract.checked) {
         pl_extract.style.boxShadow = "0 0 2px 2px #013220 inset";
+        pl_extract.style.height="15px";
+        pl_extract.style.width="15px";
     } else {
         pl_extract.style.boxShadow = "none";
     }
@@ -194,6 +207,8 @@ pl_extract.addEventListener("click", () => {
 const copyChecked = (pl_copy) => {
     if (pl_copy.checked) {
         pl_copy.style.boxShadow = "0 0 2px 2px #013220 inset";
+        pl_copy.style.height="15px";
+        pl_copy.style.width="15px";
     } else {
         pl_copy.style.boxShadow = "none";
     }
@@ -206,6 +221,8 @@ pl_copy.addEventListener("click", () => {
 const cdriveChecked = (pl_cdrive) => {
     if (pl_cdrive.checked) {
         pl_cdrive.style.boxShadow = "0 0 2px 2px #013220 inset";
+        pl_cdrive.style.height="15px";
+        pl_cdrive.style.width="15px";
     } else {
         pl_cdrive.style.boxShadow = "none";
     }
@@ -218,6 +235,8 @@ pl_cdrive.addEventListener("click", () => {
 const pasteChecked = (pl_paste) => {
     if (pl_paste.checked) {
         pl_paste.style.boxShadow = "0 0 2px 2px #013220 inset";
+        pl_paste.style.height="15px";
+        pl_paste.style.width="15px";
     } else {
         pl_paste.style.boxShadow = "none";
     }
@@ -226,17 +245,6 @@ pl_paste.addEventListener("click", () => {
     pasteChecked(pl_paste);
 });
 
-// Function for pl_version
-const versionChecked = (pl_version) => {
-    if (pl_version.checked) {
-        pl_version.style.boxShadow = "0 0 2px 2px #013220 inset";
-    } else {
-        pl_version.style.boxShadow = "none";
-    }
-};
-pl_version.addEventListener("click", () => {
-    versionChecked(pl_version);
-});
 
 
 
