@@ -156,7 +156,8 @@ const pl_version=document.querySelector("#pl-ver");
 const sdkBox=document.querySelector(".sdk-box")
 const plInstallStatus=document.querySelector(".pl-install-status")
 const plYes=document.querySelector("#pl-yes-no")
-const pl_chkbox=document.querySelector(".pl-chkbox")
+const pl_chkbox=document.querySelector("#pl-chkbox")
+const plNext=document.querySelector(".pl-next")
 // Function for pl_dl
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
@@ -240,7 +241,7 @@ pl_version.addEventListener("click", () => {
     versionChecked(pl_version);
 });
 //sdk-install-check
-const sdkinstalled=(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_version,pl_extract,pl_chkbox)=>{
+const sdkinstalled=()=>{
     if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked && plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
        plInstallStatus.style.height="17px"
        plInstallStatus.style.width="30px"
@@ -255,10 +256,10 @@ const sdkinstalled=(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_v
     }
     else if (plInstallStatus.value==="no" || plInstallStatus.value==="NO" || plInstallStatus.value==="No")
     {
-       plInstallStatus.style.paddingBottom="2px"
-       reqBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
-       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
        
+        
+        
+      
     }
     else if (plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes")
     {
@@ -266,18 +267,8 @@ const sdkinstalled=(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_v
     }
 }
 plInstallStatus.addEventListener("keyup",()=>{
-    sdkinstalled(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_version,pl_extract,pl_chkbox);
+    sdkinstalled();
 })
-
-
-pl_chkbox.forEach((plInstallStatus,pl_chkbox)=>{
-    plInstallStatus.addEventListener("keyup",()=>{
-        if(plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
-    pl_chkbox.style.boxShadow="0 0 2px 1px red inset";
-    pl_chkbox.style.animation="requirements-box 999ms ease-in-out infinite both"
-        }
-    })
-    })
 
 
 
