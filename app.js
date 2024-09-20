@@ -138,7 +138,7 @@ chkbox.forEach((chkbox) => {
     chkbox.addEventListener("click", () => {
         if (phone.checked && pc.checked && usb.checked && termux.checked && sdk.checked) {
             reqBox.style.animation = "paused";
-            reqBox.style.boxShadow = "0 0 2px 3px green";
+            reqBox.style.boxShadow = "0 0 2px 3px greenyellow";
             reqBox.style.backgroundColor = "#e6ffe6";
         } else {
             reqBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
@@ -255,7 +255,7 @@ const sdkinstalled=()=>{
        plInstallStatus.style.boxShadow=" 0 0 8px 0px #32cd32"
        plInstallStatus.style.fontSize="15px"
        sdkBox.style.animation = "paused";
-       sdkBox.style.boxShadow = "0 0 2px 2px green";
+       sdkBox.style.boxShadow = "0 0 2px 2px greenyellow";
        sdkBox.style.backgroundColor = "#e6ffe6";
     }
     else if (plInstallStatus.value==="no" || plInstallStatus.value==="NO" || plInstallStatus.value==="No")
