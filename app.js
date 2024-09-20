@@ -158,6 +158,8 @@ const plInstallStatus=document.querySelector(".pl-install-status")
 const plYes=document.querySelector("#pl-yes-no")
 const pl_chkbox=document.querySelector("#pl-chkbox")
 const plNext=document.querySelector(".pl-next")
+const contactMe=document.querySelector(".contact-me");
+const contactLogo=document.querySelector(".contact-logo");
 // Function for pl_dl
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
@@ -240,13 +242,15 @@ const versionChecked = (pl_version) => {
 pl_version.addEventListener("click", () => {
     versionChecked(pl_version);
 });
+
+
 //sdk-install-check
 const sdkinstalled=()=>{
     if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked && plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
        plInstallStatus.style.height="17px"
        plInstallStatus.style.width="30px"
        plInstallStatus.style.color="green"
-       plInstallStatus.style.fontWeight="lighter"
+       plInstallStatus.style.fontWeight="bolder"
        plInstallStatus.style.fontFamily="Arial"
        plInstallStatus.style.boxShadow=" 0 0 8px 0px #32cd32"
        plInstallStatus.style.fontSize="15px"
@@ -256,14 +260,13 @@ const sdkinstalled=()=>{
     }
     else if (plInstallStatus.value==="no" || plInstallStatus.value==="NO" || plInstallStatus.value==="No")
     {
-       
-        
-        
-      
+         plNext.style.display="none"
+        contactMe.style.display="block"
     }
     else if (plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes")
     {
-       plBoxNotchecked();
+       plNext.style.display="block"
+       contactMe.style.display="none"
     }
 }
 plInstallStatus.addEventListener("keyup",()=>{

@@ -249,6 +249,17 @@ align-items: center;
 justify-content: center;
 text-align: center;
  }
+ .contact-me{
+  margin-top: 23px;
+  height: 30px;
+width: 340px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+text-decoration: none;
+display: none;
+ }
 .pl-points{
   display: inline;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
