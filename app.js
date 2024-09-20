@@ -18,7 +18,7 @@ const termuxLink=document.querySelector("#termux-link")
 const phoneChecked=(phone)=>{
     if(phone.checked)
         {
-        phone.style.boxShadow="0 0 2px 2px #013220"
+        phone.style.boxShadow="0 0 2px 2px #013220 inset"
         phoneYes.innerText="yes";
         phoneYes.style.color="#013220"
         
@@ -169,7 +169,7 @@ const pl_version=document.querySelector("#pl-ver")
 // Function for pl_dl
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
-        pl_dl.style.boxShadow = "0 0 1px 1px #013220";
+        pl_dl.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_dl.style.boxShadow = "none";
     }
@@ -181,7 +181,7 @@ pl_dl.addEventListener("click", () => {
 // Function for pl_extract
 const extractChecked = (pl_extract) => {
     if (pl_extract.checked) {
-        pl_extract.style.boxShadow = "0 0 1px 1px #013220";
+        pl_extract.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_extract.style.boxShadow = "none";
     }
@@ -193,7 +193,7 @@ pl_extract.addEventListener("click", () => {
 // Function for pl_copy
 const copyChecked = (pl_copy) => {
     if (pl_copy.checked) {
-        pl_copy.style.boxShadow = "0 0 1px 1px #013220";
+        pl_copy.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_copy.style.boxShadow = "none";
     }
@@ -205,7 +205,7 @@ pl_copy.addEventListener("click", () => {
 // Function for pl_cdrive
 const cdriveChecked = (pl_cdrive) => {
     if (pl_cdrive.checked) {
-        pl_cdrive.style.boxShadow = "0 0 1px 1px #013220";
+        pl_cdrive.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_cdrive.style.boxShadow = "none";
     }
@@ -217,7 +217,7 @@ pl_cdrive.addEventListener("click", () => {
 // Function for pl_paste
 const pasteChecked = (pl_paste) => {
     if (pl_paste.checked) {
-        pl_paste.style.boxShadow = "0 0 1px 1px #013220";
+        pl_paste.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_paste.style.boxShadow = "none";
     }
@@ -229,7 +229,7 @@ pl_paste.addEventListener("click", () => {
 // Function for pl_version
 const versionChecked = (pl_version) => {
     if (pl_version.checked) {
-        pl_version.style.boxShadow = "0 0 1px 1px #013220";
+        pl_version.style.boxShadow = "0 0 2px 2px #013220 inset";
     } else {
         pl_version.style.boxShadow = "none";
     }
