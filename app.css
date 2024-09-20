@@ -160,6 +160,7 @@ input[type="checkbox"]:checked{
   text-align: center;
   font-weight: bolder;
   font-size: 15px;
+  margin-bottom: 6px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
