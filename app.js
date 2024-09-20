@@ -1,4 +1,3 @@
-
 const reqBox=document.querySelector(".requirements-box")
 const nextBtn=document.querySelector(".next")
 const chkbox=document.querySelectorAll(".chkbox")
@@ -154,7 +153,10 @@ const pl_copy = document.querySelector("#pl-copy");
 const pl_cdrive = document.querySelector("#pl-cdrive");
 const pl_paste = document.querySelector("#pl-paste");
 const pl_version=document.querySelector("#pl-ver");
-
+const sdkBox=document.querySelector(".sdk-box")
+const plInstallStatus=document.querySelector(".pl-install-status")
+const plYes=document.querySelector("#pl-yes-no")
+const pl_chkbox=document.querySelector(".pl-chkbox")
 // Function for pl_dl
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
@@ -237,6 +239,45 @@ const versionChecked = (pl_version) => {
 pl_version.addEventListener("click", () => {
     versionChecked(pl_version);
 });
+//sdk-install-check
+const sdkinstalled=(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_version,pl_extract,pl_chkbox)=>{
+    if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked && plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
+       plInstallStatus.style.height="17px"
+       plInstallStatus.style.width="30px"
+       plInstallStatus.style.color="green"
+       plInstallStatus.style.fontWeight="lighter"
+       plInstallStatus.style.fontFamily="Arial"
+       plInstallStatus.style.boxShadow=" 0 0 8px 0px #32cd32"
+       plInstallStatus.style.fontSize="15px"
+       sdkBox.style.animation = "paused";
+       sdkBox.style.boxShadow = "0 0 2px 2px green";
+       sdkBox.style.backgroundColor = "#e6ffe6";
+    }
+    else if (plInstallStatus.value==="no" || plInstallStatus.value==="NO" || plInstallStatus.value==="No")
+    {
+       plInstallStatus.style.paddingBottom="2px"
+       reqBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
+       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+       
+    }
+    else if (plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes")
+    {
+       plBoxNotchecked();
+    }
+}
+plInstallStatus.addEventListener("keyup",()=>{
+    sdkinstalled(plInstallStatus,sdkBox,pl_dl,pl_copy,pl_paste,pl_cdrive,pl_version,pl_extract,pl_chkbox);
+})
+
+
+pl_chkbox.forEach((plInstallStatus,pl_chkbox)=>{
+    plInstallStatus.addEventListener("keyup",()=>{
+        if(plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
+    pl_chkbox.style.boxShadow="0 0 2px 1px red inset";
+    pl_chkbox.style.animation="requirements-box 999ms ease-in-out infinite both"
+        }
+    })
+    })
 
 
 

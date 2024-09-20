@@ -279,21 +279,13 @@ margin:10px;
   width: 100%;
  }
  .pl-install-status{
-   height: 20px;
+   height: 17px;
    border: none;
    outline: none;
-   width: 70px;
+   width: 30px;
    box-shadow: 0 0 2px 1px #393939 inset;
    color: #000;
    text-align: center;
- }
- .pl-install-status::placeholder{
-  color: #292929;
-font-size: 12px;
- }
- .pl-install-status:focus::placeholder{
-  color: transparent;
-  
  }
  .pl-install-status:focus{
   height: 17px;
