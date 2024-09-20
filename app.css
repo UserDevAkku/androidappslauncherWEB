@@ -240,7 +240,8 @@ input[type="checkbox"]:checked{
   height: 30px;
   width: 100%;
  }
-.next-2{
+.next-2
+{
   color: white;
   text-align: center;
   font-weight: bolder;
