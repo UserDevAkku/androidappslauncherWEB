@@ -18,7 +18,7 @@ const termuxLink=document.querySelector("#termux-link")
 const phoneChecked=(phone)=>{
     if(phone.checked)
         {
-        phone.style.boxShadow="0 0 1px 1px #013220"
+        phone.style.boxShadow="0 0 2px 2px #013220"
         phoneYes.innerText="yes";
         phoneYes.style.color="#013220"
         
@@ -38,7 +38,7 @@ phone.addEventListener("click",()=>{
 const pcChecked=(pc)=>{
     if(pc.checked)
         {
-        pc.style.boxShadow="0 0 1px 1px #013220"
+        pc.style.boxShadow="0 0 2px 2px #013220 inset"
         pcYes.innerText="yes";
         pcYes.style.color="#013220"
     }
@@ -56,7 +56,7 @@ pc.addEventListener("click",()=>{
 const usbChecked=(usb)=>{
     if(usb.checked)
         {
-        usb.style.boxShadow="0 0 1px 1px #013220"
+        usb.style.boxShadow="0 0 2px 2px #013220 inset"
         usbYes.innerText="yes";
         usbYes.style.color="#013220"
     }
@@ -76,7 +76,7 @@ usb.addEventListener("click",()=>{
 const sdkChecked=(sdk)=>{
     if(sdk.checked)
         {
-        sdk.style.boxShadow="0 0 1px 1px #013220"
+        sdk.style.boxShadow="0 0 2px 2px #013220 inset"
        sdkYes.innerText="yes";
         sdkYes.style.color="#013220"
         sdkLink.style.display="none"
@@ -98,7 +98,7 @@ sdk.addEventListener("click",()=>{
 const termuxChecked=(termux)=>{
     if(termux.checked)
         {
-        termux.style.boxShadow="0 0 1px 1px #013220"
+        termux.style.boxShadow="0 0 2px 2px #013220 inset"
         termuxYes.innerText="yes";
         termuxYes.style.color="#013220"
     }
