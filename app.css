@@ -215,14 +215,14 @@ input[type="checkbox"]:checked{
  }
  .sdk-container{
   margin-top: 20px;
-  height: 430px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
  }
  .sdk-box{
-  height:430px;
+  height:450px;
   width:340px;
   background-color: hsl(0, 38%, 75%);
   animation: requirements-box 999ms ease-in-out infinite both;
