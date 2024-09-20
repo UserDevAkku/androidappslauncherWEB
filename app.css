@@ -158,13 +158,13 @@ input[type="checkbox"]:checked{
 }
 .note{
   text-align: center;
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: 20px;
   margin-bottom:50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #de0505;
+  color: red;
 }
 .link-box{
   display: flex;
