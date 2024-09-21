@@ -84,6 +84,7 @@ top: 2px;
 border: none;
 outline: none;
 margin:10px;
+animation: requirements-box 555ms ease-in-out infinite both;
 }
 input[type="checkbox"]:checked{
   accent-color: #2be82b;
@@ -133,14 +134,14 @@ input[type="checkbox"]:checked{
   }
   75%{
     
-    box-shadow:0 0 2px 3px red;
+    box-shadow:0 0 2px 1px red;
     border-radius: 20px;
     
   }
   100%
   {
    
-    box-shadow:0 0 2px 4px red;
+    box-shadow:0 0 2px 2px red;
     border-radius: 20px;
     
   }
@@ -243,21 +244,11 @@ input[type="checkbox"]:checked{
  .pl-next{
   margin-top: 23px;
   height: 30px;
-width: 340px;
+width: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
- }
- .contact-me{
-  margin-top: 23px;
-  height: 30px;
-width: 340px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-text-decoration: none;
 display: none;
  }
 .pl-points{
@@ -276,6 +267,7 @@ top: 2px;
 border: none;
 outline: none;
 margin:10px;
+animation: requirements-box 555ms ease-in-out infinite both;
 }
  .installation-pl{
   text-align: center;
@@ -303,4 +295,28 @@ margin:10px;
   width: 30px;
   padding-bottom: 2px;
   text-align: center;
+ } 
+ .contact{
+height: 30px;
+width: 30px;
+color: red;
+text-align: center;
+text-decoration: none;
+ }
+ .StatusNext{
+  margin-top: 30px;
+  height: 30px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ #star::after{
+content: "*";
+color: red;
+font-size: 13px;
+ }
+ #instagram{
+ height: 30px;
+ width: 30px;
  }

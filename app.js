@@ -22,10 +22,12 @@ const phoneChecked = (phone) => {
         phoneYes.style.color = "#013220";
         phone.style.height = "15px";
         phone.style.width = "15px";
+        phone.style.animation="paused"
     } else {
         phone.style.boxShadow = "none";
         phoneYes.innerText = "no";
         phoneYes.style.color = "red";
+        phone.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 phone.addEventListener("click", () => {
@@ -40,10 +42,13 @@ const pcChecked = (pc) => {
         pcYes.style.color = "#013220";
         pc.style.height = "15px";
         pc.style.width = "15px";
+        pc.style.animation="paused"
+        
     } else {
         pc.style.boxShadow = "none";
         pcYes.innerText = "no";
         pcYes.style.color = "red";
+        pc.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pc.addEventListener("click", () => {
@@ -58,10 +63,12 @@ const usbChecked = (usb) => {
         usbYes.style.color = "#013220";
         usb.style.height = "15px";
         usb.style.width = "15px";
+        usb.style.animation="paused"
     } else {
         usb.style.boxShadow = "none";
         usbYes.innerText = "no";
         usbYes.style.color = "red";
+        usb.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 usb.addEventListener("click", () => {
@@ -77,10 +84,12 @@ const sdkChecked = (sdk) => {
         sdkLink.style.display = "none";
         sdk.style.height = "15px";
         sdk.style.width = "15px";
+        sdk.style.animation="paused"
     } else {
         sdk.style.boxShadow = "none";
         sdkYes.innerText = "no";
         sdkYes.style.color = "red";
+        sdk.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 sdk.addEventListener("click", () => {
@@ -93,12 +102,14 @@ const termuxChecked = (termux) => {
         termux.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         termuxYes.innerText = "yes";
         termuxYes.style.color = "#013220";
+        termux.style.animation="paused"
     } else {
         termux.style.boxShadow = "none";
         termuxYes.innerText = "no";
         termuxYes.style.color = "red";
         termux.style.height = "15px";
         termux.style.width = "15px";
+        termux.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 termux.addEventListener("click", () => {
@@ -156,18 +167,21 @@ const pl_version=document.querySelector("#pl-ver");
 const sdkBox=document.querySelector(".sdk-box")
 const plInstallStatus=document.querySelector(".pl-install-status")
 const plYes=document.querySelector("#pl-yes-no")
-const pl_chkbox=document.querySelector("#pl-chkbox")
+const pl_chkbox=document.querySelectorAll(".pl-chkbox")
 const plNext=document.querySelector(".pl-next")
 const contactMe=document.querySelector(".contact-me");
 const contactLogo=document.querySelector(".contact-logo");
+const toolStatus=document.querySelector("#tool-status")
 // Function for pl_dl
 const dlChecked = (pl_dl) => {
     if (pl_dl.checked) {
         pl_dl.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         pl_dl.style.height = "15px";
         pl_dl.style.width = "15px";
+        pl_dl.style.animation="paused"
     } else {
         pl_dl.style.boxShadow = "none";
+        pl_dl.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_dl.addEventListener("click", () => {
@@ -180,8 +194,10 @@ const extractChecked = (pl_extract) => {
         pl_extract.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         pl_extract.style.height = "15px";
         pl_extract.style.width = "15px";
+        pl_extract.style.animation="paused"
     } else {
         pl_extract.style.boxShadow = "none";
+        pl_extract.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_extract.addEventListener("click", () => {
@@ -194,8 +210,10 @@ const copyChecked = (pl_copy) => {
         pl_copy.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         pl_copy.style.height = "15px";
         pl_copy.style.width = "15px";
+        pl_copy.style.animation="paused"
     } else {
         pl_copy.style.boxShadow = "none";
+        pl_copy.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_copy.addEventListener("click", () => {
@@ -208,8 +226,10 @@ const cdriveChecked = (pl_cdrive) => {
         pl_cdrive.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         pl_cdrive.style.height = "15px";
         pl_cdrive.style.width = "15px";
+        pl_cdrive.style.animation="paused"
     } else {
         pl_cdrive.style.boxShadow = "none";
+        pl_cdrive.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_cdrive.addEventListener("click", () => {
@@ -222,8 +242,10 @@ const pasteChecked = (pl_paste) => {
         pl_paste.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
         pl_paste.style.height = "15px";
         pl_paste.style.width = "15px";
+        pl_paste.style.animation="paused"
     } else {
         pl_paste.style.boxShadow = "none";
+        pl_paste.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_paste.addEventListener("click", () => {
@@ -235,43 +257,45 @@ const versionChecked = (pl_version) => {
         pl_version.style.boxShadow = "0 0 2px 2px greenyellow inset";
         pl_version.style.height="15px";
         pl_version.style.width="15px";
+        pl_version.style.animation="paused"
     } else {
         pl_version.style.boxShadow = "none";
+        pl_version.style.animation="requirements-box 555ms ease-in-out infinite both"
     }
 };
 pl_version.addEventListener("click", () => {
     versionChecked(pl_version);
 });
-
-
-//sdk-install-check
-const sdkinstalled=()=>{
-    if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked && plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes"){
-       plInstallStatus.style.height="17px"
-       plInstallStatus.style.width="30px"
-       plInstallStatus.style.color="green"
-       plInstallStatus.style.fontWeight="bolder"
-       plInstallStatus.style.fontFamily="Arial"
-       plInstallStatus.style.boxShadow=" 0 0 8px 0px #32cd32"
-       plInstallStatus.style.fontSize="15px"
-       sdkBox.style.animation = "paused";
-       sdkBox.style.boxShadow = "0 0 2px 2px greenyellow";
-       sdkBox.style.backgroundColor = "#e6ffe6";
+plNext.addEventListener("click",()=>{
+    if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked && plInstallStatus.value==="yes"){
+        alert("nice")
     }
-    else if (plInstallStatus.value==="no" || plInstallStatus.value==="NO" || plInstallStatus.value==="No")
-    {
-         plNext.style.display="none"
-        contactMe.style.display="block"
+    else if (plInstallStatus.value==="yes" || plInstallStatus.value===""){
+        alert("sorry! you are not eligble to proceed the next step ")
     }
-    else if (plInstallStatus.value==="yes" || plInstallStatus.value==="YES" || plInstallStatus.value==="Yes")
-    {
-       plNext.style.display="block"
-       contactMe.style.display="none"
-    }
-}
-plInstallStatus.addEventListener("keyup",()=>{
-    sdkinstalled();
 })
+//
+pl_chkbox.forEach((pl_chkbox)=>{
+    pl_chkbox.addEventListener("click",()=>{
+        if(pl_dl.checked && pl_extract.checked && pl_copy.checked && pl_cdrive.checked && pl_paste.checked &&  pl_version.checked ){
+            plInstallStatus.disabled=false    
+        }
+    })
+})
+plInstallStatus.addEventListener("input",()=>{
+    toolStatus.innerText="verifying the installation....";
+
+        if(plInstallStatus.value==="yes")
+            {
+            toolStatus.innerText="INSTALLATION COMPLETED";
+        }
+        if(plInstallStatus.value==="no")
+            {
+            toolStatus.innerText="CONTACT US";
+            }
+        
+})
+
 
 
 
