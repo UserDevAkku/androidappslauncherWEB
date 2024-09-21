@@ -9,7 +9,6 @@ body {
   background-color:#000;
 }
 .appname {
-  margin-top: 4px;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -116,7 +115,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-
+margin-bottom: 15px;
 }
 @keyframes requirements-box {
   
@@ -215,14 +214,14 @@ input[type="checkbox"]:checked{
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: 14px;
   width: 100%;
+  display: none;
  }
  .sdk-container{
   margin-top: 20px;
   height: 450px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
+  margin-bottom: 15px;
  }
  .sdk-box{
   height:450px;

@@ -1,5 +1,5 @@
 const reqBox = document.querySelector(".requirements-box");
-const rcNext = document.querySelector(".next-1");//rc = requirements completed
+const rcNext = document.querySelector(".next-1"); //rc = requirements completed
 const chkbox = document.querySelectorAll(".chkbox");
 const phone = document.querySelector("#p");
 const pc = document.querySelector("#pc");
@@ -13,6 +13,8 @@ const sdkYes = document.querySelector("#sdk-yes");
 const termuxYes = document.querySelector("#termux-yes");
 const sdkLink = document.querySelector("#sdk-link");
 const termuxLink = document.querySelector("#termux-link");
+const noteSdk = document.querySelector(".note-sdk");
+const sdkContainer = document.querySelector(".sdk-container");
 //--yesno-phone-check
 const phoneChecked = (phone) => {
   if (phone.checked) {
@@ -163,16 +165,44 @@ chkbox.forEach((chkbox) => {
       reqBox.style.animation = "paused";
       reqBox.style.boxShadow = "0 0 2px 3px greenyellow";
       reqBox.style.backgroundColor = "#e6ffe6";
-     rcNext.innerText="** Requirements are completed **"
-     rcNext.style.color="red"
-     setTimeout(()=>{rcNext.style.color="blue" ,rcNext.innerText="NEXT"},2000)
+      rcNext.innerText = "** Requirements are completed **";
+      rcNext.style.color = "red";
+      setTimeout(() => {
+        (rcNext.style.color = "blue"), (rcNext.innerText = "NEXT");
+      }, 2000);
     } else {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
-      rcNext.innerText="NEXT"
+      rcNext.innerText = "NEXT";
     }
   });
+});
+
+rcNext.addEventListener("click", () => {
+  if (
+    phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked
+  ) {
+    noteSdk.style.display = "block";
+    sdkContainer.style.display = "block";
+    sdkContainer.style.display = "flex";
+    sdkContainer.style.alignItems = "center";
+    sdkContainer.style.justifyContent = "center";
+  }
+
+  if (
+    !phone.checked ||
+    !pc.checked ||
+    !usb.checked ||
+    !termux.checked ||
+    !sdk.checked
+  ) {
+    alert("please complete all the requirement first **");
+  }
 });
 
 const pl_dl = document.querySelector("#pl-dl");
@@ -264,21 +294,20 @@ pl_chkbox.forEach((pl_chkbox) => {
       pl_version.style.width = "12px";
     }
     if (
-        !pl_dl.checked ||
-        !pl_extract.checked ||
-        !pl_copy.checked ||
-        !pl_cdrive.checked ||
-        !pl_paste.checked ||
-        !pl_version.checked
-      ) {
-        plInstallStatus.value="";
-        sdkBox.style.animation =
+      !pl_dl.checked ||
+      !pl_extract.checked ||
+      !pl_copy.checked ||
+      !pl_cdrive.checked ||
+      !pl_paste.checked ||
+      !pl_version.checked
+    ) {
+      plInstallStatus.value = "";
+      sdkBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
       sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
-      }
+    }
   });
 });
-
 
 plInstallStatus.addEventListener("input", () => {
   if (
@@ -293,13 +322,15 @@ plInstallStatus.addEventListener("input", () => {
     sdkBox.style.animation = "paused";
     sdkBox.style.boxShadow = "0 0 2px 3px greenyellow";
     sdkBox.style.backgroundColor = "#e6ffe6";
-    plNext.style.color="red"
-    plNext.innerHTML="** Platform tool is installed **"
-    setTimeout(()=>{plNext.style.color="blue" ,plNext.innerText="NEXT"},2000)
+    plNext.style.color = "red";
+    plNext.innerHTML = "** Platform tool is installed **";
+    setTimeout(() => {
+      (plNext.style.color = "blue"), (plNext.innerText = "NEXT");
+    }, 2000);
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
-    plNext.innerHTML="NEXT"
+    plNext.innerHTML = "NEXT";
   }
   if (
     pl_dl.checked &&
@@ -346,11 +377,9 @@ plNext.addEventListener("click", () => {
     plInstallStatus.value === "yes"
   ) {
     alert("nice");
-  }
-  else{
+  } else {
     alert("please verify that platform tool is installed or not ** ");
   }
-  
 });
 // Function for pl_dl
 // const dlChecked = (pl_dl) => {
