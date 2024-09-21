@@ -9,6 +9,7 @@ body {
   background-color:#000;
 }
 .appname {
+  margin-top: 4px;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -18,8 +19,8 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 5px;
-  background-color:#999999;
-  box-shadow: 0 2px 6px 3px #585858;
+  background-color:aqua;
+  box-shadow: 0 0 6px 3px greenyellow;
   margin-bottom: 10px;
 }
 .appname-QC{
@@ -107,7 +108,7 @@ input[type="checkbox"]:checked{
   height:340px;
   width:300px;
   background-color: hsl(0, 38%, 75%);
-  animation: requirements-box 999ms ease-in-out infinite both;
+  animation: requirements-box 444ms ease-in-out infinite both;
 }
 .requirements-container{
   height: 340px;
@@ -119,29 +120,29 @@ input[type="checkbox"]:checked{
 }
 @keyframes requirements-box {
   
-  0%{
+  0% ,10%,40%,65%,95%{
     
-    box-shadow:0 0 2px 1px red;
+    box-shadow:0 0 2px 2px red;
     border-radius: 20px;
    
    
   }
   25%{
     
-    box-shadow:0 0 2px 2px red;
+    box-shadow:0 0 2px 3px red;
     border-radius: 20px;
    
   }
   75%{
     
-    box-shadow:0 0 2px 1px red;
+    box-shadow:0 0 2px 4px red;
     border-radius: 20px;
     
   }
   100%
   {
    
-    box-shadow:0 0 2px 2px red;
+    box-shadow:0 0 2px 5px red;
     border-radius: 20px;
     
   }
@@ -154,7 +155,7 @@ input[type="checkbox"]:checked{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: yellow;
+  color:yellow;
 
 }
 .note{
@@ -165,7 +166,7 @@ input[type="checkbox"]:checked{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: red;
+  color:red;
 }
 .link-box{
   display: flex;
@@ -207,8 +208,9 @@ input[type="checkbox"]:checked{
  .note-sdk{
   text-align: center;
   margin-top: 5px;
-  color: yellow;
+  color: blue;
   font-size: 20px;
+  font-weight: bolder;
   text-transform: capitalize;
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: 14px;
@@ -240,16 +242,6 @@ input[type="checkbox"]:checked{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 30px;
   width: 100%;
- }
- .pl-next{
-  margin-top: 23px;
-  height: 30px;
-width: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-display: none;
  }
 .pl-points{
   display: inline;
@@ -297,19 +289,38 @@ animation: requirements-box 555ms ease-in-out infinite both;
   text-align: center;
  } 
  .contact{
-height: 30px;
-width: 30px;
+height: 40px;
+width: 40px;
 color: red;
 text-align: center;
 text-decoration: none;
+border-radius: 50%;
+padding-top: 3px;
+background-color: #000;
+box-shadow: 0 0 20px 1px #000;
+display: flex;
+align-items: center;
+justify-content: center;
  }
- .StatusNext{
-  margin-top: 30px;
-  height: 30px;
+ .pl-Next{
+  margin-top:10px;
+  height: 40px;
   width: 340px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-weight: bold;
+ }
+ .contact-logo{
+  margin-top:10px;
+  height: 40px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
  }
  #star::after{
 content: "*";
@@ -319,4 +330,6 @@ font-size: 13px;
  #instagram{
  height: 30px;
  width: 30px;
+ animation: pulse 1s ease-in-out infinite both;
+
  }
