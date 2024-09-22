@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  background-color:#650bf5;
+  background-color:#E9DCC9;
 }
 .appname {
   height: 60px;
@@ -14,7 +14,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(186, 230, 98)
+  background-color: #F3E5AB;
+  box-shadow: 0 4px 10px 2px #000;
 }
 #AAL{
   font-size: 28px;
@@ -116,7 +117,6 @@ top: 2px;
 border: none;
 outline: none;
 margin:10px;
-animation: requirements-box 555ms ease-in-out infinite both;
 }
 input[type="checkbox"]:checked{
   accent-color: hsl(120, 94%, 50%);
@@ -138,8 +138,8 @@ input[type="checkbox"]:checked{
 .requirements-box{
   height:340px;
   width:300px;
-  background-color: hsl(0, 38%, 75%);
-  animation: requirements-box 444ms ease-in-out infinite both;
+  background-color:#F0EAD6;
+  box-shadow: 0 0 12px 2px #000;
 }
 .requirements-container{
   height: 340px;
@@ -182,18 +182,18 @@ margin-bottom: 15px;
   margin: 10px;
   text-align: center;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color:yellow;
+  color:black;
 
 }
 .note{
   text-align: center;
   font-weight: bolder;
   font-size: 15px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -259,8 +259,8 @@ margin-bottom: 15px;
  .sdk-box{
   height:450px;
   width:340px;
-  background-color: hsl(0, 38%, 75%);
-  animation: requirements-box 999ms ease-in-out infinite both;
+  background-color: #FFF5EE;
+  box-shadow: 0 0 12px 2px #000;
  }
  .sdk-install{
   border-top-left-radius: 17px;
@@ -291,7 +291,6 @@ top: 2px;
 border: none;
 outline: none;
 margin:10px;
-animation: requirements-box 555ms ease-in-out infinite both;
 }
  .installation-pl{
   text-align: center;
