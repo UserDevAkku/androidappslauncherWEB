@@ -331,7 +331,7 @@ plInstallStatus.addEventListener("input", () => {
 
   }
 });
-plInstallStatus.addEventListener("mouseover", () => {
+sdkBox.addEventListener("mouseover", () => {
   if (
     !pl_dl.checked ||
     !pl_extract.checked ||
