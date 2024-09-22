@@ -9,7 +9,7 @@ body {
   background-color:#000;
 }
 .appname {
-  height: 60px;
+  height: 30px;
   width: 100%;
   text-align: center;
   font-size: 50px;
@@ -24,8 +24,8 @@ body {
   margin-bottom: 10px;
 }
 #A{
-  font-size: 55px;
-  
+  font-size: 30px;
+  animation: fadedin;
 }
 @keyframes appname {
   0%{
