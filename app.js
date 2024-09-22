@@ -182,6 +182,7 @@ chkbox.forEach((chkbox) => {
       rcNext.innerText = "** Requirements are completed **";
       rcNext.style.marginBottom="2px"
       rcNext.style.color = "red";
+      reqBox.style.pointerEvents="none"
     } else {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
@@ -189,6 +190,7 @@ chkbox.forEach((chkbox) => {
     }
   });
 });
+
 pl_chkbox.forEach((pl_chkbox) => {
   pl_chkbox.addEventListener("click", () => {
     if (pl_dl.checked) {
@@ -299,12 +301,10 @@ plInstallStatus.addEventListener("input", () => {
     plNext.innerHTML = "** Platform tool is installed **";
     plNext.style.textAlign="center"
     plNext.style.marginBottom="2px"
-    sdkBox.style.pointerEvents="auto"
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
     plNext.innerHTML = "";
-    sdkBox.style.pointerEvents="none"
   }
   if (
     pl_dl.checked &&
@@ -333,17 +333,22 @@ plInstallStatus.addEventListener("input", () => {
 
   }
 });
-sdkBox.addEventListener("mouseover", () => {
-  if (
-    !pl_dl.checked ||
-    !pl_extract.checked ||
-    !pl_copy.checked ||
-    !pl_cdrive.checked ||
-    !pl_paste.checked ||
-    !pl_version.checked && 
-     plInstallStatus.value ===""
-  ) {
-    alert("                       ** permission is denied **");
-    sdkBox.style.pointerEvents="none"
+
+
+
+const disbale_sdkBOX=()=>{
+pl_dl.checked = false,
+pl_extract.checked = false,
+pl_copy.checked = false,
+pl_cdrive.checked = false,
+pl_paste.checked = false,
+pl_version.checked = false,
+plInstallStatus.value=""
+  {
+    alert(" ** permission is denied **");
+    
   }
-},{once:true});
+}
+sdkBox.addEventListener("mouseover", () => {
+  disbale_sdkBOX();
+});
