@@ -363,6 +363,24 @@ plInstallStatus.addEventListener("input", () => {
     plNext.style.textAlign = "center";
     plNext.style.marginTop = "19px";
   }
+  if (
+    !pl_dl.checked &&
+    !pl_extract.checked &&
+    !pl_copy.checked &&
+    !pl_cdrive.checked &&
+    !pl_paste.checked &&
+    !pl_version.checked && plInstallStatus.value==="" || plInstallStatus.value==="yes" || plInstallStatus.value==="no"
+  ) {
+    sdkBox.style.backgroundColor = "#e9ecef";
+    sdkBox.style.boxShadow = "0 0 20px 1px #292929";
+    pl_dl.style.animation = "paused";
+    pl_extract.style.animation = "paused";
+    pl_copy.style.animation = "paused";
+    pl_cdrive.style.animation = "paused";
+    pl_paste.style.animation = "paused";
+    pl_version.style.animation = "paused";
+    sdkBox.style.animation = "paused";
+  }
 });
 
 const disbale_sdkBOX = () => {
