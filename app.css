@@ -110,7 +110,7 @@ font-size: 30px;
 text-transform: uppercase;
 }
 .rtc{
-  height: 450px;
+  height: 485px;
   width: 100%;
   background-color: #dddddd;
 }
@@ -247,6 +247,7 @@ background-color: black;
 .note{
   text-align: center;
   font-weight: bolder;
+  margin-top: 10px;
   font-size: 15px;
   margin-bottom: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
