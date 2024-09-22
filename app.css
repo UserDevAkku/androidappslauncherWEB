@@ -12,58 +12,33 @@ body {
   height: 60px;
   width: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 50px;
+  letter-spacing: 2px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 5px;
   background-color:aqua;
   box-shadow: 0 0 6px 3px greenyellow;
+  padding-top: 1px;
   margin-bottom: 10px;
 }
-.appname-QC{
-  animation: appname  2s ease infinite  forwards;
+#A{
+  font-size: 55px;
+  
 }
 @keyframes appname {
   0%{
-    color: blue;
-    font-size: 5px;
+   
   }
   25%{
     color: red;
-    font-size: 50px;
   }
   75%{
 color: blue;
-font-size: 50px;
   }
   100%{
     color: red;
-    font-size: 5px;
-  }
-}
-
-@keyframes lock {
-  0%{
-    font-size: 5px;
-    color: #202020;
-    opacity: 0.10;
-  }
-  25%{
-    font-size: 20x;
-    opacity: 0.25;
-    color: #303030;
-  }
-  75%{
-    font-size: 35px;
-    opacity: 0.75;
-    color: #505050;
-  }
-  100%{
-    font-size: 40px;
-    color: #000;
-    opacity: 1;
   }
 }
 .points{
@@ -87,7 +62,7 @@ margin:10px;
 animation: requirements-box 555ms ease-in-out infinite both;
 }
 input[type="checkbox"]:checked{
-  accent-color: #2be82b;
+  accent-color: hsl(120, 94%, 50%);
 }
 .requirements{
   border-top-left-radius: 17px;
@@ -203,7 +178,7 @@ margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   height: 10px;
   width: 300px;
-  margin-top: 10px;
+  display: none;
  }
  .note-sdk{
   text-align: center;
@@ -215,14 +190,14 @@ margin-bottom: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: 14px;
   width: 100%;
-  display: none;
  }
  .sdk-container{
   margin-top: 20px;
   height: 450px;
   width: 100%;
-  display: none;
   margin-bottom: 15px;
+  display: grid;
+  place-content: center;
  }
  .sdk-box{
   height:450px;
@@ -312,6 +287,7 @@ justify-content: center;
   color: blue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   font-weight: bold;
+  display: none;
  }
  .contact-logo{
   margin-top:10px;

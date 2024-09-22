@@ -13,8 +13,21 @@ const sdkYes = document.querySelector("#sdk-yes");
 const termuxYes = document.querySelector("#termux-yes");
 const sdkLink = document.querySelector("#sdk-link");
 const termuxLink = document.querySelector("#termux-link");
-const noteSdk = document.querySelector(".note-sdk");
 const sdkContainer = document.querySelector(".sdk-container");
+const sdkBox = document.querySelector(".sdk-box");
+const pl_dl = document.querySelector("#pl-dl");
+const pl_extract = document.querySelector("#pl-extract");
+const pl_copy = document.querySelector("#pl-copy");
+const pl_cdrive = document.querySelector("#pl-cdrive");
+const pl_paste = document.querySelector("#pl-paste");
+const pl_version = document.querySelector("#pl-ver");
+const plInstallStatus = document.querySelector(".pl-install-status");
+const plYes = document.querySelector("#pl-yes-no");
+const pl_chkbox = document.querySelectorAll(".pl-chkbox");
+const plNext = document.querySelector(".pl-Next");
+const plcontactMe = document.querySelector(".contact");
+const plcontactLogo = document.querySelector(".contact-logo");
+
 //--yesno-phone-check
 const phoneChecked = (phone) => {
   if (phone.checked) {
@@ -165,59 +178,41 @@ chkbox.forEach((chkbox) => {
       reqBox.style.animation = "paused";
       reqBox.style.boxShadow = "0 0 2px 3px greenyellow";
       reqBox.style.backgroundColor = "#e6ffe6";
+      rcNext.style.display = "block";
       rcNext.innerText = "** Requirements are completed **";
       rcNext.style.color = "red";
-      setTimeout(() => {
-        (rcNext.style.color = "blue"), (rcNext.innerText = "NEXT");
-      }, 2000);
     } else {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
-      rcNext.innerText = "NEXT";
     }
   });
 });
+const form2disabled_alert=()=>{
+     if (
+      !phone.checked ||
+      !pc.checked ||
+      !usb.checked ||
+      !termux.checked ||
+      !sdk.checked
+    ) {
+      alert("** permission is denied ***");
+    }
+  }
+sdkBox.addEventListener("mouseover",form2disabled_alert);
 
-rcNext.addEventListener("click", () => {
-  if (
-    phone.checked &&
+
+
+reqBox.addEventListener("mouseout",()=>{
+  if( phone.checked &&
     pc.checked &&
     usb.checked &&
     termux.checked &&
     sdk.checked
-  ) {
-    noteSdk.style.display = "block";
-    sdkContainer.style.display = "block";
-    sdkContainer.style.display = "flex";
-    sdkContainer.style.alignItems = "center";
-    sdkContainer.style.justifyContent = "center";
+  ){
+    sdkBox.removeEventListener("mouseover",form2disabled_alert);
   }
-
-  if (
-    !phone.checked ||
-    !pc.checked ||
-    !usb.checked ||
-    !termux.checked ||
-    !sdk.checked
-  ) {
-    alert("please complete all the requirement first **");
-  }
-});
-
-const pl_dl = document.querySelector("#pl-dl");
-const pl_extract = document.querySelector("#pl-extract");
-const pl_copy = document.querySelector("#pl-copy");
-const pl_cdrive = document.querySelector("#pl-cdrive");
-const pl_paste = document.querySelector("#pl-paste");
-const pl_version = document.querySelector("#pl-ver");
-const sdkBox = document.querySelector(".sdk-box");
-const plInstallStatus = document.querySelector(".pl-install-status");
-const plYes = document.querySelector("#pl-yes-no");
-const pl_chkbox = document.querySelectorAll(".pl-chkbox");
-const plNext = document.querySelector(".pl-Next");
-const plcontactMe = document.querySelector(".contact");
-const plcontactLogo = document.querySelector(".contact-logo");
+},{once:true});
 
 pl_chkbox.forEach((pl_chkbox) => {
   pl_chkbox.addEventListener("click", () => {
@@ -304,6 +299,8 @@ pl_chkbox.forEach((pl_chkbox) => {
       plInstallStatus.value = "";
       sdkBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
+        plNext.innerHTML=""
+        plcontactLogo.style.display="none"
       sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
     }
   });
@@ -322,15 +319,14 @@ plInstallStatus.addEventListener("input", () => {
     sdkBox.style.animation = "paused";
     sdkBox.style.boxShadow = "0 0 2px 3px greenyellow";
     sdkBox.style.backgroundColor = "#e6ffe6";
+    plNext.style.display="block"
     plNext.style.color = "red";
     plNext.innerHTML = "** Platform tool is installed **";
-    setTimeout(() => {
-      (plNext.style.color = "blue"), (plNext.innerText = "NEXT");
-    }, 2000);
+    plNext.style.textAlign="center"
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
-    plNext.innerHTML = "NEXT";
+    plNext.innerHTML = "";
   }
   if (
     pl_dl.checked &&
@@ -347,11 +343,16 @@ plInstallStatus.addEventListener("input", () => {
     plcontactLogo.style.display = "grid";
     plcontactLogo.style.placeContent = "center";
   }
+  else
+  {
+    plcontactLogo.style.display = "none";
+  }
+
   if (plInstallStatus.value === "") {
     plNext.style.display = "block";
     plNext.style.textAlign = "center";
     plNext.style.marginTop = "19px";
-    plcontactLogo.style.display = "none";
+
   }
 });
 plInstallStatus.addEventListener("mouseover", () => {
@@ -366,111 +367,3 @@ plInstallStatus.addEventListener("mouseover", () => {
     alert("** please install the platform tool first **");
   }
 });
-plNext.addEventListener("click", () => {
-  if (
-    pl_dl.checked &&
-    pl_extract.checked &&
-    pl_copy.checked &&
-    pl_cdrive.checked &&
-    pl_paste.checked &&
-    pl_version.checked &&
-    plInstallStatus.value === "yes"
-  ) {
-    alert("nice");
-  } else {
-    alert("please verify that platform tool is installed or not ** ");
-  }
-});
-// Function for pl_dl
-// const dlChecked = (pl_dl) => {
-//     if (pl_dl.checked) {
-//         pl_dl.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
-//
-//         pl_dl.style.animation="paused"
-//     } else {
-//         pl_dl.style.boxShadow = "none";
-//         pl_dl.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_dl.addEventListener("click", () => {
-//     dlChecked(pl_dl);
-// });
-
-// // Function for pl_extract
-// const extractChecked = (pl_extract) => {
-//     if (pl_extract.checked) {
-//         pl_extract.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
-//         pl_extract.style.height = "15px";
-//         pl_extract.style.width = "15px";
-//         pl_extract.style.animation="paused"
-//     } else {
-//         pl_extract.style.boxShadow = "none";
-//         pl_extract.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_extract.addEventListener("click", () => {
-//     extractChecked(pl_extract);
-// });
-
-// // Function for pl_copy
-// const copyChecked = (pl_copy) => {
-//     if (pl_copy.checked) {
-//         pl_copy.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
-//         pl_copy.style.height = "15px";
-//         pl_copy.style.width = "15px";
-//         pl_copy.style.animation="paused"
-//     } else {
-//         pl_copy.style.boxShadow = "none";
-//         pl_copy.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_copy.addEventListener("click", () => {
-//     copyChecked(pl_copy);
-// });
-
-// // Function for pl_cdrive
-// const cdriveChecked = (pl_cdrive) => {
-//     if (pl_cdrive.checked) {
-//         pl_cdrive.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
-//         pl_cdrive.style.height = "15px";
-//         pl_cdrive.style.width = "15px";
-//         pl_cdrive.style.animation="paused"
-//     } else {
-//         pl_cdrive.style.boxShadow = "none";
-//         pl_cdrive.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_cdrive.addEventListener("click", () => {
-//     cdriveChecked(pl_cdrive);
-// });
-
-// // Function for pl_paste
-// const pasteChecked = (pl_paste) => {
-//     if (pl_paste.checked) {
-//         pl_paste.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
-//         pl_paste.style.height = "15px";
-//         pl_paste.style.width = "15px";
-//         pl_paste.style.animation="paused"
-//     } else {
-//         pl_paste.style.boxShadow = "none";
-//         pl_paste.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_paste.addEventListener("click", () => {
-//     pasteChecked(pl_paste);
-// });
-// // Function for pl_version
-// const versionChecked = (pl_version) => {
-//     if (pl_version.checked) {
-//         pl_version.style.boxShadow = "0 0 2px 2px greenyellow inset";
-//         pl_version.style.height="15px";
-//         pl_version.style.width="15px";
-//         pl_version.style.animation="paused"
-//     } else {
-//         pl_version.style.boxShadow = "none";
-//         pl_version.style.animation="requirements-box 555ms ease-in-out infinite both"
-//     }
-// };
-// pl_version.addEventListener("click", () => {
-//     versionChecked(pl_version);
-// });
