@@ -189,32 +189,6 @@ chkbox.forEach((chkbox) => {
     }
   });
 });
-const form2disabled_alert=()=>{
-     if (
-      !phone.checked ||
-      !pc.checked ||
-      !usb.checked ||
-      !termux.checked ||
-      !sdk.checked
-    ) {
-      alert("** permission is denied ***");
-    }
-  }
-sdkBox.addEventListener("mouseover",form2disabled_alert);
-
-
-
-reqBox.addEventListener("mouseout",()=>{
-  if( phone.checked &&
-    pc.checked &&
-    usb.checked &&
-    termux.checked &&
-    sdk.checked
-  ){
-    sdkBox.removeEventListener("mouseover",form2disabled_alert);
-  }
-},{once:true});
-
 pl_chkbox.forEach((pl_chkbox) => {
   pl_chkbox.addEventListener("click", () => {
     if (pl_dl.checked) {
@@ -367,7 +341,7 @@ plInstallStatus.addEventListener("mouseover", () => {
     !pl_version.checked && 
      plInstallStatus.value ===""
   ) {
-    alert("** please install the platform tool first **");
-     sdkBox.style.pointerEvents="none"
+    alert("       ** permission is denied **");
+    sdkBox.style.pointerEvents="none"
   }
 });
