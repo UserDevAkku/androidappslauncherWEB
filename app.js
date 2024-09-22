@@ -416,23 +416,6 @@ plInstallStatus.addEventListener("input", () => {
  sdkBox.boxShadow="0 0 20px 1px aqua";
 
   }
-
-  if (
-    pl_dl.checked ||
-    pl_extract.checked ||
-    pl_copy.checked ||
-    pl_cdrive.checked ||
-    pl_paste.checked ||
-   pl_version.checked 
-  )
-  {
-  alert("**Please complete the installation proccess first**")
-  plInstallStatus.value=""
-  sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
-  sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
- }
-
-
 });
 
 const disbale_sdkBOX = () => {
