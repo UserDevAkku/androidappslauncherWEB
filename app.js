@@ -232,7 +232,7 @@ reqBox.addEventListener("mouseover", () => {
     termux.checked &&
     sdk.checked
   ) {
-    setTimeout(()=>{alert("requirements have completed")},1);
+    setTimeout(()=>{alert("Requirements have completed")},1);
   }
 });
 
@@ -401,21 +401,38 @@ plInstallStatus.addEventListener("input", () => {
   }
 
   if (
-    !pl_dl.checked ||
-    !pl_extract.checked ||
-    !pl_copy.checked ||
-    !pl_cdrive.checked ||
-    !pl_paste.checked ||
+    !pl_dl.checked &&
+    !pl_extract.checked &&
+    !pl_copy.checked &&
+    !pl_cdrive.checked &&
+    !pl_paste.checked &&
     !pl_version.checked 
    )
    {
-   alert("**please complete the installation proccess first**")
+   alert("**installation proccess is not started yet**")
    plInstallStatus.value=""
    sdkBox.style.animation = "paused";
   sdkBox.style.backgroundColor="#e9ecef";
  sdkBox.boxShadow="0 0 20px 1px aqua";
 
   }
+
+  if (
+    pl_dl.checked ||
+    pl_extract.checked ||
+    pl_copy.checked ||
+    pl_cdrive.checked ||
+    pl_paste.checked ||
+   pl_version.checked 
+  )
+  {
+  alert("**Please complete the installation proccess first**")
+  plInstallStatus.value=""
+  sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
+  sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+ }
+
+
 });
 
 const disbale_sdkBOX = () => {
@@ -434,7 +451,7 @@ const disbale_sdkBOX = () => {
       (pl_version.style.pointerEvents = "auto"),
       (plInstallStatus.style.pointerEvents = "auto");
   } else {
-    alert("** permission is not allowed **");
+    alert("** Permission is not allowed **");
   }
 
   if (
@@ -446,7 +463,7 @@ const disbale_sdkBOX = () => {
     pl_version.checked &&
     plInstallStatus.value === "yes"
   ) {
-    alert("** platform tool has installed **");
+    alert("** Platform tool has installed **");
     (pl_dl.style.pointerEvents = "none"),
       (pl_extract.style.pointerEvents = "none"),
       (pl_copy.style.pointerEvents = "none"),
