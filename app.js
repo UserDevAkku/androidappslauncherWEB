@@ -418,19 +418,11 @@ plInstallStatus.addEventListener("input", () => {
     !pl_copy.checked ||
     !pl_cdrive.checked ||
     !pl_paste.checked ||
-    (!pl_version.checked && plInstallStatus.value === "") ||
-    plInstallStatus.value === "yes" ||
-    plInstallStatus.value === "no"
-  ) {
-    sdkBox.style.backgroundColor = "#e9ecef";
-    sdkBox.style.boxShadow = "0 0 20px 1px #292929";
-    pl_dl.style.animation = "paused";
-    pl_extract.style.animation = "paused";
-    pl_copy.style.animation = "paused";
-    pl_cdrive.style.animation = "paused";
-    pl_paste.style.animation = "paused";
-    pl_version.style.animation = "paused";
-    sdkBox.style.animation = "paused";
+    !pl_version.checked
+   )
+   {
+    sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
+   sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
   }
 });
 
@@ -462,6 +454,14 @@ const disbale_sdkBOX = () => {
     plInstallStatus.value === "yes"
   ) {
     alert("** platform tool is already installed **");
+    (pl_dl.style.pointerEvents = "none"),
+      (pl_extract.style.pointerEvents = "none"),
+      (pl_copy.style.pointerEvents = "none"),
+      (pl_cdrive.style.pointerEvents = "none"),
+      (pl_paste.style.pointerEvents = "none"),
+      (pl_version.style.pointerEvents = "none"),
+      (plInstallStatus.style.pointerEvents = "none");
+
   }
 };
 
