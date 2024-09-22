@@ -299,10 +299,12 @@ plInstallStatus.addEventListener("input", () => {
     plNext.innerHTML = "** Platform tool is installed **";
     plNext.style.textAlign="center"
     plNext.style.marginBottom="2px"
+    sdkBox.style.pointerEvents="auto"
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
     plNext.innerHTML = "";
+    sdkBox.style.pointerEvents="none"
   }
   if (
     pl_dl.checked &&
@@ -341,7 +343,7 @@ sdkBox.addEventListener("mouseover", () => {
     !pl_version.checked && 
      plInstallStatus.value ===""
   ) {
-    alert("       ** permission is denied **");
+    alert("                       ** permission is denied **");
     sdkBox.style.pointerEvents="none"
   }
-});
+},{once:true});
