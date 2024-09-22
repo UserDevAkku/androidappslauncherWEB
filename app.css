@@ -9,7 +9,7 @@ body {
   background-color:#000;
 }
 .appname {
-  height: 80px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   box-shadow: 0 4px 10px 2px #000;
 }
 #AAL{
-  font-size: 35px;
+  font-size: 26px;
   text-transform: uppercase;
  color: #000;
  font-weight: bolder;
@@ -26,7 +26,7 @@ body {
 }
 
 .AAL{
-  font-size: 40px;
+  font-size: 50px;
   background-color: transparent;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
@@ -100,7 +100,7 @@ background-color: hsl(0, 62%, 55%);
   }
 }
 .att{
-  height: 35px;
+  height: 60px;
 width: 100%;
 display: flex;
 align-items: center;
@@ -110,12 +110,12 @@ font-size: 30px;
 text-transform: uppercase;
 }
 .rtc{
-  height: 200px;
+  height: 450px;
   width: 100%;
   background-color: #dddddd;
 }
 .rtc-title{
-height: 45px;
+height: 50px;
 width: 100%;
 display: flex;
 align-items: center;
@@ -123,13 +123,13 @@ justify-content: center;
 color: red;
 text-transform: uppercase;
 font-weight: bolder;
-padding-top: 10px;
+padding-top: 6px;
 padding-bottom: 6px;
 font-size:20px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .rtc-points{
-  height: 500px;
+  height: 400px;
   width: 100%;
   display: flex;
 flex-wrap: wrap;
@@ -248,7 +248,7 @@ background-color: black;
   text-align: center;
   font-weight: bolder;
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -295,7 +295,7 @@ background-color: black;
  }
  .note-sdk{
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
   color:yellow;
   font-size: 20px;
   font-weight: bolder;
