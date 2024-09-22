@@ -181,6 +181,7 @@ chkbox.forEach((chkbox) => {
       reqBox.style.border="2px solid black"
       rcNext.style.display = "block";
       rcNext.innerText = "** Requirements are completed **";
+      rcNext.style.marginBottom="2px"
       rcNext.style.color = "red";
     } else {
       reqBox.style.animation =
@@ -326,6 +327,7 @@ plInstallStatus.addEventListener("input", () => {
     plNext.style.color = "red";
     plNext.innerHTML = "** Platform tool is installed **";
     plNext.style.textAlign="center"
+    plNext.style.marginBottom="2px"
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
