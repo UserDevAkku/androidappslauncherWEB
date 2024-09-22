@@ -178,6 +178,7 @@ chkbox.forEach((chkbox) => {
       reqBox.style.animation = "paused";
       reqBox.style.boxShadow = "0 0 2px 3px greenyellow";
       reqBox.style.backgroundColor = "#e6ffe6";
+      reqBox.style.border="2px solid black"
       rcNext.style.display = "block";
       rcNext.innerText = "** Requirements are completed **";
       rcNext.style.color = "red";
@@ -185,6 +186,7 @@ chkbox.forEach((chkbox) => {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+      reqBox.style.border="none"
     }
   });
 });
@@ -319,6 +321,7 @@ plInstallStatus.addEventListener("input", () => {
     sdkBox.style.animation = "paused";
     sdkBox.style.boxShadow = "0 0 2px 3px greenyellow";
     sdkBox.style.backgroundColor = "#e6ffe6";
+    sdkBox.style.border="2px solid black"
     plNext.style.display="block"
     plNext.style.color = "red";
     plNext.innerHTML = "** Platform tool is installed **";
@@ -327,6 +330,7 @@ plInstallStatus.addEventListener("input", () => {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
     plNext.innerHTML = "";
+    sdkBox.style.border="none"
   }
   if (
     pl_dl.checked &&
