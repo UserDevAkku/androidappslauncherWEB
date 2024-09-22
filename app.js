@@ -180,13 +180,29 @@ chkbox.forEach((chkbox) => {
       reqBox.style.backgroundColor = "#e6ffe6";
       rcNext.style.display = "block";
       rcNext.innerText = "** Requirements are completed **";
-      rcNext.style.marginBottom="2px"
+      rcNext.style.marginBottom = "2px";
       rcNext.style.color = "red";
-      reqBox.style.pointerEvents="none"
+      reqBox.style.pointerEvents = "none";
     } else {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
       reqBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+    }
+    if (
+      !phone.checked &&
+      !pc.checked &&
+      !usb.checked &&
+      !termux.checked &&
+      !sdk.checked
+    ) {
+      reqBox.style.backgroundColor = "#e9ecef";
+      reqBox.style.boxShadow = "0 0 20px 1px #292929";
+      phone.style.animation = "paused";
+      pc.style.animation = "paused";
+      usb.style.animation = "paused";
+      termux.style.animation = "paused";
+      sdk.style.animation = "paused";
+      reqBox.style.animation = "paused";
     }
   });
 });
@@ -276,9 +292,27 @@ pl_chkbox.forEach((pl_chkbox) => {
       plInstallStatus.value = "";
       sdkBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
-        plNext.innerHTML=""
-        plcontactLogo.style.display="none"
+      plNext.innerHTML = "";
+      plcontactLogo.style.display = "none";
       sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+    }
+    if (
+      !pl_dl.checked &&
+      !pl_extract.checked &&
+      !pl_copy.checked &&
+      !pl_cdrive.checked &&
+      !pl_paste.checked &&
+      !pl_version.checked
+    ) {
+      sdkBox.style.backgroundColor = "#e9ecef";
+      sdkBox.style.boxShadow = "0 0 20px 1px #292929";
+      pl_dl.style.animation = "paused";
+      pl_extract.style.animation = "paused";
+      pl_copy.style.animation = "paused";
+      pl_cdrive.style.animation = "paused";
+      pl_paste.style.animation = "paused";
+      pl_version.style.animation = "paused";
+      sdkBox.style.animation = "paused";
     }
   });
 });
@@ -296,11 +330,11 @@ plInstallStatus.addEventListener("input", () => {
     sdkBox.style.animation = "paused";
     sdkBox.style.boxShadow = "0 0 2px 3px greenyellow";
     sdkBox.style.backgroundColor = "#e6ffe6";
-    plNext.style.display="block"
+    plNext.style.display = "block";
     plNext.style.color = "red";
     plNext.innerHTML = "** Platform tool is installed **";
-    plNext.style.textAlign="center"
-    plNext.style.marginBottom="2px"
+    plNext.style.textAlign = "center";
+    plNext.style.marginBottom = "2px";
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
@@ -320,9 +354,7 @@ plInstallStatus.addEventListener("input", () => {
     plcontactMe.style.paddingTop = "4px";
     plcontactLogo.style.display = "grid";
     plcontactLogo.style.placeContent = "center";
-  }
-  else
-  {
+  } else {
     plcontactLogo.style.display = "none";
   }
 
@@ -330,23 +362,28 @@ plInstallStatus.addEventListener("input", () => {
     plNext.style.display = "block";
     plNext.style.textAlign = "center";
     plNext.style.marginTop = "19px";
-
   }
 });
 
-
-
-const disbale_sdkBOX=()=>{
-if(pl_dl.checked &&
-  pl_extract.checked &&
-  pl_copy.checked &&
-  pl_cdrive.checked &&
-  pl_paste.checked &&
-  pl_version.checked &&
-  plInstallStatus.value === "yes"){
-    sdkBox.style.pointerEvents="auto"
+const disbale_sdkBOX = () => {
+  if (
+    phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked
+  ) {
+    (pl_dl.style.pointerEvents = "auto"),
+      (pl_extract.style.pointerEvents = "auto"),
+      (pl_copy.style.pointerEvents = "auto"),
+      (pl_cdrive.style.pointerEvents = "auto"),
+      (pl_paste.style.pointerEvents = "auto"),
+      (pl_version.style.pointerEvents = "auto"),
+      (plInstallStatus.style.pointerEvents = "auto");
+  } else {
+    alert("** permission is not allowed **");
   }
-}
+};
 sdkBox.addEventListener("mouseover", () => {
   disbale_sdkBOX();
 });
