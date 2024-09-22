@@ -1,36 +1,38 @@
-const reqBox = document.querySelector(".requirements-box");
-const rcNext = document.querySelector(".next-1"); //rc = requirements completed
-const chkbox = document.querySelectorAll(".chkbox");
-const phone = document.querySelector("#p");
-const pc = document.querySelector("#pc");
-const usb = document.querySelector("#usb");
-const sdk = document.querySelector("#sdk");
-const termux = document.querySelector("#T");
-const phoneYes = document.querySelector("#phone-yes");
-const pcYes = document.querySelector("#pc-yes");
-const usbYes = document.querySelector("#usb-yes");
-const sdkYes = document.querySelector("#sdk-yes");
-const termuxYes = document.querySelector("#termux-yes");
-const sdkLink = document.querySelector("#sdk-link");
-const termuxLink = document.querySelector("#termux-link");
-const sdkContainer = document.querySelector(".sdk-container");
-const sdkBox = document.querySelector(".sdk-box");
-const pl_dl = document.querySelector("#pl-dl");
-const pl_extract = document.querySelector("#pl-extract");
-const pl_copy = document.querySelector("#pl-copy");
-const pl_cdrive = document.querySelector("#pl-cdrive");
-const pl_paste = document.querySelector("#pl-paste");
-const pl_version = document.querySelector("#pl-ver");
-const plInstallStatus = document.querySelector(".pl-install-status");
-const plYes = document.querySelector("#pl-yes-no");
-const pl_chkbox = document.querySelectorAll(".pl-chkbox");
-const plNext = document.querySelector(".pl-Next");
-const plcontactMe = document.querySelector(".contact");
-const plcontactLogo = document.querySelector(".contact-logo");
+const reqBox = document.querySelector(".requirements-box"); // Select the element with class 'requirements-box'
+const rcNext = document.querySelector(".next-1"); // Select the element with class 'next-1' (Requirement Completed message)
+const chkbox = document.querySelectorAll(".chkbox"); // Select all elements with class 'chkbox'
+const phone = document.querySelector("#p"); // Select the element with ID 'p' (Phone)
+const pc = document.querySelector("#pc"); // Select the element with ID 'pc' (PC)
+const usb = document.querySelector("#usb"); // Select the element with ID 'usb' (USB)
+const sdk = document.querySelector("#sdk"); // Select the element with ID 'sdk' (SDK)
+const termux = document.querySelector("#T"); // Select the element with ID 'T' (Termux)
+const phoneYes = document.querySelector("#phone-yes"); // Select the element with ID 'phone-yes' (Phone confirmation)
+const pcYes = document.querySelector("#pc-yes"); // Select the element with ID 'pc-yes' (PC confirmation)
+const usbYes = document.querySelector("#usb-yes"); // Select the element with ID 'usb-yes' (USB confirmation)
+const sdkYes = document.querySelector("#sdk-yes"); // Select the element with ID 'sdk-yes' (SDK confirmation)
+const termuxYes = document.querySelector("#termux-yes"); // Select the element with ID 'termux-yes' (Termux confirmation)
+const sdkLink = document.querySelector("#sdk-link"); // Select the element with ID 'sdk-link' (SDK link)
+const termuxLink = document.querySelector("#termux-link"); // Select the element with ID 'termux-link' (Termux link)
+const sdkContainer = document.querySelector(".sdk-container"); // Select the element with class 'sdk-container'
+const sdkBox = document.querySelector(".sdk-box"); // Select the element with class 'sdk-box'
+const pl_dl = document.querySelector("#pl-dl"); // Select the element with ID 'pl-dl'
+const pl_extract = document.querySelector("#pl-extract"); // Select the element with ID 'pl-extract'
+const pl_copy = document.querySelector("#pl-copy"); // Select the element with ID 'pl-copy'
+const pl_cdrive = document.querySelector("#pl-cdrive"); // Select the element with ID 'pl-cdrive'
+const pl_paste = document.querySelector("#pl-paste"); // Select the element with ID 'pl-paste'
+const pl_version = document.querySelector("#pl-ver"); // Select the element with ID 'pl-ver'
+const plInstallStatus = document.querySelector(".pl-install-status"); // Select the element with class 'pl-install-status'
+const plYes = document.querySelector("#pl-yes-no"); // Select the element with ID 'pl-yes-no'
+const pl_chkbox = document.querySelectorAll(".pl-chkbox"); // Select all elements with class 'pl-chkbox'
+const plNext = document.querySelector(".pl-Next"); // Select the element with class 'pl-Next'
+const plcontactMe = document.querySelector(".contact"); // Select the element with class 'contact'
+const plcontactLogo = document.querySelector(".contact-logo"); // Select the element with class 'contact-logo'
 
 //--yesno-phone-check
 const phoneChecked = (phone) => {
+  // Function to handle phone checkbox checked state
   if (phone.checked) {
+    // If phone is checked, apply greenyellow box shadow and adjust styles
     phone.style.boxShadow = "0 0 2px 2px greenyellow inset";
     phoneYes.innerText = "yes";
     phoneYes.style.color = "#013220";
@@ -38,6 +40,7 @@ const phoneChecked = (phone) => {
     phone.style.width = "15px";
     phone.style.animation = "paused";
   } else {
+    // If phone is unchecked, remove styles and reset animation
     phone.style.boxShadow = "none";
     phoneYes.innerText = "no";
     phoneYes.style.color = "red";
@@ -45,13 +48,15 @@ const phoneChecked = (phone) => {
   }
 };
 phone.addEventListener("click", () => {
+  // Add event listener for phone checkbox click
   phoneChecked(phone);
 });
 
 //--yesno-pc-check
 const pcChecked = (pc) => {
+  // Function to handle PC checkbox checked state
   if (pc.checked) {
-    pc.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
+    pc.style.boxShadow = "0 0 2px 2px greenyellow inset";
     pcYes.innerText = "yes";
     pcYes.style.color = "#013220";
     pc.style.height = "15px";
@@ -70,8 +75,9 @@ pc.addEventListener("click", () => {
 
 //--yesno-usb-check
 const usbChecked = (usb) => {
+  // Function to handle USB checkbox checked state
   if (usb.checked) {
-    usb.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
+    usb.style.boxShadow = "0 0 2px 2px greenyellow inset";
     usbYes.innerText = "yes";
     usbYes.style.color = "#013220";
     usb.style.height = "15px";
@@ -90,8 +96,9 @@ usb.addEventListener("click", () => {
 
 //--yesno-sdk-check
 const sdkChecked = (sdk) => {
+  // Function to handle SDK checkbox checked state
   if (sdk.checked) {
-    sdk.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
+    sdk.style.boxShadow = "0 0 2px 2px greenyellow inset";
     sdkYes.innerText = "yes";
     sdkYes.style.color = "#013220";
     sdkLink.style.display = "none";
@@ -111,8 +118,9 @@ sdk.addEventListener("click", () => {
 
 //--yesno-termux-check
 const termuxChecked = (termux) => {
+  // Function to handle Termux checkbox checked state
   if (termux.checked) {
-    termux.style.boxShadow = "0 0 2px 2px greenyellow inset"; // Changed here
+    termux.style.boxShadow = "0 0 2px 2px greenyellow inset";
     termuxYes.innerText = "yes";
     termuxYes.style.color = "#013220";
     termux.style.animation = "paused";
@@ -133,6 +141,7 @@ termux.addEventListener("click", () => {
 termux.addEventListener(
   "mouseover",
   () => {
+    // Show Termux link if unchecked and mouseover
     if (termuxYes.innerText === "no") {
       termuxLink.style.display = "display";
       termuxLink.style.display = "inline";
@@ -144,6 +153,7 @@ termux.addEventListener(
 
 //--hide-termux-link
 termuxLink.addEventListener("click", () => {
+  // Hide Termux link on click
   termuxLink.style.display = "none";
   termux.disabled = false;
 });
@@ -152,6 +162,7 @@ termuxLink.addEventListener("click", () => {
 sdk.addEventListener(
   "mouseover",
   () => {
+    // Show SDK link on mouseover
     sdkLink.style.display = "block";
     sdkLink.style.display = "inline";
     sdk.disabled = true;
@@ -161,13 +172,15 @@ sdk.addEventListener(
 
 //--hide-sdk-link
 sdkLink.addEventListener("click", () => {
+  // Hide SDK link on click
   sdkLink.style.display = "none";
   sdk.disabled = false;
 });
 
-//--requiremennts completed
+//--requirements completed
 chkbox.forEach((chkbox) => {
   chkbox.addEventListener("click", () => {
+    // Iterate over checkboxes to check if requirements are met
     if (
       phone.checked &&
       pc.checked &&
@@ -182,7 +195,11 @@ chkbox.forEach((chkbox) => {
       rcNext.innerText = "** Requirements are completed **";
       rcNext.style.marginBottom = "2px";
       rcNext.style.color = "red";
-      reqBox.style.pointerEvents = "none";
+      phone.style.pointerEvents = "none";
+      pc.style.pointerEvents = "none";
+      usb.style.pointerEvents = "none";
+      termux.style.pointerEvents = "none";
+      sdk.style.pointerEvents = "none";
     } else {
       reqBox.style.animation =
         "requirements-box 999ms ease-in-out infinite both";
@@ -205,6 +222,18 @@ chkbox.forEach((chkbox) => {
       reqBox.style.animation = "paused";
     }
   });
+});
+
+reqBox.addEventListener("mouseover", () => {
+  if (
+    phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked
+  ) {
+    alert("requirements are already completed");
+  }
 });
 
 pl_chkbox.forEach((pl_chkbox) => {
@@ -316,7 +345,6 @@ pl_chkbox.forEach((pl_chkbox) => {
     }
   });
 });
-
 plInstallStatus.addEventListener("input", () => {
   if (
     pl_dl.checked &&
@@ -364,12 +392,35 @@ plInstallStatus.addEventListener("input", () => {
     plNext.style.marginTop = "19px";
   }
   if (
-    !pl_dl.checked &&
-    !pl_extract.checked &&
-    !pl_copy.checked &&
-    !pl_cdrive.checked &&
-    !pl_paste.checked &&
-    !pl_version.checked && plInstallStatus.value==="" || plInstallStatus.value==="yes" || plInstallStatus.value==="no"
+    (!pl_dl.checked &&
+      !pl_extract.checked &&
+      !pl_copy.checked &&
+      !pl_cdrive.checked &&
+      !pl_paste.checked &&
+      !pl_version.checked &&
+      plInstallStatus.value === "") ||
+    plInstallStatus.value === "yes" ||
+    plInstallStatus.value === "no"
+  ) {
+    sdkBox.style.backgroundColor = "#e9ecef";
+    sdkBox.style.boxShadow = "0 0 20px 1px #292929";
+    pl_dl.style.animation = "paused";
+    pl_extract.style.animation = "paused";
+    pl_copy.style.animation = "paused";
+    pl_cdrive.style.animation = "paused";
+    pl_paste.style.animation = "paused";
+    pl_version.style.animation = "paused";
+    sdkBox.style.animation = "paused";
+  }
+  if (
+    !pl_dl.checked ||
+    !pl_extract.checked ||
+    !pl_copy.checked ||
+    !pl_cdrive.checked ||
+    !pl_paste.checked ||
+    (!pl_version.checked && plInstallStatus.value === "") ||
+    plInstallStatus.value === "yes" ||
+    plInstallStatus.value === "no"
   ) {
     sdkBox.style.backgroundColor = "#e9ecef";
     sdkBox.style.boxShadow = "0 0 20px 1px #292929";
@@ -401,7 +452,19 @@ const disbale_sdkBOX = () => {
   } else {
     alert("** permission is not allowed **");
   }
+  if (
+    pl_dl.checked &&
+    pl_extract.checked &&
+    pl_copy.checked &&
+    pl_cdrive.checked &&
+    pl_paste.checked &&
+    pl_version.checked &&
+    plInstallStatus.value === "yes"
+  ) {
+    alert("** platform tool is already installed **");
+  }
 };
+
 sdkBox.addEventListener("mouseover", () => {
   disbale_sdkBOX();
 });
