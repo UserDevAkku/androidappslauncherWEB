@@ -343,30 +343,8 @@ if(pl_dl.checked &&
   pl_cdrive.checked &&
   pl_paste.checked &&
   pl_version.checked &&
-  plInstallStatus.value === "no" || plInstallStatus.value === "" ){
-    alert(" ** permission is denied **");
-    pl_dl.checked = false,
-    pl_extract.checked = false,
-    pl_copy.checked = false,
-    pl_cdrive.checked = false,
-    pl_paste.checked = false,
-    pl_version.checked = false,
-    plInstallStatus.value=""
-  }
-  else if ( !pl_dl.checked ||
-    !pl_extract.checked ||
-    !pl_copy.checked ||
-    !pl_cdrive.checked ||
-    !pl_paste.checked ||
-    !pl_version.checked && plInstallStatus.value === ""){
-      alert(" ** permission is denied **");
-      pl_dl.checked = false,
-      pl_extract.checked = false,
-      pl_copy.checked = false,
-      pl_cdrive.checked = false,
-      pl_paste.checked = false,
-      pl_version.checked = false,
-      plInstallStatus.value=""
+  plInstallStatus.value === "yes"){
+    sdkBox.style.pointerEvents="auto"
   }
 }
 sdkBox.addEventListener("mouseover", () => {

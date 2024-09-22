@@ -261,6 +261,7 @@ margin-bottom: 15px;
   width:340px;
   background-color:#F0EAD6;
   box-shadow: 0 0 12px 2px #000;
+  pointer-events: none;
  }
  .sdk-install{
   border-top-left-radius: 17px;
