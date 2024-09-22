@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  background-color:rgb(24, 123, 123);
+  background-color:#000;
 }
 .appname {
   height: 60px;
@@ -138,11 +138,11 @@ input[type="checkbox"]:checked{
 .requirements-box{
   height:340px;
   width:300px;
-  box-shadow: 0 0 20px 1px #000;
+  box-shadow: 0 0 20px 1px aqua;
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-radius: 20px;
-  
+  background-color: #e9ecef;
 }
 .requirements-container{
   height: 340px;
@@ -151,7 +151,7 @@ input[type="checkbox"]:checked{
   align-items: center;
   justify-content: center;
 margin-bottom: 15px;
-background-color: white;
+background-color: black;
 }
 @keyframes requirements-box {
   
@@ -197,12 +197,12 @@ background-color: white;
   text-align: center;
   font-weight: bolder;
   font-size: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   color:red;
-  background-color: white;
+  background-color:black;
 }
 .link-box{
   display: flex;
@@ -255,6 +255,7 @@ background-color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   height: 22px;
   width: 100%;
+
  }
  .sdk-container{
   margin-top: 20px;
@@ -263,13 +264,13 @@ background-color: white;
   margin-bottom: 15px;
   display: grid;
   place-content: center;
-  background-color: white;
+  background-color:black;
  }
  .sdk-box{
   height:450px;
   width:340px;
   background-color:#e9ecef;
-  box-shadow: 0 0 20px 1px #292929;
+  box-shadow: 0 0 20px 1px aqua;
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-radius: 20px;

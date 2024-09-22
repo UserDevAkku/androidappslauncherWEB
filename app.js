@@ -213,7 +213,7 @@ chkbox.forEach((chkbox) => {
       !sdk.checked
     ) {
       reqBox.style.backgroundColor = "#e9ecef";
-      reqBox.style.boxShadow = "0 0 20px 1px #292929";
+      reqBox.style.boxShadow = "0 0 20px 1px aqua";
       phone.style.animation = "paused";
       pc.style.animation = "paused";
       usb.style.animation = "paused";
@@ -232,7 +232,7 @@ reqBox.addEventListener("mouseover", () => {
     termux.checked &&
     sdk.checked
   ) {
-    alert("requirements are already completed");
+    setTimeout(()=>{alert("requirements have completed")},1);
   }
 });
 
@@ -334,7 +334,7 @@ pl_chkbox.forEach((pl_chkbox) => {
       !pl_version.checked
     ) {
       sdkBox.style.backgroundColor = "#e9ecef";
-      sdkBox.style.boxShadow = "0 0 20px 1px #292929";
+      sdkBox.style.boxShadow = "0 0 20px 1px aqua";
       pl_dl.style.animation = "paused";
       pl_extract.style.animation = "paused";
       pl_copy.style.animation = "paused";
@@ -355,14 +355,14 @@ plInstallStatus.addEventListener("input", () => {
     pl_version.checked &&
     plInstallStatus.value === "yes"
   ) {
+    plNext.style.display = "block";
+    plNext.style.color = "red";
+    plNext.innerHTML = "** Platform tool has installed **";
+    plNext.style.textAlign = "center";
+    plNext.style.marginBottom = "2px";
     sdkBox.style.animation = "paused";
     sdkBox.style.boxShadow = "0 0 2px 3px greenyellow";
     sdkBox.style.backgroundColor = "#e6ffe6";
-    plNext.style.display = "block";
-    plNext.style.color = "red";
-    plNext.innerHTML = "** Platform tool is installed **";
-    plNext.style.textAlign = "center";
-    plNext.style.marginBottom = "2px";
   } else {
     sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
     sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
@@ -382,47 +382,39 @@ plInstallStatus.addEventListener("input", () => {
     plcontactMe.style.paddingTop = "4px";
     plcontactLogo.style.display = "grid";
     plcontactLogo.style.placeContent = "center";
+    sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
+    sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
   } else {
     plcontactLogo.style.display = "none";
   }
-
-  if (plInstallStatus.value === "") {
-    plNext.style.display = "block";
-    plNext.style.textAlign = "center";
-    plNext.style.marginTop = "19px";
-  }
-  if (
-    (!pl_dl.checked &&
-      !pl_extract.checked &&
-      !pl_copy.checked &&
-      !pl_cdrive.checked &&
-      !pl_paste.checked &&
-      !pl_version.checked &&
-      plInstallStatus.value === "") ||
+  if (!pl_dl.checked ||
+      !pl_extract.checked ||
+      !pl_copy.checked ||
+      !pl_cdrive.checked ||
+      !pl_paste.checked ||
+      !pl_version.checked && 
     plInstallStatus.value === "yes" ||
-    plInstallStatus.value === "no"
+    plInstallStatus.value === "no" || plInstallStatus.value===""
   ) {
-    sdkBox.style.backgroundColor = "#e9ecef";
-    sdkBox.style.boxShadow = "0 0 20px 1px #292929";
-    pl_dl.style.animation = "paused";
-    pl_extract.style.animation = "paused";
-    pl_copy.style.animation = "paused";
-    pl_cdrive.style.animation = "paused";
-    pl_paste.style.animation = "paused";
-    pl_version.style.animation = "paused";
-    sdkBox.style.animation = "paused";
+    sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
+    sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
   }
+
   if (
     !pl_dl.checked ||
     !pl_extract.checked ||
     !pl_copy.checked ||
     !pl_cdrive.checked ||
     !pl_paste.checked ||
-    !pl_version.checked
+    !pl_version.checked 
    )
    {
-    sdkBox.style.animation = "requirements-box 999ms ease-in-out infinite both";
-   sdkBox.style.backgroundColor = "hsl(0, 38%, 75%)";
+   alert("**please complete the installation proccess first**")
+   plInstallStatus.value=""
+   sdkBox.style.animation = "paused";
+  sdkBox.style.backgroundColor="#e9ecef";
+ sdkBox.boxShadow="0 0 20px 1px aqua";
+
   }
 });
 
@@ -444,6 +436,7 @@ const disbale_sdkBOX = () => {
   } else {
     alert("** permission is not allowed **");
   }
+
   if (
     pl_dl.checked &&
     pl_extract.checked &&
@@ -453,7 +446,7 @@ const disbale_sdkBOX = () => {
     pl_version.checked &&
     plInstallStatus.value === "yes"
   ) {
-    alert("** platform tool is already installed **");
+    alert("** platform tool has installed **");
     (pl_dl.style.pointerEvents = "none"),
       (pl_extract.style.pointerEvents = "none"),
       (pl_copy.style.pointerEvents = "none"),
@@ -463,8 +456,8 @@ const disbale_sdkBOX = () => {
       (plInstallStatus.style.pointerEvents = "none");
 
   }
-};
-
+}
 sdkBox.addEventListener("mouseover", () => {
   disbale_sdkBOX();
 });
+
