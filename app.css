@@ -6,39 +6,96 @@
 }
 body {
   height: 100vh;
-  background-color:#000;
+  background-color:#650bf5;
 }
 .appname {
-  height: 30px;
+  height: 60px;
   width: 100%;
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color:aqua;
-  box-shadow: 0 0 6px 3px greenyellow;
-  padding-top: 1px;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(186, 230, 98)
 }
-#A{
-  font-size: 30px;
-  animation: fadedin;
+#AAL{
+  font-size: 28px;
+  text-transform: uppercase;
+ color: #000;
+ font-weight: bolder;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.AAL{
+  font-size: 40px;
+  background-color: transparent;
+  animation: AAL 2s ease-out infinite 0s alternate;
+}
+
+@keyframes AAL {
+  0%{
+   color: white ;
+   transform: rotateY(360deg);
+  }
+  25%{
+    color:green;
+  }
+  55%{
+    color:yellow;
+
+  }
+  65%{
+    color:#650bf5;
+  
+  }
+  75%{
+color: hsl(0, 62%, 55%);
+
+  }
+  85%{
+    color: #06d7e6f2;
+
+  }
+  95%{
+    color: rgb(208, 231, 33);
+
+  }
+
+  100%{
+    color: hsl(327, 77%, 50%);
+    
+  }
 }
 @keyframes appname {
   0%{
-   
+   background-color: white ;
+
   }
   25%{
-    color: red;
+    background-color:green;
+  }
+  55%{
+    background-color:yellow;
+
+  }
+  65%{
+    background-color:#650bf5;
+  
   }
   75%{
-color: blue;
+background-color: hsl(0, 62%, 55%);
+
   }
+  85%{
+    background-color: #06d7e6f2;
+
+  }
+  95%{
+    background-color: rgb(208, 231, 33);
+
+  }
+
   100%{
-    color: red;
+    background-color: hsl(327, 77%, 50%);
+    
   }
 }
 .points{
