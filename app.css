@@ -166,11 +166,11 @@ body {
 #point-2 .point-1-1{
   color:red;
   font-weight: bolder;
-  
+
 }
 @media (max-width:600px){
   .rtc-points{
-    height: 360px;
+    height: 340px;
   }
 }
 .points {
