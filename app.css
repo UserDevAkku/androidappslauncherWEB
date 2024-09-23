@@ -38,7 +38,10 @@ body {
 }
 @media(max-width:600px){
   body{
-    font-size: 1rem;
+    font-size: 14px;
+  }
+  #AAL{
+    font-size: 1.1rem;
   }
 }
 
