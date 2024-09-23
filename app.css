@@ -122,9 +122,10 @@ body {
  height: 300px;
  display: flex;
  flex-wrap: wrap;
+ background-color: white;
 }
 #point-1 {
-  color: #00050f;
+  color:black;
   max-height:max-content;
   padding: 6px 0px 6px 0px;
   font-size:20px;
@@ -132,12 +133,12 @@ body {
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: transparent;
 }
 @media (max-width:600px){
   #point-1{
     font-size: 12px;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 #point-1 .point-1-1{
@@ -145,11 +146,11 @@ body {
   font-weight: bolder;
 }
 #point-2 {
-  color: hsl(261, 78%, 43%);
+  color: black;
   max-height:max-content;
   font-size:20px;
   padding: 6px 0px 6px 0px;
-  background-color: aliceblue;
+  background-color: transparent;
   box-shadow: 0 -1px 1px -1px #000;
   display:flex;
   align-items: center;
@@ -157,16 +158,19 @@ body {
 }
 @media(max-width:600px){
   #point-2{
-    font-size:14px;
+    font-size:12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
   }
 }
 #point-2 .point-1-1{
   color:red;
   font-weight: bolder;
+  
 }
 @media (max-width:600px){
   .rtc-points{
-    height: 380px;
+    height: 360px;
   }
 }
 .points {
@@ -255,6 +259,7 @@ input[type="checkbox"]:checked {
   text-transform: uppercase;
   color: yellow;
 }
+
 .note {
   text-align: center;
   font-weight: bolder;
