@@ -160,6 +160,9 @@ body {
   #point-2{
     font-size:12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+  align-items: center;
+  justify-content: center;
     
   }
 }
@@ -171,6 +174,9 @@ body {
 @media (max-width:600px){
   .rtc-points{
     height: 340px;
+    display:flex;
+  align-items: center;
+  justify-content: center;
   }
 }
 .points {
