@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 16px;
+}
 body {
   height: 100vh;
   width: 100vw;
   background-color: #f5f5f5;
+  font-size: 1rem;
 }
 .appname {
   height:20%;
@@ -17,22 +21,25 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 12px;
 }
 #AAL {
-  font-size:1.6rem;
+  font-size:1.7rem;
   text-transform: uppercase;
-  letter-spacing:3px;
   color: black;
   font-weight: bolder;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 .AAL {
-  font-size: 200%;
+  font-size: 4rem;
   text-align: center;
   background-color: transparent;
-  animation: AAL 1s ease-out infinite 0s alternate;
+  animation: AAL 2s ease-out infinite 0s alternate;
+}
+@media(max-width:600px){
+  body{
+    font-size: 14px;
+  }
 }
 
 @keyframes AAL {
