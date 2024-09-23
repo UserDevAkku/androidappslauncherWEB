@@ -9,24 +9,27 @@ body {
   background-color:#000;
 }
 .appname {
-  height: 70px;
+  height: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: aqua;
-  box-shadow: 0 4px 10px 2px #000;
+  text-align: center;
+
 }
 #AAL{
-  font-size: 26px;
+  font-size: 1.5em;
   text-transform: uppercase;
  color: #000;
+ text-align: center;
  font-weight: bolder;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .AAL{
-  font-size: 50px;
+  font-size: 3rem;
+  text-align: center;
   background-color: transparent;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
@@ -100,7 +103,7 @@ background-color: hsl(0, 62%, 55%);
   }
 }
 .att{
-  height: 60px;
+  height: 3rem;
 width: 100%;
 display: flex;
 align-items: center;
@@ -110,12 +113,13 @@ font-size: 30px;
 text-transform: uppercase;
 }
 .rtc{
-  height: 460px;
+  max-height: 22rem;
   width: 100%;
+  font-size: 10px;
   background-color: #dddddd;
 }
 .rtc-title{
-height: 50px;
+height: 1.4em;
 width: 100%;
 display: flex;
 align-items: center;
@@ -123,20 +127,22 @@ justify-content: center;
 color: red;
 text-transform: uppercase;
 font-weight: bolder;
-padding-top: 6px;
-padding-bottom: 6px;
-font-size:20px;
+padding-top: 1em;
+padding-bottom: 1em;
+background-color: white;
+font-size:1.2em;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .rtc-points{
-  height: 400px;
+  max-height:max-content;
   width: 100%;
   display: flex;
 flex-wrap: wrap;
 color: #000;
 font-weight: bold;
-font-size: 14px;
-letter-spacing: 1px;
+background-color: #e1ff00;
+font-size: 1.2em;
+letter-spacing: .0.22em;
 }
 
 .points{
@@ -149,13 +155,12 @@ font-weight: bold;
 }
 #point-1{
   color: rgb(15, 84, 234);
-  padding-top: 6px;
-padding-bottom: 3px;
+  padding-top: 0.23em;
 box-shadow: 0 -1px 1px -1px #000;
 }
 #point-2{
   color: #f30ab1;
-  padding-top: 5px;
+  padding-top: 0.44em;
 box-shadow: 0 -1px 1px -1px #000;
 }
 
