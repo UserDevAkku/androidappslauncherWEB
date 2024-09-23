@@ -17,25 +17,19 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 12px;
 }
 #AAL {
-  font-size: 3em;
+  font-size:1.2rem;
   text-transform: uppercase;
-  line-height: 40px;
   letter-spacing:3px;
   color: black;
   font-weight: bolder;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-@media (max-width: 600px) {
-  #AAL {
-
-    font-size: px;
-  }
-}
 .AAL {
-  font-size: 40px;
+  font-size: 200%;
   text-align: center;
   background-color: transparent;
   animation: AAL 1s ease-out infinite 0s alternate;
