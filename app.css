@@ -173,7 +173,7 @@ body {
 }
 @media (max-width:600px){
   .rtc-points{
-    height: 340px;
+    height: 350px;
     display:flex;
   align-items: center;
   justify-content: center;
