@@ -257,6 +257,7 @@ input[type="checkbox"]:checked {
 }
 .warning {
   text-align: center;
+  margin-top: 10px;
   font-weight: bolder;
   font-size: 40px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
