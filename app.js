@@ -28,6 +28,25 @@ const plNext = document.querySelector(".pl-Next"); // Select the element with cl
 const plcontactMe = document.querySelector(".contact"); // Select the element with class 'contact'
 const plcontactLogo = document.querySelector(".contact-logo"); // Select the element with class 'contact-logo'
 
+const noteAal=document.querySelector(".note-aal")
+const importantMsg=document.querySelector(".important-msg")
+const hide=document.querySelector(".hide")
+
+noteAal.addEventListener("click",()=>{
+ importantMsg.style.display="block"
+ noteAal.style.display="none"
+ hide.style.display="block"
+ hide.style.display="grid"
+ hide.style.placeContent="center"
+})
+
+hide.addEventListener("click",()=>{
+  importantMsg.style.display="none"
+  noteAal.style.display="block"
+   noteAal.style.display="grid"
+ noteAal.style.placeContent="center"
+  hide.style.display="none"
+})
 //--yesno-phone-check
 const phoneChecked = (phone) => {
   // Function to handle phone checkbox checked state

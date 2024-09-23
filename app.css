@@ -88,6 +88,53 @@ body {
     background-color: hsl(327, 77%, 50%);
   }
 }
+.note-aal{
+  margin-top: 10px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   animation: pulse 1s ease-in-out infinite both
+}
+.hide{
+  margin-top: 10px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   animation: pulse 1s ease-in-out infinite both;
+   display: none;
+}
+@keyframes pulse {
+0%{
+color: #e1ff00;
+
+}  
+20%{
+  color: blue;
+
+}
+40%{
+  color: green ;
+}
+60%{
+  color: red;
+}
+80%{
+  color: black;
+}
+100%{
+  color: #650bf5;
+}
+}
 .att {
   height: 40px;
   width: 100%;
