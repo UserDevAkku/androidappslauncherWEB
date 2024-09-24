@@ -20,7 +20,7 @@ body {
   white-space: nowrap;
 }
 #AAL {
-  font-size: clamp(20px,7.8vw,70px); 
+  font-size: clamp(20px,7.4vw,80px); 
   text-transform: uppercase;
   color: black;
   font-weight: bolder;
@@ -28,7 +28,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .AAL {
-  font-size: clamp(20px,7.8vw,70px);  /*best size for pc for headers*/
+  font-size: clamp(20px,7.4vw,80px);  /*best size for pc for headers*/
   text-align: center;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
