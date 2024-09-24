@@ -9,14 +9,18 @@ body {
   background-color: #f4f4f4;
 }
 .appname {
-  max-width: 100%;
+  width: 100%;
   display: flex;
+  margin: 0;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  background-color: #ccc;
+  box-shadow:  0 8px 10px 0px #000;
+  border: 1px solid #000;
+  white-space: nowrap;
 }
 #AAL {
-  font-size: clamp(20px,8vw,100px); 
+  font-size: clamp(20px,7.8vw,70px); 
   text-transform: uppercase;
   color: black;
   font-weight: bolder;
@@ -24,7 +28,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .AAL {
-  font-size: clamp(20px,8vw,100px);  /*best size for pc for headers*/
+  font-size: clamp(20px,7.8vw,70px);  /*best size for pc for headers*/
   text-align: center;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
