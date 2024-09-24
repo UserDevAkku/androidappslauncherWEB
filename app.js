@@ -1,3 +1,99 @@
+/*<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appGuide</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header><div class="appname"><span id="AAL"><i class="fa-solid fa-font AAL"></i>ndroid<i class="fa-solid fa-font AAL" ></i>pps<i class="fa-solid fa-l AAL" ></i>auncher</span></div>
+    </header>
+    <!--attention-->
+    <div class="note-aal"><label><span>click here</span></label></div>
+    <div class="hide"><label><span>hide</span></label></div>
+    <div class="note"><span>requirements are mendatory</span></div>
+    <div class="requirements-container">
+    <div class="requirements-box">
+<label><p class="points">1. Do you have any Android phone?</p></label>
+<br>
+<input type="checkbox" class="chkbox" id="p"><p class="yes-no" id="phone-yes">no</p>
+<br>
+
+<!-- 2. Laptop or Computer -->
+<label><p class="points">2. Do you have a laptop or computer?</p></label>
+<br>
+<input type="checkbox" class="chkbox" id="pc"><p class="yes-no" id="pc-yes">no</p>
+<br>
+
+<!-- 3. USB Data Cable -->
+<label><p class="points">3. Do you have a USB data cable?</p></label>
+<br>
+<input type="checkbox" class="chkbox" id="usb"><p class="yes-no" id="usb-yes">no</p>
+<br>
+
+<!-- 4. Platform Tool -->
+<label><p class="points">4. Have you downloaded platform tool?</p></label>
+<br>
+<input type="checkbox" class="chkbox" id="sdk"><p class="yes-no" id="sdk-yes">no</p>
+<div class="link-box" id="sdk-link"><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="link">download</a></div>
+<br>
+
+<!-- 5. Termux App -->
+<label><p class="points">5. Have you downloaded Termux app?</p></label>
+<br>
+<input type="checkbox" class="chkbox" id="T"><p class="yes-no" id="termux-yes">no</p>
+<div class="link-box" id="termux-link"><a href="https://f-droid.org/repo/com.termux_118.apk" class="link">download</a></div>
+<label><p class="next-1"></p></label>
+  </div>
+</div> 
+<div class="note"><span>platform tool is mendatory</span></div>
+<div class="sdk-container">
+  <div class="sdk-box">
+    <label id="platformtool"><p class="pl-points">1.download sdk platform tool?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-dl">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">2.extract sdk platform tool?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-extract">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">3.copy platform tool folder?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-copy">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">4.go to C:drive and search program files folder?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-cdrive">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">5.paste platform tool folder inside this folder?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-paste">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">6.open command prompt and type adb --version?</p></label>
+    <br>
+    <input type="checkbox" name="platformtool" class="pl-chkbox" id="pl-ver">
+    <br>
+    <label class="pl" for="" id="platformtool"><p class="pl-points">7.did you see adb version there?</p></label>
+    <input class="pl-install-status" type="text" value=""><span id="star"> yes/no</span>
+    <br>
+    <label><p class="pl-Next" tyle="font-size: 15px;"></p></label>
+    <label><p class="contact-logo"><a href="https://www.instagram.com/aakash.cali" class="contact"><span><img src="instagram.svg" id="instagram"></span></a></p></label>
+</div>
+</div>
+<br>
+<p class="note"><span></span></p>
+<!-- <div class="adb-connection"><div id="a-c">adb setup</div></div> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
+*/
+
 const reqBox = document.querySelector(".requirements-box"); // Select the element with class 'requirements-box'
 const rcNext = document.querySelector(".next-1"); // Select the element with class 'next-1' (Requirement Completed message)
 const chkbox = document.querySelectorAll(".chkbox"); // Select all elements with class 'chkbox'

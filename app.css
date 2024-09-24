@@ -16,7 +16,6 @@ body {
   height:20%;
   width: 100%;
   background-color: #dddddd;
-  box-shadow: 0 2px 2px 1px #ffffdf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,11 +38,11 @@ body {
 @media(max-width:768px)
 {
   #AAL{
-    font-size:2.1rem;   
+    font-size:2rem;   
     letter-spacing: 0.0.999; 
   }                       
   .AAL{
-   font-size:2.1rem;                          /*for ipad or tab*/
+   font-size:2rem;                          /*for ipad or tab*/
   }
  .appname{
   white-space:nowrap;
@@ -91,7 +90,7 @@ body {
 }
 .note-aal {
   margin-top:0.1rem;
-  height: 10%;
+  height: 5%;
   font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -104,7 +103,7 @@ body {
 }
 .hide {
   margin-top:0.1rem;
-  height: 10%;
+  height: 5%;
   font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -313,46 +312,14 @@ input[type="checkbox"]:checked {
 
 .note {
   text-align: center;
-  font-size: 0.888rem;    /*best font size for to fit for pc for heading or title*/
+  font-size: .77rem; /*best font size for to fit for pc for heading or title*/
   letter-spacing: 1px;
   text-transform: uppercase;
-  height: 10%;
+  height: 5%;
   color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-
-
-
-/* Extra Small Devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
-  /* Styles for devices smaller than 576px */
-  .note{
-    font-size: 1rem;
-  }
-}
-
-/* Small Devices (tablets, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* Styles for devices between 576px and 768px */
-}
-
-/* Medium Devices (desktops, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  /* Styles for devices between 768px and 992px */
-}
-
-/* Large Devices (large desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Styles for devices between 992px and 1200px */
-}
-
-/* Extra Large Devices (larger desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* Styles for devices larger than 1200px */
 }
 
 
