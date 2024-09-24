@@ -278,7 +278,6 @@ input[type="checkbox"]:checked {
   text-transform: uppercase;
   color: red;
 }
-
 .note {
   display: flex;
   align-items: center;
