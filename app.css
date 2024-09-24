@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 html{
-  font-size: 16px;
+  font-size: 32px;    /*best size for biger header for base also*/
 }
 body {
   height: 100vh;
   width: 100vw;
   background-color: #f5f5f5;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .appname {
   height:20%;
@@ -23,26 +23,42 @@ body {
   text-align: center;
 }
 #AAL {
-  font-size:1.7rem;
+  font-size:2rem;
   text-transform: uppercase;
   color: black;
   font-weight: bolder;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",            /*for pc */
     "Lucida Sans", Arial, sans-serif;
 }
 .AAL {
-  font-size: 4rem;
+  font-size: 2rem;                 /*best size for pc for headers*/
   text-align: center;
   background-color: transparent;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
-@media(max-width:600px){
-  body{
-    font-size: 14px;
-  }
+@media(max-width:768px)
+{
   #AAL{
-    font-size: 1.1rem;
+    font-size:2.1rem;   
+    letter-spacing: 0.0.999; 
+  }                       
+  .AAL{
+   font-size:2.1rem;                          /*for ipad or tab*/
   }
+ .appname{
+  white-space:nowrap;
+ }
+}
+ @media (max-width:540px){
+  #AAL{
+    font-size:0.888rem;
+  }                                       /*for android phones */
+  .AAL{                          
+   font-size:0.888rem;
+  }
+ .appname{
+  white-space: nowrap;
+ }
 }
 
 @keyframes AAL {
@@ -74,9 +90,9 @@ body {
   }
 }
 .note-aal {
-  margin-top: 10px;
-  height: 20px;
-  font-size: 14px;
+  margin-top:0.1rem;
+  height: 10%;
+  font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
@@ -84,12 +100,12 @@ body {
   justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   animation: pulse 1s ease-in-out infinite both;
-  display: none;
+  /* display: none */
 }
 .hide {
-  margin-top: 10px;
-  height: 20px;
-  font-size: 14px;
+  margin-top:0.1rem;
+  height: 10%;
+  font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
@@ -251,6 +267,7 @@ input[type="checkbox"]:checked {
   width: 20%;
   background-color: white;
   box-shadow: 0 0 3px 2px #ddd;
+  display: none;
 }
 @media (max-width: 600) {
   .requirements-box {
@@ -296,15 +313,67 @@ input[type="checkbox"]:checked {
 
 .note {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.888rem;    /*best font size for to fit for pc for heading or title*/
   letter-spacing: 1px;
   text-transform: uppercase;
-  height: 50px;
+  height: 10%;
   color: red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
+
+
+
+/* Extra Small Devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Styles for devices smaller than 576px */
+  .note{
+    font-size: 1rem;
+  }
+}
+
+/* Small Devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for devices between 576px and 768px */
+}
+
+/* Medium Devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for devices between 768px and 992px */
+}
+
+/* Large Devices (large desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for devices between 992px and 1200px */
+}
+
+/* Extra Large Devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for devices larger than 1200px */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .note::after {
   content: "*";
   color: red;
@@ -366,6 +435,7 @@ input[type="checkbox"]:checked {
   width: 25%;
   background-color: white;
   box-shadow: 0 0 3px 2px #ddd;
+  display: none;
 }
 .pl-points {
   display: inline;

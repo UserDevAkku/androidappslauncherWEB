@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text Without Cutting</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            width: 90%; /* Full width with some margin */
+            padding: 10px;
+            font-size: 2vw; /* Responsive font size */
+            text-align: center;
+            white-space: nowrap; /* Prevent wrapping by default */
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        /* On smaller screens, allow wrapping and decrease font size */
+        @media (max-width: 768px) {
+            .text-container {
+                font-size: 4vw; /* Decrease font size for smaller screens */
+                white-space: normal; /* Allow wrapping if necessary */
+            }
+        }
+
+        /* On larger screens (PC), increase font size */
+        @media (min-width: 1024px) {
+            .text-container {
+                font-size: 1.5vw; /* Slightly larger font size for PCs */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        Follow the steps to install platform tools carefully. This text will remain fully visible on all devices, adjusting its font size and wrapping only on smaller screens if needed.
+    </div>
+</body>
+</html>
