@@ -7,6 +7,8 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #f4f4f4;
+  display: flex;
+ flex-direction: column;
 }
 .appname {
   width: 100%;
@@ -62,11 +64,12 @@ body {
 }
 .note-aal {
   max-width: 100%;
-  font-size: clamp(20px, 20vw, 30px);
+  font-size: clamp(15px, 20vw, 20px);
   display: flex;
   align-items: center;
+  font-weight: bold;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
   text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   animation: pulse 1s ease-in-out infinite both;
@@ -102,6 +105,50 @@ body {
   100% {
     color: #650bf5;
   }
+}
+.requirements-container {
+ width:100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+ /* background-color: #000; */
+}
+.requirements-box {
+width: 90%;
+max-width: 500px;
+white-space: nowrap;
+ display: flex;
+flex-direction: column;
+row-gap:0px;
+ box-shadow: 0 0 2px 1px #ccc;
+}
+.chkbox {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  border: none;
+  outline: none;
+  top:9px;
+  font-size:clamp(.666rem,1rem,1rem);
+}
+.yes-no {
+  font-size:clamp(.666rem,1rem,1rem);
+  position: relative;
+  color: red;
+  left: 15px;
+  bottom:7px
+}
+.points {
+  display: block;
+  font-size:clamp(.222rem,8vw,1.377rem);
+  color: #292929;
+  font-weight: lighter;
+}
+.link-box {
+  position: relative;
+ bottom: 25px;
+ left: 35px;
 }
 .att {
   height: 40px;
@@ -142,6 +189,7 @@ body {
   justify-content: center;
 }
 .points-container {
+
   display: flex;
   flex-wrap: wrap;
   height: 50%;
@@ -211,45 +259,12 @@ body {
     justify-content: center;
   }
 }
-.chkbox {
-  /* position: relative; */
-  height: 12px;
-  width: 12px;
-  bottom: 5px;
-  top: 2px;
-  border: none;
-  outline: none;
-  margin: 10px;
-}
+
 input[type="checkbox"]:checked {
   accent-color: hsl(120, 94%, 50%);
 }
-.points {
-  display: inline;
-  font-size: 15px;
-  color: #292929;
-  font-weight: lighter;
-}
-.requirements-box {
-  height: 100%;
-  width: 20%;
-  background-color: white;
-  box-shadow: 0 0 3px 2px #ddd;
-  display: none;
-}
-@media (max-width: 600) {
-  .requirements-box {
-    width: 50%;
-    height: 100%;
-  }
-}
-.requirements-container {
-  max-height: 350px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
 @keyframes requirements-box {
   0%,
   10%,
@@ -285,31 +300,23 @@ input[type="checkbox"]:checked {
   white-space: nowrap;
   color: red;
   max-width: 100%;
+  margin: 20px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: clamp(1rem ,5vw,2rem);
   text-transform: uppercase;
 }
-
 .note::after {
   content: "*";
-  color: red;
+  animation: pulse 1s ease-in-out infinite forwards;
+
 }
 .note::before {
   content: "*";
-  color: red;
+  animation:pulse 2s ease-in-out infinite reverse;
 }
 
-.link-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
-  width: fit-content;
-  display: inline;
-  position: relative;
-  right: 2px;
-  bottom: 2px;
-  display: none;
-}
+
 .link {
   color: blue;
   text-transform: lowercase;
@@ -318,15 +325,7 @@ input[type="checkbox"]:checked {
   font-size: 14px;
   text-decoration: none;
 }
-.yes-no {
-  height: fit-content;
-  width: fit-content;
-  display: inline;
-  position: relative;
-  right: 4px;
-  bottom: 2px;
-  color: red;
-}
+
 .next-1 {
   text-align: center;
   font-weight: bolder;

@@ -162,8 +162,7 @@ termux.addEventListener(
   () => {
     // Show Termux link if unchecked and mouseover
     if (termuxYes.innerText === "no") {
-      termuxLink.style.display = "display";
-      termuxLink.style.display = "inline";
+      termuxLink.style.display = "block";
       termux.disabled = true;
     }
   },
