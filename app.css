@@ -3,26 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  font-size: 32px;    /*best size for biger header for base also*/
-}
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #f5f5f5;
-  font-size: 2rem;
+  background-color: #f4f4f4;
 }
 .appname {
-  height:20%;
-  width: 100%;
-  background-color: #dddddd;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 #AAL {
-  font-size:2rem;
+  font-size: clamp(20px,8vw,100px); 
   text-transform: uppercase;
   color: black;
   font-weight: bolder;
@@ -30,36 +24,10 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .AAL {
-  font-size: 2rem;                 /*best size for pc for headers*/
+  font-size: clamp(20px,8vw,100px);  /*best size for pc for headers*/
   text-align: center;
-  background-color: transparent;
   animation: AAL 2s ease-out infinite 0s alternate;
 }
-@media(max-width:768px)
-{
-  #AAL{
-    font-size:2rem;   
-    letter-spacing: 0.0.999; 
-  }                       
-  .AAL{
-   font-size:2rem;                          /*for ipad or tab*/
-  }
- .appname{
-  white-space:nowrap;
- }
-}
- @media (max-width:540px){
-  #AAL{
-    font-size:0.888rem;
-  }                                       /*for android phones */
-  .AAL{                          
-   font-size:0.888rem;
-  }
- .appname{
-  white-space: nowrap;
- }
-}
-
 @keyframes AAL {
   0% {
     color: white;
