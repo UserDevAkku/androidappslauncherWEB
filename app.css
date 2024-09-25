@@ -59,6 +59,6 @@ flex-direction: column;
 }
 .requirements span{
 text-align: left;
-font-size: clamp(1rem,2vw,2px);
+font-size: clamp(1rem,2vw,2.5rem);
 text-transform: capitalize;
 }
