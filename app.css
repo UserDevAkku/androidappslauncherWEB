@@ -44,7 +44,6 @@ header {
 .app-requirements-box{
   max-width: 80%;
   max-width: 700px;
-  padding: clamp(1.1rem,2vw,2rem);
   display: flex;
 flex-direction: column;
   background-color: aqua;
