@@ -73,7 +73,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(2.5rem, 0rem, 0.7rem);
+  font-size: clamp(.888rem, 2.7rem, 2.7rem);
   animation: app-about 1s ease-in-out  infinite;
 }
 @keyframes app-about {
