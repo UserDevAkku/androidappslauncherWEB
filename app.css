@@ -7,7 +7,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #585858;
+  background-color: #f4f4f4;
 }
 header {
   display: flex;
@@ -19,11 +19,46 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: white;
+  background-color: #000;
   text-transform: uppercase;
-  padding: 10px;
-  font-size: clamp(20px, 7vw, 80px);
+  font-size: clamp(1.5rem, 4vw,500px);
 }
+@keyframes aal {
+  0% {
+    transform: translateX(-10px);
+    color: blue;
+  }
+  50% {
+    transform: translateX(10px);
+    color: #32cd32;
+  }
+  100% {
+    transform: translateX(-12px);
+    color: blue;
+  }
+}
+  .aal{
+    animation: aal 6s ease-in-out 0s  infinite; /* Adjust the duration and easing */
+  }
+  @keyframes aal-2 {
+    0% {
+      color: blue;
+    }
+    50% {
+
+      color: red;
+    }
+    100% {
+      color: blue;
+    }
+  }
+  .aal-2{
+    animation: aal-2 2s ease-in-out infinite; /* Adjust the duration and easing */
+    padding-left: clamp(12px,1vw,1.6rem);
+    padding-right: 10px;
+
+  }
+
 .app-about {
   width: 100%;
   padding: 10px;
@@ -38,27 +73,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:red;
 
 }
 .app-requirements-box{
   max-width: 80%;
-  max-width: 800px;
+  max-width: 700px;
   display: flex;
 flex-direction: column;
-  background-color: aqua;
+  background-color: #ffffff;
+  border-radius: 2%;
+  border: 1px solid #292929;
+  box-shadow: -3px 0 5px 0px #ccc inset,3px 0 5px 0px #ccc inset,0px -3px 5px 0px #ccc inset,0 3px 5px 0px #ccc inset;
 }
 .requirements{
-  padding: clamp(.3rem,2vw,3rem);
+  padding: clamp(.099rem,.288vw,1rem);
 }
 .requirements-checkboxes{
   position: relative;
   left: 32px;
   height: 20px;
   width: 20px;
+margin-bottom: 10px;
+accent-color: #32cd44;
 }
 .requirements span{
 text-align: left;
-font-size: clamp(1rem,4vw,5rem);
+font-size: clamp(1.05rem,3.6vw,2.1rem);
 text-transform: capitalize;
 }
