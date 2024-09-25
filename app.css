@@ -21,24 +21,27 @@ header {
   width: 100%;
   background-color: #000;
   text-transform: uppercase;
-  font-size: clamp(1.5rem, 4vw,500px);
+  padding: 8px;
+  font-size: clamp(1.6rem, 4vw,500px);
 }
 @keyframes aal {
   0% {
-    transform: translateX(-10px);
+    transform: translateY(-2px);
     color: blue;
   }
   50% {
-    transform: translateX(10px);
+    transform: translateY(2px);
     color: #32cd32;
   }
   100% {
-    transform: translateX(-12px);
+    transform: translateY(-2px);
     color: blue;
   }
 }
   .aal{
     animation: aal 6s ease-in-out 0s  infinite; /* Adjust the duration and easing */
+    padding-left: 6px;
+  padding-right: 6px;
   }
   @keyframes aal-2 {
     0% {
@@ -54,8 +57,9 @@ header {
   }
   .aal-2{
     animation: aal-2 2s ease-in-out infinite; /* Adjust the duration and easing */
-    padding-left: clamp(12px,1vw,1.6rem);
-    padding-right: 10px;
+    padding-left: 1px;
+  padding-right: 1px;
+    
 
   }
 
@@ -88,16 +92,24 @@ flex-direction: column;
 .requirements{
   padding: clamp(.099rem,.288vw,1rem);
 }
-.requirements-checkboxes{
+input[type="checkbox"]{
   position: relative;
   left: 32px;
   height: 20px;
   width: 20px;
 margin-bottom: 10px;
-accent-color: #32cd44;
+border: 2px solid #000;
 }
+.requirements-checkboxes:checked{
+  accent-color: rgb(17, 237, 28);
+  box-shadow: 0 0 2px 1px greenyellow inset;
+}
+.requirements-checkboxes:hover{
+  box-shadow: 0 0 10px 1px #ccc ;
+}
+
 .requirements span{
 text-align: left;
-font-size: clamp(1.05rem,3.6vw,2.1rem);
+font-size: clamp(1.3rem,3.6vw,2.1rem);
 text-transform: capitalize;
 }
