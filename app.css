@@ -100,6 +100,7 @@ header {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
+  padding: 10px;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 }
@@ -112,19 +113,20 @@ header {
   align-items: center;
   justify-content: center;
   font-size:clamp(1.2rem,2vw,2rem);
-padding: 15px;
+padding: 7px;
 }
 .requirements-title::after{
 content: "*";
 color:red;
 }
 .requirements {
-  padding: 10px;
+  padding: 5px;
   /* padding:0 10px 0 20px ; */
 }
 .requirements span {
+
   text-align: left;
-  font-size: clamp(0.976rem, 1.7vw, 100px);
+  font-size: clamp(1.07rem, 1.7vw, 100px);
   text-transform: capitalize;
 }
 .requirements-checkboxes{
@@ -147,12 +149,11 @@ color:red;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
+  padding: 10px;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 
 }
-
-
 .platformtool-title{
   color: black;
   font-weight: bold;
@@ -162,19 +163,19 @@ color:red;
   align-items: center;
   justify-content: center;
   font-size:clamp(1.2rem,2vw,2rem);
-padding: 15px;
+padding: 7px;
 }
 .platformtool-title::after{
   content: "*";
   color:red;
   }
   .platformtool {
-    padding: 10px;
-   /* padding: 0 30px 0 30px; */
+    padding: 1px;
+   /* padding: 0 15px 0 15px; */
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.976rem, 1.5vw, 100px);
+    font-size: clamp(0.85rem, 1.5vw, 100px);
     text-transform: capitalize;
   
   }
