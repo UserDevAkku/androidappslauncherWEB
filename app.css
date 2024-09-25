@@ -112,6 +112,6 @@ border: 2px solid #000;
 
 .requirements span{
 text-align: left;
-font-size: clamp(1rem,3vw,25px);
+font-size: clamp(.887rem,3vw,100px);
 text-transform: capitalize;
 }
