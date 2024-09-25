@@ -42,15 +42,15 @@ header {
 
 }
 .app-requirements-box{
-  max-width: 90%;
+  max-width: 80%;
   max-width: 700px;
-  padding: clamp(1.4rem,2vw,1.7rem);
+  padding: clamp(1.1rem,2vw,2rem);
   display: flex;
 flex-direction: column;
   background-color: aqua;
 }
 .requirements{
-  padding: clamp(.4rem,2vw,1.7rem);
+  padding: clamp(.3rem,2vw,2rem);
 }
 .requirements-checkboxes{
   position: relative;
@@ -60,6 +60,6 @@ flex-direction: column;
 }
 .requirements span{
 text-align: left;
-font-size: clamp(1rem,2vw,1.7px);
+font-size: clamp(1rem,2vw,2px);
 text-transform: capitalize;
 }
