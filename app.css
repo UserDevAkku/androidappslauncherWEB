@@ -22,7 +22,7 @@ header {
   background-color: #000;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(1.6rem, 4vw,500px);
+  font-size: clamp(1.3rem,6vw,80px);
 }
 @keyframes aal {
   0% {
@@ -80,10 +80,10 @@ header {
 
 }
 .app-requirements-box{
-  max-height: 80%;
-  max-height:700px;
-  max-width: 80%;
-  max-width: 700px;
+  height: 100%;
+  max-height:1000px;
+  width: 90%;
+  max-width:600px;
   display: flex;
 flex-direction: column;
   background-color: #ffffff;
@@ -92,7 +92,7 @@ flex-direction: column;
   box-shadow: -3px 0 5px 0px #ccc inset,3px 0 5px 0px #ccc inset,0px -3px 5px 0px #ccc inset,0 3px 5px 0px #ccc inset;
 }
 .requirements{
-  padding: clamp(.099rem,.288vw,1rem);
+  padding: clamp(.099rem,.66vw,2rem);
 }
 input[type="checkbox"]{
   position: relative;
@@ -112,6 +112,6 @@ border: 2px solid #000;
 
 .requirements span{
 text-align: left;
-font-size: clamp(1rem,3.6vw,2.1rem);
+font-size: clamp(1rem,3vw,25px);
 text-transform: capitalize;
 }
