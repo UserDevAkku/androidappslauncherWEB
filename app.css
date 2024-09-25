@@ -82,8 +82,7 @@ header {
 .app-requirements-box{
   height: 100%;
   max-height:1000px;
-  width: 90%;
-  max-width:600px;
+  width:clamp(500px,50vw,800px);
   display: flex;
 flex-direction: column;
   background-color: #ffffff;
@@ -92,7 +91,7 @@ flex-direction: column;
   box-shadow: -3px 0 5px 0px #ccc inset,3px 0 5px 0px #ccc inset,0px -3px 5px 0px #ccc inset,0 3px 5px 0px #ccc inset;
 }
 .requirements{
-  padding: clamp(.099rem,.66vw,2rem);
+  padding: clamp(.099rem,.66vw,1rem);
 }
 input[type="checkbox"]{
   position: relative;
@@ -112,6 +111,6 @@ border: 2px solid #000;
 
 .requirements span{
 text-align: left;
-font-size: clamp(.887rem,3vw,100px);
+font-size: clamp(.887rem,5vw,100px);
 text-transform: capitalize;
 }
