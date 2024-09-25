@@ -80,6 +80,8 @@ header {
 
 }
 .app-requirements-box{
+  max-height: 80%;
+  max-height:700px;
   max-width: 80%;
   max-width: 700px;
   display: flex;
