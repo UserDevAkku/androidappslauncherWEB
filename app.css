@@ -35,24 +35,31 @@ header {
 }
 .app-requirements {
   width: 100%;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:red;
+
 }
 .app-requirements-box{
-  max-width: 100%;
+  max-width: 90%;
+  max-width: 700px;
+  padding: clamp(1.4rem,2vw,1.7rem);
   display: flex;
-  flex-direction: column;
+flex-direction: column;
+  background-color: aqua;
 }
 .requirements{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  background-color: bisque;
-  font-size: clamp(14px,8vw,20px);
-  white-space: nowrap;
+  padding: clamp(.4rem,2vw,1.7rem);
+}
+.requirements-checkboxes{
+  position: relative;
+  left: 32px;
+  height: 20px;
+  width: 20px;
+}
+.requirements span{
+text-align: left;
+font-size: clamp(1rem,2vw,1.7px);
+text-transform: capitalize;
 }
