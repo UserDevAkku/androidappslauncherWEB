@@ -7,7 +7,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #000;
 }
 header {
   display: flex;
@@ -19,49 +19,52 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #000;
+  background-color: #f4f4f4;
   text-transform: uppercase;
+
   padding: 8px;
-  font-size: clamp(1.3rem,6vw,80px);
+  font-size: clamp(1.3rem, 6vw, 80px);
 }
 @keyframes aal {
   0% {
+    transform: translateY(-3px);
+    color: white;
+  }
+  50% {
+    transform: translateY(3px);
+    color: aqua;
+  }
+  100% {
+    transform: translateY(-3px);
+    color: white;
+  }
+}
+.aal {
+  animation: aal 5s ease-in-out 0s infinite; /* Adjust the duration and easing */
+  padding-left: 6px;
+  padding-right: 6px;
+ 
+}
+.aal-2 {
+  animation: aal-2 3s ease-in-out infinite; /* Adjust the duration and easing */
+  padding-left: 1px;
+  padding-right: 1px;
+  color: azure;
+}
+@keyframes aal-2 {
+  0% {
     transform: translateY(-2px);
-    color: blue;
+    color: white;
   }
   50% {
     transform: translateY(2px);
-    color: #32cd32;
+    color: black;
   }
   100% {
     transform: translateY(-2px);
-    color: blue;
+    color: white;
   }
 }
-  .aal{
-    animation: aal 6s ease-in-out 0s  infinite; /* Adjust the duration and easing */
-    padding-left: 6px;
-  padding-right: 6px;
-  }
-  @keyframes aal-2 {
-    0% {
-      color: blue;
-    }
-    50% {
-
-      color: red;
-    }
-    100% {
-      color: blue;
-    }
-  }
-  .aal-2{
-    animation: aal-2 2s ease-in-out infinite; /* Adjust the duration and easing */
-    padding-left: 1px;
-  padding-right: 1px;
-    
-
-  }
 
 .app-about {
   width: 100%;
@@ -71,46 +74,57 @@ header {
   justify-content: center;
   text-transform: uppercase;
   font-size: clamp(1rem, 2vw, 2.5rem);
+  animation: app-about 1s ease-in-out  infinite;
+}
+@keyframes app-about {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #32cd32;
+  }
+  100% {
+    color: red;
+  }
 }
 .app-requirements {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.app-requirements-box{
-  height: 100%;
-  max-height:1000px;
-  width:clamp(500px,50vw,800px);
+.app-requirements-box {
+  width: 80%;
+  max-width: clamp(700px, 2vw, 900px);
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  border: 1px solid #292929;
-  box-shadow: -3px 0 5px 0px #ccc inset,3px 0 5px 0px #ccc inset,0px -3px 5px 0px #ccc inset,0 3px 5px 0px #ccc inset;
+  border: 2px solid yellow;
+  box-shadow: -3px 0 5px 0px aqua inset, 3px 0 5px 0px aqua inset,
+    0px -3px 5px 0px aqua inset, 0 3px 5px 0px aqua inset;
 }
-.requirements{
-  padding: clamp(.099rem,.66vw,1rem);
+.requirements {
+  padding: clamp(0.099rem, 0.66vw, 1rem);
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   position: relative;
   left: 32px;
   height: 20px;
   width: 20px;
-margin-bottom: 10px;
-border: 2px solid #000;
+  margin-bottom: 10px;
+  border: 2px solid #000;
 }
-.requirements-checkboxes:checked{
+.requirements-checkboxes:checked {
   accent-color: rgb(17, 237, 28);
   box-shadow: 0 0 2px 1px greenyellow inset;
 }
-.requirements-checkboxes:hover{
-  box-shadow: 0 0 10px 1px #ccc ;
+.requirements-checkboxes:hover {
+  box-shadow: 0 0 10px 1px #ccc;
 }
 
-.requirements span{
-text-align: left;
-font-size: clamp(.987rem,5vw,100px);
-text-transform: capitalize;
+.requirements span {
+  text-align: left;
+  font-size: clamp(0.987rem, 2.8vw, 100px);
+  text-transform: capitalize;
 }
