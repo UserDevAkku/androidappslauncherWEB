@@ -22,7 +22,7 @@ header {
   background-color: #f4f4f4;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(2.3rem,2.3rem,2.3rem);
+  font-size: clamp(1.2rem,6.6vw,3.2rem); /*390-width,25px-fit on portrait,*/
 }
 @keyframes aal {
   0% {
