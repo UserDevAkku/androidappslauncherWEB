@@ -7,7 +7,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #f4f4f4;
 }
 header {
   display: flex;
@@ -94,8 +94,8 @@ header {
   justify-content: center;
 }
 .app-requirements-box {
-  width: 80%;
-  max-width: clamp(700px, 2vw, 900px);
+  width: 90%;
+  max-width: clamp(700px, 4vw, 900px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -125,6 +125,6 @@ input[type="checkbox"] {
 
 .requirements span {
   text-align: left;
-  font-size: clamp(0.987rem, 2.8vw, 100px);
+  font-size: clamp(0.976rem, 2.8vw, 100px);
   text-transform: capitalize;
 }
