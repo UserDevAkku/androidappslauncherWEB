@@ -19,116 +19,46 @@
     </div>
     <div class="app-requirements">
       <div class="app-requirements-box">
+        <label class="requirements-title"><span>requirements</span></label>
         <label id="android" class="requirements"><span>1.do you have an android phone?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="android-checkbox">
+        <input type="checkbox" class="requirements-checkboxes" id="phone">
         <label id="android" class="requirements"><span>2.do you have a laptop or computer?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="android-checkbox">
+        <input type="checkbox" class="requirements-checkboxes" id="pc">
         <label id="android" class="requirements"><span>3.do you have a usb data cable?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="android-checkbox">
+        <input type="checkbox" class="requirements-checkboxes" id="usb">
         <label id="android" class="requirements"><span>4.have you downloaded termux application?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="android-checkbox">
-        <a href="https://f-droid.org/repo/com.termux_118.apk"></a>
+        <input type="checkbox" class="requirements-checkboxes" id="termux">
+        <a href="https://f-droid.org/repo/com.termux_118.apk" class="link"></a>
         <label id="android" class="requirements"><span>5.have you downloaded sdk platform tools?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="android-checkbox">
-        <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip"></a>
+        <input type="checkbox" class="requirements-checkboxes" id="platformtool">
+        <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="link"></a>
+        <p class="requirements-completed"><span></span></p>
       </div>
     </div>
-
-    <div class="note"><span>platform tool is mendatory</span></div>
-    <div class="sdk-container">
-      <div class="sdk-box">
-        <label id="platformtool"
-          ><p class="pl-points">1.download sdk platform tool?</p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-dl"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">2.extract sdk platform tool?</p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-extract"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">3.copy platform tool folder?</p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-copy"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">
-            4.go to C:drive and search program files folder?
-          </p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-cdrive"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">
-            5.paste platform tool folder inside this folder?
-          </p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-paste"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">
-            6.open command prompt and type adb --version?
-          </p></label
-        >
-        <br />
-        <input
-          type="checkbox"
-          name="platformtool"
-          class="pl-chkbox"
-          id="pl-ver"
-        />
-        <br />
-        <label class="pl" for="" id="platformtool"
-          ><p class="pl-points">7.did you see adb version there?</p></label
-        >
-        <input class="pl-install-status" type="text" value="" /><span id="star">
-          yes/no</span
-        >
-        <br />
-        <label><p class="pl-Next" tyle="font-size: 15px;"></p></label>
-        <label
-          ><p class="contact-logo">
-            <a href="https://www.instagram.com/aakash.cali" class="contact"
-              ><span><img src="instagram.svg" id="instagram" /></span
-            ></a></p
-        ></label>
-      </div>
+    <br>
+    <div class="app-platformtool">
+    <div class="app-platformtool-box">
+      <label class="platformtool-title">platform tool</label>
+      <label class="platformtool"><span>1.download the sdk platform tool for window</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="download">
+      <label class="platformtool"><span>2.extract the sdk platform tool zip file</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="extract">
+      <label class="platformtool"><span>3.copy the extracted platform tool folder</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="copy">
+      <label class="platformtool"><span>4.go to c:drive and locate the program files folder</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="cdrive">
+      <label class="platformtool"><span>5.paste the platform tool folder in program files folder</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="paste">
+      <label class="platformtool"><span>6.press window key + r and type cmd and hit enter</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="cmd">
+      <label class="platformtool"><span>7.type this command adb --version and hit /span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="adb">
+      <label class="platformtool"><span>8.did you see the adb version (Version 35.0.2-12147458)</span></label>
+      <input type="checkbox" class="platformtool-checkboxes" id="version">
+      <p class="platformtool-installed"><span></span></p>
     </div>
-    <br />
-    <p class="note"><span></span></p>
-    <!-- <div class="adb-connection"><div id="a-c">adb setup</div></div> -->
-
+    </div>
+    <br>
     <script src="app.js"></script>
   </body>
 </html>

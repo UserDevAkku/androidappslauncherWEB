@@ -95,36 +95,93 @@ header {
 }
 .app-requirements-box {
   width: 90%;
-  max-width: clamp(600px, 4vw, 900px);
+  max-width: clamp(550px, 4vw, 900px);
   display: flex;
-  padding: clamp(0.099rem, 1vw, 4rem);
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 }
-.requirements {
-  padding: clamp(0.099rem, 0.66vw, 1rem);
+.requirements-title{
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:clamp(1.2rem,2vw,2rem);
+padding: 15px;
 }
-input[type="checkbox"] {
+.requirements-title::after{
+content: "*";
+color:red;
+}
+.requirements {
+  padding: 10px;
+  /* padding:0 10px 0 20px ; */
+}
+.requirements span {
+  text-align: left;
+  font-size: clamp(0.976rem, 1.7vw, 100px);
+  text-transform: capitalize;
+}
+.requirements-checkboxes{
   position: relative;
   left: 32px;
   height: 20px;
   width: 20px;
-  margin-bottom: 10px;
-  border: 2px solid #000;
+  margin: 5px 0 5px 0;
 }
-.requirements-checkboxes:checked {
-  accent-color: rgb(17, 237, 28);
-  box-shadow: 0 0 2px 1px greenyellow inset;
+.app-platformtool{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.requirements-checkboxes:hover {
-  box-shadow: 0 0 10px 1px #ccc;
+.app-platformtool-box{
+  width: 90%;
+  max-width: clamp(550px, 4vw, 900px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
+    0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
+
 }
 
-.requirements span {
-  text-align: left;
-  font-size: clamp(0.976rem, 1.8vw, 100px);
-  text-transform: capitalize;
+
+.platformtool-title{
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:clamp(1.2rem,2vw,2rem);
+padding: 15px;
 }
+.platformtool-title::after{
+  content: "*";
+  color:red;
+  }
+  .platformtool {
+    padding: 10px;
+   /* padding: 0 30px 0 30px; */
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.976rem, 1.5vw, 100px);
+    text-transform: capitalize;
+  
+  }
+  .platformtool-checkboxes{
+    position: relative;
+    left: 32px;
+    height: 20px;
+    width: 20px;
+    margin: 5px 0 5px 0;
+  }
