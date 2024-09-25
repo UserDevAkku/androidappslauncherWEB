@@ -97,6 +97,7 @@ header {
   width: 90%;
   max-width: clamp(700px, 4vw, 900px);
   display: flex;
+  padding: clamp(0.099rem, 0.66vw, 4rem);
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
@@ -125,6 +126,6 @@ input[type="checkbox"] {
 
 .requirements span {
   text-align: left;
-  font-size: clamp(0.976rem, 2.8vw, 100px);
+  font-size: clamp(0.976rem, 2.6vw, 100px);
   text-transform: capitalize;
 }
