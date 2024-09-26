@@ -26,28 +26,25 @@ header {
 }
 @keyframes aal {
   0% {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     color: white;
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(5px);
     color: aqua;
   }
   100% {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     color: white;
   }
 }
 .aal {
-  animation: aal 5s ease-in-out 0s infinite; /* Adjust the duration and easing */
-  padding-left: 6px;
-  padding-right: 6px;
+  animation: aal 2s ease-in-out 0s infinite; /* Adjust the duration and easing */
+ padding-left: clamp(1rem,3vw,4rem);
  
 }
 .aal-2 {
   animation: aal-2 3s ease-in-out infinite; /* Adjust the duration and easing */
-  padding-left: 1px;
-  padding-right: 1px;
   color: azure;
 }
 @keyframes aal-2 {
@@ -72,7 +69,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(.5rem, 5vw, 2.7rem);
+  font-size: clamp(.75rem, 2vw, 2rem);
   animation: app-about 1s ease-in-out  infinite;
 }
 @keyframes app-about {
@@ -94,7 +91,7 @@ header {
 }
 .app-requirements-box {
   width: 90%;
-  max-width: clamp(700px, 0px, 900px);
+  max-width: clamp(500px,2vw,600px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -119,13 +116,13 @@ content: "*";
 color:red;
 }
 .requirements {
-  padding: 5px;
+  padding: 2px;
   /* padding:0 10px 0 20px ; */
 }
 .requirements span {
 
   text-align: left;
-  font-size: clamp(1.07rem, 1.7vw, 100px);
+  font-size: clamp(1.09rem, 1.98vw, 100px); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes{
@@ -143,7 +140,7 @@ color:red;
 }
 .app-platformtool-box{
   width: 90%;
-  max-width: clamp(550px, 4vw, 900px);
+  max-width: clamp(500px, 2vw, 600px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -174,7 +171,7 @@ padding: 7px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.85rem, 1.5vw, 100px);
+    font-size: clamp(.88rem, 1.61vw, 100px);
     text-transform: capitalize;
   
   }
@@ -184,4 +181,12 @@ padding: 7px;
     height: 20px;
     width: 20px;
     margin: 5px 0 5px 0;
+  }
+  .status{
+  text-transform:uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: clamp(.7rem,1vw,8px);
   }
