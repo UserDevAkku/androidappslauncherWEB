@@ -122,7 +122,7 @@ color:red;
 .requirements span {
 
   text-align: left;
-  font-size: clamp(1.09rem, 1.98vw, 100px); /*pc first approach*/
+  font-size: clamp(1.07rem, 1.98vw, 100px); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes{
