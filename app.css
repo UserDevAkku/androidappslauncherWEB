@@ -171,7 +171,7 @@ padding: 7px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(.88rem, 1.61vw, 100px);
+    font-size: clamp(.65rem, 1.2vw, 100px);
     text-transform: capitalize;
   
   }
