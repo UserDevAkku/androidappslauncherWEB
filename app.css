@@ -22,7 +22,7 @@ header {
   background-color: #f4f4f4;
   text-transform: uppercase;
   padding: 8px;
-  font-size:clamp(1.2rem,6vw,4rem);
+  font-size: clamp(1.2rem, 6vw, 4rem);
 }
 @keyframes aal {
   0% {
@@ -40,8 +40,7 @@ header {
 }
 .aal {
   animation: aal 2s ease-in-out 0s infinite; /* Adjust the duration and easing */
- padding-left: clamp(1rem,3vw,4rem);
- 
+  padding-left: clamp(1rem, 3vw, 4rem);
 }
 .aal-2 {
   animation: aal-2 3s ease-in-out infinite; /* Adjust the duration and easing */
@@ -69,8 +68,8 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(.9rem,2vw,3rem);
-  animation: app-about 1s ease-in-out  infinite;
+  font-size: clamp(0.9rem, 2vw, 3rem);
+  animation: app-about 1s ease-in-out infinite;
 }
 @keyframes app-about {
   0% {
@@ -91,7 +90,7 @@ header {
 }
 .app-requirements-box {
   width: 90%;
-  max-width: clamp(500px,2vw,600px);
+  max-width: clamp(500px, 2vw, 600px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -100,7 +99,7 @@ header {
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 }
-.requirements-title{
+.requirements-title {
   color: black;
   font-weight: bold;
   width: 100%;
@@ -108,37 +107,56 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:clamp(1.2rem,2vw,2rem);
-padding: 7px;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  padding: 7px;
 }
-.requirements-title::after{
-content: "*";
-color:red;
+.requirements-title::after {
+  content: "*";
+  color: red;
 }
 .requirements {
   padding: 2px;
   /* padding:0 10px 0 20px ; */
 }
 .requirements span {
-
   text-align: left;
-  font-size: clamp(.9rem,1.6vw,2rem); /*pc first approach*/
+  font-size: clamp(0.689rem, 1.6vw, 2rem); /*pc first approach*/
   text-transform: capitalize;
 }
-.requirements-checkboxes{
+.requirements-checkboxes {
   position: relative;
   left: 32px;
   height: 20px;
   width: 20px;
   margin: 5px 0 5px 0;
 }
-.app-platformtool{
+
+.requirements-verification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.requirements-verified{
+  width: 90%;
+  width: clamp(300px, 1vw, 400px);
+  border: none;
+  outline: none;
+ 
+  box-shadow: 0 0 0px 2px #ccc;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 2%;
+}
+.app-platformtool {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.app-platformtool-box{
+.app-platformtool-box {
   width: 90%;
   max-width: clamp(500px, 2vw, 600px);
   display: flex;
@@ -148,9 +166,8 @@ color:red;
   padding: 10px;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
-
 }
-.platformtool-title{
+.platformtool-title {
   color: black;
   font-weight: bold;
   width: 100%;
@@ -158,35 +175,70 @@ color:red;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:clamp(1.2rem,2vw,2rem);
-padding: 7px;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  padding: 7px;
 }
-.platformtool-title::after{
+.platformtool-title::after {
   content: "*";
-  color:red;
-  }
-  .platformtool {
-    padding: 1px;
-   /* padding: 0 15px 0 15px; */
-  }
-  .platformtool span {
-    text-align: left;
-    font-size: clamp(.9rem,1.5vw,2rem);
-    text-transform: capitalize;
-  
-  }
-  .platformtool-checkboxes{
-    position: relative;
-    left: 32px;
-    height: 20px;
-    width: 20px;
-    margin: 5px 0 5px 0;
-  }
-  .status{
-  text-transform:uppercase;
+  color: red;
+}
+.platformtool {
+  padding: 1px;
+  /* padding: 0 15px 0 15px; */
+}
+.platformtool span {
+  text-align: left;
+  font-size: clamp(0.9rem, 1.5vw, 2rem);
+  text-transform: capitalize;
+}
+.platformtool-checkboxes {
+  position: relative;
+  left: 32px;
+  height: 20px;
+  width: 20px;
+  margin: 5px 0 5px 0;
+}
+.adbconnection-verification {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  font-size: clamp(.7rem,1vw,8px);
-  }
+}
+.adbconnection-verified{
+  width: 90%;
+  width: clamp(300px, 1vw, 400px);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0px 2px #ccc;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 2%;
+}
+.platformtool-verification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.platformtool-verified{
+  width: 90%;
+  width: clamp(300px, 1vw, 400px);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0px 2px #ccc;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 2%;
+}
+.status {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: clamp(0.7rem, 1vw, 8px);
+}

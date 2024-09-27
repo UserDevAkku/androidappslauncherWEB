@@ -32,7 +32,8 @@
         <label id="android" class="requirements"><span>5.have you downloaded sdk platform tools?</span></label>
         <input type="checkbox" class="requirements-checkboxes" id="platformtool">
         <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="link"></a>
-        <p class="requirements-completed status"><span>you are elidgible to install this application</span></p>
+        <label class="requirements-verification"><input type="text" class="requirements-verified"></label>
+        <p class="requirements-completed status"><span>requirements completed</span></p>
       </div>
     </div>
     <div class="app-about"></div>
@@ -55,9 +56,9 @@
       <input type="checkbox" class="platformtool-checkboxes" id="cmd">
       <label class="platformtool"><span>7.run this command adb --version in cmd</span></label>
       <input type="checkbox" class="platformtool-checkboxes" id="adb">
-      <label class="platformtool"><span>8.adb version must be shown there (Version 35.0.2)</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="version">
-      <p class="platformtool-installed status"><span>you have installed platformtool successfully</span></p>
+      <label class="platformtool"><span>8.did you see adb version (Version 35.0.2)?</span></label>
+      <label class="platformtool-verification"><input type="text" class="platformtool-verified"></label>
+      <p class="platformtool-installed status"><span>platformtool installed</span></p>
     </div>
     </div>
     <div class="app-about"></div>
@@ -65,7 +66,7 @@
     </div>
     <div class="app-adbconnection">
     <div class="app-adbconnection-box">
-      <label class="adbconnection-title"><span>adb connection setup</span></label>
+      <label class="adbconnection-title"><span>adb configuration</span></label>
       <label class="adbconnection"><span>1.go to phone settings and tap on about phone</span></label>
       <input type="checkbox" class="adbconnection-checkboxes" id="settings">
       <label class="adbconnection"><span>2.tap 7 times on build number or miui version</span></label>
@@ -84,9 +85,9 @@
       <input type="checkbox" class="adbconnection-checkboxes" id="allowforphone">
       <label class="adbconnection"><span>8.open command prompt and type adb devices</span></label>
       <input type="checkbox" class="adbconnection-checkboxes" id="adbdevices">
-      <label class="adbconnection"><span>9.did you see your device there like this (4fd5g3d2 device)</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="devicesfoundd">
-      <p class="adbconnection-connected status"><span>adb is now connected with your phone</span></p>
+      <label class="adbconnection"><span>9.did you see your device (4fd5g3d2 device)?</span></label>
+      <label class="adbconnection-verification"><input type="text" class="adbconnection-verified"></label>
+      <p class="adbconnection-connected status"><span>adb configured </span></p>
     </div>
     </div>
     </label>
