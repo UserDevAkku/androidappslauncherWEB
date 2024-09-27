@@ -139,8 +139,8 @@ header {
   padding: 10px;
 }
 .requirements-verified{
-  width: 90%;
-  width: clamp(300px, 1vw, 400px);
+  width: 30%;
+  max-width: clamp(200px, 1vw, 300px);
   border: none;
   outline: none;
  
