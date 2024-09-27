@@ -120,7 +120,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(.6rem, 3.7vw, 10rem); /*pc first approach*/
+  font-size: clamp(.6rem, 1.98vw, 6rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
@@ -129,26 +129,6 @@ header {
   height: 20px;
   width: 20px;
   margin: 5px 0 5px 0;
-}
-
-.requirements-verification {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-.requirements-verified{
-  width: 30%;
-  max-width: clamp(200px, 1vw, 300px);
-  border: none;
-  outline: none;
- 
-  box-shadow: 0 0 0px 2px #ccc;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 2%;
 }
 .app-platformtool {
   width: 100%;
@@ -188,7 +168,7 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(0.9rem, 1.5vw, 2rem);
+  font-size: clamp(.6rem, 1.98vw, 6rem); 
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
