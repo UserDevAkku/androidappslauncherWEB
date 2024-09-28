@@ -120,7 +120,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(7rem, 2.2vw, 6rem); /*pc first approach*/
+  font-size: clamp(1rem, 2.2vw, 6rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
