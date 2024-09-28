@@ -120,7 +120,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1.27rem,1.5vw,2rem); /*pc first approach*/
+  font-size: clamp(1.2rem,1.5vw,2rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
@@ -168,7 +168,7 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(1rem,1.47vw,6em); 
+  font-size: clamp(1.09rem,1.47vw,6em); 
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
@@ -243,7 +243,7 @@ header {
 }
 .adbconnection  span {
   text-align: left;
-  font-size: clamp(.68rem,1.18vw,6em); 
+  font-size: clamp(.7rem,1.18vw,6em); 
   text-transform: capitalize;
 }
 .adbconnection-checkboxes {
