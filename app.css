@@ -60,7 +60,6 @@ header {
     color: aqua;
   }
 }
-
 .app-about {
   width: 100%;
   padding: 10px;
@@ -70,6 +69,16 @@ header {
   text-transform: uppercase;
   font-size: clamp(0.9rem, 2vw, 3rem);
   animation: app-about 1s ease-in-out infinite;
+}
+.note {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.6rem, 1.4vw, 3rem);
+ color: red;
+ font-weight: bolder;
 }
 @keyframes app-about {
   0% {
@@ -90,7 +99,7 @@ header {
   margin: 10px;
 }
 .app-requirements-box {
-  width:90%;
+  width: 90%;
   max-width: clamp(600px, 1vw, 600px);
   display: flex;
   flex-direction: column;
@@ -121,7 +130,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1.22rem,1.5vw,2rem); /*pc first approach*/
+  font-size: clamp(1.22rem, 1.5vw, 2rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
@@ -170,7 +179,7 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(1.18rem,1.47vw,6em); 
+  font-size: clamp(1.18rem, 1.47vw, 6em);
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
@@ -187,7 +196,7 @@ header {
   justify-content: center;
   padding-top: 3px;
 }
-.platformtool-verified{
+.platformtool-verified {
   width: 30%;
   width: clamp(100px, 1vw, 200px);
   border: none;
@@ -207,21 +216,21 @@ header {
   padding-top: 9px;
   font-size: clamp(0.7rem, 1vw, 8px);
 }
-.app-adbconnection{
+.app-adbconnection {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
 }
-.app-adbconnection-box{
+.app-adbconnection-box {
   width: 90%;
   max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  padding:8px;
+  padding: 8px;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 }
@@ -244,9 +253,9 @@ header {
   padding: 1px;
   /* padding: 0 15px 0 15px; */
 }
-.adbconnection  span {
+.adbconnection span {
   text-align: left;
-  font-size: clamp(.9rem,1.18vw,6em); 
+  font-size: clamp(0.95rem, 1.18vw, 6em);
   text-transform: capitalize;
 }
 .adbconnection-checkboxes {
@@ -263,7 +272,7 @@ header {
   justify-content: center;
   padding-top: 3px;
 }
-.adbconnection-verified{
+.adbconnection-verified {
   width: 30%;
   width: clamp(100px, 1vw, 200px);
   border: none;
@@ -274,21 +283,21 @@ header {
   padding-top: 4px;
   border-radius: 2%;
 }
-.app-termuxadbconnection{
+.app-termuxadbconnection {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
 }
-.app-termuxadbconnection-box{
+.app-termuxadbconnection-box {
   width: 90%;
   max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  padding:8px;
+  padding: 8px;
   box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
     0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
 }
@@ -311,9 +320,9 @@ header {
   padding: 1px;
   /* padding: 0 15px 0 15px; */
 }
-.termuxadbconnection  span {
+.termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.9rem,1.18vw,6em); 
+  font-size: clamp(0.9rem, 1.18vw, 6em);
   text-transform: capitalize;
 }
 .termuxadbconnection-checkboxes {
@@ -330,7 +339,7 @@ header {
   justify-content: center;
   padding-top: 3px;
 }
-.termuxadbconnection-verified{
+.termuxadbconnection-verified {
   width: 30%;
   width: clamp(100px, 1vw, 200px);
   border: none;
