@@ -168,7 +168,7 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(.6rem, 1.98vw, 6rem); 
+  font-size: clamp(1.1999rem,2.1vw,2rem);; 
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
