@@ -89,7 +89,7 @@ header {
   justify-content: center;
 }
 .app-requirements-box {
-  width:100%;
+  width:90%;
   max-width: clamp(600px, 1vw, 700px);
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1.5rem,2.1vw,2rem); /*pc first approach*/
+  font-size: clamp(1rem,2.1vw,2rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
