@@ -90,7 +90,7 @@ header {
 }
 .app-requirements-box {
   width:90%;
-  max-width: clamp(400px, 1vw, 700px);
+  max-width: clamp(600px, 1vw, 700px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -138,7 +138,7 @@ header {
 }
 .app-platformtool-box {
   width: 90%;
-  max-width: clamp(400px, 2vw, 700px);
+  max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -213,7 +213,7 @@ header {
 }
 .app-adbconnection-box{
   width: 90%;
-  max-width: clamp(400px, 2vw, 700px);
+  max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
