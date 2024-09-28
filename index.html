@@ -35,9 +35,6 @@
         <p class="requirements-completed status"><span>requirements completed</span></p>
       </div>
     </div>
-    <div class="app-about"></div>
-      <label><span>installing platform tool to setup adb</span></label>
-    </div>
     <div class="app-platformtool">
     <div class="app-platformtool-box">
       <label class="platformtool-title">platform tool configuration for pc</label>
@@ -57,11 +54,8 @@
       <input type="checkbox" class="platformtool-checkboxes" id="adb">
       <label class="platformtool"><span>8.did you see adb version (Version 35.0.2)?</span></label>
       <label class="platformtool-verification"><input type="text" class="platformtool-verified"></label>
-      <p class="platformtool-installed status"><span>platformtool installed</span></p>
+      <p class="platformtool-installed status"><span>platformtool installed </span></p>
     </div>
-    </div>
-    <div class="app-about"></div>
-      <label><span>setting up adb connection for termux app</span></label>
     </div>
     <div class="app-adbconnection">
     <div class="app-adbconnection-box">
@@ -86,10 +80,34 @@
       <input type="checkbox" class="adbconnection-checkboxes" id="adbdevices">
       <label class="adbconnection"><span>10.did you see your device like this (4fd5g3d2 device)?</span></label>
       <label class="adbconnection-verification"><input type="text" class="adbconnection-verified"></label>
-      <p class="adbconnection-connected status"><span>adb configured </span></p>
+      <p class="adbconnection-connected status"><span>adb configured for android</span></p>
     </div>
     </div>
-    <br>
+    <div class="app-termuxadbconnection">
+      <div class="app-termuxadbconnection-box">
+        <label class="termuxadbconnection-title"><span>adb configuration for termux</span></label>
+      <label class="termuxadbconnection"><span>1.have you configured adb for android on pc?</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>2.type this command adb tcpip 5555 on cmd and enter</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>3.unplug your phone and install termux and open it</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>4.run this command pkg update && pkg upgrade -y </span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>5.now,run this command pkg install android-tools -y</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>6.now we need wifi ip address to connect with adb in termux</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>8.in phone settings search ip address on search bar  and note this</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>9.run this command adb connect ip address in termux</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection"><span>10.give it allow permission to connect adb with android in termux</span></label>
+      <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
+      <label class="termuxadbconnection-verification"><input type="text" class="termuxadbconnection-verified"></label>
+      <p class="termuxadbconnection-connected status"><span>adb configured for termux</span></p>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
