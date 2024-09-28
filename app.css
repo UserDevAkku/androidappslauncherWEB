@@ -120,14 +120,14 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1rem,1.5vw,2rem); /*pc first approach*/
+  font-size: clamp(1.27rem,1.5vw,2rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
   position: relative;
   left: 32px;
-  height: 14x;
-  width: 14px;
+  height: 20x;
+  width: 20px;
   margin: 3px;
 }
 .app-platformtool {
@@ -168,14 +168,14 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(1.1rem,1.47vw,6em); 
+  font-size: clamp(1rem,1.47vw,6em); 
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
   position: relative;
   left: 32px;
-  height: 14px;
-  width: 14px;
+  height: 20px;
+  width: 20px;
   margin: 3px;
 }
 .platformtool-verification {
@@ -243,14 +243,14 @@ header {
 }
 .adbconnection  span {
   text-align: left;
-  font-size: clamp(.87rem,1.18vw,6em); 
+  font-size: clamp(.68rem,1.18vw,6em); 
   text-transform: capitalize;
 }
 .adbconnection-checkboxes {
   position: relative;
   left: 32px;
-  height: 14px;
-  width: 14px;
+  height: 20px;
+  width: 20px;
   margin: 3px;
 }
 .adbconnection-verification {
