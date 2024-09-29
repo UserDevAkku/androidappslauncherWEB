@@ -76,7 +76,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.6rem, 1.4vw, 3rem);
+  font-size: clamp(.8rem, 1.4vw, 3rem);
  color: red;
  font-weight: bolder;
 }
@@ -130,7 +130,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1.22rem, 1.5vw, 2rem); /*pc first approach*/
+  font-size: clamp(1.1rem, 1.5vw, 2rem); /*pc first approach*/
   text-transform: capitalize;
 }
 .requirements-checkboxes {
@@ -179,7 +179,7 @@ header {
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(1.18rem, 1.47vw, 6em);
+  font-size: clamp(1.11rem, 1.47vw, 6em);
   text-transform: capitalize;
 }
 .platformtool-checkboxes {
@@ -255,7 +255,7 @@ header {
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(0.95rem, 1.18vw, 6em);
+  font-size: clamp(0.91rem, 1.18vw, 6em);
   text-transform: capitalize;
 }
 .adbconnection-checkboxes {
@@ -322,7 +322,7 @@ header {
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(0.9rem, 1.18vw, 6em);
+  font-size: clamp(0.8rem, 1.18vw, 6em);
   text-transform: capitalize;
 }
 .termuxadbconnection-checkboxes {
