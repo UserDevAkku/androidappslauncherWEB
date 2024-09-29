@@ -131,7 +131,7 @@ header {
 .requirements span {
   text-align: left;
   font-size: clamp(1.1rem, 1.5vw, 2rem); /*pc first approach*/
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 .requirements-checkboxes {
   position: relative;
@@ -180,7 +180,7 @@ header {
 .platformtool span {
   text-align: left;
   font-size: clamp(1.11rem, 1.47vw, 6em);
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 .platformtool-checkboxes {
   position: relative;
@@ -256,7 +256,7 @@ header {
 .adbconnection span {
   text-align: left;
   font-size: clamp(0.91rem, 1.18vw, 6em);
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 .adbconnection-checkboxes {
   position: relative;
@@ -322,8 +322,8 @@ header {
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(0.8rem, 1.18vw, 6em);
-  text-transform: capitalize;
+  font-size: clamp(0.8rem, 1.2vw, 6em);
+  text-transform: lowercase;
 }
 .termuxadbconnection-checkboxes {
   position: relative;
