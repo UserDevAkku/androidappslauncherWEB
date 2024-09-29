@@ -130,7 +130,7 @@ header {
 }
 .requirements span {
   text-align: left;
-  font-size: clamp(1.04rem, 1.5vw, 2rem); /*pc first approach*/
+  font-size: clamp(1rem, 1.5vw, 2rem); /*pc first approach*/
   text-transform: lowercase;
 }
 .requirements-checkboxes {
@@ -322,7 +322,7 @@ header {
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(0.86rem, 1.2vw, 6em);
+  font-size: clamp(0.81rem, 1.2vw, 6em);
   text-transform: lowercase;
 }
 .termuxadbconnection-checkboxes {
