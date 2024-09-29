@@ -99,7 +99,7 @@ header {
   margin: 10px;
 }
 .app-requirements-box {
-  width: 98%;
+  width: 90%;
   max-width: clamp(600px, 1vw, 600px);
   display: flex;
   flex-direction: column;
@@ -148,7 +148,7 @@ header {
   margin: 10px;
 }
 .app-platformtool-box {
-  width: 98%;
+  width: 90%;
   max-width: clamp(600px, 2vw, 600px);
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@ header {
   margin: 10px;
 }
 .app-adbconnection-box {
-  width: 98%;
+  width: 90%;
   max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
@@ -291,7 +291,7 @@ header {
   margin: 10px;
 }
 .app-termuxadbconnection-box {
-  width: 98%;
+  width: 90%;
   max-width: clamp(600px, 2vw, 700px);
   display: flex;
   flex-direction: column;
