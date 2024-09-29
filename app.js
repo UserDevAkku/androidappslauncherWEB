@@ -1,5 +1,5 @@
-const reqBox = document.querySelector(".requirements-box"); // Select the element with class 'requirements-box'
-const rcNext = document.querySelector(".next-1"); // Select the element with class 'next-1' (Requirement Completed message)
+const arb = document.querySelector(".app-requirements-box"); // Select the element with class 'requirements-box'
+const rcNext = document.querySelector("."); // Select the element with class 'next-1' (Requirement Completed message)
 const chkbox = document.querySelectorAll(".chkbox"); // Select all elements with class 'chkbox'
 const phone = document.querySelector("#p"); // Select the element with ID 'p' (Phone)
 const pc = document.querySelector("#pc"); // Select the element with ID 'pc' (PC)
