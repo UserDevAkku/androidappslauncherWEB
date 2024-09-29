@@ -9,6 +9,13 @@ body {
   width: 100%;
   background-color: #f4f4f4;
 }
+.link{
+  width: 100%;
+  position: relative;
+  bottom: 25px;
+  left: 80px;
+  text-decoration: none;
+}
 header {
   display: flex;
   align-items: center;
