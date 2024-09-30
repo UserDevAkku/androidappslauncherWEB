@@ -104,7 +104,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 .app-requirements-box {
   width: 90%;
@@ -154,7 +153,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 .app-platformtool-box {
   width: 90%;
@@ -230,7 +228,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 .app-adbconnection-box {
   width: 90%;
@@ -297,7 +294,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 .app-termuxadbconnection-box {
   width: 90%;
