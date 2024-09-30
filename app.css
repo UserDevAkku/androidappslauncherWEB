@@ -148,6 +148,9 @@ header {
   width: 25px;
   margin: 3px;
 }
+input[type="checkbox"]{
+  accent-color: #32cd32;
+}
 input[type="checkbox"]:checked{
   accent-color: #32cd32;
 }
