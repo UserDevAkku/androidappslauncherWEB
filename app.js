@@ -31,7 +31,6 @@ const reqCompleted = () => {
 const reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 reqCheckbox.forEach((reqCheckbox) => {
   reqCheckbox.addEventListener("click", () => {
-    reqCheckbox.style.accentColor = "#7CFC00";
     reqCompleted();
   });
 });
@@ -44,7 +43,6 @@ let plCheckbox = document.querySelectorAll(".platformtool-checkboxes");
 // platformtool checkboxes :- GREEN CHECKED BOX
 plCheckbox.forEach((plCheckbox) => {
   plCheckbox.addEventListener("click", () => {
-    plCheckbox.style.accentColor = "#7CFC00";
   });
 });
 // platformtool box :- called plBoxlocked function
@@ -58,10 +56,11 @@ const plBoxlocked=()=>{
   ){
     // plBox.style.pointerEvents="auto";
     alert("complete the requirements first");
+
   }
 }
 // platformtool box :-  platformtool box is locked if requirements are not completed
-plBox.addEventListener("mouseover",()=>{
+plBox.addEventListener("click",()=>{
   plBoxlocked();
 })
 
@@ -71,7 +70,6 @@ plBox.addEventListener("mouseover",()=>{
 const adbACheckbox = document.querySelectorAll(".adbconnection-checkboxes");
 adbACheckbox.forEach((adbACheckbox) => {
   adbACheckbox.addEventListener("click", () => {
-    adbACheckbox.style.accentColor = "#7CFC00";
   });
 });
 // termuxadbconnection checkboxes :- GREEN CHECKED BOX
@@ -80,6 +78,5 @@ const adbTCheckbox = document.querySelectorAll(
 );
 adbTCheckbox.forEach((adbTCheckbox) => {
   adbTCheckbox.addEventListener("click", () => {
-    adbTCheckbox.style.accentColor = "#7CFC00";
   });
 });
