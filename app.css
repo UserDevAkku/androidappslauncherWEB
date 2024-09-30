@@ -131,9 +131,11 @@ header {
 .requirements-title::after {
   content: "*";
   color: red;
+  font-size: 30px;
 }
 .requirements {
   padding: 1px;
+  font-weight:100;
   /* padding:0 10px 0 20px ; */
 }
 .requirements span {
@@ -149,16 +151,29 @@ header {
   margin: 3px;
 }
 input[type="checkbox"]{
-  accent-color: #32cd32;
   border: none;
   outline: none;
 }
 input[type="checkbox"]:checked{
-  accent-color: #32cd32;
   border: none;
   outline: none;
-  box-shadow: 0 0 0 1px greenyellow inset;
 }
+.requirements-completed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#R-status{
+  text-transform: uppercase;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bolder;
+  font-size: clamp(0.7rem, 1.1vw, 3rem);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+  font-weight: bolder;
+}
+
 .app-platformtool {
   width: 100%;
   display: flex;
@@ -190,6 +205,7 @@ input[type="checkbox"]:checked{
 .platformtool-title::after {
   content: "*";
   color: red;
+  font-size: 30px;
 }
 .platformtool {
   padding: 1px;
@@ -225,7 +241,7 @@ input[type="checkbox"]:checked{
   padding-top: 4px;
   border-radius: 2%;
 }
-.status {
+.platformtool-installed{
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -233,7 +249,19 @@ input[type="checkbox"]:checked{
   font-weight: bolder;
   padding-top: 9px;
   font-size: clamp(0.7rem, 1.1vw, 3rem);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#P-status{
+  text-transform: uppercase;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bolder;
+  font-size: clamp(0.7rem, 1.1vw, 3rem);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+  font-weight: bolder;
+}
+
 .app-adbconnection {
   width: 100%;
   display: flex;
@@ -265,6 +293,7 @@ input[type="checkbox"]:checked{
 .adbconnection-title::after {
   content: "*";
   color: red;
+  font-size: 30px;
 }
 .adbconnection {
   padding: 1px;
@@ -300,6 +329,16 @@ input[type="checkbox"]:checked{
   padding-top: 4px;
   border-radius: 2%;
 }
+.adbconnection-connected{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 9px;
+  font-size: clamp(0.7rem, 1.1vw, 3rem);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .app-termuxadbconnection {
   width: 100%;
   display: flex;
@@ -330,6 +369,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-title::after {
   content: "*";
+  font-size: 30px;
   color: red;
 }
 .termuxadbconnection {
@@ -365,4 +405,82 @@ input[type="checkbox"]:checked{
   text-transform: uppercase;
   padding-top: 4px;
   border-radius: 2%;
+}
+.termuxadbconnection-connected{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-top: 9px;
+  font-size: clamp(0.7rem, 1.1vw, 3rem);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@keyframes reqBox {
+  0%{
+    box-shadow: 0 0 0px 5px #32cd32;
+  }
+  50%{
+    box-shadow: 0 0 0px 2px #32cd32;
+  }
+  100%{
+    box-shadow: 0 0 0px  5px #32cd32;
+  }
+}
+@keyframes Status {
+  0%{
+    color:  #008000;
+    transform: translateX(-5px);
+    letter-spacing: 1px;
+  }
+  50%{
+    color:  #008000;
+    transform: translateX(5px);
+    letter-spacing: 1px;
+  }
+  100%{
+    color:  #008000;
+    transform: translateX(-5px);
+    letter-spacing: 1px;
+  }
+}
+#R-status::after{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#R-status::before{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#P-status::after{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#P-status::before{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#A-status::after{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#A-status::before{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#T-status::after{
+  content: "*";
+  color: red;
+  font-size: 14px;
+}
+#T-status::before{
+  content: "*";
+  color: red;
+  font-size: 14px;
 }

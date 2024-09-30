@@ -35,7 +35,7 @@
         <label id="android" class="requirements"><span>5.download sdk platform tools on pc?</span></label>
         <input type="checkbox" class="requirements-checkboxes" id="sdk">
         <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="link">download</a>
-        <p class="requirements-completed status"><span></span></p>
+        <p class="requirements-completed"><span id="R-status"></span></p>
       </div>
     </div>
     <div class="app-platformtool">
@@ -57,7 +57,7 @@
       <input type="checkbox" class="platformtool-checkboxes" id="adb">
       <label class="platformtool"><span>8.did you see adb version (Version 35.0.2)?</span></label>
       <label class="platformtool-verification"><input type="text" class="platformtool-verified" placeholder="yes/no"></label>
-      <p class="platformtool-installed status"><span></span></p>
+      <p class="platformtool-installed"><span id="P-status"></span></p>
     </div>
     </div>
     <div class="app-adbconnection">
@@ -83,7 +83,7 @@
       <input type="checkbox" class="adbconnection-checkboxes" id="adbdevices">
       <label class="adbconnection"><span>10.did you see your device like this (4fd5g3d2 device)?</span></label>
       <label class="adbconnection-verification"><input type="text" class="adbconnection-verified" placeholder="yes/no"></label>
-      <p class="adbconnection-connected status"><span></span></p>
+      <p class="adbconnection-connected"><span id="A-status"></span></p>
     </div>
     </div>
     <div class="app-termuxadbconnection">
@@ -108,7 +108,7 @@
       <label class="termuxadbconnection"><span>10.give it allow permission to connect adb with android</span></label>
       <input type="checkbox" class="termuxadbconnection-checkboxes" id="adbconfigured">
       <label class="termuxadbconnection-verification"><input type="text" class="termuxadbconnection-verified" placeholder="yes/no"></label>
-      <p class="termuxadbconnection-connected status"><span></span></p>
+      <p class="termuxadbconnection-connected"><span id="T-status"></span></p>
       </div>
     </div>
     <script src="app.js"></script>
