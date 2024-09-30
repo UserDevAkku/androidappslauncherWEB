@@ -157,7 +157,7 @@ input[type="checkbox"]:checked{
   accent-color: #32cd32;
   border: none;
   outline: none;
-  box-shadow: 0 0 0 2px #32cd32 inset;
+  box-shadow: 0 0 0 1px greenyellow inset;
 }
 .app-platformtool {
   width: 100%;
