@@ -7,7 +7,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #6e6e040c;
 }
 .link{
   width: fit-content;
@@ -27,7 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #91e09d;
+  background-color: aqua;
   text-transform: uppercase;
   padding: 8px;
   font-size: clamp(1.2rem, 6vw, 4rem);
@@ -113,8 +113,8 @@ header {
   background-color: #ffffff;
   border-radius: 2%;
   padding: 8px;
-  box-shadow: -3px 0 5px 0px #ffffff, 3px 0 5px 0px #ffffff,
-  0px -3px 5px 0px #ffffff, 0 3px 5px 0px #ffffff;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
 
 }
 .requirements-title {
@@ -162,8 +162,8 @@ header {
   background-color: #ffffff;
   border-radius: 2%;
   padding: 8px;
-  box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
-    0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
 }
 .platformtool-title {
   color: black;
@@ -237,8 +237,8 @@ header {
   background-color: #ffffff;
   border-radius: 2%;
   padding: 8px;
-  box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
-    0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
 }
 .adbconnection-title {
   color: black;
@@ -303,8 +303,8 @@ header {
   background-color: #ffffff;
   border-radius: 2%;
   padding: 8px;
-  box-shadow: -3px 0 5px 0px #ccc inset, 3px 0 5px 0px #ccc inset,
-    0px -3px 5px 0px #ccc inset, 0 3px 5px 0px #ccc inset;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
 }
 .termuxadbconnection-title {
   color: black;
