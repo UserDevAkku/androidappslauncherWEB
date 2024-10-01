@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
 }
 body {
   height: 100%;
@@ -12,10 +11,10 @@ body {
 .link{
   width: fit-content;
   height: fit-content;
-  position: relative;
-  bottom: 25px;
-  left: 80px;
   text-decoration: none;
+  position: relative;
+  left: 15px;
+  display: none;
 }
 header {
   display: flex;
@@ -99,70 +98,248 @@ header {
     color: red;
   }
 }
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: none;
+   margin: 5px 0 5px 50px;
+}
+/* boxes */
+.app-requirements-box {
+  width: 90%;
+  max-width: clamp(500px, 1vw, 500px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
+}
+.app-platformtool-box {
+  width: 90%;
+  max-width: clamp(500px, 2vw, 500px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
+}
+.app-adbconnection-box {
+  width: 90%;
+  max-width: clamp(500px, 2vw, 500px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
+}
+.app-termuxadbconnection-box {
+  width: 90%;
+  max-width: clamp(500px, 2vw, 500px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 0 0 12px 1px #000;
+  margin-top: 20px;
+}
+/* verification-container*/
+.platformtool-verification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adbconnection-verification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.termuxadbconnection-verification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* verified */
+.platformtool-verified {
+  width: 25%;
+  width: clamp(80px, 1vw, 100px);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0px 1px #ccc;
+  text-align: center;
+  border-radius: 2%;
+  margin: 5px;
+  padding: 2px;
+}
+.Aadbconnection-verified {
+  width: 25%;
+  width: clamp(80px, 1vw, 100px);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0px 1px #ccc;
+  text-align: center;
+  border-radius: 2%;
+  margin: 5px;
+  padding: 2px;
+}
+.termuxadbconnection-verified {
+  width: 25%;
+  width: clamp(80px, 1vw, 100px);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0px 1px #ccc;
+  text-align: center;
+  border-radius: 2%;
+  margin: 5px;
+  padding: 2px;
+}
+/* titles */
+.requirements-title {
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.9rem, 1.5vw, 1.2rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.platformtool-title {
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.9rem, 1.5vw, 1.2rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.adbconnection-title {
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.9rem, 1.5vw, 1.2rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.termuxadbconnection-title {
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.9rem, 1.5vw, 1.2rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* title asterisks */
+.requirements-title::after {
+  content: "*";
+  color: red;
+  font-size: 30px;
+}
+.platformtool-title::after {
+  content: "*";
+  color: red;
+  font-size: 30px;
+}
+.adbconnection-title::after {
+  content: "*";
+  color: red;
+  font-size: 30px;
+}
+.termuxadbconnection-title::after {
+  content: "*";
+  font-size: 30px;
+  color: red;
+}
+/* all boxes labels */
+.requirements span {
+  text-align: left;
+  padding: 10px;
+  font-size: clamp(0.96rem, 1.8vw, 2.13rem);
+  text-transform: lowercase;
+ 
+}
+.platformtool span {
+  text-align: left;
+  font-size: clamp(0.96rem, 1.6vw, 1.94rem);
+  text-transform: lowercase;
+  padding: 10px;
+}
+.adbconnection span {
+  text-align: left;
+  font-size: clamp(0.96rem, 1.6vw, 1.82rem);
+  text-transform: lowercase;
+  padding: 10px;
+}
+.termuxadbconnection span {
+  text-align: left;
+  font-size: clamp(0.96rem, 1.6vw, 1.67rem);
+  text-transform: lowercase;
+  padding: 10px;
+}
+/* all box-containers*/
 .app-requirements {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.app-requirements-box {
-  width: 90%;
-  max-width: clamp(600px, 1vw, 600px);
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 2%;
-  padding: 8px;
-  box-shadow: 0 0 12px 1px #000;
-  margin-top: 20px;
-
-}
-.requirements-title {
-  color: black;
-  font-weight: bold;
+.app-adbconnection {
   width: 100%;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  padding: 10px;
 }
-.requirements-title::after {
-  content: "*";
-  color: red;
-  font-size: 30px;
+.app-platformtool {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.requirements {
-  padding: 1px;
-  font-weight:100;
-  /* padding:0 10px 0 20px ; */
+.app-termuxadbconnection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.requirements span {
-  text-align: left;
-  font-size: clamp(1.03rem, 2vw, 2rem); /*pc first approach*/
-  text-transform: lowercase;
-}
-.requirements-checkboxes {
-  position: relative;
-  left: 32px;
-  height: 25px;
-  width: 25px;
-  margin: 3px;
-}
-input[type="checkbox"]{
-  border: none;
-  outline: none;
-}
-input[type="checkbox"]:checked{
-  border: none;
-  outline: none;
-}
+/* status-containers*/
 .requirements-completed{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
+.platformtool-installed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.adbconnection-connected{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.termuxadbconnection-connected{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+/*status*/
 #R-status{
   text-transform: uppercase;
   width: fit-content;
@@ -172,84 +349,6 @@ input[type="checkbox"]:checked{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
-}
-
-.app-platformtool {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app-platformtool-box {
-  width: 90%;
-  max-width: clamp(600px, 2vw, 600px);
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 2%;
-  padding: 8px;
-  box-shadow: 0 0 12px 1px #000;
-  margin-top: 20px;
-}
-.platformtool-title {
-  color: black;
-  font-weight: bold;
-  width: 100%;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  padding: 10px;
-}
-.platformtool-title::after {
-  content: "*";
-  color: red;
-  font-size: 30px;
-}
-.platformtool {
-  padding: 1px;
-  /* padding: 0 15px 0 15px; */
-}
-.platformtool span {
-  text-align: left;
-  font-size: clamp(0.96rem, 1.9vw, 6em);
-  text-transform: lowercase;
-}
-.platformtool-checkboxes {
-  position: relative;
-  left: 32px;
-  height: 25px;
-  width: 25px;
-  margin: 3px;
-}
-.platformtool-verification {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3px;
-}
-.platformtool-verified {
-  width: 30%;
-  width: clamp(100px, 1vw, 200px);
-  border: none;
-  outline: none;
-  box-shadow: 0 0 0px 2px #ccc;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 4px;
-  border-radius: 2%;
-}
-.platformtool-installed{
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;
-  padding-top: 9px;
-  font-size: clamp(0.7rem, 1.1vw, 3rem);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #P-status{
   text-transform: uppercase;
@@ -261,189 +360,27 @@ input[type="checkbox"]:checked{
   display: none;
   font-weight: bolder;
 }
-
-.app-adbconnection {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app-adbconnection-box {
-  width: 90%;
-  max-width: clamp(600px, 2vw, 700px);
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 2%;
-  padding: 8px;
-  box-shadow: 0 0 12px 1px #000;
-  margin-top: 20px;
-}
-.adbconnection-title {
-  color: black;
-  font-weight: bold;
-  width: 100%;
+#A-status{
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  padding: 10px;
-}
-.adbconnection-title::after {
-  content: "*";
-  color: red;
-  font-size: 30px;
-}
-.adbconnection {
-  padding: 1px;
-  /* padding: 0 15px 0 15px; */
-}
-.adbconnection span {
-  text-align: left;
-  font-size: clamp(0.87rem, 1.8vw, 6em);
-  text-transform: lowercase;
-}
-.adbconnection-checkboxes {
-  position: relative;
-  left: 32px;
-  height: 25px;
-  width: 25px;
-  margin: 3px;
-}
-.adbconnection-verification {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3px;
-}
-.adbconnection-verified {
-  width: 30%;
-  width: clamp(100px, 1vw, 200px);
-  border: none;
-  outline: none;
-  box-shadow: 0 0 0px 2px #ccc;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 4px;
-  border-radius: 2%;
-}
-.adbconnection-connected{
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
+  height: fit-content;
   font-weight: bolder;
-  padding-top: 9px;
   font-size: clamp(0.7rem, 1.1vw, 3rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.app-termuxadbconnection {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app-termuxadbconnection-box {
-  width: 90%;
-  max-width: clamp(600px, 2vw, 700px);
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 2%;
-  padding: 8px;
-  box-shadow: 0 0 12px 1px #000;
-  margin-top: 20px;
-}
-.termuxadbconnection-title {
-  color: black;
-  font-weight: bold;
-  width: 100%;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  padding: 10px;
-}
-.termuxadbconnection-title::after {
-  content: "*";
-  font-size: 30px;
-  color: red;
-}
-.termuxadbconnection {
-  padding: 1px;
-  /* padding: 0 15px 0 15px; */
-}
-.termuxadbconnection span {
-  text-align: left;
-  font-size: clamp(0.81rem, 1.7vw, 6em);
-  text-transform: lowercase;
-}
-.termuxadbconnection-checkboxes {
-  position: relative;
-  left: 32px;
-  height: 25px;
-  width: 25px;
-  margin: 3px;
-}
-.termuxadbconnection-verification {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3px;
-}
-.termuxadbconnection-verified {
-  width: 30%;
-  width: clamp(100px, 1vw, 200px);
-  border: none;
-  outline: none;
-  box-shadow: 0 0 0px 2px #ccc;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 4px;
-  border-radius: 2%;
-}
-.termuxadbconnection-connected{
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
   font-weight: bolder;
-  padding-top: 9px;
+}
+#T-status{
+  text-transform: uppercase;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bolder;
   font-size: clamp(0.7rem, 1.1vw, 3rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+  font-weight: bolder;
 }
-@keyframes reqBox {
-  0%{
-    box-shadow: 0 0 0px 5px #32cd32;
-  }
-  50%{
-    box-shadow: 0 0 0px 2px #32cd32;
-  }
-  100%{
-    box-shadow: 0 0 0px  5px #32cd32;
-  }
-}
-@keyframes Status {
-  0%{
-    color:  #008000;
-    transform: translateX(-5px);
-    letter-spacing: 1px;
-  }
-  50%{
-    color:  #008000;
-    transform: translateX(5px);
-    letter-spacing: 1px;
-  }
-  100%{
-    color:  #008000;
-    transform: translateX(-5px);
-    letter-spacing: 1px;
-  }
-}
+/* aestrisk symbol with status */
 #R-status::after{
   content: "*";
   color: red;
@@ -483,4 +420,34 @@ input[type="checkbox"]:checked{
   content: "*";
   color: red;
   font-size: 14px;
+}
+
+/* animation on requirements completed on requirements box*/
+@keyframes reqBox {
+  0%{
+    box-shadow: 0 0 0px 5px #32cd32;
+  }
+  50%{
+    box-shadow: 0 0 0px 2px #32cd32;
+  }
+  100%{
+    box-shadow: 0 0 0px  5px #32cd32;
+  }
+}
+@keyframes Status {
+  0%{
+    color:  #008000;
+    transform: translateX(-5px);
+    letter-spacing: 1px;
+  }
+  50%{
+    color:  #008000;
+    transform: translateX(5px);
+    letter-spacing: 1px;
+  }
+  100%{
+    color:  #008000;
+    transform: translateX(-5px);
+    letter-spacing: 1px;
+  }
 }

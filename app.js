@@ -1,17 +1,9 @@
-let phone = document.querySelector("#phone");
-let pc = document.querySelector("#pc");
-let usb = document.querySelector("#usb");
-let termux = document.querySelector("#termux");
-let sdk = document.querySelector("#sdk");
+// **                                       REQUIREMENTS                     **//
 let reqBox = document.querySelector(".app-requirements-box");
 let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
-console.log(Rstatus)
-
-// **                                       REQUIREMENTS                     **//
 // dynamically css manipulation on requirements completed by dom
 const reqCompleted = () => {
- 
   if (
     phone.checked &&
     pc.checked &&
@@ -44,7 +36,6 @@ reqCheckbox.forEach((reqCheckbox) => {
 let plBox=document.querySelector(".app-platformtool-box");
 let plCheckbox = document.querySelectorAll(".platformtool-checkboxes");
 let Pstatus=document.querySelector("#P-status")
-
 plinstalled=()=>{
   if (
     download.checked &&
@@ -73,33 +64,33 @@ plCheckbox.forEach((plCheckbox) => {
     plinstalled();
   });
 });
-// platformtool box :- called plBoxlocked function
-const plBoxlocked=()=>{
-  if (
-    !phone.checked ||
-    !pc.checked ||
-    !usb.checked ||
-    !termux.checked ||
-    !sdk.checked
-  ){
-    // plBox.style.pointerEvents="auto";
-    alert("complete the requirements first");
-  }
-}
-// platformtool box :-  platformtool box is locked if requirements are not completed
-plBox.addEventListener("click",()=>{
-  plBoxlocked();
-})
 
-// androidadbconnection checkboxes :- GREEN CHECKED BOX
-const adbACheckbox = document.querySelectorAll(".adbconnection-checkboxes");
-adbACheckbox.forEach((adbACheckbox) => {
-  adbACheckbox.addEventListener("click", () => {
-    adbACheckbox.style.accentColor = "#7CFC00";
+
+
+
+//*                    CONFIGURATION FOR ANDROID                    *//
+
+
+let ABox=document.querySelector(".app-adbconnection-box");
+let ACheckbox = document.querySelectorAll(".adbconnection-checkboxes");
+let Astatus=document.querySelector("#A-status");
+let Averified=document.querySelector(".Aadbconnection-verified")
+
+
+  
+  Averified.addEventListener("input", () => {
+    if(settings.checked && miuibuild.checked && searchdeveloperoption.checked && opendeveloperoption.checked && allowforusb.checked && datacable.checked && allowforphone.checked && Acmd.checked && Aadbdevices.checked && Averified.value ==="yes"|| Averified.value ==="YES"  || Averified.value ==="Yes" ){
+      ABox.style.backgroundColor="#32cd32"
+    }else{
+       ABox.style.backgroundColor="#ffffff"
+    }
   });
-});
+
+
+
+
 // termuxadbconnection checkboxes :- GREEN CHECKED BOX
-const adbTCheckbox = document.querySelectorAll(
+let adbTCheckbox = document.querySelectorAll(
   ".termuxadbconnection-checkboxes"
 );
 adbTCheckbox.forEach((adbTCheckbox) => {
@@ -107,3 +98,25 @@ adbTCheckbox.forEach((adbTCheckbox) => {
     adbTCheckbox.style.accentColor = "#7CFC00";
   });
 });
+
+
+
+
+
+// // platformtool box :- called plBoxlocked function
+// const plBoxlocked=()=>{
+//   if (
+//     !phone.checked ||
+//     !pc.checked ||
+//     !usb.checked ||
+//     !termux.checked ||
+//     !sdk.checked
+//   ){
+//     // plBox.style.pointerEvents="auto";
+//     alert("complete the requirements first");
+//   }
+// }
+// // platformtool box :-  platformtool box is locked if requirements are not completed
+// plBox.addEventListener("click",()=>{
+//   plBoxlocked();
+// })
