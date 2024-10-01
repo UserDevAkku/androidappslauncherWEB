@@ -26,7 +26,7 @@ const reqCompleted = () => {
 reqCheckbox.forEach((reqCheckbox) => {
   reqCheckbox.addEventListener("click", () => {
     reqCheckbox.style.accentColor="#32cd32"
-     reqCheckbox.style.boxShadow="0 0 0 1px #32cd32 inset"
+     reqCheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
     reqCompleted();
   });
 });
@@ -62,7 +62,7 @@ plinstalled=()=>{
 plCheckbox.forEach((plCheckbox) => {
   plCheckbox.addEventListener("click", () => {
     plCheckbox.style.accentColor = "#32cd32";
-    plCheckbox.style.boxShadow="0 0 0 1px #32cd32 inset"
+    plCheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
     plinstalled();
   });
 });
@@ -81,7 +81,7 @@ let Averified=document.querySelector(".Aadbconnection-verified")
 ACheckbox.forEach((adbTCheckbox) => {
   ACheckbox.addEventListener("click", () => {
     ACheckbox.style.accentColor = "#32cd32";
-    ACheckbox.style.boxShadow="0 0 0 1px #32cd32 inset"
+    ACheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
   });
 });
   
@@ -104,7 +104,7 @@ let TCheckbox = document.querySelectorAll(
 TCheckbox.forEach((adbTCheckbox) => {
   TCheckbox.addEventListener("click", () => {
     TCheckbox.style.accentColor = "#32cd32";
-     TCheckbox.style.boxShadow="0 0 0 1px #32cd32 inset"
+     TCheckbox.style.boxShadow="0 0 0 3px #32cd32 inset"
   });
 });
 
