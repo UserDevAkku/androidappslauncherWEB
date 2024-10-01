@@ -25,7 +25,7 @@ const reqCompleted = () => {
 // requirements checkboxes :- GREEN CHECKED BOX
 reqCheckbox.forEach((reqCheckbox) => {
   reqCheckbox.addEventListener("click", () => {
-    reqCheckbox.style.accentColor="#008000"
+    reqCheckbox.style.accentColor="#32cd32"
     reqCompleted();
   });
 });
@@ -60,7 +60,7 @@ plinstalled=()=>{
 // platformtool checkboxes :- GREEN CHECKED BOX
 plCheckbox.forEach((plCheckbox) => {
   plCheckbox.addEventListener("click", () => {
-    plCheckbox.style.accentColor = "#008000";
+    plCheckbox.style.accentColor = "#32cd32";
     plinstalled();
   });
 });
@@ -76,7 +76,11 @@ let ACheckbox = document.querySelectorAll(".adbconnection-checkboxes");
 let Astatus=document.querySelector("#A-status");
 let Averified=document.querySelector(".Aadbconnection-verified")
 
-
+ACheckbox.forEach((adbTCheckbox) => {
+  ACheckbox.addEventListener("click", () => {
+    ACheckbox.style.accentColor = "#32cd32";
+  });
+});
   
   Averified.addEventListener("input", () => {
     if(settings.checked && miuibuild.checked && searchdeveloperoption.checked && opendeveloperoption.checked && allowforusb.checked && datacable.checked && allowforphone.checked && Acmd.checked && Aadbdevices.checked && Averified.value ==="yes"|| Averified.value ==="YES"  || Averified.value ==="Yes" ){
@@ -90,12 +94,13 @@ let Averified=document.querySelector(".Aadbconnection-verified")
 
 
 // termuxadbconnection checkboxes :- GREEN CHECKED BOX
-let adbTCheckbox = document.querySelectorAll(
+let TCheckbox = document.querySelectorAll(
   ".termuxadbconnection-checkboxes"
 );
-adbTCheckbox.forEach((adbTCheckbox) => {
-  adbTCheckbox.addEventListener("click", () => {
-    adbTCheckbox.style.accentColor = "#7CFC00";
+
+TCheckbox.forEach((adbTCheckbox) => {
+  TCheckbox.addEventListener("click", () => {
+    TCheckbox.style.accentColor = "#32cd32";
   });
 });
 
