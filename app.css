@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #32cd32;
+  background-color: #ffffff;
 }
 .link{
   width: fit-content;
@@ -103,6 +103,9 @@ input[type="checkbox"]{
     height: 20px;
     border: none;
    margin: 5px 0 5px 50px;
+}
+input[type+"checkbox"]:checked{
+  border: none;
 }
 /* boxes */
 .app-requirements-box {
