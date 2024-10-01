@@ -67,7 +67,7 @@ Pverified.addEventListener("input", () => {
   }
 });
 //**####**//
-plBox.addEventListener("mouseover",()=>{
+plBox.addEventListener("click",()=>{
   if( phone.checked &&
     pc.checked &&
     usb.checked &&
@@ -129,7 +129,7 @@ Averified.addEventListener("input", () => {
 
 });
 //**####**//
-ABox.addEventListener("mouseover",()=>{
+ABox.addEventListener("click",()=>{
   if (
     (settings.checked &&
       miuibuild.checked &&
@@ -197,7 +197,7 @@ Tverified.addEventListener("input", () => {
   }
 });
 //**####**//
-TBox.addEventListener("mouseover",()=>{
+TBox.addEventListener("click",()=>{
 if (VAadbdevice.checked &&
     tcp.checked &&
     T_install.checked &&
