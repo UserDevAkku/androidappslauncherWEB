@@ -67,17 +67,17 @@ Pverified.addEventListener("input", () => {
   }
 });
 //**####**//
-plBox.addEventListener("click",()=>{
+plBox.addEventListener("mouseover",()=>{
   if( phone.checked &&
     pc.checked &&
     usb.checked &&
     termux.checked &&
     sdk.checked){
-      plBox.style.pointerEvents="auto"
-    }else
+      plCheckbox.style.pointerEvents="auto"
+    }
+    else
     {
-      plBox.style.pointerEvents="none"
-      alert("please complete all the requirements first*")
+      alert("requirements are incomplete")
     }
 })
 //**####**//
@@ -129,7 +129,7 @@ Averified.addEventListener("input", () => {
 
 });
 //**####**//
-ABox.addEventListener("click",()=>{
+ABox.addEventListener("mouseover",()=>{
   if (
     (settings.checked &&
       miuibuild.checked &&
@@ -144,10 +144,9 @@ ABox.addEventListener("click",()=>{
     Averified.value === "YES" ||
     Averified.value === "Yes"
   ){
-      ABox.style.pointerEvents="auto"
+      ACheckbox.style.pointerEvents="auto"
     }else
     {
-      ABox.style.pointerEvents="none"
       alert("please install sdk platformtool first*")
     }
 })
@@ -197,7 +196,7 @@ Tverified.addEventListener("input", () => {
   }
 });
 //**####**//
-TBox.addEventListener("click",()=>{
+TBox.addEventListener("mouseover",()=>{
 if (VAadbdevice.checked &&
     tcp.checked &&
     T_install.checked &&
@@ -210,10 +209,10 @@ if (VAadbdevice.checked &&
   Tverified.value === "YES" ||
   Tverified.value === "Yes"
 ){
-    TBox.style.pointerEvents="auto"
+    TCheckbox.style.pointerEvents="auto"
   }else
   {
-    TBox.style.pointerEvents="none"
+    
     alert("please complete the adb configuration for android first *")
   }
 })

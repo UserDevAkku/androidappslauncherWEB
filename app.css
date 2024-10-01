@@ -428,6 +428,7 @@ input[type="checkbox"]:checked{
   font-size: 14px;
 }
 
+
 /* animation on requirements completed on requirements box*/
 @keyframes reqBox {
   0%{
@@ -455,4 +456,13 @@ input[type="checkbox"]:checked{
     color:  blue;
     transform: translateX(-5px);
   }
+}
+.platformtool-checkboxes{
+  pointer-events: none;
+}
+.adbconnection-checkboxes{
+  pointer-events: none;
+}
+.termuxadbconnection-checkboxes{
+  pointer-events: none;
 }
