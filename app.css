@@ -106,6 +106,7 @@ input[type="checkbox"]{
 }
 input[type+"checkbox"]:checked{
   border: none;
+  accent-color: #32cd32;
 }
 /* boxes */
 .app-requirements-box {
