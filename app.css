@@ -26,7 +26,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: aqua;
+  background-color:#585858;
   text-transform: uppercase;
   padding: 8px;
   font-size: clamp(1.2rem, 6vw, 4rem);
@@ -204,7 +204,7 @@ input[type+"checkbox"]:checked{
 /* titles */
 .requirements-title {
   color: black;
-  font-weight: lighter;
+  font-weight:bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
@@ -215,7 +215,7 @@ input[type+"checkbox"]:checked{
 }
 .platformtool-title {
   color: black;
-  font-weight: lighter;
+  font-weight:bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
@@ -225,7 +225,7 @@ input[type+"checkbox"]:checked{
   font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .adbconnection-title {
   color: black;
-  font-weight: lighter;
+  font-weight:bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
@@ -236,7 +236,7 @@ input[type+"checkbox"]:checked{
 }
 .termuxadbconnection-title {
   color: black;
-  font-weight: lighter;
+  font-weight:bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
