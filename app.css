@@ -100,12 +100,14 @@ header {
 }
 input[type="checkbox"]{
     width: 20px;
+    outline: none;
     height: 20px;
     border: none;
    margin: 5px 0 5px 50px;
 }
 input[type+"checkbox"]:checked{
   border: none;
+  outline: none;
   accent-color: #32cd32;
 }
 /* boxes */
