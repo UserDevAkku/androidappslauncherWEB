@@ -442,18 +442,17 @@ input[type="checkbox"]:checked{
 }
 @keyframes Status {
   0%{
-    color:  #008000;
+    color:  blue;
     transform: translateX(-5px);
-    letter-spacing: 1px;
+
   }
   50%{
-    color:  #008000;
+    color:  blue;
     transform: translateX(5px);
-    letter-spacing: 1px;
+
   }
   100%{
-    color:  #008000;
+    color:  blue;
     transform: translateX(-5px);
-    letter-spacing: 1px;
   }
 }

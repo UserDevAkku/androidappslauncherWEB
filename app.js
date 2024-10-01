@@ -12,120 +12,150 @@ const reqCompleted = () => {
     sdk.checked
   ) {
     Rstatus.innerHTML = "requirements completed";
-    reqBox.style.backgroundColor="#ccffcc"
-    Rstatus.style.display="block"
-    Rstatus.style.animation="Status 555ms ease-in-out infinite"
-    reqBox.style.boxShadow=" 0 0 12px 1px #32cd32";
+    reqBox.style.backgroundColor = "#ccffcc";
+    Rstatus.style.display = "block";
+    Rstatus.style.animation = "Status 555ms ease-in-out infinite";
+    reqBox.style.border = "2px dotted green";
   } else {
     Rstatus.innerText = "";
-    reqBox.style.boxShadow =
-      " -3px 0 5px 0px #ccc inset, 3px 0 5px 0px # inset,0px -3px 5px 0px #32cd32 inset, 0 3px 5px 0px #32cd32 inset";
+    reqBox.style.boxShadow = "0 0 12px 1px #000";
   }
 };
 // requirements checkboxes :- GREEN CHECKED BOX
 reqCheckbox.forEach((reqCheckbox) => {
   reqCheckbox.addEventListener("click", () => {
-    reqCheckbox.style.accentColor="#32cd32"
-     reqCheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
+    reqCheckbox.style.accentColor = "green";
+    reqCheckbox.style.boxShadow = "0 0 0 2px green inset";
     reqCompleted();
   });
 });
 
-
-
 // **                                       PLATFORMTOOL                     **//
-let plBox=document.querySelector(".app-platformtool-box");
+let plBox = document.querySelector(".app-platformtool-box");
 let plCheckbox = document.querySelectorAll(".platformtool-checkboxes");
-let Pstatus=document.querySelector("#P-status")
-plinstalled=()=>{
-  if (
-    download.checked &&
-    extract.checked &&
-    copy.checked &&
-    cdrive.checked &&
-    paste.checked &&
-    cmd.checked && 
-    adb.checked
-  ) {
-    Pstatus.innerHTML = "platform installed";
-    plBox.style.backgroundColor="#ccffcc"
-    Pstatus.style.display="block"
-    Pstatus.style.animation="Status 555ms ease-in-out infinite"
-    plBox.style.boxShadow=" 0 0 12px 1px #32cd32";
-  } else {
-    Pstatus.innerText = "";
-    plBox.style.boxShadow =
-      " -3px 0 5px 0px #ccc inset, 3px 0 5px 0px # inset,0px -3px 5px 0px #32cd32 inset, 0 3px 5px 0px #32cd32 inset";
-  }
-};
-// platformtool checkboxes :- GREEN CHECKED BOX
+let Pstatus = document.querySelector("#P-status");
+let Pverified = document.querySelector(".platformtool-verified");
+
+//**####**//
 plCheckbox.forEach((plCheckbox) => {
   plCheckbox.addEventListener("click", () => {
-    plCheckbox.style.accentColor = "#32cd32";
-    plCheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
-    plinstalled();
+    plCheckbox.style.accentColor = "green";
+    plCheckbox.style.boxShadow = "0 0 0 2px green inset";
   });
 });
+//**####**//
+Pverified.addEventListener("input", () => {
+  if (
+    (download.checked &&
+      extract.checked &&
+      copy.checked &&
+      cdrive.checked &&
+      paste.checked &&
+      cmd.checked &&
+      adb.checked &&
+      Pverified.value === "yes") ||
+    Pverified.value === "YES" ||
+    Pverified.value === "Yes"
+  ) {
+    Pstatus.innerHTML = "platformtool installed";
+    plBox.style.backgroundColor = "#ccffcc";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+    plBox.style.border = "2px dotted green";
+  } else {
+    Pstatus.innerHTML = "";
+    Pstatus.style.display = "none";
+    Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+    plBox.style.border = "none";
+    plBox.style.backgroundColor = "#ffffff";
 
-
-
+  }
+});
+//**####**//
 
 //*                    CONFIGURATION FOR ANDROID                    *//
 
-
-let ABox=document.querySelector(".app-adbconnection-box");
+let ABox = document.querySelector(".app-adbconnection-box");
 let ACheckbox = document.querySelectorAll(".adbconnection-checkboxes");
-let Astatus=document.querySelector("#A-status");
-let Averified=document.querySelector(".Aadbconnection-verified")
+let Astatus = document.querySelector("#A-status");
+let Averified = document.querySelector(".Aadbconnection-verified");
 
-ACheckbox.forEach((adbTCheckbox) => {
+//**####**//
+ACheckbox.forEach((ACheckbox) => {
   ACheckbox.addEventListener("click", () => {
-    ACheckbox.style.accentColor = "#32cd32";
-    ACheckbox.style.boxShadow="0 0 0 2px #32cd32 inset"
+    ACheckbox.style.accentColor = "green";
+    ACheckbox.style.boxShadow = "0 0 0 2px green inset";
   });
 });
-  
-  Averified.addEventListener("input", () => {
-    if(settings.checked && miuibuild.checked && searchdeveloperoption.checked && opendeveloperoption.checked && allowforusb.checked && datacable.checked && allowforphone.checked && Acmd.checked && Aadbdevices.checked && Averified.value ==="yes"|| Averified.value ==="YES"  || Averified.value ==="Yes" ){
-      ABox.style.backgroundColor="#32cd32"
-    }else{
-       ABox.style.backgroundColor="#ffffff"
-    }
-  });
+//**####**//
+Averified.addEventListener("input", () => {
+  if (
+    (settings.checked &&
+      miuibuild.checked &&
+      searchdeveloperoption.checked &&
+      opendeveloperoption.checked &&
+      allowforusb.checked &&
+      datacable.checked &&
+      allowforphone.checked &&
+      Acmd.checked &&
+      Aadbdevices.checked &&
+      Averified.value === "yes") ||
+    Averified.value === "YES" ||
+    Averified.value === "Yes"
+  ) {
+    Astatus.innerHTML = "adb configured for android";
+    ABox.style.backgroundColor = "#ccffcc";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "Status 555ms ease-in-out infinite";
+    ABox.style.border = "2px dotted green";
+  } else {
+    Astatus.innerHTML = "";
+    Astatus.style.display = "none";
+    Astatus.style.animation = "Status 555ms ease-in-out infinite";
+    ABox.style.border = "none";
+    ABox.style.backgroundColor = "#ffffff";}
+});
+//**####**//
 
 
+//*                    CONFIGURATION FOR TERMUX                    *//
+let TBox = document.querySelector(".app-termuxadbconnection-box");
+let TCheckbox = document.querySelectorAll(".termuxadbconnection-checkboxes");
+let Tstatus = document.querySelector("#T-status");
+let Tverified = document.querySelector(".termuxadbconnection-verified");
 
-
-// termuxadbconnection checkboxes :- GREEN CHECKED BOX
-let TCheckbox = document.querySelectorAll(
-  ".termuxadbconnection-checkboxes"
-);
-
-TCheckbox.forEach((adbTCheckbox) => {
+//**####**//
+TCheckbox.forEach((TCheckbox) => {
   TCheckbox.addEventListener("click", () => {
-    TCheckbox.style.accentColor = "#32cd32";
-     TCheckbox.style.boxShadow="0 0 0 3px #32cd32 inset"
+    TCheckbox.style.accentColor = "green";
+    TCheckbox.style.boxShadow = "0 0 0 2px green inset";
   });
 });
-
-
-
-
-
-// // platformtool box :- called plBoxlocked function
-// const plBoxlocked=()=>{
-//   if (
-//     !phone.checked ||
-//     !pc.checked ||
-//     !usb.checked ||
-//     !termux.checked ||
-//     !sdk.checked
-//   ){
-//     // plBox.style.pointerEvents="auto";
-//     alert("complete the requirements first");
-//   }
-// }
-// // platformtool box :-  platformtool box is locked if requirements are not completed
-// plBox.addEventListener("click",()=>{
-//   plBoxlocked();
-// })
+//**####**//
+Tverified.addEventListener("input", () => {
+  if (
+    (VAadbdevice.checked &&
+      tcp.checked &&
+      T_install.checked &&
+      T_pkgs1.checked &&
+      T_pkgs2.checked &&
+      IP_find.checked &&
+      IP_noted.checked &&
+      IP_enter.checked &&
+      Tverified.value === "yes") ||
+    Tverified.value === "YES" ||
+    Tverified.value === "Yes"
+  ) {
+    Tstatus.innerHTML = "adb configured for termux";
+    TBox.style.backgroundColor = "#ccffcc";
+   Tstatus.style.display="block"
+    Tstatus.style.animation = "Status 555ms ease-in-out infinite";
+    TBox.style.border = "2px dotted green";
+  } else {
+    Tstatus.innerHTML = "";
+    Tstatus.style.display = "none";
+    Tstatus.style.animation = "Status 555ms ease-in-out infinite";
+    TBox.style.border = "none";
+    TBox.style.backgroundColor = "#ffffff";}
+});
+//**####**//
