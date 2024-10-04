@@ -66,34 +66,6 @@ Pverified.addEventListener("input", () => {
   }
 });
 //**####**//
-plBox.addEventListener("mouseover",()=>{
-  if( phone.checked &&
-    pc.checked &&
-    usb.checked &&
-    termux.checked &&
-    sdk.checked){
-      download.style.pointerEvents="auto"
-      extract.style.pointerEvents="auto"
-      copy.style.pointerEvents="auto"
-      cdrive.style.pointerEvents="auto"
-       paste.style.pointerEvents="auto"
-      cmd.style.pointerEvents="auto"
-      adb.style.pointerEvents="auto"
-      Pverified.style.pointerEvents="auto"
-    }
-    else
-    {
-      download.style.pointerEvents="none"
-      extract.style.pointerEvents="none"
-      copy.style.pointerEvents="none"
-      cdrive.style.pointerEvents="none"
-       paste.style.pointerEvents="none"
-      cmd.style.pointerEvents="none"
-      adb.style.pointerEvents="none"
-      Pverified.style.pointerEvents="none"
-      alert("please complete all the requirements first*")
-    }
-})
 //**####**//
 
 //*                    CONFIGURATION FOR ANDROID                    *//

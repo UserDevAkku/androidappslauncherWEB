@@ -273,7 +273,7 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(0.96rem, 1.8vw, 2.13rem);
+  font-size: clamp(1rem, 2vw, 2.29rem);
   text-transform: lowercase;
  
 }
