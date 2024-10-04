@@ -37,18 +37,17 @@ let Pstatus = document.querySelector("#P-status");
 let Pverified = document.querySelector(".platformtool-verified");
 //**####**//
 Pverified.addEventListener("input", () => {
-  if (
-    (download.checked &&
+  if (download.checked &&
       extract.checked &&
       copy.checked &&
       cdrive.checked &&
       paste.checked &&
       cmd.checked &&
       adb.checked &&
-      Pverified.value === "yes") ||
+      Pverified.value === "yes" ||
     Pverified.value === "YES" ||
     Pverified.value === "Yes"
-  ) {
+  ){
     Pstatus.innerHTML = "platformtool installed";
     plBox.style.backgroundColor = "#ccffcc";
     Pstatus.style.display = "block";
@@ -73,11 +72,26 @@ plBox.addEventListener("mouseover",()=>{
     usb.checked &&
     termux.checked &&
     sdk.checked){
-      plCheckbox.style.pointerEvents="auto"
+      download.style.pointerEvents="auto"
+      extract.style.pointerEvents="auto"
+      copy.style.pointerEvents="auto"
+      cdrive.style.pointerEvents="auto"
+       paste.style.pointerEvents="auto"
+      cmd.style.pointerEvents="auto"
+      adb.style.pointerEvents="auto"
+      Pverified.style.pointerEvents="auto"
     }
     else
     {
-      alert("requirements are incomplete")
+      download.style.pointerEvents="none"
+      extract.style.pointerEvents="none"
+      copy.style.pointerEvents="none"
+      cdrive.style.pointerEvents="none"
+       paste.style.pointerEvents="none"
+      cmd.style.pointerEvents="none"
+      adb.style.pointerEvents="none"
+      Pverified.style.pointerEvents="none"
+      alert("please complete all the requirements first*")
     }
 })
 //**####**//
@@ -90,13 +104,24 @@ let Astatus = document.querySelector("#A-status");
 let Averified = document.querySelector(".Aadbconnection-verified");
 
 //**####**//
-ACheckbox.forEach((ACheckbox) => {
-  ACheckbox.addEventListener("click", () => {
+  ABox.addEventListener("click", () => {
+    if(download.checked &&
+      extract.checked &&
+      copy.checked &&
+      cdrive.checked &&
+      paste.checked &&
+      cmd.checked &&
+      adb.checked &&
+      Pverified.value === "yes" || Pverified.value==="Yes" || Pverified.value==="YES"){
+      PCheckbox.style.pointerEvents="auto"
+    }else
+    {
+      alert("please install sdk platformtool first*")
+    }
   });
-});
 //**####**//
 Averified.addEventListener("input", () => {
-  if (
+  if
     (settings.checked &&
       miuibuild.checked &&
       searchdeveloperoption.checked &&
@@ -106,7 +131,7 @@ Averified.addEventListener("input", () => {
       allowforphone.checked &&
       Acmd.checked &&
       Aadbdevices.checked &&
-      Averified.value === "yes") ||
+      Averified.value === "yes" ||
     Averified.value === "YES" ||
     Averified.value === "Yes"
   ) {
@@ -129,27 +154,6 @@ Averified.addEventListener("input", () => {
 
 });
 //**####**//
-ABox.addEventListener("mouseover",()=>{
-  if (
-    (settings.checked &&
-      miuibuild.checked &&
-      searchdeveloperoption.checked &&
-      opendeveloperoption.checked &&
-      allowforusb.checked &&
-      datacable.checked &&
-      allowforphone.checked &&
-      Acmd.checked &&
-      Aadbdevices.checked &&
-      Averified.value === "yes") ||
-    Averified.value === "YES" ||
-    Averified.value === "Yes"
-  ){
-      ACheckbox.style.pointerEvents="auto"
-    }else
-    {
-      alert("please install sdk platformtool first*")
-    }
-})
 //**####**//
 
 //*                    CONFIGURATION FOR TERMUX                    *//
@@ -158,11 +162,6 @@ let TCheckbox = document.querySelectorAll(".termuxadbconnection-checkboxes");
 let Tstatus = document.querySelector("#T-status");
 let Tverified = document.querySelector(".termuxadbconnection-verified");
 
-//**####**//
-TCheckbox.forEach((TCheckbox) => {
-  TCheckbox.addEventListener("click", () => {
-  });
-});
 //**####**//
 Tverified.addEventListener("input", () => {
   if (
@@ -196,23 +195,26 @@ Tverified.addEventListener("input", () => {
   }
 });
 //**####**//
-TBox.addEventListener("mouseover",()=>{
-if (VAadbdevice.checked &&
-    tcp.checked &&
-    T_install.checked &&
-    T_pkgs1.checked &&
-    T_pkgs2.checked &&
-    IP_find.checked &&
-    IP_noted.checked &&
-    IP_enter.checked &&
-    Tverified.value === "yes"||
-  Tverified.value === "YES" ||
-  Tverified.value === "Yes"
-){
-    TCheckbox.style.pointerEvents="auto"
-  }else
-  {
-    
-    alert("please complete the adb configuration for android first *")
-  }
+TCheckbox.forEach((TCheckbox)=>{
+  TCheckbox.addEventListener("click",()=>{
+    if (settings.checked &&
+      miuibuild.checked &&
+      searchdeveloperoption.checked &&
+      opendeveloperoption.checked &&
+      allowforusb.checked &&
+      datacable.checked &&
+      allowforphone.checked &&
+      Acmd.checked &&
+      Aadbdevices.checked &&
+      Averified.value === "yes" ||
+    Averified.value === "YES" ||
+    Averified.value === "Yes"
+  ){
+      TCheckbox.style.pointerEvents="auto"
+    }else
+    {
+      
+      alert("please complete the adb configuration for android first *")
+    }
+  })
 })

@@ -457,12 +457,3 @@ input[type="checkbox"]:checked{
     transform: translateX(-5px);
   }
 }
-.platformtool-checkboxes{
-  pointer-events: none;
-}
-.adbconnection-checkboxes{
-  pointer-events: none;
-}
-.termuxadbconnection-checkboxes{
-  pointer-events: none;
-}
