@@ -113,7 +113,7 @@ input[type="checkbox"]:checked{
 /* boxes */
 .app-requirements-box {
   width: 90%;
-  max-width: clamp(90%, 1vw, 90%);
+  max-width: clamp(40%, 1vw, 90%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -273,7 +273,7 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(1.2rem, 1.8vw, 2.13rem);
+  font-size: clamp(1.2rem, 2.1vw, 2.13rem);
   text-transform: lowercase;
  
 }
