@@ -120,7 +120,7 @@ input[type="checkbox"]:checked{
 /* boxes */
 .app-requirements-box {
   width: 90%;
-  max-width: clamp(45%, 1vw, 60%);
+  max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
