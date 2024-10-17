@@ -119,7 +119,7 @@ input[type="checkbox"]:checked{
 }
 /* boxes */
 .app-requirements-box {
-  width: 90%;
+  width: 95%;
   max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ input[type="checkbox"]:checked{
   margin-top: clamp(1rem,2.2vw,6rem);
 }
 .app-platformtool-box {
-  width: 90%;
+  width: 95%;
   max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ input[type="checkbox"]:checked{
   margin-top: clamp(1rem,2.2vw,6rem);
 }
 .app-adbconnection-box {
-  width: 90%;
+  width: 95%;
   max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
@@ -149,7 +149,7 @@ input[type="checkbox"]:checked{
   margin-top: clamp(1rem,2.2vw,6rem);
 }
 .app-termuxadbconnection-box {
-  width: 90%;
+  width: 95%;
   max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
