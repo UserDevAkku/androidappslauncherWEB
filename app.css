@@ -130,7 +130,7 @@ input[type="checkbox"]:checked{
 }
 .app-platformtool-box {
   width: 90%;
-  max-width: clamp(45%, 1vw, 60%);
+  max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -140,7 +140,7 @@ input[type="checkbox"]:checked{
 }
 .app-adbconnection-box {
   width: 90%;
-  max-width: clamp(45%, 1vw, 60%);
+  max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -150,7 +150,7 @@ input[type="checkbox"]:checked{
 }
 .app-termuxadbconnection-box {
   width: 90%;
-  max-width: clamp(45%, 1vw, 60%);
+  max-width: clamp(100%, 1vw, 60%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
