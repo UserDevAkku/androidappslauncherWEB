@@ -301,25 +301,25 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(1.1rem, 2.5vw, 4rem);
+  font-size: clamp(1rem, 4.2vw, 6rem);
   text-transform: lowercase;
  
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(.99rem, 2.5vw, 4rem);
+  font-size: clamp(.97rem, 4.2vw, 6rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(.93rem, 2.5vw, 4rem);
+  font-size: clamp(.92rem, 4vw, 6rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.85rem, 2.5vw, 4rem);
+  font-size: clamp(.84rem, 4vw, 6rem);
   text-transform: lowercase;
   padding: 10px;
 }
