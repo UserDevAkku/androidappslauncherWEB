@@ -52,7 +52,6 @@ header {
 }
 .aal {
   animation: aal 4s ease-in-out 0s infinite; /* Adjust the duration and easing */
-  padding-left: clamp(1rem, 3vw, 4rem);
 }
 .aal-2 {
   animation: aal-2 4s ease-in-out infinite; /* Adjust the duration and easing */
