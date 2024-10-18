@@ -34,7 +34,7 @@ header {
   background-color:#585858;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(.9rem, 5.8vw, 8rem);
+  font-size: clamp(.9rem, 5.97vw, 8rem);
 }
 @keyframes aal {
   0% {
@@ -79,7 +79,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(.7rem, 3.7vw, 6rem);
+  font-size: clamp(.7rem, 3.84vw, 6rem);
   animation: app-about 1s ease-in-out infinite;
 }
 .note {
