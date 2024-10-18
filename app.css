@@ -34,7 +34,7 @@ header {
   background-color:#585858;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(1rem, 6.6vw, 9rem);
+  font-size: clamp(1rem, 6.49vw, 9rem);
 }
 @keyframes aal {
   0% {
@@ -52,6 +52,7 @@ header {
 }
 .aal {
   animation: aal 4s ease-in-out 0s infinite; /* Adjust the duration and easing */
+  padding-left: clamp(1rem, 3vw, 4rem);
 }
 .aal-2 {
   animation: aal-2 4s ease-in-out infinite; /* Adjust the duration and easing */
