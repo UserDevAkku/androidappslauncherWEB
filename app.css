@@ -301,13 +301,13 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(.7rem, 3.9vw, 7rem);
+  font-size: clamp(.7rem, 4vw, 7rem);
   text-transform: lowercase;
  
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(.7rem, 3.8vw, 7rem);
+  font-size: clamp(.7rem, 3.87vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
@@ -319,7 +319,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 4.6vw, 7rem);
+  font-size: clamp(.7rem, 3.7vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
