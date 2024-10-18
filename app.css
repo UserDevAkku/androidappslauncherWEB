@@ -301,19 +301,19 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(.95rem, 4vw, 6rem);
+  font-size: clamp(.78rem, 6vw, 6rem);
   text-transform: lowercase;
  
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(.933rem, 3.5vw, 6rem);
+  font-size: clamp(.7rem, 3.5vw, 6rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(.799rem, 3.6vw, 6rem);
+  font-size: clamp(.6rem, 3.66vw, 6rem);
   text-transform: lowercase;
   padding: 10px;
 }
