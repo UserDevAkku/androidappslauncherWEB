@@ -12,105 +12,284 @@
   </head>
   <body>
     <header>
-      <div class="app-name"><span><span>ㅤ<i class="fa-solid fa-a aal"></i></span><span class="aal-2">ndroidㅤ</span><span>ㅤ<i class="fa-solid fa-a aal"></i></span><span class="aal-2">ppsㅤ</span><span>ㅤ<i class="fa-solid fa-l aal"></i></span><span class="aal-2">auncherㅤ</span></span></div>
+      <div class="app-name">
+        <span
+          ><span><i class="fa-solid fa-a aal"></i></span
+          ><span class="aal-2">ndroidㅤ</span
+          ><span><i class="fa-solid fa-a aal"></i></span
+          ><span class="aal-2">ppsㅤ</span
+          ><span><i class="fa-solid fa-l aal"></i></span
+          ><span class="aal-2">auncher</span></span
+        >
+      </div>
     </header>
     <div class="app-about">
       <label><span>information about application</span></label>
     </div>
     <div class="note">
-      <label><span>*** all commands will be written in small letters ***</span></label>
+      <label
+        ><span
+          >*** all commands will be written in small letters ***</span
+        ></label
+      >
     </div>
     <div class="app-requirements">
       <div class="app-requirements-box">
-        <label class="requirements-title"><span>requirements for application</span></label>
-        <label id="android" class="requirements"><span>1.do you have an charged android phone?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="phone">
-        <label id="android" class="requirements"><span>2.do you have a laptop or computer?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="pc">
-        <label id="android" class="requirements"><span>3.do you have a usb data cable?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="usb">
-        <label id="android" class="requirements"><span>4.download termux application on android?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="termux">
-        <a href="https://f-droid.org/repo/com.termux_118.apk" class="link">download</a>
-        <label id="android" class="requirements"><span>5.download sdk platform tools on pc?</span></label>
-        <input type="checkbox" class="requirements-checkboxes" id="sdk">
-        <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="link">download</a>
+        <label class="requirements-title"
+          ><span>requirements for application</span></label
+        >
+        <label id="android" class="requirements"
+          ><span>1.do you have an charged android phone?</span></label
+        >
+        <input type="checkbox" class="requirements-checkboxes" id="phone" />
+        <label id="android" class="requirements"
+          ><span>2.do you have a laptop or computer?</span></label
+        >
+        <input type="checkbox" class="requirements-checkboxes" id="pc" />
+        <label id="android" class="requirements"
+          ><span>3.do you have a usb data cable?</span></label
+        >
+        <input type="checkbox" class="requirements-checkboxes" id="usb" />
+        <label id="android" class="requirements"
+          ><span>4.download termux application on android?</span></label
+        >
+        <input type="checkbox" class="requirements-checkboxes" id="termux" />
+        <a href="https://f-droid.org/repo/com.termux_118.apk" class="link"
+          >download</a
+        >
+        <label id="android" class="requirements"
+          ><span>5.download sdk platform tools on pc?</span></label
+        >
+        <input type="checkbox" class="requirements-checkboxes" id="sdk" />
+        <a
+          href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
+          class="link"
+          >download</a
+        >
         <p class="requirements-completed"><span id="R-status"></span></p>
       </div>
     </div>
     <div class="app-platformtool">
-    <div class="app-platformtool-box">
-      <label class="platformtool-title">platform tool configuration</label>
-      <label class="platformtool"><span>1.have you downloaded the sdk platform tool?</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="download">
-      <label class="platformtool"><span>2.extract the sdk platform tool zip file</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="extract">
-      <label class="platformtool"><span>3.copy the extracted platform tool folder</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="copy">
-      <label class="platformtool"><span>4.go to c:drive & find program files folder</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="cdrive">
-      <label class="platformtool"><span>5.paste that folder into program files folder</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="paste">
-      <label class="platformtool"><span>6.open cmd  (command prompt) from search bar</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="cmd">
-      <label class="platformtool"><span>7.enter this command adb --version in cmd</span></label>
-      <input type="checkbox" class="platformtool-checkboxes" id="adb">
-      <label class="platformtool"><span>8.did you see adb version (Version 35.0.2)?</span></label>
-      <label class="platformtool-verification"><input type="text" class="platformtool-verified" placeholder="YES/NO"></label>
-      <p class="platformtool-installed"><span id="P-status"></span></p>
-    </div>
+      <div class="app-platformtool-box">
+        <label class="platformtool-title">platform tool configuration</label>
+        <label class="platformtool"
+          ><span>1.have you downloaded the sdk platform tool?</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="download" />
+        <label class="platformtool"
+          ><span>2.extract the sdk platform tool zip file</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="extract" />
+        <label class="platformtool"
+          ><span>3.copy the extracted platform tool folder</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="copy" />
+        <label class="platformtool"
+          ><span>4.go to c:drive & find program files folder</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="cdrive" />
+        <label class="platformtool"
+          ><span>5.paste that folder into program files folder</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="paste" />
+        <label class="platformtool"
+          ><span>6.open cmd (command prompt) from search bar</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="cmd" />
+        <label class="platformtool"
+          ><span>7.enter this command adb --version in cmd</span></label
+        >
+        <input type="checkbox" class="platformtool-checkboxes" id="adb" />
+        <label class="platformtool"
+          ><span>8.did you see adb version (Version 35.0.2)?</span></label
+        >
+        <label class="platformtool-verification"
+          ><input
+            type="text"
+            class="platformtool-verified"
+            placeholder="YES/NO"
+        /></label>
+        <p class="platformtool-installed"><span id="P-status"></span></p>
+      </div>
     </div>
     <div class="app-adbconnection">
-    <div class="app-adbconnection-box">
-      <label class="adbconnection-title"><span>adb configuration for android</span></label>
-      <label class="adbconnection"><span>1.go to about phone in phone's settings carefully</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="settings">
-      <label class="adbconnection"><span>2.tap 7 times on buildnumber or miui version</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="miuibuild">
-      <label class="adbconnection"><span>3.type developer option on search bar in settings</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="searchdeveloperoption">
-      <label class="adbconnection"><span>4.open it and locate for usb debugging option</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="opendeveloperoption">
-      <label class="adbconnection"><span>5.enable it by giving it allow permissions simply</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="allowforusb">
-      <label class="adbconnection"><span>6.connect your phone with laptop via usb cable</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="datacable">
-      <label class="adbconnection"><span>7.give it allow permission to connect it with pc</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="allowforphone">
-      <label class="adbconnection"><span>8.press Window key + S and search cmd and open it</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="Acmd">
-      <label class="adbconnection"><span>9.simply enter this command adb devices in cmd</span></label>
-      <input type="checkbox" class="adbconnection-checkboxes" id="Aadbdevices">
-      <label class="adbconnection"><span>10.did you see your device ex:-(4fd5g3d2 device)?</span></label>
-      <label class="adbconnection-verification"><input type="text" class="Aadbconnection-verified" placeholder="YES/NO" value=""></label>
-      <p class="adbconnection-connected"><span id="A-status"></span></p>
-    </div>
+      <div class="app-adbconnection-box">
+        <label class="adbconnection-title"
+          ><span>adb configuration for android</span></label
+        >
+        <label class="adbconnection"
+          ><span>1.go to about phone in phone's settings carefully</span></label
+        >
+        <input type="checkbox" class="adbconnection-checkboxes" id="settings" />
+        <label class="adbconnection"
+          ><span>2.tap 7 times on buildnumber or miui version</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="miuibuild"
+        />
+        <label class="adbconnection"
+          ><span>3.type developer option on search bar in settings</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="searchdeveloperoption"
+        />
+        <label class="adbconnection"
+          ><span>4.open it and locate for usb debugging option</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="opendeveloperoption"
+        />
+        <label class="adbconnection"
+          ><span>5.enable it by giving it allow permissions simply</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="allowforusb"
+        />
+        <label class="adbconnection"
+          ><span>6.connect your phone with laptop via usb cable</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="datacable"
+        />
+        <label class="adbconnection"
+          ><span>7.give it allow permission to connect it with pc</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="allowforphone"
+        />
+        <label class="adbconnection"
+          ><span>8.press Window key + S and search cmd and open it</span></label
+        >
+        <input type="checkbox" class="adbconnection-checkboxes" id="Acmd" />
+        <label class="adbconnection"
+          ><span>9.simply enter this command adb devices in cmd</span></label
+        >
+        <input
+          type="checkbox"
+          class="adbconnection-checkboxes"
+          id="Aadbdevices"
+        />
+        <label class="adbconnection"
+          ><span>10.did you see your device ex:-(4fd5g3d2 device)?</span></label
+        >
+        <label class="adbconnection-verification"
+          ><input
+            type="text"
+            class="Aadbconnection-verified"
+            placeholder="YES/NO"
+            value=""
+        /></label>
+        <p class="adbconnection-connected"><span id="A-status"></span></p>
+      </div>
     </div>
     <div class="app-termuxadbconnection">
       <div class="app-termuxadbconnection-box">
-        <label class="termuxadbconnection-title"><span>adb configuration for termux</span></label>
-      <label class="termuxadbconnection"><span>1.have you configured adb for android in previous step?</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="VAadbdevice">
-      <label class="termuxadbconnection"><span>2.enter this command adb tcpip 5555 on cmd to connect</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="tcp">
-      <label class="termuxadbconnection"><span>3.remove cable and install termux app and open it</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="T_install">
-      <label class="termuxadbconnection"><span>4.enter this command pkg update && pkg upgrade -y </span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="T_pkgs1">
-      <label class="termuxadbconnection"><span>5.enter this command pkg install android-tools -y</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="T_pkgs2">
-      <label class="termuxadbconnection"><span>6.now, we need ip address to configure adb for termux</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="IP_find">
-      <label class="termuxadbconnection"><span>8.note your ip address from connected wifi network</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="IP_noted">
-      <label class="termuxadbconnection"><span>9.enter this command adb connect ip address in termux</span></label>
-      <input type="checkbox" class="termuxadbconnection-checkboxes" id="IP_enter">
-      <label class="termuxadbconnection"><span>10.give it allow permission to connect adb with android</span></label>
-      <label class="termuxadbconnection-verification"><input type="text" class="termuxadbconnection-verified" placeholder="YES/NO"></label>
-      <p class="termuxadbconnection-connected"><span id="T-status"></span></p>
+        <label class="termuxadbconnection-title"
+          ><span>adb configuration for termux</span></label
+        >
+        <label class="termuxadbconnection"
+          ><span
+            >1.have you configured adb for android in previous step?</span
+          ></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="VAadbdevice"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >2.enter this command adb tcpip 5555 on cmd to connect</span
+          ></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="tcp"
+        />
+        <label class="termuxadbconnection"
+          ><span>3.remove cable and install termux app and open it</span></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="T_install"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >4.enter this command pkg update && pkg upgrade -y
+          </span></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="T_pkgs1"
+        />
+        <label class="termuxadbconnection"
+          ><span>5.enter this command pkg install android-tools -y</span></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="T_pkgs2"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >6.now, we need ip address to configure adb for termux</span
+          ></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="IP_find"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >8.note your ip address from connected wifi network</span
+          ></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="IP_noted"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >9.enter this command adb connect ip address in termux</span
+          ></label
+        >
+        <input
+          type="checkbox"
+          class="termuxadbconnection-checkboxes"
+          id="IP_enter"
+        />
+        <label class="termuxadbconnection"
+          ><span
+            >10.give it allow permission to connect adb with android</span
+          ></label
+        >
+        <label class="termuxadbconnection-verification"
+          ><input
+            type="text"
+            class="termuxadbconnection-verified"
+            placeholder="YES/NO"
+        /></label>
+        <p class="termuxadbconnection-connected"><span id="T-status"></span></p>
       </div>
     </div>
-    <br>
+    <br />
     <script src="app.js"></script>
   </body>
 </html>
