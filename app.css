@@ -313,13 +313,13 @@ input[type="checkbox"]:checked{
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.6vw, 7rem);
+  font-size: clamp(.7rem, 3.68vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.17vw, 7rem);
+  font-size: clamp(.7rem, 3.19vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
