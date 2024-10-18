@@ -301,7 +301,7 @@ input[type="checkbox"]:checked{
 .requirements span {
   text-align: left;
   padding: 10px;
-  font-size: clamp(.7rem, 4.5vw, 7rem);
+  font-size: clamp(.7rem, 4.17vw, 7rem);
   text-transform: lowercase;
  
 }
@@ -313,13 +313,13 @@ input[type="checkbox"]:checked{
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.4vw, 7rem);
+  font-size: clamp(.7rem, 3.6vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.1vw, 7rem);
+  font-size: clamp(.7rem, 3.17vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
