@@ -79,7 +79,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2vw, 8rem);
+  font-size: clamp(4rem, 1vw, 4rem);
   animation: app-about 1s ease-in-out infinite;
 }
 .note {
