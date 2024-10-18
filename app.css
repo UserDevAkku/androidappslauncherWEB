@@ -319,7 +319,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.19vw, 7rem);
+  font-size: clamp(.7rem, 3.2vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
