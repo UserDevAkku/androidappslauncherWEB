@@ -88,7 +88,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.6rem, 4.1vw, 7rem);
+  font-size: clamp(.6rem, 3.8vw, 7rem);
  color: red;
  font-weight: bolder;
 }
