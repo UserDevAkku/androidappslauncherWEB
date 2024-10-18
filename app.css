@@ -34,7 +34,7 @@ header {
   background-color:#585858;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(.4rem, 2vw, 4rem);
+  font-size: clamp(.6rem, 5vw, 6rem);
 }
 @keyframes aal {
   0% {
@@ -79,7 +79,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(.4, 3vw, 4rem);
+  font-size: clamp(.6, 5vw, 6rem);
   animation: app-about 1s ease-in-out infinite;
 }
 .note {
@@ -88,7 +88,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.6rem, 2vw, 6rem);
+  font-size: clamp(.6rem, 5vw, 6rem);
  color: red;
  font-weight: bolder;
 }
@@ -180,7 +180,7 @@ input[type="checkbox"]:checked{
 /* verified */
 .platformtool-verified {
   width: 25%;
-  width: clamp(5rem, 2vw, 9rem);
+  width: clamp(5rem, 7vw, 9rem);
   border: none;
   outline: none;
   text-align: center;
@@ -193,7 +193,7 @@ input[type="checkbox"]:checked{
 }
 .Aadbconnection-verified {
   width: 25%;
-  width: clamp(5rem, 2vw, 9rem);
+  width: clamp(5rem, 7vw, 9rem);
   border: none;
   outline: none;
   text-align: center;
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-verified {
   width: 25%;
-  width: clamp(5rem, 2vw, 9rem);
+  width: clamp(5rem, 7vw, 9rem);
   border: none;
   outline: none;
   text-align: center;
