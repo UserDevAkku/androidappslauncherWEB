@@ -34,7 +34,7 @@ header {
   background-color:#585858;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(1rem, 6.8vw, 9rem);
+  font-size: clamp(1rem, 6.5vw, 9rem);
 }
 @keyframes aal {
   0% {
