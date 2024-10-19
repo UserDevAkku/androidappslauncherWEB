@@ -415,42 +415,42 @@ input[type="checkbox"]:checked{
 #R-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #R-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #P-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #P-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #A-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #A-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #T-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 #T-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,2.3vw,5rem);
+  font-size: clamp(.8rem,4vw,6rem);
 }
 
 
