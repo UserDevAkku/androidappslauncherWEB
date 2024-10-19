@@ -180,20 +180,20 @@ input[type="checkbox"]:checked{
 /* verified */
 .platformtool-verified {
   width: 30%;
-  max-width: clamp(15rem, 1vw, 150rem);
+  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
   border-radius: clamp(2%,1vw,5%);
   margin: clamp(.2rem,1vw,2rem);
-  padding-top: clamp(.3rem,.3vw,8rem);
+  padding-top: clamp(.5rem,.4vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  padding-bottom: clamp(.2rem,.3vw,3rem);
+  padding-bottom: clamp(.5rem,.4vw,6rem);
   font-size: clamp(1rem,1.2vw,4rem);
 }
 .Aadbconnection-verified {
-  width: 40%;
-  max-width: clamp(15rem, 1vw, 150rem);
+  width: 30%;
+  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-verified {
   width: 40%;
-  max-width: clamp(15rem, 1vw, 150rem);
+  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
