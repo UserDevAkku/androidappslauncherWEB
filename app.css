@@ -193,7 +193,7 @@ input[type="checkbox"]:checked{
 }
 .Aadbconnection-verified {
   width: 40%;
-  width: clamp(10rem, 10vw, 10rem);
+  width: clamp(100rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-verified {
   width: 40%;
-  width: clamp(10rem, 10vw, 10rem);
+  width: clamp(100rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
