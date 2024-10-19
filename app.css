@@ -179,8 +179,8 @@ input[type="checkbox"]:checked{
 }
 /* verified */
 .platformtool-verified {
-  width: 40%;
-  width: clamp(20rem, 1vw, 150rem);
+  width: 30%;
+  max-width: clamp(15rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
@@ -193,7 +193,7 @@ input[type="checkbox"]:checked{
 }
 .Aadbconnection-verified {
   width: 40%;
-  width: clamp(20rem, 1vw, 150rem);
+  max-width: clamp(15rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-verified {
   width: 40%;
-  width: clamp(20rem, 1vw, 150rem);
+  max-width: clamp(15rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
