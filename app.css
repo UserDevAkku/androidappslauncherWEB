@@ -180,7 +180,7 @@ input[type="checkbox"]:checked{
 /* verified */
 .platformtool-verified {
   width: 40%;
-  width: clamp(10rem, 10vw, 10rem);
+  width: clamp(100rem, 1vw, 150rem);
   border: none;
   outline: none;
   text-align: center;
