@@ -236,7 +236,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 1.5vw, 6rem);
+  font-size: clamp(.9rem, 2.2vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -249,7 +249,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 1.5vw, 6rem);
+  font-size: clamp(.9rem, 2.2vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .adbconnection-title {
@@ -260,7 +260,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 1.5vw, 6rem);
+  font-size: clamp(.9rem, 2.2vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -272,7 +272,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 1.5vw, 6rem);
+  font-size: clamp(.9rem, 2.2vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -280,21 +280,21 @@ input[type="checkbox"]:checked{
 .requirements-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,1.4vw,4rem);
+  font-size: clamp(1rem,2vw,4rem);
 }
 .platformtool-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,1.4vw,4rem);
+  font-size: clamp(1rem,2vw,4rem);
 }
 .adbconnection-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,1.4vw,4rem);
+  font-size: clamp(1rem,2vw,4rem);
 }
 .termuxadbconnection-title::after {
   content: "*";
-  font-size: clamp(1rem,1.4vw,4rem);
+  font-size: clamp(1rem,2vw,4rem);
   color: red;
 }
 /* all boxes labels */
