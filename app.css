@@ -185,10 +185,9 @@ input[type="checkbox"]:checked{
   outline: none;
   text-align: center;
   border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.2rem,1vw,2rem);
-  padding-top: clamp(.5rem,.4vw,6rem);
+  margin: clamp(.4rem,1vw,4rem);
+  padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  padding-bottom: clamp(.5rem,.4vw,6rem);
   font-size: clamp(1rem,1.2vw,4rem);
 }
 .Aadbconnection-verified {
@@ -198,23 +197,21 @@ input[type="checkbox"]:checked{
   outline: none;
   text-align: center;
   border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.2rem,1vw,2rem);
-  padding-top: clamp(.3rem,.3vw,8rem);
+  margin: clamp(.4rem,1vw,4rem);
+  padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  padding-bottom: clamp(.2rem,.3vw,3rem);
   font-size: clamp(1rem,1.2vw,4rem);
 }
 .termuxadbconnection-verified {
-  width: 40%;
+  width: 30%;
   max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
   border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.2rem,1vw,2rem);
-  padding-top: clamp(.3rem,.3vw,8rem);
+  margin: clamp(.4rem,1vw,4rem);
+  padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  padding-bottom: clamp(.2rem,.3vw,3rem);
   font-size: clamp(1rem,1.2vw,4rem);
 }
 .platformtool-verified::placeholder{
