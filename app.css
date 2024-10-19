@@ -180,7 +180,7 @@ input[type="checkbox"]:checked{
 /* verified */
 .platformtool-verified {
   width: 25%;
-  width: clamp(7rem, 2vw, 7rem);
+  width: clamp(7rem, 5vw, 7rem);
   border: none;
   outline: none;
   text-align: center;
@@ -193,7 +193,7 @@ input[type="checkbox"]:checked{
 }
 .Aadbconnection-verified {
   width: 25%;
-  width: clamp(7rem, 2vw, 7rem);
+  width: clamp(7rem, 5vw, 7rem);
   border: none;
   outline: none;
   text-align: center;
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked{
 }
 .termuxadbconnection-verified {
   width: 25%;
-  width: clamp(7rem, 2vw, 7rem);
+  width: clamp(7rem, 5vw, 7rem);
   border: none;
   outline: none;
   text-align: center;
@@ -236,7 +236,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 2.2vw, 6rem);
+  font-size: clamp(.9rem, 3vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -249,7 +249,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 2.2vw, 6rem);
+  font-size: clamp(.9rem, 3vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .adbconnection-title {
@@ -260,7 +260,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 2.2vw, 6rem);
+  font-size: clamp(.9rem, 3vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -272,7 +272,7 @@ input[type="checkbox"]:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 2.2vw, 6rem);
+  font-size: clamp(.9rem, 3vw, 6rem);
   padding-top: clamp(.2rem,.2vw,0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -280,21 +280,21 @@ input[type="checkbox"]:checked{
 .requirements-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,2vw,4rem);
+  font-size: clamp(1rem,5vw,5rem);
 }
 .platformtool-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,2vw,4rem);
+  font-size: clamp(1rem,5vw,5rem);
 }
 .adbconnection-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,2vw,4rem);
+  font-size: clamp(1rem,5vw,5rem);
 }
 .termuxadbconnection-title::after {
   content: "*";
-  font-size: clamp(1rem,2vw,4rem);
+  font-size: clamp(1rem,5vw,5rem);
   color: red;
 }
 /* all boxes labels */
