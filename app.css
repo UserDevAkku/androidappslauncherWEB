@@ -188,7 +188,7 @@ input[type="checkbox"]:checked{
   margin: clamp(.4rem,1vw,4rem);
   padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1rem,2.7vw,4rem);
+  font-size: clamp(1.2rem,4vw,4rem);
 }
 .Aadbconnection-verified {
   width: 30%;
@@ -200,7 +200,7 @@ input[type="checkbox"]:checked{
   margin: clamp(.4rem,1vw,4rem);
   padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1rem,2.7vw,4rem);
+  font-size: clamp(1.2rem,4vw,4rem);
 }
 .termuxadbconnection-verified {
   width: 30%;
@@ -212,16 +212,16 @@ input[type="checkbox"]:checked{
   margin: clamp(.4rem,1vw,4rem);
   padding: clamp(.6rem,3vw,6rem);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1rem,2.7vw,4rem);
+  font-size: clamp(1.2rem,4vw,4rem);
 }
 .platformtool-verified::placeholder{
-  font-size: clamp(1rem,2.8vw,4rem);
+  font-size: clamp(1rem,3vw,4rem);
 }
 .Aadbconnection-verified::placeholder{
-  font-size: clamp(1rem,2.8vw,4rem);
+  font-size: clamp(1rem,3vw,4rem);
 }
 .termuxadbconnection-verified::placeholder{
-  font-size: clamp(1rem,2.8vw,4rem);
+  font-size: clamp(1rem,3vw,4rem);
 }
 
 /* titles */
@@ -376,7 +376,7 @@ input[type="checkbox"]:checked{
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
-  font-size: clamp(0.6rem, 1.9vw, 4rem);
+  font-size: clamp(0.7rem, 4vw, 4rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
@@ -386,7 +386,7 @@ input[type="checkbox"]:checked{
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
-  font-size: clamp(0.6rem, 1.9vw, 4rem);
+  font-size: clamp(0.7rem, 4vw, 4rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
@@ -396,7 +396,7 @@ input[type="checkbox"]:checked{
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
-  font-size: clamp(0.6rem, 1.9vw, 4rem);
+  font-size: clamp(0.7rem, 4vw, 4rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
@@ -406,7 +406,7 @@ input[type="checkbox"]:checked{
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
-  font-size: clamp(0.6rem, 1.9vw, 4rem);
+  font-size: clamp(0.7rem, 4vw, 4rem);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
@@ -415,42 +415,42 @@ input[type="checkbox"]:checked{
 #R-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #R-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #P-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #P-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #A-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #A-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #T-status::after{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 #T-status::before{
   content: "*";
   color: red;
-  font-size: clamp(.7rem,1.9vw,5rem);
+  font-size: clamp(.7rem,2.3vw,5rem);
 }
 
 
