@@ -425,7 +425,7 @@ input[type="checkbox"]:checked {
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 3.82vw, 6rem);
+    font-size: clamp(0.3rem, 3.79vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
