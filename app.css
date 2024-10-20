@@ -253,31 +253,6 @@ input[type="checkbox"]:checked {
   font-size: clamp(1rem, 2.8vw, 5rem);
   color: red;
 }
-/* all boxes labels */
-.requirements span {
-  text-align: left;
-  font-size: clamp(0.7rem, 2.1vw, 7rem);
-  text-transform: lowercase;
-  padding: 10px;
-}
-.platformtool span {
-  text-align: left;
-  font-size: clamp(0.7rem, 1.97vw, 7rem);
-  text-transform: lowercase;
-  padding: 10px;
-}
-.adbconnection span {
-  text-align: left;
-  font-size: clamp(0.6rem, 1.84vw, 7rem);
-  text-transform: lowercase;
-  padding: 10px;
-}
-.termuxadbconnection span {
-  text-align: left;
-  font-size: clamp(0.7rem, 1.67vw, 7rem);
-  text-transform: lowercase;
-  padding: 10px;
-}
 /* all box-containers*/
 .app-requirements {
   width: 100%;
@@ -455,6 +430,30 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 10px;
   }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.7rem, 5vw, 7rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.7rem, 5vw, 7rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.6rem, 5vw, 7rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.7rem, 5vw, 7rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
 }
 @media (min-width: 460px) and (max-width: 1000px) {
   .boxes {
@@ -469,6 +468,7 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 20px;
   }
+
 }
 
 /* Desktop site width limit on phones*/
