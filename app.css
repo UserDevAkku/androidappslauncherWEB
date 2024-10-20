@@ -485,7 +485,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.49rem, 3.72vw, 7rem);
+    font-size: clamp(0.7rem, 3.62vw, 7rem);
     color: red;
     font-weight: bolder;
     margin-bottom: 10px;
