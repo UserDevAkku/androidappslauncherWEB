@@ -442,7 +442,7 @@ input[type="checkbox"]:checked {
   }
 }
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 960px) {
+@media (min-width: 320px) and (max-width: 1800px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
