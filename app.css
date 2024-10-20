@@ -470,7 +470,7 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(.88rem, 1vw, .9rem);
+    font-size: clamp(1rem, 1vw, .9rem);
     text-transform: lowercase;
     padding: 10px;
   }
