@@ -419,8 +419,7 @@ input[type="checkbox"]:checked {
     content: "*";
     font-size: clamp(1rem, 2.8vw, 5rem);
     color: red;
-  }
-  
+  }  
   .yesNo {
     width: 30%;
     border-radius: 10%;
@@ -458,6 +457,36 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
+  }
+  .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #585858;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: clamp(1rem, 6.3vw, 9rem);
+  }
+  .app-about {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2.2vw, 6rem);
+    animation: app-about 1s ease-in-out infinite;
+  }
+  .note {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.6rem, 1.7vw, 7rem);
+    color: red;
+    font-weight: bolder;
   }
   .requirements-title {
     color: black;
