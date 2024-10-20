@@ -442,7 +442,7 @@ input[type="checkbox"]:checked {
   }
 }
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 460px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -456,7 +456,22 @@ input[type="checkbox"]:checked {
     font-size: 10px;
   }
 }
-/*Desktop site width limit on phones*/
+@media (min-width: 460px) and (max-width: 720px) {
+  .boxes {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .yesNo {
+    width: 30%;
+    border-radius: 10%;
+    margin: 15px;
+    padding: 5px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 10px;
+  }
+}
+
+/* Desktop site width limit on phones
 @media (min-width:720px) and (max-width:960px) {
   .boxes {
     width: 97%;
@@ -470,11 +485,12 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 12px;
   }
-}
+} */
 /*PCsOrLaptop*/
 @media (min-width: 1280px) and (max-width: 3840px) {
   .boxes {
     width: 40%;
+    margin-top: 20px;
   }
   .yesNo {
     width: 15%;
