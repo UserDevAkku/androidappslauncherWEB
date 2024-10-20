@@ -476,19 +476,19 @@ input[type="checkbox"]:checked {
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(.3rem, 4.28vw, 6rem);
+    font-size: clamp(.3rem, 4vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(.3rem, 4.28vw, 6rem);
+    font-size: clamp(.3rem, 3.6vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(.3rem, 4.28vw, 6rem);
+    font-size: clamp(.3rem, 3.6vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
