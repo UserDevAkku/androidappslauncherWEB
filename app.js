@@ -18,7 +18,7 @@ const reqCompleted = () => {
     reqBox.style.border = "2px solid green";
     reqCheckbox.style.accentColor = "green";
     reqCheckbox.style.boxShadow = "0 0 0px 2px green inset";
-    reqBox.style.boxShadow = "0 0 12px 1px #32cd32";
+    reqBox.style.boxShadow = "0 0 15px 3px greenyellow";
 
   } else {
     reqBox.style.backgroundColor = "#ffffff";
