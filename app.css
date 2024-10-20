@@ -8,12 +8,12 @@ body {
   width: 100%;
   background-color: #f4f4f4;
 }
-:root{
-  --shadow-size:clamp(1rem,1vw,4rem);
-  --shadow-spread:clamp(.1rem,.1vw,4rem);
-  --shadow-blur:clamp(.2rem,.3vw,4rem);
+:root {
+  --shadow-size: clamp(1rem, 1vw, 4rem);
+  --shadow-spread: clamp(0.1rem, 0.1vw, 4rem);
+  --shadow-blur: clamp(0.2rem, 0.3vw, 4rem);
 }
-.link{
+.link {
   width: fit-content;
   height: fit-content;
   text-decoration: none;
@@ -31,10 +31,10 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color:#585858;
+  background-color: #585858;
   text-transform: uppercase;
   padding: 8px;
-  font-size: clamp(1rem, 6.9vw, 9rem);
+  font-size: clamp(1rem, 6.3vw, 9rem);
 }
 @keyframes aal {
   0% {
@@ -79,7 +79,7 @@ header {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: clamp(.8rem, 4.3vw, 6rem);
+  font-size: clamp(0.8rem, 2.2vw, 6rem);
   animation: app-about 1s ease-in-out infinite;
 }
 .note {
@@ -88,9 +88,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.6rem, 3.5vw, 7rem);
- color: red;
- font-weight: bolder;
+  font-size: clamp(0.6rem, 1.7vw, 7rem);
+  color: red;
+  font-weight: bolder;
 }
 @keyframes app-about {
   0% {
@@ -103,16 +103,16 @@ header {
     color: red;
   }
 }
-input[type="checkbox"]{
-    width: clamp(12px,5vw,200px);
-    outline: none;
-    height: clamp(12px,5vh,200px);
-    border: none;
-   margin-left: clamp(1rem,1vw,6rem);
-   margin-top: clamp(.2rem,1vw,1rem);
-   margin-bottom: clamp(.2rem,1vw,.1rem);
+input[type="checkbox"] {
+  width: clamp(12px, 5vw, 200px);
+  outline: none;
+  height: clamp(12px, 5vh, 200px);
+  border: none;
+  margin-left: clamp(1rem, 1vw, 6rem);
+  margin-top: clamp(0.2rem, 1vw, 1rem);
+  margin-bottom: clamp(0.2rem, 1vw, 0.1rem);
 }
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked {
   border: none;
   outline: none;
   accent-color: #32cd32;
@@ -123,32 +123,28 @@ input[type="checkbox"]:checked{
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size)  2px #000;
-  margin-top: clamp(1rem,2.2vw,6rem);
+  box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
 .app-platformtool-box {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size)  2px #000;
-  margin-top: clamp(1rem,2.2vw,6rem);
+  box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
 .app-adbconnection-box {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size)  2px #000;
-  margin-top: clamp(1rem,2.2vw,6rem);
+  box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
 .app-termuxadbconnection-box {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size)  2px #000;
-  margin-top: clamp(1rem,2.2vw,6rem);
+  box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
 /* verification-container*/
 .platformtool-verification {
@@ -171,143 +167,114 @@ input[type="checkbox"]:checked{
 }
 /* verified */
 .platformtool-verified {
-  width: 30%;
-  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
-  border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.4rem,1vw,4rem);
-  padding: clamp(.6rem,3vw,6rem);
-  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1.2rem,4vw,4rem);
 }
 .Aadbconnection-verified {
-  width: 30%;
-  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
-  border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.4rem,1vw,4rem);
-  padding: clamp(.6rem,3vw,6rem);
-  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1.2rem,4vw,4rem);
 }
 .termuxadbconnection-verified {
-  width: 30%;
-  max-width: clamp(15rem, 9vw, 20rem);
   border: none;
   outline: none;
   text-align: center;
-  border-radius: clamp(2%,1vw,5%);
-  margin: clamp(.4rem,1vw,4rem);
-  padding: clamp(.6rem,3vw,6rem);
-  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-  font-size: clamp(1.2rem,4vw,4rem);
-}
-.platformtool-verified::placeholder{
-  font-size: clamp(1rem,3vw,4rem);
-}
-.Aadbconnection-verified::placeholder{
-  font-size: clamp(1rem,3vw,4rem);
-}
-.termuxadbconnection-verified::placeholder{
-  font-size: clamp(1rem,3vw,4rem);
 }
 
 /* titles */
 .requirements-title {
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 3vw, 6rem);
-  padding-top: clamp(.2rem,.2vw,0.9rem);
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 6rem);
+  padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .platformtool-title {
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 3vw, 6rem);
-  padding-top: clamp(.2rem,.2vw,0.9rem);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;}
+  font-size: clamp(0.9rem, 1.5vw, 6rem);
+  padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .adbconnection-title {
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 3vw, 6rem);
-  padding-top: clamp(.2rem,.2vw,0.9rem);
+  font-size: clamp(0.9rem, 1.5vw, 6rem);
+  padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .termuxadbconnection-title {
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   width: 100%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(.9rem, 3vw, 6rem);
-  padding-top: clamp(.2rem,.2vw,0.9rem);
+  font-size: clamp(0.9rem, 1.5vw, 6rem);
+  padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* title asterisks */
 .requirements-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,5vw,5rem);
+  font-size: clamp(1rem, 2.8vw, 5rem);
 }
 .platformtool-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,5vw,5rem);
+  font-size: clamp(1rem, 2.8vw, 5rem);
 }
 .adbconnection-title::after {
   content: "*";
   color: red;
-  font-size: clamp(1rem,5vw,5rem);
+  font-size: clamp(1rem, 2.8vw, 5rem);
 }
 .termuxadbconnection-title::after {
   content: "*";
-  font-size: clamp(1rem,5vw,5rem);
+  font-size: clamp(1rem, 2.8vw, 5rem);
   color: red;
 }
 /* all boxes labels */
 .requirements span {
   text-align: left;
-  font-size: clamp(.7rem, 4.17vw, 7rem);
+  font-size: clamp(0.7rem, 2.1vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .platformtool span {
   text-align: left;
-  font-size: clamp(.7rem, 3.89vw, 7rem);
+  font-size: clamp(0.7rem, 1.97vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .adbconnection span {
   text-align: left;
-  font-size: clamp(.6rem, 3.68vw, 7rem);
+  font-size: clamp(0.6rem, 1.84vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
 .termuxadbconnection span {
   text-align: left;
-  font-size: clamp(.7rem, 3.28vw, 7rem);
+  font-size: clamp(0.7rem, 1.67vw, 7rem);
   text-transform: lowercase;
   padding: 10px;
 }
@@ -337,144 +304,184 @@ input[type="checkbox"]:checked{
   justify-content: center;
 }
 /* status-containers*/
-.requirements-completed{
+.requirements-completed {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
-.platformtool-installed{
+.platformtool-installed {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
-.adbconnection-connected{
+.adbconnection-connected {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
-.termuxadbconnection-connected{
+.termuxadbconnection-connected {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
 /*status*/
-#R-status{
+#R-status {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
   font-size: clamp(0.7rem, 4vw, 4rem);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
 }
-#P-status{
+#P-status {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
   font-size: clamp(0.7rem, 4vw, 4rem);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
 }
-#A-status{
+#A-status {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
   font-size: clamp(0.7rem, 4vw, 4rem);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
 }
-#T-status{
+#T-status {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
   font-weight: bolder;
   font-size: clamp(0.7rem, 4vw, 4rem);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: none;
   font-weight: bolder;
 }
 /* aestrisk symbol with status */
-#R-status::after{
+#R-status::after {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#R-status::before{
+#R-status::before {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#P-status::after{
+#P-status::after {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#P-status::before{
+#P-status::before {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#A-status::after{
+#A-status::after {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#A-status::before{
+#A-status::before {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#T-status::after{
+#T-status::after {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-#T-status::before{
+#T-status::before {
   content: "*";
   color: red;
-  font-size: clamp(.8rem,4vw,6rem);
+  font-size: clamp(0.8rem, 4vw, 6rem);
 }
-
 
 /* animation on requirements completed on requirements box*/
 @keyframes reqBox {
-  0%{
+  0% {
     box-shadow: 0 0 0px 5px #32cd32;
   }
-  50%{
+  50% {
     box-shadow: 0 0 0px 2px #32cd32;
   }
-  100%{
-    box-shadow: 0 0 0px  5px #32cd32;
+  100% {
+    box-shadow: 0 0 0px 5px #32cd32;
   }
 }
 @keyframes Status {
-  0%{
-    color:  blue;
+  0% {
+    color: blue;
     transform: translateX(-5px);
-
   }
-  50%{
-    color:  blue;
+  50% {
+    color: blue;
     transform: translateX(5px);
-
   }
-  100%{
-    color:  blue;
+  100% {
+    color: blue;
     transform: translateX(-5px);
   }
 }
-@media (min-width: 320px) and (max-width: 720px) {
-  .boxes{
-    width: 100%;
+/*PHONES*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .boxes {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .yesNo {
+    width: 30%;
+    border-radius: 10%;
+    margin: 15px;
+    padding: 5px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 10px;
+  }
+}
+/*Desktop site width limit on phones*/
+@media (min-width:720px) and (max-width:960px) {
+  .boxes {
+    width: 97%;
+    margin-bottom: 15px;
+  }
+  .yesNo {
+    width: 32%;
+    border-radius: 12%;
+    margin: 18px;
+    padding: 8px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 12px;
+  }
+}
+/*PCsOrLaptop*/
+@media (min-width: 1280px) and (max-width: 3840px) {
+  .boxes {
+    width: 40%;
+  }
+  .yesNo {
+    width: 15%;
+    border-radius: 10%;
+    margin: 4px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 6px;
+    padding: 10px;
   }
 }
