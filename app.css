@@ -328,7 +328,7 @@ input[type="checkbox"]:checked {
     background-color: #585858;
     text-transform: uppercase;
     padding: 8px;
-    font-size: clamp(1rem, 6.3vw, 9rem);
+    font-size: clamp(1rem, 7.5vw, 9rem);
   }
   .app-about {
     width: 100%;
@@ -337,7 +337,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: clamp(0.8rem, 2.2vw, 6rem);
+    font-size: clamp(0.8rem, 3.9vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
   .note {
@@ -346,7 +346,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.6rem, 1.7vw, 7rem);
+    font-size: clamp(0.6rem, 3.8vw, 7rem);
     color: red;
     font-weight: bolder;
   }
@@ -466,7 +466,7 @@ input[type="checkbox"]:checked {
     background-color: #585858;
     text-transform: uppercase;
     padding: 8px;
-    font-size: clamp(1rem, 6.3vw, 9rem);
+    font-size: clamp(1rem, 7.9vw, 9rem);
   }
   .app-about {
     width: 100%;
@@ -475,7 +475,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: clamp(0.8rem, 2.2vw, 6rem);
+    font-size: clamp(0.8rem, 4.6vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
   .note {
@@ -484,7 +484,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.6rem, 1.7vw, 7rem);
+    font-size: clamp(0.6rem, 4.4vw, 7rem);
     color: red;
     font-weight: bolder;
   }
