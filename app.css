@@ -432,7 +432,7 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.4rem, 7vw, 7rem);
+    font-size: clamp(0.4rem, 9vw, 9rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -482,7 +482,7 @@ input[type="checkbox"]:checked {
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.6rem, 7vw, 8rem);
+    font-size: clamp(0.6rem, vw, 8rem);
     text-transform: lowercase;
     padding: 10px;
   }
