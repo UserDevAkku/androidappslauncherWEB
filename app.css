@@ -136,21 +136,6 @@ input[type="checkbox"]:checked {
   justify-content: center;
 }
 /* verified */
-.platformtool-verified {
-  border: none;
-  outline: none;
-  text-align: center;
-}
-.Aadbconnection-verified {
-  border: none;
-  outline: none;
-  text-align: center;
-}
-.termuxadbconnection-verified {
-  border: none;
-  outline: none;
-  text-align: center;
-}
 /* all box-containers*/
 .app-requirements {
   width: 100%;
@@ -363,7 +348,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -420,18 +405,21 @@ input[type="checkbox"]:checked {
     content: "*";
     font-size: clamp(1rem, 2.8vw, 5rem);
     color: red;
-  }  
+  }
   .yesNo {
-    width: 30%;
+    width: 20%;
     border-radius: 10%;
     margin: 15px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(.9rem, 4.28vw, 1.2rem);
+    font-size: clamp(0.9rem, 4.28vw, 1.2rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -502,7 +490,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -561,34 +549,37 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    width: 30%;
+    width: 20%;
     border-radius: 10%;
     margin: 25px;
     padding: 15px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(.3rem, 4.28vw, 6rem);
+    font-size: clamp(0.3rem, 4.28vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(.3rem, 3.86vw, 6rem);
+    font-size: clamp(0.3rem, 3.86vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(.3rem, 3.69vw, 6rem);
+    font-size: clamp(0.3rem, 3.69vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(.3rem, 3.4vw, 6rem);
+    font-size: clamp(0.3rem, 3.4vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
