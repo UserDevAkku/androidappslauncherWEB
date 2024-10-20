@@ -15,10 +15,10 @@ const reqCompleted = () => {
     reqBox.style.backgroundColor = "#ccffcc";
     Rstatus.style.display = "block";
     Rstatus.style.animation = "Status 555ms ease-in-out infinite";
-    reqBox.style.border = "10px dotted green";
+    reqBox.style.border = "2px solid green";
     reqCheckbox.style.accentColor = "green";
     reqCheckbox.style.boxShadow = "0 0 0px 2px green inset";
-    reqBox.style.width="98%"
+    reqBox.style.width="100%"
   } else {
     Rstatus.innerText = "";
     reqBox.style.boxShadow = "0 0 12px 1px #000";
