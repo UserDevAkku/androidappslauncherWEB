@@ -119,7 +119,6 @@ input[type="checkbox"]:checked {
 }
 /* boxes */
 .app-requirements-box {
-  max-width: clamp(95%,95%);
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -443,7 +442,7 @@ input[type="checkbox"]:checked {
   }
 }
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 460px) {
+@media (min-width: 320px) and (max-width: 960px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -457,7 +456,7 @@ input[type="checkbox"]:checked {
     font-size: 10px;
   }
 }
-@media (min-width: 460px) and (max-width: 720px) {
+/* @media (min-width: 460px) and (max-width: 720px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -470,10 +469,10 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 10px;
   }
-}
+} */
 
 /* Desktop site width limit on phones*/
-@media (min-width:720px) and (max-width:960px) {
+/* @media (min-width:720px) and (max-width:960px) {
   .boxes {
     width: 97%;
     margin-bottom: 15px;
@@ -486,7 +485,7 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 12px;
   }
-} 
+}  */
 /*PCsOrLaptop*/
 /* @media (min-width: 1280px) and (max-width: 3840px) {
   .boxes {
