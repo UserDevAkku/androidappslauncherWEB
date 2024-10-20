@@ -471,7 +471,7 @@ input[type="checkbox"]:checked {
   }
 }
 
-/* Desktop site width limit on phones
+/* Desktop site width limit on phones*/
 @media (min-width:720px) and (max-width:960px) {
   .boxes {
     width: 97%;
@@ -485,9 +485,9 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: 12px;
   }
-} */
+} 
 /*PCsOrLaptop*/
-@media (min-width: 1280px) and (max-width: 3840px) {
+/* @media (min-width: 1280px) and (max-width: 3840px) {
   .boxes {
     width: 40%;
     margin-top: 20px;
@@ -500,4 +500,4 @@ input[type="checkbox"]:checked {
     font-size: 6px;
     padding: 10px;
   }
-}
+} */
