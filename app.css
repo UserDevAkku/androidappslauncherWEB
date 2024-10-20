@@ -328,7 +328,7 @@ input[type="checkbox"]:checked {
     background-color: #585858;
     text-transform: uppercase;
     padding: 8px;
-    font-size: clamp(1rem, 6.73vw, 9rem);
+    font-size: clamp(1rem, 6.83vw, 9rem);
   }
   .app-about {
     width: 100%;
@@ -467,7 +467,7 @@ input[type="checkbox"]:checked {
     background-color: #585858;
     text-transform: uppercase;
     padding: 8px;
-    font-size: clamp(1rem, 7.44vw, 9rem);
+    font-size: clamp(1rem, 7vw, 9rem);
   }
   .app-about {
     width: 100%;
