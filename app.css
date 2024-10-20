@@ -470,13 +470,13 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(.3rem, 4.22vw, 6rem);
+    font-size: clamp(.3rem, 4.24vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(.3rem, 3.7vw, 6rem);
+    font-size: clamp(.3rem, 3.82vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
