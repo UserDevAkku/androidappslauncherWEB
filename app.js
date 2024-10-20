@@ -18,10 +18,14 @@ const reqCompleted = () => {
     reqBox.style.border = "2px solid green";
     reqCheckbox.style.accentColor = "green";
     reqCheckbox.style.boxShadow = "0 0 0px 2px green inset";
+    reqBox.style.boxShadow = "0 0 12px 1px #32cd32";
+
   } else {
-    Rstatus.innerText = "";
+    reqBox.style.backgroundColor = "#ffffff";
+    Rstatus.style.display = "none";
+    reqBox.style.border = "none";
+    reqCheckbox.style.boxShadow = "none";
     reqBox.style.boxShadow = "0 0 12px 1px #000";
-    reqCheckbox.style.boxShadow = " 0 0 0px 0px";
   }
 };
 reqCheckbox.forEach((reqCheckbox) => {
