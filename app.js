@@ -38,10 +38,7 @@ let Pstatus = document.querySelector("#P-status");
 let Pverified = document.querySelector(".platformtool-verified");
 //**####**//
 Pverified.addEventListener("input", () => {
-  if (download.checked &&
-      extract.checked &&
-      copy.checked &&
-      cdrive.checked &&
+  if (download.checked && extract.checked && copy.checked && cdrive.checked &&
       paste.checked &&
       cmd.checked &&
       adb.checked &&
@@ -95,7 +92,7 @@ let Averified = document.querySelector(".Aadbconnection-verified");
 //**####**//
 Averified.addEventListener("input", () => {
   if
-    (settings.checked &&
+    ( settings.checked &&
       miuibuild.checked &&
       searchdeveloperoption.checked &&
       opendeveloperoption.checked &&
@@ -190,4 +187,25 @@ TCheckbox.forEach((TCheckbox)=>{
       alert("please complete the adb configuration for android first *")
     }
   })
+})
+
+plBox.addEventListener("click",()=>{
+  if( phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked){
+      PCheckbox.style.pointerEvents="auto"
+    }
+})
+PCheckbox.forEach((PCheckbox)=>{
+PCheckbox.addEventListener("click",()=>{
+  if( phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked){
+      PCheckbox.style.pointerEvents="auto"
+    }
+})
 })

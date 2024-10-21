@@ -614,3 +614,6 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 } */
+.yesNo{
+  pointer-events: none;
+}
