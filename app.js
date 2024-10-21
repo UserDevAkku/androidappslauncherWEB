@@ -16,8 +16,7 @@ const reqCompleted = () => {
     Rstatus.style.display = "block";
     Rstatus.style.animation = "Status 555ms ease-in-out infinite";
     reqBox.style.border = "2px solid green";
-    reqBox.style.boxShadow="0 0 20px 2px #32cd32";
-
+    reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
   } else {
     reqBox.style.backgroundColor = "#ffffff";
     Rstatus.style.display = "none";
@@ -37,33 +36,66 @@ let plCheckbox = document.querySelectorAll(".platformtool-checkboxes");
 let Pstatus = document.querySelector("#P-status");
 let Pverified = document.querySelector(".platformtool-verified");
 //**####**//
+plCheckbox.forEach((plCheckbox) => {
+  plCheckbox.addEventListener("click", () => {
+    if (
+      !download.checked ||
+      !extract.checked ||
+      !copy.checked ||
+      !cdrive.checked ||
+      !paste.checked ||
+      !cmd.checked ||
+      !adb.checked){
+        plBox.style.backgroundColor = "#ffffff";
+    Pstatus.style.display = "none";
+    plBox.style.border = "none";
+    plBox.style.boxShadow = "0 0 12px 1px #000";
+      Pverified.value=""
+    }
+  });
+});
 Pverified.addEventListener("input", () => {
-  if (download.checked && extract.checked && copy.checked && cdrive.checked &&
-      paste.checked &&
-      cmd.checked &&
-      adb.checked ){
-        if(Pverified.value === "yes" || Pverified.value === "YES" ||Pverified.value === "Yes"){
-          Pstatus.innerHTML = "platformtool installed";
-          plBox.style.backgroundColor = "#ccffcc";
-          Pstatus.style.display = "block";
-          Pstatus.style.animation = "Status 555ms ease-in-out infinite";
-          plBox.style.border = "2px dotted green";
-          plCheckbox.style.accentColor = "green";
-          plCheckbox.style.boxShadow = "0 0 0 2px green inset";
-        } else {
-          Pstatus.innerHTML = "";
-          Pstatus.style.display = "none";
-          Pstatus.style.animation = "Status 555ms ease-in-out infinite";
-          plBox.style.border = "none";
-          plBox.style.backgroundColor = "#ffffff";
-          plCheckbox.style.accentColor = "transparent";
-          plCheckbox.style.boxShadow = "0 0 0px 0px";
-          alert("*sdk installation is mendatory*")
-          Pverified.value=""
-        }
-        }
-      })
-    
+  if (
+    !download.checked ||
+    !extract.checked ||
+    !copy.checked ||
+    !cdrive.checked ||
+    !paste.checked ||
+    !cmd.checked ||
+    !adb.checked
+  ) {
+    alert("sdk installation is required*");
+    Pverified.value = "";
+  }
+  if (
+    download.checked &&
+    extract.checked &&
+    copy.checked &&
+    cdrive.checked &&
+    paste.checked &&
+    cmd.checked &&
+    adb.checked
+  ) {
+    if (
+      Pverified.value === "yes" ||
+      Pverified.value === "YES" ||
+      Pverified.value === "Yes"
+    ) {
+      Pstatus.innerHTML = "Platformtool Installed";
+      plBox.style.backgroundColor = "#ccffcc";
+      Pstatus.style.display = "block";
+      Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+      plBox.style.border = "2px solid green";
+      plBox.style.boxShadow = "0 0 20px 2px #32cd32";
+    } else {
+      plBox.style.backgroundColor = "#ffffff";
+      Pstatus.style.display = "none";
+      plBox.style.border = "none";
+      plBox.style.boxShadow = "0 0 12px 1px #000";
+    }
+  }
+});
+
 //**####**//
 //**####**//
 
@@ -75,25 +107,28 @@ let Astatus = document.querySelector("#A-status");
 let Averified = document.querySelector(".Aadbconnection-verified");
 
 //**####**//
-  ABox.addEventListener("click", () => {
-    if(download.checked &&
+ABox.addEventListener("click", () => {
+  if (
+    (download.checked &&
       extract.checked &&
       copy.checked &&
       cdrive.checked &&
       paste.checked &&
       cmd.checked &&
       adb.checked &&
-      Pverified.value === "yes" || Pverified.value==="Yes" || Pverified.value==="YES"){
-      PCheckbox.style.pointerEvents="auto"
-    }else
-    {
-      alert("please install sdk platformtool first*")
-    }
-  });
+      Pverified.value === "yes") ||
+    Pverified.value === "Yes" ||
+    Pverified.value === "YES"
+  ) {
+    PCheckbox.style.pointerEvents = "auto";
+  } else {
+    alert("please install sdk platformtool first*");
+  }
+});
 //**####**//
 Averified.addEventListener("input", () => {
-  if
-    ( settings.checked &&
+  if (
+    (settings.checked &&
       miuibuild.checked &&
       searchdeveloperoption.checked &&
       opendeveloperoption.checked &&
@@ -102,7 +137,7 @@ Averified.addEventListener("input", () => {
       allowforphone.checked &&
       Acmd.checked &&
       Aadbdevices.checked &&
-      Averified.value === "yes" ||
+      Averified.value === "yes") ||
     Averified.value === "YES" ||
     Averified.value === "Yes"
   ) {
@@ -122,7 +157,6 @@ Averified.addEventListener("input", () => {
     ACheckbox.style.accentColor = "transparent";
     ACheckbox.style.boxShadow = "0 0 0px 0px";
   }
-
 });
 //**####**//
 //**####**//
@@ -150,7 +184,7 @@ Tverified.addEventListener("input", () => {
   ) {
     Tstatus.innerHTML = "adb configured for termux";
     TBox.style.backgroundColor = "#ccffcc";
-   Tstatus.style.display="block"
+    Tstatus.style.display = "block";
     Tstatus.style.animation = "Status 555ms ease-in-out infinite";
     TBox.style.border = "2px dotted green";
     TCheckbox.style.accentColor = "green";
@@ -166,47 +200,46 @@ Tverified.addEventListener("input", () => {
   }
 });
 //**####**//
-TCheckbox.forEach((TCheckbox)=>{
-  TCheckbox.addEventListener("click",()=>{
-    if (settings.checked &&
-      miuibuild.checked &&
-      searchdeveloperoption.checked &&
-      opendeveloperoption.checked &&
-      allowforusb.checked &&
-      datacable.checked &&
-      allowforphone.checked &&
-      Acmd.checked &&
-      Aadbdevices.checked &&
-      Averified.value === "yes" ||
-    Averified.value === "YES" ||
-    Averified.value === "Yes"
-  ){
-      TCheckbox.style.pointerEvents="auto"
-    }else
-    {
-      
-      alert("please complete the adb configuration for android first *")
+TCheckbox.forEach((TCheckbox) => {
+  TCheckbox.addEventListener("click", () => {
+    if (
+      (settings.checked &&
+        miuibuild.checked &&
+        searchdeveloperoption.checked &&
+        opendeveloperoption.checked &&
+        allowforusb.checked &&
+        datacable.checked &&
+        allowforphone.checked &&
+        Acmd.checked &&
+        Aadbdevices.checked &&
+        Averified.value === "yes") ||
+      Averified.value === "YES" ||
+      Averified.value === "Yes"
+    ) {
+      TCheckbox.style.pointerEvents = "auto";
+    } else {
+      alert("please complete the adb configuration for android first *");
     }
-  })
-})
+  });
+});
 
-plBox.addEventListener("mouseover",()=>{
-  if( phone.checked &&
-    pc.checked &&
-    usb.checked &&
-    termux.checked &&
-    sdk.checked){
-      PCheckbox.style.pointerEvents="auto"
-    }
-})
-PCheckbox.forEach((PCheckbox)=>{
-PCheckbox.addEventListener("click",()=>{
-  if( phone.checked &&
-    pc.checked &&
-    usb.checked &&
-    termux.checked &&
-    sdk.checked){
-      PCheckbox.style.pointerEvents="auto"
-    }
-})
-})
+// plBox.addEventListener("mouseover",()=>{
+//   if( phone.checked &&
+//     pc.checked &&
+//     usb.checked &&
+//     termux.checked &&
+//     sdk.checked){
+//       PCheckbox.style.pointerEvents="auto"
+//     }
+// })
+// PCheckbox.forEach((PCheckbox)=>{
+// PCheckbox.addEventListener("click",()=>{
+//   if( phone.checked &&
+//     pc.checked &&
+//     usb.checked &&
+//     termux.checked &&
+//     sdk.checked){
+//       PCheckbox.style.pointerEvents="auto"
+//     }
+// })
+// })

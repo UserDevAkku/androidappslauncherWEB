@@ -614,6 +614,3 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 } */
- .platformtool-checkboxes{
-  pointer-events: none;
- }
