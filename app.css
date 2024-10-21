@@ -599,33 +599,146 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-/* Desktop site width limit on phones*/
-/* @media (min-width:720px) and (max-width:960px) {
+@media (min-width:1280) and (max-width:3840){
   .boxes {
-    width: 97%;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 40px;
   }
-  .yesNo {
-    width: 32%;
-    border-radius: 12%;
-    margin: 18px;
+  .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #585858;
+    text-transform: uppercase;
     padding: 8px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 12px;
+    font-size: clamp(1rem, 7vw, 9rem);
   }
-}  */
-/*PCsOrLaptop*/
-/* @media (min-width: 1280px) and (max-width: 3840px) {
-  .boxes {
-    width: 40%;
-    margin-top: 20px;
+  .app-about {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 4.6vw, 6rem);
+    animation: app-about 1s ease-in-out infinite;
+  }
+  .note {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 3.62vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 3.1vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 3.1vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 3.1vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 3.1vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 4.1vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 4.1vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 4.1vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 4.1vw, 5rem);
+    color: red;
   }
   .yesNo {
-    width: 15%;
+    width: 20%;
     border-radius: 10%;
-    margin: 4px;
+    margin: 25px;
+    padding: 15px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 6px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 4.28vw, 6rem);
+    text-transform: lowercase;
     padding: 10px;
   }
-} */
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 3.86vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 3.69vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 3.4vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+}
+
