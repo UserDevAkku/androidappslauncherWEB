@@ -189,7 +189,7 @@ TCheckbox.forEach((TCheckbox)=>{
   })
 })
 
-plBox.addEventListener("click",()=>{
+plBox.addEventListener("mouseover",()=>{
   if( phone.checked &&
     pc.checked &&
     usb.checked &&
