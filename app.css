@@ -234,42 +234,42 @@ input[type="checkbox"]:checked {
 /* aestrisk symbol with status */
 #R-status::after {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #R-status::before {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #P-status::after {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #P-status::before {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #A-status::after {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #A-status::before {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #T-status::after {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 #T-status::before {
   content: "*";
-  color: red;
+  color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
 
@@ -299,6 +299,21 @@ input[type="checkbox"]:checked {
     transform: translateX(-5px);
   }
 }
+@keyframes NoStatus {
+  0% {
+    color: red;
+    transform: translateX(-5px);
+  }
+  50% {
+    color: red;
+    transform: translateX(5px);
+  }
+  100% {
+    color: red;
+    transform: translateX(-5px);
+  }
+}
+
 /*PHONES*/
 @media (min-width: 320px) and (max-width: 460px) {
   .boxes {
