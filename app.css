@@ -600,10 +600,6 @@ input[type="checkbox"]:checked {
   }
 }
 @media (min-width:1280) and (max-width:3840){
-  .boxes {
-    width: 100%;
-    margin-bottom: 40px;
-  }
   .app-name {
     display: flex;
     align-items: center;
@@ -741,4 +737,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-
+.boxes {
+  width: 100%;
+  margin-bottom: 40px;
+}
