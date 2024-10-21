@@ -107,28 +107,43 @@ let Astatus = document.querySelector("#A-status");
 let Averified = document.querySelector(".Aadbconnection-verified");
 
 //**####**//
-ABox.addEventListener("click", () => {
-  if (
-    (download.checked &&
-      extract.checked &&
-      copy.checked &&
-      cdrive.checked &&
-      paste.checked &&
-      cmd.checked &&
-      adb.checked &&
-      Pverified.value === "yes") ||
-    Pverified.value === "Yes" ||
-    Pverified.value === "YES"
-  ) {
-    PCheckbox.style.pointerEvents = "auto";
-  } else {
-    alert("please install sdk platformtool first*");
-  }
+ACheckbox.forEach((ACheckbox) => {
+  ACheckbox.addEventListener("click", () => {
+    if (
+      !settings.checked ||
+      !miuibuild.checked ||
+      !searchdeveloperoption.checked ||
+      !opendeveloperoption.checked ||
+      !allowforusb.checked ||
+      !datacable.checked ||
+      !allowforphone.checked ||
+      !Acmd.checked ||
+      !Aadbdevices.checked){
+        ABox.style.backgroundColor = "#ffffff";
+    Astatus.style.display = "none";
+    ABox.style.border = "none";
+    ABox.style.boxShadow = "0 0 12px 1px #000";
+      Averified.value=""
+    }
+  });
 });
-//**####**//
 Averified.addEventListener("input", () => {
   if (
-    (settings.checked &&
+    !settings.checked ||
+      !miuibuild.checked ||
+      !searchdeveloperoption.checked ||
+      !opendeveloperoption.checked ||
+      !allowforusb.checked ||
+      !datacable.checked ||
+      !allowforphone.checked ||
+      !Acmd.checked ||
+      !Aadbdevices.checked
+  ) {
+    alert("android adb configuration is required*");
+    Averified.value = "";
+  }
+  if (
+    settings.checked &&
       miuibuild.checked &&
       searchdeveloperoption.checked &&
       opendeveloperoption.checked &&
@@ -136,29 +151,27 @@ Averified.addEventListener("input", () => {
       datacable.checked &&
       allowforphone.checked &&
       Acmd.checked &&
-      Aadbdevices.checked &&
-      Averified.value === "yes") ||
-    Averified.value === "YES" ||
-    Averified.value === "Yes"
+      Aadbdevices.checked
   ) {
-    Astatus.innerHTML = "adb configured for android";
-    ABox.style.backgroundColor = "#ccffcc";
-    Astatus.style.display = "block";
-    Astatus.style.animation = "Status 555ms ease-in-out infinite";
-    ABox.style.border = "2px dotted green";
-    ACheckbox.style.accentColor = "green";
-    ACheckbox.style.boxShadow = "0 0 0 2px green inset";
-  } else {
-    Astatus.innerHTML = "";
-    Astatus.style.display = "none";
-    Astatus.style.animation = "Status 555ms ease-in-out infinite";
-    ABox.style.border = "none";
-    ABox.style.backgroundColor = "#ffffff";
-    ACheckbox.style.accentColor = "transparent";
-    ACheckbox.style.boxShadow = "0 0 0px 0px";
+    if (
+      Averified.value === "yes" ||
+      Averified.value === "YES" ||
+      Averified.value === "Yes"
+    ) {
+      Astatus.innerHTML = "Android Adb Configured";
+      ABox.style.backgroundColor = "#ccffcc";
+      Astatus.style.display = "block";
+      Astatus.style.animation = "Status 555ms ease-in-out infinite";
+      ABox.style.border = "2px solid green";
+      ABox.style.boxShadow = "0 0 20px 2px #32cd32";
+    } else {
+      ABox.style.backgroundColor = "#ffffff";
+      Astatus.style.display = "none";
+      ABox.style.border = "none";
+      ABox.style.boxShadow = "0 0 12px 1px #000";
+    }
   }
 });
-//**####**//
 //**####**//
 
 //*                    CONFIGURATION FOR TERMUX                    *//
@@ -168,78 +181,66 @@ let Tstatus = document.querySelector("#T-status");
 let Tverified = document.querySelector(".termuxadbconnection-verified");
 
 //**####**//
+TCheckbox.forEach((TCheckbox) => {
+  TCheckbox.addEventListener("click", () => {
+    if (
+      !VAadbdevice.checked ||
+      !tcp.checked ||
+      !T_install.checked ||
+      !T_pkgs1.checked ||
+      !T_pkgs2.checked ||
+      !IP_find.checked ||
+      !IP_noted.checked ||
+      !IP_enter.checked){
+        TBox.style.backgroundColor = "#ffffff";
+    Tstatus.style.display = "none";
+    TBox.style.border = "none";
+    TBox.style.boxShadow = "0 0 12px 1px #000";
+      Tverified.value=""
+    }
+  });
+});
 Tverified.addEventListener("input", () => {
   if (
-    (VAadbdevice.checked &&
+    !VAadbdevice.checked ||
+      !tcp.checked ||
+      !T_install.checked ||
+      !T_pkgs1.checked ||
+      !T_pkgs2.checked ||
+      !IP_find.checked ||
+      !IP_noted.checked ||
+      !IP_enter.checked
+  ) {
+    alert("termux adb configuration is required*");
+    Tverified.value = "";
+  }
+  if (
+    VAadbdevice.checked &&
       tcp.checked &&
       T_install.checked &&
       T_pkgs1.checked &&
       T_pkgs2.checked &&
       IP_find.checked &&
       IP_noted.checked &&
-      IP_enter.checked &&
-      Tverified.value === "yes") ||
-    Tverified.value === "YES" ||
-    Tverified.value === "Yes"
+      IP_enter.checked
   ) {
-    Tstatus.innerHTML = "adb configured for termux";
-    TBox.style.backgroundColor = "#ccffcc";
-    Tstatus.style.display = "block";
-    Tstatus.style.animation = "Status 555ms ease-in-out infinite";
-    TBox.style.border = "2px dotted green";
-    TCheckbox.style.accentColor = "green";
-    TCheckbox.style.boxShadow = "0 0 0 2px green inset";
-  } else {
-    Tstatus.innerHTML = "";
-    Tstatus.style.display = "none";
-    Tstatus.style.animation = "Status 555ms ease-in-out infinite";
-    TBox.style.border = "none";
-    TBox.style.backgroundColor = "#ffffff";
-    TCheckbox.style.accentColor = "transparent";
-    TCheckbox.style.boxShadow = "0 0 0px 0px";
+    if (
+      Tverified.value === "yes" ||
+      Tverified.value === "YES" ||
+      Tverified.value === "Yes"
+    ) {
+      Tstatus.innerHTML = "Termux Adb Configured";
+      TBox.style.backgroundColor = "#ccffcc";
+      Tstatus.style.display = "block";
+      Tstatus.style.animation = "Status 555ms ease-in-out infinite";
+      TBox.style.border = "2px solid green";
+      TBox.style.boxShadow = "0 0 20px 2px #32cd32";
+    } else {
+      TBox.style.backgroundColor = "#ffffff";
+      Tstatus.style.display = "none";
+      TBox.style.border = "none";
+      TBox.style.boxShadow = "0 0 12px 1px #000";
+    }
   }
 });
 //**####**//
-TCheckbox.forEach((TCheckbox) => {
-  TCheckbox.addEventListener("click", () => {
-    if (
-      (settings.checked &&
-        miuibuild.checked &&
-        searchdeveloperoption.checked &&
-        opendeveloperoption.checked &&
-        allowforusb.checked &&
-        datacable.checked &&
-        allowforphone.checked &&
-        Acmd.checked &&
-        Aadbdevices.checked &&
-        Averified.value === "yes") ||
-      Averified.value === "YES" ||
-      Averified.value === "Yes"
-    ) {
-      TCheckbox.style.pointerEvents = "auto";
-    } else {
-      alert("please complete the adb configuration for android first *");
-    }
-  });
-});
-
-// plBox.addEventListener("mouseover",()=>{
-//   if( phone.checked &&
-//     pc.checked &&
-//     usb.checked &&
-//     termux.checked &&
-//     sdk.checked){
-//       PCheckbox.style.pointerEvents="auto"
-//     }
-// })
-// PCheckbox.forEach((PCheckbox)=>{
-// PCheckbox.addEventListener("click",()=>{
-//   if( phone.checked &&
-//     pc.checked &&
-//     usb.checked &&
-//     termux.checked &&
-//     sdk.checked){
-//       PCheckbox.style.pointerEvents="auto"
-//     }
-// })
-// })
