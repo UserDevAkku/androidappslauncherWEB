@@ -1,2 +1,1 @@
-ANDROID APPS LAUNCHER REQUIREMENTS AND GUIDE
-androidappslauncher.netlify.app
+
