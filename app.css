@@ -422,12 +422,12 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    width: 20%;
+    width: 25%;
     border-radius: 10%;
     margin: 15px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 10px;
+    font-size: 13px;
     border: none;
     outline: none;
     text-align: center;
@@ -457,7 +457,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width: 481px) and (max-width: 1200px) {
+@media (min-width: 481px) and (max-width: 1280px) {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
@@ -569,7 +569,7 @@ input[type="checkbox"]:checked {
     margin: 25px;
     padding: 15px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 20px;
+    font-size: 14px;
     border: none;
     outline: none;
     text-align: center;
@@ -599,7 +599,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width:200px) and (max-width:5120px){
+@media (min-width:1280px) and (max-width:1920px){
   .boxes {
     width: 40%;
     margin-bottom: 40px;
@@ -830,5 +830,954 @@ input[type="checkbox"]:checked {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+}
+@media (min-width:1920px) and (max-width:2560px){
+  .boxes {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 9px 0px black;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: clamp(1rem, 6vw, 9rem);
+  }
+  .app-about {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+    animation: app-about 1s ease-in-out infinite;
+  }
+  .note {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 1.4vw, 5rem);
+    color: red;
+  }
+  .yesNo {
+    
+    border-radius: 10%;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 12px;
+    width: 12%;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.14vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.93vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.78vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.68vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  #R-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #P-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #A-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #T-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  /* aestrisk symbol with status */
+  #R-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #R-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #P-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #P-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #A-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #A-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #T-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #T-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+}
+@media (min-width:2560px) and (max-width:3440px){
+  .boxes {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 9px 0px black;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: clamp(1.2rem, 6vw, 9rem);
+  }
+  .app-about {
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+    animation: app-about 1s ease-in-out infinite;
+  }
+  .note {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.4vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 1.4vw, 5rem);
+    color: red;
+  }
+  .yesNo {
+    
+    border-radius: 10%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 25px;
+    width: 14%;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.6vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.4vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.2vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.1vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  #R-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #P-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #A-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #T-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  /* aestrisk symbol with status */
+  #R-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #R-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #P-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #P-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #A-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #A-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #T-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+  #T-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.4vw, 4rem);
+  }
+}
+@media (min-width:3440px) and (max-width:3840px){
+  .boxes {
+    width: 50%;
+    margin-bottom: 100px;
+  }
+  .app-name {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 9px 0px black;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: clamp(1.2rem, 5vw, 20rem);
+  }
+  .app-about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2.3vw, 10rem);
+    animation: app-about 1s ease-in-out infinite;
+    margin-bottom: 70px;
+  }
+  .note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 2vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 100px;
+
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 1.4vw, 5rem);
+    color: red;
+  }
+  .yesNo {
+    border-radius: 10%;
+    margin: 16px;
+    padding: 30px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 60px;
+    width: 10%;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.6vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.4vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.2vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  #R-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #P-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #A-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #T-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* aestrisk symbol with status */
+  #R-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #R-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #P-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #P-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #A-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #A-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #T-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #T-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+}
+
+@media (min-width:5120px) and (max-width:6000px){
+  .boxes {
+    width: 50%;
+    margin-bottom: 100px;
+  }
+  .app-name {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 9px 0px black;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: clamp(1.2rem, 5vw, 20rem);
+  }
+  .app-about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2.3vw, 10rem);
+    animation: app-about 1s ease-in-out infinite;
+    margin-bottom: 70px;
+  }
+  .note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 2vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 100px;
+
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.8vw, 6rem);
+    padding-top: clamp(0.2rem, 0.8vw, 0.9rem);
+    padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 1.4vw, 5rem);
+    color: red;
+  }
+  .yesNo {
+    border-radius: 10%;
+    margin: 16px;
+    padding: 30px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 60px;
+    width: 10%;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.6vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.4vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.2vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2vw, 10rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  #R-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #P-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #A-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #T-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.8vw, 10rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* aestrisk symbol with status */
+  #R-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #R-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #P-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #P-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #A-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #A-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #T-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+  }
+  #T-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
 }
