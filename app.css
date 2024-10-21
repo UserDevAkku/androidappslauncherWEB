@@ -81,6 +81,7 @@ input[type="checkbox"] {
   margin-left: clamp(1rem, 1vw, 6rem);
   margin-top: clamp(0.2rem, 1vw, 1rem);
   margin-bottom: clamp(0.2rem, 1vw, 0.1rem);
+  pointer-events: none;
 }
 input[type="checkbox"]:checked {
   border: none;
@@ -614,6 +615,3 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 } */
-.yesNo{
-  pointer-events: none;
-}
