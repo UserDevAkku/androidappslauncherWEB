@@ -41,28 +41,29 @@ Pverified.addEventListener("input", () => {
   if (download.checked && extract.checked && copy.checked && cdrive.checked &&
       paste.checked &&
       cmd.checked &&
-      adb.checked &&
-      Pverified.value === "yes" ||
-    Pverified.value === "YES" ||
-    Pverified.value === "Yes"
-  ){
-    Pstatus.innerHTML = "platformtool installed";
-    plBox.style.backgroundColor = "#ccffcc";
-    Pstatus.style.display = "block";
-    Pstatus.style.animation = "Status 555ms ease-in-out infinite";
-    plBox.style.border = "2px dotted green";
-    plCheckbox.style.accentColor = "green";
-    plCheckbox.style.boxShadow = "0 0 0 2px green inset";
-  } else {
-    Pstatus.innerHTML = "";
-    Pstatus.style.display = "none";
-    Pstatus.style.animation = "Status 555ms ease-in-out infinite";
-    plBox.style.border = "none";
-    plBox.style.backgroundColor = "#ffffff";
-    plCheckbox.style.accentColor = "transparent";
-    plCheckbox.style.boxShadow = "0 0 0px 0px";
-  }
-});
+      adb.checked ){
+        if(Pverified.value === "yes" || Pverified.value === "YES" ||Pverified.value === "Yes"){
+          Pstatus.innerHTML = "platformtool installed";
+          plBox.style.backgroundColor = "#ccffcc";
+          Pstatus.style.display = "block";
+          Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+          plBox.style.border = "2px dotted green";
+          plCheckbox.style.accentColor = "green";
+          plCheckbox.style.boxShadow = "0 0 0 2px green inset";
+        } else {
+          Pstatus.innerHTML = "";
+          Pstatus.style.display = "none";
+          Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+          plBox.style.border = "none";
+          plBox.style.backgroundColor = "#ffffff";
+          plCheckbox.style.accentColor = "transparent";
+          plCheckbox.style.boxShadow = "0 0 0px 0px";
+          alert("*sdk installation is mendatory*")
+          Pverified.value=""
+        }
+        }
+      })
+    
 //**####**//
 //**####**//
 
