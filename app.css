@@ -315,7 +315,7 @@ input[type="checkbox"]:checked {
 }
 
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -457,7 +457,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width: 430px) and (max-width: 600px) {
+@media (min-width: 480px) and (max-width: 720px) {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
@@ -599,7 +599,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width:1280) and (max-width:3840){
+@media (min-width:960) and (max-width:3840){
   .app-name {
     display: flex;
     align-items: center;
@@ -737,4 +737,230 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-
+@media (min-width:960px) and (max-width:3840px){
+  .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: clamp(1rem, 6vw, 9rem);
+  }
+  .app-about {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+    animation: app-about 1s ease-in-out infinite;
+  }
+  .note {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.8vw, 7rem);
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .requirements-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.6vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .platformtool-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.6vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .adbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.6vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .termuxadbconnection-title {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.9rem, 1.6vw, 6rem);
+    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* title asterisks */
+  .requirements-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 2vw, 5rem);
+  }
+  .platformtool-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 2vw, 5rem);
+  }
+  .adbconnection-title::after {
+    content: "*";
+    color: red;
+    font-size: clamp(1rem, 2vw, 5rem);
+  }
+  .termuxadbconnection-title::after {
+    content: "*";
+    font-size: clamp(1rem, 2vw, 5rem);
+    color: red;
+  }
+  .yesNo {
+    width: 20%;
+    border-radius: 10%;
+    margin: 25px;
+    padding: 15px;
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  .requirements span {
+    text-align: left;
+    font-size: clamp(0.3rem, 2.14vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .platformtool span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.93vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .adbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.78vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .termuxadbconnection span {
+    text-align: left;
+    font-size: clamp(0.3rem, 1.68vw, 6rem);
+    text-transform: lowercase;
+    padding: 10px;
+  }
+  .boxes {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  #R-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 2vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #P-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 2vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #A-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 2vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  #T-status {
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 2vw, 4rem);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    font-weight: bolder;
+  }
+  /* aestrisk symbol with status */
+  #R-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #R-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #P-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #P-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #A-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #A-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #T-status::after {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+  #T-status::before {
+    content: "*";
+    color: black;
+    font-size: clamp(0.8rem, 2vw, 6rem);
+  }
+}
