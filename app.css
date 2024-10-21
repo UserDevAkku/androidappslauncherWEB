@@ -315,7 +315,7 @@ input[type="checkbox"]:checked {
 }
 
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 478px) {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -457,7 +457,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width: 480px) and (max-width: 1200px) {
+@media (min-width: 481px) and (max-width: 1200px) {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
@@ -599,7 +599,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width:1280px) and (max-width:2000px){
+@media (min-width:1280px) and (max-width:3840px){
   .boxes {
     width: 40%;
     margin-bottom: 40px;
