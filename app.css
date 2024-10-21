@@ -599,7 +599,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width:1280px) and (max-width:3840px){
+@media (min-width:200px) and (max-width:5120px){
   .boxes {
     width: 40%;
     margin-bottom: 40px;
