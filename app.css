@@ -326,7 +326,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:#243642;
+    background-color:#FFF100;
     text-transform: uppercase;
     padding: 4px;
     font-size: clamp(1rem, 6.9vw, 9rem);
@@ -469,7 +469,7 @@ input[type="checkbox"]:checked {
     text-decoration: none;
     position: relative;
     left: clamp(1.2rem,1.4vw,10rem);
-    font-size: clamp(2rem,1.8vw,10rem);
+    font-size: clamp(2rem,3vw,10rem);
     display: none;
   }
   .app-name {
@@ -477,10 +477,10 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:#243642;
+    background-color:#FFF100;
     text-transform: uppercase;
     padding: 4px;
-    font-size: clamp(1rem, 7.5vw, 9rem);
+    font-size: clamp(1rem, 7.3vw, 9rem);
   }
   .app-about {
     width: 100%;
