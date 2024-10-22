@@ -116,8 +116,16 @@ Pverified.addEventListener("input", () => {
     !cmd.checked ||
     !adb.checked
   ) {
-    alert("platformtool installation is required*");
+    alert("Please install the platformtool first*");
     Pverified.value = "";
+  }
+  if(!phone.checked ||
+    !pc.checked ||
+    !usb.checked ||
+    !termux.checked ||
+    !sdk.checked){
+      alert("Please complete the requirements first*");
+      Pverified.value = "";
   }
   if (
     download.checked &&
@@ -312,7 +320,7 @@ plBox.addEventListener("mouseover", () => {
       plCheckbox.style.pointerEvents = "auto";
     });
   } else {
-    plCheckbox.forEach((plCheckbox) => {
+      plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "none";
       Pstatus.style.display = "block";
       Pstatus.innerHTML = "permission is not allowed";
