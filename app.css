@@ -468,8 +468,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(2rem,1.4vw,10rem);
+    left: clamp(1.2rem,1.4vw,10rem);
+    font-size: clamp(2rem,1.8vw,10rem);
     display: none;
   }
   .app-name {
