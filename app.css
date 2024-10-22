@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color:#BCF2F6;
 }
 :root {
   --shadow-size: clamp(1rem, 1vw, 4rem);
@@ -326,10 +326,10 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #585858;
+    background-color:#243642;
     text-transform: uppercase;
-    padding: 8px;
-    font-size: clamp(1rem, 6.83vw, 9rem);
+    padding: 4px;
+    font-size: clamp(1rem, 6.9vw, 9rem);
   }
   .app-about {
     width: 100%;
@@ -477,10 +477,10 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #585858;
+    background-color:#243642;
     text-transform: uppercase;
-    padding: 8px;
-    font-size: clamp(1rem, 7vw, 9rem);
+    padding: 4px;
+    font-size: clamp(1rem, 7.5vw, 9rem);
   }
   .app-about {
     width: 100%;
