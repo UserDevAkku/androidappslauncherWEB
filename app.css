@@ -13,14 +13,6 @@ body {
   --shadow-spread: clamp(0.1rem, 0.1vw, 4rem);
   --shadow-blur: clamp(0.2rem, 0.3vw, 4rem);
 }
-.link {
-  width: fit-content;
-  height: fit-content;
-  text-decoration: none;
-  position: relative;
-  left: 15px;
-  display: none;
-}
 header {
   display: flex;
   align-items: center;
@@ -320,6 +312,15 @@ input[type="checkbox"]:checked {
     width: 95%;
     margin-bottom: 20px;
   }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(1.2rem,1.2vw,10rem);
+    display: none;
+  }
   .app-name {
     display: flex;
     align-items: center;
@@ -462,6 +463,15 @@ input[type="checkbox"]:checked {
     width: 95%;
     margin-bottom: 40px;
   }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(2rem,1.4vw,10rem);
+    display: none;
+  }
   .app-name {
     display: flex;
     align-items: center;
@@ -603,6 +613,15 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 40px;
+  }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(1.2rem,1.6vw,10rem);
+    display: none;
   }
   .app-name {
     display: flex;
@@ -837,6 +856,15 @@ input[type="checkbox"]:checked {
     width: 40%;
     margin-bottom: 40px;
   }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(2rem,1.6vw,10rem);
+    display: none;
+  }
   .app-name {
     display: flex;
     align-items: center;
@@ -1070,6 +1098,15 @@ input[type="checkbox"]:checked {
     width: 50%;
     margin-bottom: 40px;
   }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(2rem,1.4vw,10rem);
+    display: none;
+  }
   .app-name {
     display: flex;
     align-items: center;
@@ -1302,6 +1339,15 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
+  }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(2rem,1.4vw,10rem);
+    display: none;
   }
   .app-name {
     display: flex;
@@ -1544,6 +1590,16 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
+  }
+  .link {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    position: relative;
+    left: clamp(1.2rem,1vw,10rem);
+    font-size: clamp(2rem,1.4vw,10rem);
+    display: none;
+
   }
   .app-name {
     display: flex;

@@ -2,6 +2,7 @@
 let reqBox = document.querySelector(".app-requirements-box");
 let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
+let link=document.querySelectorAll(".link")
 // dynamically css manipulation on requirements completed by dom
 const reqCompleted = () => {
   if (
@@ -30,7 +31,14 @@ reqCheckbox.forEach((reqCheckbox) => {
     reqCompleted();
   });
 });
-
+termux.addEventListener("mouseover",()=>{
+  termuxLink.style.display="block"
+  termux.style.pointerEvents="none"
+},{once:true})
+termuxLink.addEventListener("click",()=>{
+  termuxLink.style.display="none"
+  termux.style.pointerEvents="auto"
+},{once:true})
 // **                                       PLATFORMTOOL                     **//
 let plBox = document.querySelector(".app-platformtool-box");
 let plCheckbox = document.querySelectorAll(".platformtool-checkboxes");
@@ -56,6 +64,16 @@ plCheckbox.forEach((plCheckbox) => {
     }
   });
 });
+
+sdk.addEventListener("mouseover",()=>{
+  sdkLink.style.display="block";
+   sdk.style.pointerEvents="none";
+},{once:true})
+sdkLink.addEventListener("click",()=>{
+     sdkLink.style.display="none";
+    sdk.style.pointerEvents="auto";
+},{once:true});
+
 Pverified.addEventListener("input", () => {
   if (
     !download.checked ||
