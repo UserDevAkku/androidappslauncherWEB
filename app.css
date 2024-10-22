@@ -581,9 +581,9 @@ input[type="checkbox"]:checked {
     width: 20%;
     border-radius: 10%;
     margin: 25px;
-    padding: 15px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 14px;
+    padding: 20px;
+    box-shadow: 0 0 12px 1px red;
+    font-size: 25px;
     border: none;
     outline: none;
     text-align: center;
