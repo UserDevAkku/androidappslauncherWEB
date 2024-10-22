@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color:#BCF2F6;
+  background-color:black;
 }
 :root {
   --shadow-size: clamp(1rem, 1vw, 4rem);
@@ -311,7 +311,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
-    box-shadow: 0 0 18px 1px black;
+    box-shadow: 0 0 18px 1px aqua;
   }
   .link {
     width: fit-content;
@@ -464,7 +464,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
-    box-shadow: 0 0 18px 1px black;
+    box-shadow: 0 0 18px 1px aqua;
   }
   .link {
     width: fit-content;
@@ -483,8 +483,8 @@ input[type="checkbox"]:checked {
     background-color:#FFF100;
     text-transform: uppercase;
     padding: 4px;
-    font-size: clamp(1rem, 7.3vw, 9rem);
-    box-shadow: 0 0 15px 1px black;
+    font-size: clamp(1rem, 7vw, 9rem);
+    box-shadow: 0 0 20px 1px white;
   }
   .app-about {
     width: 100%;
