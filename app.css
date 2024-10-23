@@ -516,12 +516,13 @@ input[type="checkbox"]:checked {
     background-color:white;
     text-transform: uppercase;
     padding: 4px;
+    margin-bottom: 14px;
     font-size: clamp(1rem, 7vw, 9rem);
-    box-shadow: 0 0 20px 1px white;
+    box-shadow: 0 0 20px 1px black;
   }
   .app-about {
     width: 100%;
-    padding: 10px;
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,14 +532,13 @@ input[type="checkbox"]:checked {
   }
   .note {
     width: 100%;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: clamp(0.7rem, 3.62vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .requirements-title {
     color: black;
