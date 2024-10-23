@@ -146,9 +146,36 @@ plCheckbox.forEach((plCheckbox) => {
 //   { once: true }
 // );
 Pverified.addEventListener("mouseout",()=>{
-  Pstatus.style.display="none";
+  if(!download.checked ||
+    !extract.checked ||
+    !copy.checked ||
+    !cdrive.checked ||
+    !paste.checked ||
+    !cmd.checked ||
+    !adb.checked){
+      Pstatus.style.display="none";
+    }
+  
 })
 Pverified.addEventListener("input", () => {
+  if(download.checked &&
+    extract.checked &&
+    copy.checked &&
+    cdrive.checked &&
+    paste.checked &&
+    cmd.checked &&
+    adb.checked ){
+      if( Pverified.value !== "yes" ||
+    Pverified.value !== "YES" ||
+    Pverified.value !== "Yes"
+  ){  ABox.style.backgroundColor = "#ffffff";
+      ABox.style.border = "none";
+      ABox.style.boxShadow = "0 0 12px 1px #000";
+      ACheckbox.forEach((ACheckbox)=>{
+        ACheckbox.checked=false;
+      })
+    }
+  }
   if (
     !download.checked ||
     !extract.checked ||
@@ -183,7 +210,10 @@ Pverified.addEventListener("input", () => {
       Pstatus.style.animation = "Status 555ms ease-in-out infinite";
       plBox.style.border = "2px solid green";
       plBox.style.boxShadow = "0 0 20px 2px #32cd32";
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
       Astatus.innerHTML = "permission is allowed";
+
     } else {
       plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
@@ -231,9 +261,40 @@ ACheckbox.forEach((ACheckbox) => {
   });
 });
 Averified.addEventListener("mouseout",()=>{
-  Astatus.style.display="none"
+if(!settings.checked ||
+  !miuibuild.checked ||
+  !searchdeveloperoption.checked ||
+  !opendeveloperoption.checked ||
+  !allowforusb.checked ||
+  !datacable.checked ||
+  !allowforphone.checked ||
+  !Acmd.checked ||
+  !Aadbdevices.checked){
+Astatus.style.display="none"
+  }
+  
 })
 Averified.addEventListener("input", () => {
+  if( settings.checked &&
+    miuibuild.checked &&
+    searchdeveloperoption.checked &&
+    opendeveloperoption.checked &&
+    allowforusb.checked &&
+    datacable.checked &&
+    allowforphone.checked &&
+    Acmd.checked &&
+    Aadbdevices.checked ){
+      if( Averified.value !== "yes" ||
+    Averified.value !== "YES" ||
+    Averified.value !== "Yes"
+  ){  TBox.style.backgroundColor = "#ffffff";
+      TBox.style.border = "none";
+      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TCheckbox.forEach((ACheckbox)=>{
+        TCheckbox.checked=false;
+      })
+    }
+  }
   if (
     !settings.checked ||
     !miuibuild.checked ||
@@ -246,6 +307,8 @@ Averified.addEventListener("input", () => {
     !Aadbdevices.checked
   ) {
     Astatus.innerHTML="permission is not allowed*";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     Averified.value = "";
   }
   if (
@@ -284,7 +347,6 @@ Averified.addEventListener("input", () => {
   }
 });
 //**####**//
-
 //*                    CONFIGURATION FOR TERMUX                    *//
 let TBox = document.querySelector(".app-termuxadbconnection-box");
 let TCheckbox = document.querySelectorAll(".termuxadbconnection-checkboxes");
@@ -378,27 +440,20 @@ plBox.addEventListener("mouseover", () => {
   }
 });
 ABox.addEventListener("mouseover", () => {
-  if(download.checked &&
+  if(Pverified.value!=="yes" || Pverified.value!=="Yes" || Pverified.value!=="YES" || Pverified.value===""){
+    if(download.checked &&
     extract.checked &&
     copy.checked &&
     cdrive.checked &&
     paste.checked &&
     cmd.checked &&
-    adb.checked ){
-      if(!Pverified.value === "yes" ||
-    !Pverified.value === "YES" ||
-    !Pverified.value === "Yes"
-  ){
-        Astatus.style.display = "block";
-        Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-         Astatus.innerHTML="platformtool installation is incomplete"
-        ABox.style.backgroundColor = "#ffffff";
-      ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
-      ACheckbox.forEach((ACheckbox)=>{
-        ACheckbox.checked=false;
-      })
-    }
+    adb.checked
+    )
+  {
+    Astatus.innerHTML="platformtool is mendatory"
+          Astatus.style.display = "block";
+          Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
   }
     if(!download.checked ||
       !extract.checked ||
@@ -416,7 +471,7 @@ ABox.addEventListener("mouseover", () => {
       ACheckbox.forEach((ACheckbox)=>{
         ACheckbox.checked=false;
       })
-      }
+    }
   if (download.checked &&
       extract.checked &&
       copy.checked &&
@@ -438,22 +493,23 @@ ABox.addEventListener("mouseover", () => {
   }
 });
 TBox.addEventListener("mouseover", () => {
-  if(settings.checked &&
-    miuibuild.checked &&
-    searchdeveloperoption.checked &&
-    opendeveloperoption.checked &&
-    allowforusb.checked &&
-    datacable.checked &&
-    allowforphone.checked &&
-    Acmd.checked &&
-    Aadbdevices.checked && Averified.value==="" || !Averified.value === "yes" ||
-    !Averified.value === "YES" ||
-    !Averified.value === "Yes" ){
-      Tstatus.innerHTML="android configuration is incomplete"
-        Tstatus.style.display = "block";
-      Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-
-    }
+  if(Averified.value!=="yes" || Averified.value!=="Yes" || Averified.value!=="YES" || Averified.value===""){
+    if(settings.checked &&
+      miuibuild.checked &&
+      searchdeveloperoption.checked &&
+      opendeveloperoption.checked &&
+      allowforusb.checked &&
+      datacable.checked &&
+      allowforphone.checked &&
+      Acmd.checked &&
+      Aadbdevices.checked
+    )
+  {
+    Tstatus.innerHTML="android configuration is mendatory"
+          Tstatus.style.display = "block";
+          Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
+  }
     if(!settings.checked ||
       !miuibuild.checked ||
       !searchdeveloperoption.checked ||
@@ -463,7 +519,7 @@ TBox.addEventListener("mouseover", () => {
       !allowforphone.checked ||
       !Acmd.checked ||
       !Aadbdevices.checked){
-        Tstatus.innerHTML="android is not configured yet"
+        Tstatus.innerHTML="android configuration is mendatory"
         Tstatus.style.display = "block";
       Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
       }
@@ -490,32 +546,3 @@ TBox.addEventListener("mouseover", () => {
     });
   }
 });
-
-let mouseoverBOX=()=>{
-  reqCheckbox.forEach((reqCheckbox)=>{
-    reqCheckbox.addEventListener("mouseover",()=>{
-      reqCheckbox.checked=true;
-      reqCompleted();
-    })
-  })
-  plCheckbox.forEach((plCheckbox)=>{
-    plCheckbox.addEventListener("mouseover",()=>{
-      plCheckbox.checked=true;
-    })
-  })
-  ACheckbox.forEach((ACheckbox)=>{
-    ACheckbox.addEventListener("mouseover",()=>{
-      ACheckbox.checked=true;
-    })
-  })
-  TCheckbox.forEach((TCheckbox)=>{
-    TCheckbox.addEventListener("mouseover",()=>{
-      TCheckbox.checked=true;
-      })
-  })
-}
-
-let body=document.querySelector("body")
-body.addEventListener("mouseover",()=>{
-  mouseoverBOX();
-})
