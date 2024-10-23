@@ -145,7 +145,9 @@ plCheckbox.forEach((plCheckbox) => {
 //   },
 //   { once: true }
 // );
-
+Pverified.addEventListener("mouseout",()=>{
+  Pstatus.style.display="none";
+})
 Pverified.addEventListener("input", () => {
   if (
     !download.checked ||
@@ -228,6 +230,9 @@ ACheckbox.forEach((ACheckbox) => {
     }
   });
 });
+Averified.addEventListener("mouseout",()=>{
+  Astatus.style.display="none"
+})
 Averified.addEventListener("input", () => {
   if (
     !settings.checked ||
@@ -366,7 +371,7 @@ plBox.addEventListener("mouseover", () => {
   } else {
       plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "none";
-      Pstatus.innerHTML = "requirements are incompleted";
+      Pstatus.innerHTML = "requirements are mendatory";
       Pstatus.style.display = "block";
       Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     });
@@ -402,7 +407,7 @@ ABox.addEventListener("mouseover", () => {
       !paste.checked ||
       !cmd.checked ||
       !adb.checked){
-        Astatus.innerHTML="platformtool is not installed yet"
+        Astatus.innerHTML="platformtool is mendatory"
         Astatus.style.display = "block";
         Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
         ABox.style.backgroundColor = "#ffffff";
@@ -485,3 +490,32 @@ TBox.addEventListener("mouseover", () => {
     });
   }
 });
+
+let mouseoverBOX=()=>{
+  reqCheckbox.forEach((reqCheckbox)=>{
+    reqCheckbox.addEventListener("mouseover",()=>{
+      reqCheckbox.checked=true;
+      reqCompleted();
+    })
+  })
+  plCheckbox.forEach((plCheckbox)=>{
+    plCheckbox.addEventListener("mouseover",()=>{
+      plCheckbox.checked=true;
+    })
+  })
+  ACheckbox.forEach((ACheckbox)=>{
+    ACheckbox.addEventListener("mouseover",()=>{
+      ACheckbox.checked=true;
+    })
+  })
+  TCheckbox.forEach((TCheckbox)=>{
+    TCheckbox.addEventListener("mouseover",()=>{
+      TCheckbox.checked=true;
+      })
+  })
+}
+
+let body=document.querySelector("body")
+body.addEventListener("mouseover",()=>{
+  mouseoverBOX();
+})
