@@ -29,13 +29,11 @@ const reqCompleted = () => {
     Pstatus.style.display = "none";
     plBox.style.border = "none";
     plBox.style.boxShadow = "0 0 12px 1px #000";
-    Pverified.value = "";
     //
     ABox.style.backgroundColor = "#ffffff";
       Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
-      Averified.value = "";
       //
       TBox.style.backgroundColor = "#ffffff";
       Tstatus.style.display = "none";
