@@ -113,7 +113,10 @@ plCheckbox.forEach((plCheckbox) => {
       Pstatus.style.display = "none";
       plBox.style.border = "none";
       plBox.style.boxShadow = "0 0 12px 1px #000";
-      // Pverified.value = "";
+
+      if(Pverified.value==="yes" || Pverified.value==="Yes" || Pverified.value==="YES"){
+        Pverified.value = "";
+      }
         ABox.style.backgroundColor = "#ffffff";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
@@ -260,7 +263,9 @@ ACheckbox.forEach((ACheckbox) => {
       Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
-      // Averified.value = "";
+      if(Averified.value==="yes" || Averified.value==="Yes" || Averified.value==="YES"){
+       Averified.value = "";
+      }
     }
   });
 });
@@ -374,7 +379,10 @@ TCheckbox.forEach((TCheckbox) => {
       Tstatus.style.display = "none";
       TBox.style.border = "none";
       TBox.style.boxShadow = "0 0 12px 1px #000";
-      // Tverified.value = "";
+      if(Tverified.value==="yes" || Tverified.value==="Yes" || Tverified.value==="YES"){
+        Tverified.value = "";
+       }
+
     }
   });
 });
