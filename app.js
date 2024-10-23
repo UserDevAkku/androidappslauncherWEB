@@ -1,4 +1,5 @@
 // **                                       REQUIREMENTS                     **//
+let yesNo=document.querySelectorAll(".yesNo");
 let reqBox = document.querySelector(".app-requirements-box");
 let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
@@ -20,6 +21,11 @@ const reqCompleted = () => {
     reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
     Pstatus.innerHTML = "permission is allowed";
   } else {
+    yesNo.forEach((yesNo)=>{
+      if(yesNo.value==="yes"){
+        yesNo.value="";
+      }
+      })
     reqBox.style.backgroundColor = "#ffffff";
     Rstatus.style.display = "none";
     reqBox.style.border = "none";
@@ -107,7 +113,7 @@ plCheckbox.forEach((plCheckbox) => {
       Pstatus.style.display = "none";
       plBox.style.border = "none";
       plBox.style.boxShadow = "0 0 12px 1px #000";
-      Pverified.value = "";
+      // Pverified.value = "";
         ABox.style.backgroundColor = "#ffffff";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
@@ -254,7 +260,7 @@ ACheckbox.forEach((ACheckbox) => {
       Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
-      Averified.value = "";
+      // Averified.value = "";
     }
   });
 });
@@ -368,7 +374,7 @@ TCheckbox.forEach((TCheckbox) => {
       Tstatus.style.display = "none";
       TBox.style.border = "none";
       TBox.style.boxShadow = "0 0 12px 1px #000";
-      Tverified.value = "";
+      // Tverified.value = "";
     }
   });
 });

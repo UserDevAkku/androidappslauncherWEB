@@ -311,7 +311,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 20px;
-    box-shadow: 0 0 18px 1px aqua;
+    box-shadow: 0 0 12px 1px red;
   }
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
@@ -336,14 +336,14 @@ input[type="checkbox"]:checked {
     display: none;
   }
   body{
-    background-color: hsl(240, 77%, 36%);
+    background-color: white;
   }
   .app-name {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:#5252bd;
+    background-color:white;
     text-transform: uppercase;
     padding: 2px;
     margin-bottom: 10px;
@@ -481,7 +481,10 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
-    box-shadow: 0 0 18px 1px aqua;
+    box-shadow: 0 0 12px 1px red;
+  }
+  body{
+    background-color: white;
   }
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
@@ -510,7 +513,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:#FFF100;
+    background-color:white;
     text-transform: uppercase;
     padding: 4px;
     font-size: clamp(1rem, 7vw, 9rem);
