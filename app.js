@@ -20,86 +20,57 @@ const reqCompleted = () => {
     reqBox.style.border = "2px solid green";
     reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
     Pstatus.innerHTML = "permission is allowed";
-  } 
-  else
-  {
+  } else {
     reqBox.style.backgroundColor = "#ffffff";
     Rstatus.style.display = "none";
     reqBox.style.border = "none";
     reqBox.style.boxShadow = "0 0 12px 1px #000";
   }
-if(!phone.checked ||
-  !pc.checked ||
-  !usb.checked ||
-  !termux.checked ||
-  !sdk.checked){
-    if(download.checked &&
-  extract.checked &&
-  copy.checked &&
-  cdrive.checked &&
-  paste.checked &&
-  cmd.checked &&
-  adb.checked)
-  {
+  if (
+    !phone.checked ||
+    !pc.checked ||
+    !usb.checked ||
+    !termux.checked ||
+    !sdk.checked
+  ) {
     plBox.style.backgroundColor = "#ffffff";
     Pstatus.style.display = "none";
     plBox.style.border = "none";
     plBox.style.boxShadow = "0 0 12px 1px #000";
-    Pverified.value = "";
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.checked = false;
     });
-  }
-}
-if(!phone.checked ||
-  !pc.checked ||
-  !usb.checked ||
-  !termux.checked ||
-  !sdk.checked){
-  if( settings.checked &&
-    miuibuild.checked &&
-    searchdeveloperoption.checked &&
-    opendeveloperoption.checked &&
-    allowforusb.checked &&
-    datacable.checked &&
-    allowforphone.checked &&
-    Acmd.checked &&
-    Aadbdevices.checked)
-    {
-      ABox.style.backgroundColor = "#ffffff";
+    if (Pverified.value === "YesNo") {
+      Pverified.value != "";
+    } else {
+      Pverified.value = "";
+    }
+    ABox.style.backgroundColor = "#ffffff";
     Astatus.style.display = "none";
     ABox.style.border = "none";
     ABox.style.boxShadow = "0 0 12px 1px #000";
-    Averified.value = "";
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.checked = false;
     });
-  }
-}
-if(!phone.checked ||
-  !pc.checked ||
-  !usb.checked ||
-  !termux.checked ||
-  !sdk.checked){
-if( VAadbdevice.checked &&
-  tcp.checked &&
-  T_install.checked &&
-  T_pkgs1.checked &&
-  T_pkgs2.checked &&
-  IP_find.checked &&
-  IP_noted.checked &&
-  IP_enter.checked){
-  Tverified.value = "";
-  TBox.style.backgroundColor = "#ffffff";
+    if (Averified.value === "YesNo") {
+      Averified.value != "";
+    } else {
+      Averified.value = "";
+    }
+    TBox.style.backgroundColor = "#ffffff";
     Tstatus.style.display = "none";
     TBox.style.border = "none";
     TBox.style.boxShadow = "0 0 12px 1px #000";
     TCheckbox.forEach((TCheckbox) => {
       TCheckbox.checked = false;
     });
-}
-}
-}
+    if (Tverified.value === "YesNo") {
+      Tverified.value != "";
+    } else {
+      Tverified.value = "";
+    }
+  }
+};
 reqBox.addEventListener("click", () => {
   reqCompleted();
 });
@@ -120,14 +91,12 @@ plCheckbox.forEach((plCheckbox) => {
       !cmd.checked ||
       !adb.checked
     ) {
-      if(Pverified.value==="YesNo"){
+      if (Pverified.value === "YesNo") {
         Pverified.value != "";
+      } else {
+        Pverified.value = "";
       }
-      else
-      {
-        Pverified.value=""
-      }
-     
+
       plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
       plBox.style.border = "none";
@@ -138,14 +107,11 @@ plCheckbox.forEach((plCheckbox) => {
       ACheckbox.forEach((ACheckbox) => {
         ACheckbox.checked = false;
       });
-      if(Averified.value==="YesNo"){
+      if (Averified.value === "YesNo") {
         Averified.value != "";
+      } else {
+        Averified.value = "";
       }
-      else
-      {
-        Averified.value=""
-      }
-     
     }
     if (
       download.checked &&
@@ -188,23 +154,20 @@ Pverified.addEventListener("input", () => {
       Pverified.value !== "YES" ||
       Pverified.value !== "Yes"
     ) {
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+      Astatus.innerHTML = "platformtool is mendatory";
       ABox.style.backgroundColor = "#ffffff";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
       ACheckbox.forEach((ACheckbox) => {
-      ACheckbox.checked = false;
+        ACheckbox.checked = false;
       });
-      Astatus.style.display = "block";
-      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-      Astatus.innerHTML = "platformtool is mendatory";
-      
-     if(Averified.value==="YesNo"){
-      Averified.value!=""
-     }
-     else
-     {
-Averified.value=""
-     }
+      if (Averified.value === "YesNo") {
+        Averified.value != "";
+      } else {
+        Averified.value = "";
+      }
     }
   }
   if (
@@ -241,9 +204,9 @@ Averified.value=""
       Pstatus.style.animation = "Status 555ms ease-in-out infinite";
       plBox.style.border = "2px solid green";
       plBox.style.boxShadow = "0 0 20px 2px #32cd32";
-      Astatus.innerHTML="permission is allowed"
-      Astatus.style.display="block"
-      Astatus.style.animation="NoStatus 555ms ease-in-out infinite";
+      Astatus.innerHTML = "permission is allowed";
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     } else {
       plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
@@ -253,14 +216,11 @@ Averified.value=""
       Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
-      if(Averified.value==="YesNo"){
+      if (Averified.value === "YesNo") {
         Averified.value != "";
+      } else {
+        Averified.value = "";
       }
-      else
-      {
-        Averified.value=""
-      }
-     
     }
   }
 });
@@ -293,11 +253,9 @@ ACheckbox.forEach((ACheckbox) => {
       Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
-      if (
-        Averified.value === "yes" ||
-        Averified.value === "Yes" ||
-        Averified.value === "YES"
-      ) {
+      if (Averified.value === "YesNo") {
+        Averified.value != "";
+      } else {
         Averified.value = "";
       }
     }
@@ -375,7 +333,7 @@ Averified.addEventListener("input", () => {
       Averified.value === "YES" ||
       Averified.value === "Yes"
     ) {
-      Astatus.innerHTML = "configuration is completed";
+      Astatus.innerHTML = "android configuration is completed";
       ABox.style.backgroundColor = "#ccffcc";
       Astatus.style.display = "block";
       Astatus.style.animation = "Status 555ms ease-in-out infinite";
@@ -401,7 +359,7 @@ let TCheckbox = document.querySelectorAll(".termuxadbconnection-checkboxes");
 let Tstatus = document.querySelector("#T-status");
 let Tverified = document.querySelector(".termuxadbconnection-verified");
 
-//**####**//
+//**####**////
 TCheckbox.forEach((TCheckbox) => {
   TCheckbox.addEventListener("click", () => {
     if (
@@ -418,11 +376,9 @@ TCheckbox.forEach((TCheckbox) => {
       Tstatus.style.display = "none";
       TBox.style.border = "none";
       TBox.style.boxShadow = "0 0 12px 1px #000";
-      if (
-        Tverified.value === "yes" ||
-        Tverified.value === "Yes" ||
-        Tverified.value === "YES"
-      ) {
+      if (Tverified.value === "YesNo") {
+        Tverified.value != "";
+      } else {
         Tverified.value = "";
       }
     }
@@ -438,10 +394,27 @@ Tverified.addEventListener("input", () => {
     !IP_find.checked ||
     !IP_noted.checked ||
     !IP_enter.checked
-  ) {
-    Tstatus.innerHTML = "permission is not allowed*";
-    Tverified.value = "";
+  ){
+    Tstatus.innerHTML="permission is not allowed"
+    Tstatus.style.display = "block";
+    Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   }
+  //
+  Tverified.addEventListener("mouseout", () => {
+    if (
+      !VAadbdevice.checked ||
+    !tcp.checked ||
+    !T_install.checked ||
+    !T_pkgs1.checked ||
+    !T_pkgs2.checked ||
+    !IP_find.checked ||
+    !IP_noted.checked ||
+    !IP_enter.checked
+    ) {
+      Tstatus.style.display = "none";
+    }
+  });
+  //
   if (
     VAadbdevice.checked &&
     tcp.checked &&
@@ -457,11 +430,11 @@ Tverified.addEventListener("input", () => {
       Tverified.value === "YES" ||
       Tverified.value === "Yes"
     ) {
-      Tstatus.innerHTML = "configuration is completed";
-      TBox.style.backgroundColor = "#ccffcc";
+      Tstatus.innerHTML = " Termux configuration is completed";
       Tstatus.style.display = "block";
       Tstatus.style.animation = "Status 555ms ease-in-out infinite";
       TBox.style.border = "2px solid green";
+      TBox.style.backgroundColor = "#ccffcc";
       TBox.style.boxShadow = "0 0 20px 2px #32cd32";
     } else {
       TBox.style.backgroundColor = "#ffffff";
@@ -486,32 +459,13 @@ plBox.addEventListener("mouseover", () => {
   } else {
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "none";
-      Pstatus.innerHTML = "requirements are mendatory";
-      Pstatus.style.display = "block";
-      Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     });
+    Pstatus.innerHTML = "requirements are mendatory";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   }
 });
 ABox.addEventListener("mouseover", () => {
-  if (
-    !download.checked ||
-    !extract.checked ||
-    !copy.checked ||
-    !cdrive.checked ||
-    !paste.checked ||
-    !cmd.checked ||
-    !adb.checked
-  ) {
-    Astatus.innerHTML = "platformtool is mendatory";
-    Astatus.style.display = "block";
-    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-    ABox.style.backgroundColor = "#ffffff";
-    ABox.style.border = "none";
-    ABox.style.boxShadow = "0 0 12px 1px #000";
-    ACheckbox.forEach((ACheckbox) => {
-      ACheckbox.checked = false;
-    });
-  }
   if (
     (download.checked &&
       extract.checked &&
@@ -531,67 +485,12 @@ ABox.addEventListener("mouseover", () => {
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.style.pointerEvents = "none";
     });
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+    Astatus.innerHTML = "platformtool is mendatory";
   }
 });
 TBox.addEventListener("mouseover", () => {
-  if (
-    settings.checked &&
-    miuibuild.checked &&
-    searchdeveloperoption.checked &&
-    opendeveloperoption.checked &&
-    allowforusb.checked &&
-    datacable.checked &&
-    allowforphone.checked &&
-    Acmd.checked &&
-    Aadbdevices.checked
-  ) {
-    if (
-      Averified.value === "yes" ||
-      Averified.value === "YES" ||
-      Averified.value === "Yes"
-    ) {
-      Tstatus.style.display = "none";
-    }
-  }
-  if (
-    Averified.value !== "yes" ||
-    Averified.value !== "Yes" ||
-    Averified.value !== "YES" ||
-    Averified.value === ""
-  ) {
-    if (
-      settings.checked &&
-      miuibuild.checked &&
-      searchdeveloperoption.checked &&
-      opendeveloperoption.checked &&
-      allowforusb.checked &&
-      datacable.checked &&
-      allowforphone.checked &&
-      Acmd.checked &&
-      Aadbdevices.checked
-    ) {
-      Tstatus.innerHTML = "android configuration is mendatory";
-      Tstatus.style.display = "block";
-      Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-    }
-  } else {
-    Tstatus.style.display = "none";
-  }
-  if (
-    !settings.checked ||
-    !miuibuild.checked ||
-    !searchdeveloperoption.checked ||
-    !opendeveloperoption.checked ||
-    !allowforusb.checked ||
-    !datacable.checked ||
-    !allowforphone.checked ||
-    !Acmd.checked ||
-    !Aadbdevices.checked
-  ) {
-    Tstatus.innerHTML = "android configuration is mendatory";
-    Tstatus.style.display = "block";
-    Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-  }
   if (
     (settings.checked &&
       miuibuild.checked &&
@@ -613,5 +512,8 @@ TBox.addEventListener("mouseover", () => {
     TCheckbox.forEach((TCheckbox) => {
       TCheckbox.style.pointerEvents = "none";
     });
+    Tstatus.innerHTML = "android configuration is mendatory";
+    Tstatus.style.display = "block";
+    Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   }
 });
