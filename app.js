@@ -546,10 +546,89 @@ ABox.addEventListener("mouseover", () => {
     });
   }
 });
-// ABox.addEventListener("mouseover",()=>{
-
-// })
 TBox.addEventListener("mouseover", () => {
+  if (
+    (settings.checked &&
+      miuibuild.checked &&
+      searchdeveloperoption.checked &&
+      opendeveloperoption.checked &&
+      allowforusb.checked &&
+      datacable.checked &&
+      allowforphone.checked &&
+      Acmd.checked &&
+      Aadbdevices.checked &&
+      Averified.value === "yes") ||
+    Averified.value === "YES" ||
+    Averified.value === "Yes"
+  ) {
+    TCheckbox.forEach((TCheckbox) => {
+      TCheckbox.style.pointerEvents = "auto";
+    });
+  } else {
+    TCheckbox.forEach((TCheckbox) => {
+      TCheckbox.style.pointerEvents = "none";
+    });
+    Tstatus.innerHTML = "android configuration is mendatory";
+    Tstatus.style.display = "block";
+    Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
+});
+plBox.addEventListener("touchstart", () => {
+  if (
+    phone.checked &&
+    pc.checked &&
+    usb.checked &&
+    termux.checked &&
+    sdk.checked
+  ) {
+    plCheckbox.forEach((plCheckbox) => {
+      plCheckbox.style.pointerEvents = "auto";
+    });
+  } else {
+    plCheckbox.forEach((plCheckbox) => {
+      plCheckbox.style.pointerEvents = "none";
+    });
+    Pstatus.innerHTML = "requirements are mendatory";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
+});
+ABox.addEventListener("touchstart", () => {
+  if (
+    !download.checked ||
+    !extract.checked ||
+    !copy.checked ||
+    !cdrive.checked ||
+    !paste.checked ||
+    !cmd.checked ||
+    !adb.checked
+  ) {
+    Astatus.innerHTML = "platformtool is mendatory";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
+  if (
+    (download.checked &&
+      extract.checked &&
+      copy.checked &&
+      cdrive.checked &&
+      paste.checked &&
+      cmd.checked &&
+      adb.checked &&
+      Pverified.value === "yes") ||
+    Pverified.value === "YES" ||
+    Pverified.value === "Yes"
+  ) {
+    ACheckbox.forEach((ACheckbox) => {
+      ACheckbox.style.pointerEvents = "auto";
+    });
+  } else {
+    ACheckbox.forEach((ACheckbox) => {
+      ACheckbox.style.pointerEvents = "none";
+    });
+  }
+});
+TBox.addEventListener("touchstart", () => {
   if (
     (settings.checked &&
       miuibuild.checked &&
