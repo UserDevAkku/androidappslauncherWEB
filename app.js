@@ -457,6 +457,9 @@ plBox.addEventListener("mouseover", () => {
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "auto";
     });
+    Astatus.innerHTML = "permission is granted";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   } else {
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "none";
@@ -482,6 +485,9 @@ ABox.addEventListener("mouseover", () => {
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.style.pointerEvents = "auto";
     });
+    Astatus.innerHTML = "permission is granted";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   } else {
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.style.pointerEvents = "none";
@@ -509,6 +515,9 @@ TBox.addEventListener("mouseover", () => {
     TCheckbox.forEach((TCheckbox) => {
       TCheckbox.style.pointerEvents = "auto";
     });
+    Tstatus.innerHTML = "permission is granted";
+    Tstatus.style.display = "block";
+    Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   } else {
     TCheckbox.forEach((TCheckbox) => {
       TCheckbox.style.pointerEvents = "none";
