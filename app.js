@@ -14,16 +14,22 @@ const reqCompleted = () => {
     sdk.checked
   ) {
     Rstatus.innerHTML = "requirements completed";
-    reqBox.style.backgroundColor = "#ccffcc";
     Rstatus.style.display = "block";
     Rstatus.style.animation = "Status 555ms ease-in-out infinite";
+    reqBox.style.backgroundColor = "#ccffcc";
     reqBox.style.border = "2px solid green";
     reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+    Pstatus.innerHTML = "permission is allowed";
   } else {
-    reqBox.style.backgroundColor = "#ffffff";
     Rstatus.style.display = "none";
+    reqBox.style.backgroundColor = "#ffffff";
     reqBox.style.border = "none";
     reqBox.style.boxShadow = "0 0 12px 1px #000";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+    Pstatus.innerHTML = "requirements are mendatory";
   }
   if (
     !phone.checked ||
@@ -135,7 +141,15 @@ Pverified.addEventListener("mouseout", () => {
     !cmd.checked ||
     !adb.checked
   ) {
-    Pstatus.style.display = "none";
+    if (
+      Pverified.value === "yes" ||
+      Pverified.value === "Yes" ||
+      Pverified.value === "YES"
+    ) {
+      Pstatus.style.display != "none";
+    } else {
+      Pstatus.style.display = "none";
+    }
   }
 });
 Pverified.addEventListener("input", () => {
@@ -146,12 +160,8 @@ Pverified.addEventListener("input", () => {
     cdrive.checked &&
     paste.checked &&
     cmd.checked &&
-    adb.checked
-  ) {
-    if (
-      Pverified.value !== "yes" ||
-      Pverified.value !== "YES" ||
-      Pverified.value !== "Yes"
+    adb.checked){
+      if(Pverified.value !== "yes" || Pverified.value !== "YES" || Pverified.value !== "Yes"
     ) {
       Astatus.style.display = "block";
       Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
@@ -167,6 +177,8 @@ Pverified.addEventListener("input", () => {
       } else {
         Averified.value = "";
       }
+    } else {
+      Astatus.style.display = "none";
     }
   }
   if (
@@ -197,19 +209,24 @@ Pverified.addEventListener("input", () => {
       Pverified.value === "YES" ||
       Pverified.value === "Yes"
     ) {
-      Pstatus.innerHTML = "Platformtool Installed";
-      plBox.style.backgroundColor = "#ccffcc";
       Pstatus.style.display = "block";
       Pstatus.style.animation = "Status 555ms ease-in-out infinite";
+      Pstatus.innerHTML = "Platformtool Installed";
+      plBox.style.backgroundColor = "#ccffcc";
       plBox.style.border = "2px solid green";
       plBox.style.boxShadow = "0 0 20px 2px #32cd32";
+      Astatus.innerHTML = "permission is allowed";
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     } else {
-      plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
+      plBox.style.backgroundColor = "#ffffff";
       plBox.style.border = "none";
       plBox.style.boxShadow = "0 0 12px 1px #000";
+      Astatus.innerHTML = "platformtool is mendatory";
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
       ABox.style.backgroundColor = "#ffffff";
-      Astatus.style.display = "none";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
       if (Averified.value === "YesNo") {
@@ -269,7 +286,15 @@ Averified.addEventListener("mouseout", () => {
     !Acmd.checked ||
     !Aadbdevices.checked
   ) {
-    Astatus.style.display = "none";
+    if (
+      Averified.value === "yes" ||
+      Averified.value === "Yes" ||
+      Averified.value === "YES"
+    ) {
+      Astatus.style.display != "none";
+    } else {
+      Astatus.style.display = "none";
+    }
   }
 });
 Averified.addEventListener("input", () => {
@@ -295,6 +320,13 @@ Averified.addEventListener("input", () => {
       TCheckbox.forEach((TCheckbox) => {
         TCheckbox.checked = false;
       });
+      if(Tverified.value==="YesNo"){
+        Tverified.value!=""
+      }
+      else
+      {
+         Tverified.value="";
+      }
     }
   }
   if (
@@ -332,18 +364,26 @@ Averified.addEventListener("input", () => {
       Astatus.innerHTML = "android configuration is completed";
       ABox.style.backgroundColor = "#ccffcc";
       Astatus.style.display = "block";
+      Astatus.innerHTML = "android configuration is completed";
       Astatus.style.animation = "Status 555ms ease-in-out infinite";
       ABox.style.border = "2px solid green";
       ABox.style.boxShadow = "0 0 20px 2px #32cd32";
+      Tstatus.style.display = "block";
+      Tstatus.innerHTML = "permission is allowed";
+      Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+      
     } else {
-      ABox.style.backgroundColor = "#ffffff";
       Astatus.style.display = "none";
+      ABox.style.backgroundColor = "#ffffff";
       ABox.style.border = "none";
       ABox.style.boxShadow = "0 0 12px 1px #000";
       TBox.style.backgroundColor = "#ffffff";
-      Tstatus.style.display = "none";
       TBox.style.border = "none";
       TBox.style.boxShadow = "0 0 12px 1px #000";
+      Tstatus.style.display = "block";
+      Tstatus.innerHTML = "android configuration is completed";
+      Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+      
     }
   }
 });
@@ -389,25 +429,33 @@ Tverified.addEventListener("input", () => {
     !IP_find.checked ||
     !IP_noted.checked ||
     !IP_enter.checked
-  ){
-    Tstatus.innerHTML="permission is not allowed"
+  ) {
+    Tstatus.innerHTML = "permission is not allowed";
     Tstatus.style.display = "block";
     Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-    Tverified.value=""
+    Tverified.value = "";
   }
   //
   Tverified.addEventListener("mouseout", () => {
     if (
       !VAadbdevice.checked ||
-    !tcp.checked ||
-    !T_install.checked ||
-    !T_pkgs1.checked ||
-    !T_pkgs2.checked ||
-    !IP_find.checked ||
-    !IP_noted.checked ||
-    !IP_enter.checked
+      !tcp.checked ||
+      !T_install.checked ||
+      !T_pkgs1.checked ||
+      !T_pkgs2.checked ||
+      !IP_find.checked ||
+      !IP_noted.checked ||
+      !IP_enter.checked
     ) {
-      Tstatus.style.display = "none";
+      if (
+        Tverified.value === "yes" ||
+        Tverified.value === "Yes" ||
+        Tverified.value === "YES"
+      ) {
+        Tstatus.style.display != "none";
+      } else {
+        Tstatus.style.display = "none";
+      }
     }
   });
   //
@@ -463,6 +511,19 @@ plBox.addEventListener("mouseover", () => {
 });
 ABox.addEventListener("mouseover", () => {
   if (
+    !download.checked ||
+    !extract.checked ||
+    !copy.checked ||
+    !cdrive.checked ||
+    !paste.checked ||
+    !cmd.checked ||
+    !adb.checked
+  ) {
+    Astatus.innerHTML = "platformtool is mendatory";
+    Astatus.style.display = "block";
+    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+  }
+  if (
     (download.checked &&
       extract.checked &&
       copy.checked &&
@@ -481,11 +542,11 @@ ABox.addEventListener("mouseover", () => {
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.style.pointerEvents = "none";
     });
-    Astatus.style.display = "block";
-    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-    Astatus.innerHTML = "platformtool is mendatory";
   }
 });
+// ABox.addEventListener("mouseover",()=>{
+
+// })
 TBox.addEventListener("mouseover", () => {
   if (
     (settings.checked &&

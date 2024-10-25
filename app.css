@@ -447,7 +447,7 @@ input[type="checkbox"]:checked {
     margin: 15px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 13px;
+    font-size: 8px;
     border: none;
     outline: none;
     text-align: center;
@@ -531,7 +531,7 @@ input[type="checkbox"]:checked {
     animation: app-about 1s ease-in-out infinite;
   }
   .note {
-    width: 100%;
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
