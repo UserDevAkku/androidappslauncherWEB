@@ -442,12 +442,12 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    width: 10%;
+    width:clamp(20%,1vw,30%);
     border-radius: 10%;
     margin: 15px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 8px;
+    font-size:clamp(.2rem,1vw,2rem);
     border: none;
     outline: none;
     text-align: center;
