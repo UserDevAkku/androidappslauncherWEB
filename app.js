@@ -19,7 +19,6 @@ const reqCompleted = () => {
     Rstatus.style.animation = "Status 555ms ease-in-out infinite";
     reqBox.style.border = "2px solid green";
     reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
-    Pstatus.innerHTML = "permission is allowed";
   } else {
     reqBox.style.backgroundColor = "#ffffff";
     Rstatus.style.display = "none";
@@ -204,9 +203,6 @@ Pverified.addEventListener("input", () => {
       Pstatus.style.animation = "Status 555ms ease-in-out infinite";
       plBox.style.border = "2px solid green";
       plBox.style.boxShadow = "0 0 20px 2px #32cd32";
-      Astatus.innerHTML = "permission is allowed";
-      Astatus.style.display = "block";
-      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     } else {
       plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
@@ -339,7 +335,6 @@ Averified.addEventListener("input", () => {
       Astatus.style.animation = "Status 555ms ease-in-out infinite";
       ABox.style.border = "2px solid green";
       ABox.style.boxShadow = "0 0 20px 2px #32cd32";
-      Tstatus.innerHTML = "permission is allowed";
     } else {
       ABox.style.backgroundColor = "#ffffff";
       Astatus.style.display = "none";
