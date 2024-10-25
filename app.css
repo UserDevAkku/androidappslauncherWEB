@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color:white;
+  background-color: white;
 }
 :root {
   --shadow-size: clamp(1rem, 1vw, 4rem);
@@ -308,6 +308,26 @@ input[type="checkbox"]:checked {
 
 /*PHONES*/
 @media (min-width: 320px) and (max-width: 480px) {
+  .contactsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactUs {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.myAccounts{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.links{
+  text-decoration: none;
+}
   .boxes {
     width: 95%;
     margin-bottom: 20px;
@@ -331,11 +351,11 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(1.2rem,1.2vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(1.2rem, 1.2vw, 10rem);
     display: none;
   }
-  body{
+  body {
     background-color: white;
   }
   .app-name {
@@ -343,7 +363,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:white;
+    background-color: white;
     text-transform: uppercase;
     padding: 2px;
     margin-bottom: 10px;
@@ -442,12 +462,12 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    width:clamp(20%,1vw,30%);
+    width: clamp(20%, 1vw, 30%);
     border-radius: 10%;
     margin: 5px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size:clamp(.9rem,1vw,2rem);
+    font-size: clamp(0.9rem, 1vw, 2rem);
     border: none;
     outline: none;
     text-align: center;
@@ -483,7 +503,7 @@ input[type="checkbox"]:checked {
     margin-bottom: 40px;
     box-shadow: 0 0 12px 1px red;
   }
-  body{
+  body {
     background-color: white;
   }
   input[type="checkbox"] {
@@ -504,8 +524,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1.4vw,10rem);
-    font-size: clamp(2rem,3vw,10rem);
+    left: clamp(1.2rem, 1.4vw, 10rem);
+    font-size: clamp(2rem, 3vw, 10rem);
     display: none;
   }
   .app-name {
@@ -513,7 +533,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:white;
+    background-color: white;
     text-transform: uppercase;
     padding: 4px;
     margin-bottom: 14px;
@@ -531,7 +551,7 @@ input[type="checkbox"]:checked {
     animation: app-about 1s ease-in-out infinite;
   }
   .note {
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -646,7 +666,7 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
-@media (min-width:1280px) and (max-width:1920px){
+@media (min-width: 1280px) and (max-width: 1920px) {
   .boxes {
     width: 40%;
     margin-bottom: 40px;
@@ -656,8 +676,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(1.2rem,1.6vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(1.2rem, 1.6vw, 10rem);
     display: none;
   }
   .app-name {
@@ -705,7 +725,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -767,7 +787,6 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    
     border-radius: 10%;
     margin: 5px;
     padding: 8px;
@@ -888,7 +907,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
-@media (min-width:1920px) and (max-width:2560px){
+@media (min-width: 1920px) and (max-width: 2560px) {
   .boxes {
     width: 40%;
     margin-bottom: 40px;
@@ -898,8 +917,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(2rem,1.6vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(2rem, 1.6vw, 10rem);
     display: none;
   }
   .app-name {
@@ -947,7 +966,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -1009,7 +1028,6 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    
     border-radius: 10%;
     margin: 5px;
     padding: 8px;
@@ -1130,7 +1148,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
-@media (min-width:2560px) and (max-width:3440px){
+@media (min-width: 2560px) and (max-width: 3440px) {
   .boxes {
     width: 50%;
     margin-bottom: 40px;
@@ -1140,8 +1158,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(2rem,1.4vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
   }
   .app-name {
@@ -1189,7 +1207,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -1251,7 +1269,6 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    
     border-radius: 10%;
     margin: 10px;
     padding: 20px;
@@ -1372,7 +1389,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
-@media (min-width:3440px) and (max-width:3840px){
+@media (min-width: 3440px) and (max-width: 3840px) {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
@@ -1382,8 +1399,8 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(2rem,1.4vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
   }
   .app-name {
@@ -1417,7 +1434,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
-
   }
   .requirements-title {
     color: black;
@@ -1432,7 +1448,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
@@ -1623,7 +1639,7 @@ input[type="checkbox"]:checked {
   }
 }
 
-@media (min-width:5120px) and (max-width:6000px){
+@media (min-width: 5120px) and (max-width: 6000px) {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
@@ -1633,10 +1649,9 @@ input[type="checkbox"]:checked {
     height: fit-content;
     text-decoration: none;
     position: relative;
-    left: clamp(1.2rem,1vw,10rem);
-    font-size: clamp(2rem,1.4vw,10rem);
+    left: clamp(1.2rem, 1vw, 10rem);
+    font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
-
   }
   .app-name {
     display: flex;
@@ -1669,7 +1684,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
-
   }
   .requirements-title {
     color: black;
@@ -1684,7 +1698,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .platformtool-title {
     color: black;
     font-weight: bold;
