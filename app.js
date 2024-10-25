@@ -457,9 +457,9 @@ plBox.addEventListener("mouseover", () => {
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "auto";
     });
-    Astatus.innerHTML = "permission is granted";
-    Astatus.style.display = "block";
-    Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+    Pstatus.innerHTML = "permission is granted";
+    Pstatus.style.display = "block";
+    Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   } else {
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.style.pointerEvents = "none";
