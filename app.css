@@ -313,21 +313,60 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100px;
   }
   .contactUs {
     width: 60%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px 2px aqua;
   }
-.myAccounts{
-  width: 100%;
+  .myAccounts{
+  width: 80%;
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
-}
-.links{
+  align-items: center;
+  justify-content: center;
+  
+  }
+  .links{
   text-decoration: none;
-}
+  width: 60px;
+  height: 40px;
+  }
+  .socialsAccounts{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo{
+    font-size: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #fb-logo{
+  color: blue;
+   }
+   #ig-logo{
+  color: hwb(346 30% 11%);
+   }
+   #github-logo{
+    color: black;
+   }
+   #linkedin-logo{
+  color: #0a61ec;
+   }
+   #yt-logo{
+  color: red;
+   }
+  
   .boxes {
     width: 95%;
     margin-bottom: 20px;
