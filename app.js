@@ -101,7 +101,6 @@ plCheckbox.forEach((plCheckbox) => {
       } else {
         Pverified.value = "";
       }
-
       plBox.style.backgroundColor = "#ffffff";
       Pstatus.style.display = "none";
       plBox.style.border = "none";
@@ -112,6 +111,9 @@ plCheckbox.forEach((plCheckbox) => {
       ACheckbox.forEach((ACheckbox) => {
         ACheckbox.checked = false;
       });
+      Astatus.style.display = "block";
+      Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+      Astatus.innerHTML = "platformtool is mendatory";
       if (Averified.value === "YesNo") {
         Averified.value != "";
       } else {
