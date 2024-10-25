@@ -444,10 +444,10 @@ input[type="checkbox"]:checked {
   .yesNo {
     width:clamp(20%,1vw,30%);
     border-radius: 10%;
-    margin: 15px;
+    margin: 5px;
     padding: 5px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size:clamp(.2rem,1vw,2rem);
+    font-size:clamp(.9rem,1vw,2rem);
     border: none;
     outline: none;
     text-align: center;
