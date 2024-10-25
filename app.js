@@ -398,6 +398,7 @@ Tverified.addEventListener("input", () => {
     Tstatus.innerHTML="permission is not allowed"
     Tstatus.style.display = "block";
     Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
+    Tverified.value=""
   }
   //
   Tverified.addEventListener("mouseout", () => {
