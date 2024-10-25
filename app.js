@@ -264,6 +264,19 @@ ACheckbox.forEach((ACheckbox) => {
       !Acmd.checked ||
       !Aadbdevices.checked
     ) {
+      TBox.style.backgroundColor = "#ffffff";
+      TBox.style.border = "none";
+      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TCheckbox.forEach((TCheckbox) => {
+        TCheckbox.checked = false;
+      });
+      if(Tverified.value==="YesNo"){
+        Tverified.value!=""
+      }
+      else
+      {
+         Tverified.value="";
+      }
       ABox.style.backgroundColor = "#ffffff";
       Astatus.style.display = "none";
       ABox.style.border = "none";
