@@ -442,7 +442,7 @@ input[type="checkbox"]:checked {
     color: red;
   }
   .yesNo {
-    width: 35%;
+    width: 50%;
     border-radius: 10%;
     margin: 15px;
     padding: 5px;
