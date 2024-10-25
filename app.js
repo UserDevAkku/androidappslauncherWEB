@@ -668,3 +668,20 @@ TBox.addEventListener("touchstart", () => {
     Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
   }
 });
+termux.addEventListener("mouseover",()=>{
+  termuxLink.style.display="block";
+  termux.disabled=true;
+
+})
+sdk.addEventListener("mouseover",()=>{
+  sdkLink.style.display="block";
+  sdk.disabled=true;
+})
+termuxLink.addEventListener("click",()=>{
+  termuxLink.style.display="none"
+  termux.disabled=false;
+})
+sdkLink.addEventListener("click",()=>{
+  sdkLink.style.display="none"
+  sdk.disabled=false;
+})
