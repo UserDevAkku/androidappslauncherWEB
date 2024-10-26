@@ -429,7 +429,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: clamp(0.8rem, 3.9vw, 6rem);
+    font-size: clamp(0.8rem, 3.5vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 10px;
   }
@@ -439,7 +439,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.6rem, 3.2vw, 7rem);
+    font-size: clamp(0.6rem, 3vw, 7rem);
     color: red;
     font-weight: bolder;
     margin-bottom: 20px;
@@ -581,7 +581,7 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 2px 0px aqua;
   }
   .myAccounts {
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -605,7 +605,7 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 60px;
   }
   #fb-logo {
     color: blue;
