@@ -672,11 +672,11 @@ termux.addEventListener("mouseover",()=>{
   termuxLink.style.display="block";
   termux.disabled=true;
 
-})
+},{once:true})
 sdk.addEventListener("mouseover",()=>{
   sdkLink.style.display="block";
   sdk.disabled=true;
-})
+},{once:true})
 termuxLink.addEventListener("click",()=>{
   termuxLink.style.display="none"
   termux.disabled=false;
