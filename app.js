@@ -20,6 +20,21 @@ else{
   Rstatus.style.display="none";
 }
 })
+reqBox.addEventListener("click",()=>{
+  if(!phone.checked &&
+    !pc.checked &&
+    !usb.checked &&
+    !termux.checked &&
+    !sdk.checked
+){
+  Rstatus.innerHTML="please complete the requirements"
+  Rstatus.style.display="block";
+  Rstatus.style.animation="NoStatus 555ms ease-in-out infinite";
+}
+else{
+  Rstatus.style.display="none";
+}
+})
 const reqCompleted = () => {
   if (
     phone.checked &&
