@@ -770,25 +770,25 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.3rem, 4.28vw, 6rem);
+    font-size: clamp(0.3rem, 4.23vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 3.86vw, 6rem);
+    font-size: clamp(0.3rem, 3.83vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 3.69vw, 6rem);
+    font-size: clamp(0.3rem, 3.65vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 3.4vw, 6rem);
+    font-size: clamp(0.3rem, 3.2vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -797,8 +797,7 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    background-color: #000;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1003,25 +1002,25 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.14vw, 6rem);
+    font-size: clamp(0.3rem, 2.12vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.93vw, 6rem);
+    font-size: clamp(0.3rem, 1.9vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.78vw, 6rem);
+    font-size: clamp(0.3rem, 1.74vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.68vw, 6rem);
+    font-size: clamp(0.3rem, 1.64vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -1322,25 +1321,25 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.14vw, 6rem);
+    font-size: clamp(0.3rem, 2.12vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.93vw, 6rem);
+    font-size: clamp(0.3rem, 1.9vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.78vw, 6rem);
+    font-size: clamp(0.3rem, 1.74vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 1.68vw, 6rem);
+    font-size: clamp(0.3rem, 1.64vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -1640,25 +1639,25 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.6vw, 6rem);
+    font-size: clamp(0.3rem, 2.3vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.4vw, 6rem);
+    font-size: clamp(0.3rem, 2.2vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.2vw, 6rem);
+    font-size: clamp(0.3rem, 2vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.1vw, 6rem);
+    font-size: clamp(0.3rem, 1.87vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
@@ -1959,25 +1958,25 @@ input[type="checkbox"]:checked {
   }
   .requirements span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.6vw, 10rem);
+    font-size: clamp(0.3rem, 2.3vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .platformtool span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.4vw, 10rem);
+    font-size: clamp(0.3rem, 2.1vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .adbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 2.2vw, 10rem);
+    font-size: clamp(0.3rem, 1.9vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
   .termuxadbconnection span {
     text-align: left;
-    font-size: clamp(0.3rem, 2vw, 10rem);
+    font-size: clamp(0.3rem, 1.6vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
