@@ -5,7 +5,7 @@ let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 // dynamically css manipulation on requirements completed by dom
-reqBox.addEventListener("mouseover",()=>{
+reqEmpty=()=>{
   if(!phone.checked &&
     !pc.checked &&
     !usb.checked &&
@@ -19,7 +19,8 @@ reqBox.addEventListener("mouseover",()=>{
 else{
   Rstatus.style.display="none";
 }
-})
+
+}
 reqBox.addEventListener("click",()=>{
   if(!phone.checked &&
     !pc.checked &&
@@ -108,6 +109,7 @@ const reqCompleted = () => {
 };
 reqBox.addEventListener("click", () => {
   reqCompleted();
+  reqEmpty();
 });
 // **                                       PLATFORMTOOL                     **//
 let plBox = document.querySelector(".app-platformtool-box");
