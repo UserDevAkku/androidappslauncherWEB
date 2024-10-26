@@ -7,12 +7,12 @@ let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
 // dynamically css manipulation on requirements completed by dom
 alertMsg=()=>{
-  alert("**FOOTER SECTION IS IN PROGRESS**")
+  alert("   ****   WORK IS IN PROGRESS.....   *****")
   console.log(body)
 }
 window.addEventListener("scroll",()=>{
 alertMsg();
-},{once:true})
+})
 //
 reqEmpty=()=>{
   if(!phone.checked &&
