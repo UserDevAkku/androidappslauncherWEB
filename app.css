@@ -554,10 +554,9 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    background-color: white;
-    color: black;
+    color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 5px;
     font-weight: bold;
@@ -573,7 +572,7 @@ input[type="checkbox"]:checked {
     background-color: #000000;
   }
   .contactUs {
-    width: 60%;
+    width: 70%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -583,56 +582,53 @@ input[type="checkbox"]:checked {
   }
   .myAccounts {
     width: 80%;
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .links {
-    text-decoration: none;
-    width: 60px;
-    height: 30px;
-  }
   .socialsAccounts {
-    width: 80%;
-    height: max-content;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: black;
+    padding: 5px;
   }
+  .links {
+    text-decoration: none;
+    width: 20%;
+    height: fit-content;
+  }
+  
   .logo {
-    font-size: 40px;
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    height: 30px;
-    width: fit-content;
+    font-size: 80px;
   }
   #fb-logo {
-    color: white;
+    color: blue;
   }
   #ig-logo {
     color: hwb(346 30% 11%);
   }
   #github-logo {
     color: white;
-    background-color: black;
   }
   #linkedin-logo {
     color: #0a61ec;
   }
   #yt-logo {
     color: red;
-    background-color: black;
   }
 
   .boxes {
     width: 95%;
     margin-bottom: 60px;
-    box-shadow: 0px 0px 0px 1px #000 inset;
-    border: 5px solid blue;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 4px solid #f4f4f4;
+    border: 20%;
   }
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
