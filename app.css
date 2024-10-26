@@ -871,8 +871,9 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 3px #000 inset;
-    border: 1px solid blue;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 5px solid #f4f4f4;
+    border: 20%;
   }
   .link {
     width: fit-content;
@@ -1189,8 +1190,9 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 3px #000 inset;
-    border: 1px solid blue;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 5px solid #f4f4f4;
+    border: 20%;
   }
   .link {
     width: fit-content;
@@ -1431,8 +1433,7 @@ input[type="checkbox"]:checked {
 @media (min-width: 2560px) and (max-width: 3440px) {
   #cs {
     width: 100%;
-
-    height: max-content;
+      height: max-content;
     background-color: white;
     color: black;
     text-transform: uppercase;
@@ -1507,8 +1508,9 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 3px #000 inset;
-    border: 1px solid blue;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 5px solid #f4f4f4;
+    border: 20%;
   }
   .link {
     width: fit-content;
@@ -1825,8 +1827,9 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 0px 3px #000 inset;
-    border: 1px solid blue;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 5px solid #f4f4f4;
+    border: 20%;
   }
   .link {
     width: fit-content;
@@ -2074,6 +2077,13 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 5120px) and (max-width: 6000px) {
+  .boxes {
+    width: 50%;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    border: 5px solid #f4f4f4;
+    border: 20%;
+  }
   #cs {
     width: 100%;
     height: max-content;
