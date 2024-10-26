@@ -385,7 +385,8 @@ input[type="checkbox"]:checked {
     width: 95%;
     margin-bottom: 40px;
     box-shadow: 0px 0px 0px 1px #000 inset;
-    border: 5px solid blue;
+    border: 2px solid #f4f4f4;
+    border: 10%;
   }
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
@@ -630,7 +631,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 60px;
-    box-shadow: 0px 0px 0px 5px #000 inset;
+    box-shadow: 0px 0px 0px 1px #000 inset;
     border: 5px solid blue;
   }
   input[type="checkbox"] {
@@ -665,7 +666,7 @@ input[type="checkbox"]:checked {
     padding: 4px;
     margin-bottom: 22px;
     font-size: clamp(1rem, 7vw, 9rem);
-    box-shadow: 0 8px 0px 0px aqua;
+    box-shadow: 0 2px 10px 0px aqua;
   }
   .app-about {
     width: 100%;
