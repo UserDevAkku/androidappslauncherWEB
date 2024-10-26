@@ -367,9 +367,7 @@ input[type="checkbox"]:checked {
     font-size: 30px;
    }
    #fb-logo{
-  color: white;
-  background-color: blue;
-  border-radius: 50%;
+  color: blue;
   
    }
    #ig-logo{
@@ -377,16 +375,13 @@ input[type="checkbox"]:checked {
    }
    #github-logo{
     color: white;
-    background-color: black;
-    border-radius: 50%;
   
    }
    #linkedin-logo{
-  color: #0a61ec;
+  color: blue;
    }
    #yt-logo{
   color: red;
-  background-color:black;
    }
   
   .boxes {
