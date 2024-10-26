@@ -384,7 +384,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 5px #000 inset;
+    box-shadow: 0px 0px 0px 1px #000 inset;
     border: 5px solid blue;
   }
   input[type="checkbox"] {
@@ -417,7 +417,7 @@ input[type="checkbox"]:checked {
     background-color: white;
     text-transform: uppercase;
     padding: 2px;
-    box-shadow: 0 8px 0px 0px aqua;
+    box-shadow: 0 4px 12px 0px aqua;
     margin-bottom: 10px;
     font-size: clamp(1rem, 6.9vw, 9rem);
    
@@ -451,8 +451,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.5vw, 6rem);
-    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -464,8 +464,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.5vw, 6rem);
-    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .adbconnection-title {
@@ -476,8 +476,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.5vw, 6rem);
-    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .termuxadbconnection-title {
@@ -488,8 +488,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.5vw, 6rem);
-    padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
+    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   /* title asterisks */
