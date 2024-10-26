@@ -311,12 +311,12 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
     padding: 5px;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
@@ -554,12 +554,12 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
     padding: 5px;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
