@@ -763,7 +763,7 @@ input[type="checkbox"]:checked {
     margin: 25px;
     padding: 20px;
     box-shadow: 0 0 12px 1px red;
-    font-size: clamp(.9rem,1.6vw,3rem);
+    font-size: clamp(.9rem,2.4vw,3rem);
     border: none;
     outline: none;
     text-align: center;
