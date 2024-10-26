@@ -357,7 +357,7 @@ input[type="checkbox"]:checked {
     text-decoration: none;
     width: 20%;
     height: 100%;
-    padding: 10px;
+    padding: clamp(.4rem,.4vw,.8rem);
   }
 
   .logo {
@@ -365,7 +365,7 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1.2rem,1vw,2rem);
+    font-size: clamp(1rem,1vw,2rem);
   }
   #fb-logo {
     color: blue;
