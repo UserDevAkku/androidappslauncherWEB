@@ -5,6 +5,36 @@ let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 // dynamically css manipulation on requirements completed by dom
+reqBox.addEventListener("touchstart",()=>{
+  if(!phone.checked &&
+    !pc.checked &&
+    !usb.checked &&
+    !termux.checked &&
+    !sdk.checked
+){
+  Rstatus.innerHTML="please complete the requirements"
+  Rstatus.style.display="block";
+  Rstatus.style.animation="NoStatus 555ms ease-in-out infinite";
+}
+else{
+  Rstatus.style.display="none";
+}
+})
+reqBox.addEventListener("mouseover",()=>{
+  if(!phone.checked &&
+    !pc.checked &&
+    !usb.checked &&
+    !termux.checked &&
+    !sdk.checked
+){
+  Rstatus.innerHTML="please complete the requirements"
+  Rstatus.style.display="block";
+  Rstatus.style.animation="NoStatus 555ms ease-in-out infinite";
+}
+else{
+  Rstatus.style.display="none";
+}
+})
 const reqCompleted = () => {
   if (
     phone.checked &&
