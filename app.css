@@ -313,9 +313,9 @@ input[type="checkbox"]:checked {
     height: max-content;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(1rem,2vw,5rem);
     text-align: center;
-    padding: 5px;
+    padding: clamp(.4rem,.8vw,1rem);
     font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -327,7 +327,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom:1.2rem,1vw,3rem;
     background-color: black;
   }
   .contactUs {
@@ -365,7 +365,7 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: clamp(1.2rem,1vw,2rem);
   }
   #fb-logo {
     color: blue;
