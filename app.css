@@ -345,7 +345,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0a61ec;
   }
   .socialsAccounts {
     width: 90%;
@@ -353,7 +352,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
     justify-content: space-evenly;
   }
   .links {
@@ -378,7 +376,7 @@ input[type="checkbox"]:checked {
     color: hwb(346 30% 11%);
   }
   #github-logo {
-    color: black
+    color: white;
   }
   #linkedin-logo {
     color: blue;
