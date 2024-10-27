@@ -367,6 +367,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     align-items: center;
     font-size: clamp(1rem,1.2vw,2rem);
+    background-color: aquamarine;
   }
   #fb-logo {
     color: blue;
