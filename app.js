@@ -6,13 +6,13 @@ let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
 // dynamically css manipulation on requirements completed by dom
-alertMsg=()=>{
-  alert("   ****   WORK IS IN PROGRESS.....   *****")
-  console.log(body)
-}
-window.addEventListener("scroll",()=>{
-alertMsg();
-})
+// alertMsg=()=>{
+//   alert("   ****   WORK IS IN PROGRESS.....   *****")
+//   console.log(body)
+// }
+// window.addEventListener("scroll",()=>{
+// alertMsg();
+// })
 //
 reqEmpty=()=>{
   if(!phone.checked &&
