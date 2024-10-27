@@ -354,10 +354,10 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color: yellow;
+    justify-content: space-evenly;
   }
   .links {
     text-decoration: none;
-    background-color: #32cd32;
     height: max-content;
     width: max-content;
   }
