@@ -359,6 +359,7 @@ input[type="checkbox"]:checked {
     width: 20%;
     height: 100%;
     padding: clamp(.4rem,.4vw,.8rem);
+    background-color: #0a61ec;
   }
 
   .logo {
