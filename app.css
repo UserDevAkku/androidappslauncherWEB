@@ -351,15 +351,14 @@ input[type="checkbox"]:checked {
     width: 80%;
     height: 70%;
     display: flex;
-    justify-content: space-evenly;
     background-color: yellow;
   }
   .links {
     text-decoration: none;
-    width: 20%;
-    height: 100%;
+    width:20%;
+    height: 50%;
     padding: clamp(.4rem,.4vw,.8rem);
-    background-color: #0a61ec;
+    background-color: #32cd32;
   }
 
   .logo {
@@ -367,7 +366,8 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1rem,1.2vw,2rem);
+    font-size:100%;
+    width: 100%;
     background-color: aquamarine;
   }
   #fb-logo {
