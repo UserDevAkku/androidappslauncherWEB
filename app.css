@@ -561,69 +561,74 @@ input[type="checkbox"]:checked {
     height: max-content;
     color: black;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: clamp(1rem,2vw,5rem);
     text-align: center;
-    padding: 5px;
+    padding: clamp(.4rem,.8vw,1rem);
     font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: #000000;
-    margin-bottom: 20px;
+    margin-bottom:1.2rem,1vw,3rem;
+    background-color: black;
   }
   .contactUs {
-    width: 70%;
+    width: 90%;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #000;
-    box-shadow: 0 0 2px 0px white;
+    box-shadow: 0 0 5px 0px white;
   }
   .myAccounts {
     width: 90%;
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .socialsAccounts {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: space-evenly;
-    background-color: black;
-    padding: 5px;
   }
   .links {
     text-decoration: none;
-    width: 20%;
-    height: fit-content;
+    height: max-content;
+    width: max-content;
   }
-  
+
   .logo {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: clamp(2rem,10vw,20rem);
+    height: 100%;
+    width: 100%;
   }
   #fb-logo {
     color: blue;
   }
   #ig-logo {
-    color: hwb(346 30% 11%);
+    color: #eb035c
   }
+
   #github-logo {
     color: white;
   }
   #linkedin-logo {
-    color: #0a61ec;
+    color: blue;
   }
   #yt-logo {
     color: red;
