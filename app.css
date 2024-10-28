@@ -373,7 +373,7 @@ input[type="checkbox"]:checked {
     color: blue;
   }
   #ig-logo {
-    color: hwb(346 30% 11%);
+    color: red;
   }
   #github-logo {
     color: white;
