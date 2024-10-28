@@ -373,8 +373,9 @@ input[type="checkbox"]:checked {
     color: blue;
   }
   #ig-logo {
-    color: red;
+    color: #eb035c
   }
+
   #github-logo {
     color: white;
   }
