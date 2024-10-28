@@ -326,7 +326,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: clamp(100px,1vw,200px);
     margin-bottom:1.2rem,1vw,3rem;
     background-color: black;
   }
