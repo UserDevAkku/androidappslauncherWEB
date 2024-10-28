@@ -347,7 +347,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
   }
   .socialsAccounts {
-    width: 90%;
+    width: 100%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -365,7 +365,7 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(2rem,4.5vw,20rem);
+    font-size: clamp(2rem,6vw,20rem);
     height: 100%;
     width: 100%;
   }
