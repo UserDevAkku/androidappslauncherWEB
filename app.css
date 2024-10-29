@@ -354,7 +354,7 @@ input[type="checkbox"]:checked {
         width: 70%;
         color: yellow;
         text-shadow: 0 5px 3px red;
-        font-size: clamp(1rem,5.1vw,8rem);
+        font-size: clamp(1rem,4.8vw,8rem);
     }
   }
   #cs {
