@@ -313,7 +313,7 @@ input[type="checkbox"]:checked {
     animation: wc 444ms ease 0s forwards;
     z-index: 5555;
     text-align: center;
-    top: 5%;
+    top: 50%;
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
