@@ -333,7 +333,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: transparent;
+    color: yellow;
   }
   .close-wc{
     position: absolute;
