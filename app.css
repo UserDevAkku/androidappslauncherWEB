@@ -345,8 +345,8 @@ input[type="checkbox"]:checked {
   }
   @keyframes wc {
     0%{
-        height: 10%;
-        width: 10%;
+        height: 0%;
+        width: 0%;
         color: transparent;
         
     }
