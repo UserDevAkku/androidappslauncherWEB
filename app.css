@@ -414,17 +414,17 @@ input[type="checkbox"]:checked {
     0% {
       transform: translateY(-2px);
       color: red;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
     50% {
       transform: translateY(2px);
       color: black;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
     }
     100% {
       transform: translateY(-2px);
       color: aqua;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
   }
   .app-about {
@@ -681,17 +681,17 @@ input[type="checkbox"]:checked {
     0% {
       transform: translateY(-2px);
       color: red;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
     50% {
       transform: translateY(2px);
       color: black;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
     }
     100% {
       transform: translateY(-2px);
       color: aqua;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
   }
   .app-about {
