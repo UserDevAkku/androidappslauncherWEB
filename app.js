@@ -8,6 +8,7 @@ let body=document.getElementsByTagName("body");
 let closeWc=document.querySelector(".close-wc");
 let wcContainer=document.querySelector(".wc-container");
 let wc=document.querySelector("#wc");
+let welcome=document.querySelector(".welcome")
 console.log(wc,body)
 // dynamically css manipulation on requirements completed by dom
 // alertMsg=()=>{
@@ -24,6 +25,8 @@ closeWc.addEventListener("click",()=>{
 window.addEventListener("mouseover",()=>{
   wc.innerText="welcome to my application";
   wcContainer.style.display="block";
+  welcome.style.display="block"
+  
 },{once:true})
 window.addEventListener("touchstart",()=>{
   wc.innerText="welcome to my application";
