@@ -20,9 +20,7 @@ closeWc.addEventListener("click",()=>{
   wcContainer.style.display="none"
 }
 )
-wcContainer.addEventListener("touchstart",()=>{
-  wcContainer.style.display="block"
-},{once:true})
+
 //
 reqEmpty=()=>{
   if(!phone.checked &&
