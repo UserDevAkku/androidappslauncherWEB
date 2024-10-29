@@ -561,7 +561,7 @@ input[type="checkbox"]:checked {
     height: max-content;
     color: black;
     text-transform: uppercase;
-    font-size: clamp(1rem,3.1vw,5rem);
+    font-size: clamp(1rem,4vw,5rem);
     text-align: center;
     padding: clamp(.4rem,.8vw,1rem);
     font-weight: bolder;
@@ -574,7 +574,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(100px,15vh,200px);
+    height: clamp(100px,10vh,200px);
     margin-bottom:1.2rem,1vw,3rem;
     background-color: black;
   }
