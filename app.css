@@ -403,7 +403,7 @@ input[type="checkbox"]:checked {
     padding: 2px;
     box-shadow:  1px 0px 0px 0px #000 inset,-1px 0px 0px 0px #000 inset ,0px 1px 0px 0px #000 inset ,0px -1px 0px 0px #000 inset;
     margin-bottom: 10px;
-    font-size: clamp(1rem, 6.9vw, 9rem);
+    font-size: clamp(1rem, 6.6vw, 9rem);
     animation: app-name 1s ease-in-out infinite both;
    
   }
@@ -686,7 +686,7 @@ input[type="checkbox"]:checked {
     50% {
       transform: translateY(2px);
       color: black;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
     100% {
       transform: translateY(-2px);
