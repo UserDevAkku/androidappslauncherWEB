@@ -344,9 +344,10 @@ input[type="checkbox"]:checked {
   }
   @keyframes wc {
     0%{
-        height: 0%;
-        width: 0%;
+        height: 10%;
+        width: 10%;
         color: transparent;
+        font-size: clamp(.4rem,2vw,8rem);
         
     }
     100%{
