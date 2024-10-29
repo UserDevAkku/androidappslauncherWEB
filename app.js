@@ -23,7 +23,7 @@ closeWc.addEventListener("click",()=>{
 }
 )
 body.addEventListener("mouseover",()=>{
-  wc.innerHTML="welcome to my application"
+  wc.innerText="welcome to my application";
 })
 
 //
