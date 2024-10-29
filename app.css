@@ -363,7 +363,8 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color: white;
-    box-shadow: 0 0 20px 0px #000
+    box-shadow: 0 0 13px 0px #000;
+    border-radius: 10%;
   }
 
   .myAccounts {
