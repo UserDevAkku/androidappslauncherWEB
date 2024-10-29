@@ -313,7 +313,7 @@ input[type="checkbox"]:checked {
     animation: wc 444ms ease 0s forwards;
     z-index: 5555;
     text-align: center;
-    top: 50%;
+    top: 10%;
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
@@ -354,7 +354,7 @@ input[type="checkbox"]:checked {
         width: 70%;
         color: yellow;
         text-shadow: 0 5px 3px red;
-        font-size: clamp(1rem,4.8vw,8rem);
+        font-size: clamp(1rem,4.2vw,8rem);
     }
   }
   #cs {
