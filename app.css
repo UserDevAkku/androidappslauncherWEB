@@ -3,6 +3,20 @@
   padding: 0px;
   box-sizing: border-box;
 }
+@keyframes app-name {
+  0% {
+    transform: translateY(-2px);
+    color: red;
+  }
+  50% {
+    transform: translateY(2px);
+    color: black;
+  }
+  100% {
+    transform: translateY(-2px);
+    color: aqua;
+  }
+}
 body {
   height: 100%;
   width: 100%;
@@ -17,42 +31,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@keyframes aal {
-  0% {
-    transform: translateY(-5px);
-    color: red;
-  }
-  50% {
-    transform: translateY(5px);
-    color: black;
-  }
-  100% {
-    transform: translateY(-5px);
-    color: aqua;
-  }
-}
-.aal {
-  animation: aal 4s ease-in-out 0s infinite; /* Adjust the duration and easing */
-  padding-left: clamp(1rem, 3vw, 4rem);
-}
-.aal-2 {
-  animation: aal-2 4s ease-in-out infinite; /* Adjust the duration and easing */
-  color: azure;
-}
-@keyframes aal-2 {
-  0% {
-    transform: translateY(-2px);
-    color: red;
-  }
-  50% {
-    transform: translateY(2px);
-    color: black;
-  }
-  100% {
-    transform: translateY(-2px);
-    color: aqua;
-  }
 }
 @keyframes app-about {
   0% {
@@ -423,10 +401,31 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     text-transform: uppercase;
     padding: 2px;
-    box-shadow:  1px 0px 0px 0px #000,-1px 0px 0px 0px #000,0px 1px 0px 0px #000,0px -1px 0px 0px #000;
+    box-shadow:  1px 0px 0px 0px #000 inset,-1px 0px 0px 0px #000 inset ,0px 1px 0px 0px #000 inset ,0px -1px 0px 0px #000 inset;
     margin-bottom: 10px;
     font-size: clamp(1rem, 6.9vw, 9rem);
+    animation: app-name 1s ease-in-out infinite both;
    
+  }
+  .appname{
+    animation: app-name 1s ease-in-out infinite both;
+  }
+  @keyframes app-name {
+    0% {
+      transform: translateY(-2px);
+      color: red;
+      letter-spacing: 2px;
+    }
+    50% {
+      transform: translateY(2px);
+      color: black;
+      letter-spacing: 3px;
+    }
+    100% {
+      transform: translateY(-2px);
+      color: aqua;
+      letter-spacing: 2px;
+    }
   }
   .app-about {
     width: 100%;
@@ -668,13 +667,32 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    
-    text-transform: uppercase;
     padding: 4px;
+    box-shadow:  1px 0px 0px 0px #000 inset,-1px 0px 0px 0px #000 inset ,0px 1px 0px 0px #000 inset ,0px -1px 0px 0px #000 inset;
+    text-transform: uppercase;
     margin-bottom: 22px;
     font-size: clamp(1rem, 7vw, 9rem);
     background-color:yellow;
-    box-shadow:  1px 0px 0px 0px #000,-1px 0px 0px 0px #000,0px 1px 0px 0px #000,0px -1px 0px 0px #000;
+  }
+  .appname{
+    animation: app-name 1s ease-in-out infinite both;
+  }
+  @keyframes app-name {
+    0% {
+      transform: translateY(-2px);
+      color: red;
+      letter-spacing: 2px;
+    }
+    50% {
+      transform: translateY(2px);
+      color: black;
+      letter-spacing: 3px;
+    }
+    100% {
+      transform: translateY(-2px);
+      color: aqua;
+      letter-spacing: 2px;
+    }
   }
   .app-about {
     width: 100%;
@@ -897,11 +915,32 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color:yellow;
-    box-shadow:  4px 0px 0px 0px #000,-4px 0px 0px 0px #000,0px 4px 0px 0px #000,0px -4px 0px 0px #000;
+    box-shadow:  0px -15px 0px 0px red inset,-15px 0px 0px 0px red inset,15px 0px 0px 0px red inset,0px 15px 0px 0px red inset;
     width: 100%;
+    border: 1px solid #fff;
     text-transform: uppercase;
-    padding: 2px;
+    padding: 5px;
     font-size: clamp(1rem, 6vw, 9rem);
+  }
+  .appname{
+    animation: app-name 1s ease-in-out infinite both;
+  }
+  @keyframes app-name {
+    0% {
+      transform: translateY(-2px);
+      color: red;
+      letter-spacing: 2px;
+    }
+    50% {
+      transform: translateY(2px);
+      color: black;
+      letter-spacing: 11px;
+    }
+    100% {
+      transform: translateY(-2px);
+      color: aqua;
+      letter-spacing: 2px;
+    }
   }
   .app-about {
     width: 100%;
