@@ -5,6 +5,8 @@ let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
+let closeWc=document.querySelector(".close-wc");
+let wcContainer=document.querySelector(".wc-container");
 // dynamically css manipulation on requirements completed by dom
 // alertMsg=()=>{
 //   alert("   ****   WORK IS IN PROGRESS.....   *****")
@@ -14,6 +16,10 @@ let body=document.getElementsByTagName("body");
 // alertMsg();
 // })
 //
+closeWc.addEventListener("click",()=>{
+  wcContainer.style.display="none"
+}
+)
 reqEmpty=()=>{
   if(!phone.checked &&
     !pc.checked &&
