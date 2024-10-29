@@ -337,7 +337,7 @@ input[type="checkbox"]:checked {
   }
   .close-wc{
     position: absolute;
-    bottom: 84%;
+    bottom: 88%;
     left: 97%;
     color: #393939;
     font-size: clamp(1rem,1rem,2rem);
