@@ -353,7 +353,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: clamp(100px, 2vw, 200px);
     margin-bottom: 1.2rem, 1vw, 3rem;
-    background-color: black;
+    background-color:white;
   }
 
   .contactUs {
@@ -362,8 +362,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    box-shadow: 0 0 5px 0px white;
+    background-color: white;
+    box-shadow: 0 0 20px 0px #000
   }
 
   .myAccounts {
@@ -408,7 +408,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color: black;
   }
 
   #linkedin-logo {
