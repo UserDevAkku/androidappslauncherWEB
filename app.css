@@ -471,11 +471,8 @@ input[type="checkbox"]:checked {
     width: 100%;
     background-color: yellow;
     text-transform: uppercase;
-    padding: 2px;
     margin-bottom: 10px;
-    font-size: clamp(1rem, 6.6vw, 9rem);
-    animation: app-name 1s ease-in-out infinite both;
-   
+    font-size: clamp(1rem, 6.2vw, 9rem);
   }
   .appname{
     animation: app-name 1s ease-in-out infinite both;
