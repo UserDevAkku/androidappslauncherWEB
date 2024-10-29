@@ -317,7 +317,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
-    border: 4px dotted aqua;
+    border: 2px dotted aqua;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
@@ -340,7 +340,6 @@ input[type="checkbox"]:checked {
     bottom: 86%;
     left: 97%;
     color: #393939;
-    text-shadow: 0 4px 2px yellow;
     font-size: clamp(1rem,1rem,2rem);
   }
   @keyframes wc {
@@ -354,8 +353,7 @@ input[type="checkbox"]:checked {
         height: 5%;
         width: 90%;
         color: yellow;
-        text-shadow: 0 2px 2px red;
-        font-size: clamp(.4rem,4.2vw,8rem);
+        font-size: clamp(.4rem,4.5vw,8rem);
     }
   }
   #cs {
