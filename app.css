@@ -458,8 +458,9 @@ input[type="checkbox"]:checked {
     width: 100%;
     background-color: yellow;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: clamp(1rem, 7.2vw, 9rem);
+    box-shadow: 0px 0px 15px 0px #000 ;
   }
 
   .appname {
@@ -491,7 +492,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 3.5vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px 0px #000 ;
   }
 
   .note {
@@ -504,6 +506,7 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 15px 0px #000 ;
   }
 
   .requirements-title {
@@ -754,6 +757,7 @@ input[type="checkbox"]:checked {
     margin-bottom: 22px;
     font-size: clamp(1rem, 6.4vw, 9rem);
     background-color: yellow;
+    box-shadow: 0px 0px 20px 0px #000 ;
   }
 
   .appname {
@@ -789,6 +793,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 4.6vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
+    box-shadow: 0px 0px 20px 0px #000 ;
+    margin-bottom: 50px;
   }
 
   .note {
@@ -799,7 +805,8 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 3.62vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 30px;
+    margin-bottom:40px;
+    box-shadow: 0px 0px 20px 0px #000 ;
   }
 
   .requirements-title {
@@ -1007,8 +1014,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 40%;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 30px 0px #000 ;
     border: 20%;
   }
 
@@ -1033,6 +1040,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1rem, 6vw, 9rem);
+    box-shadow: 0px 0px 30px 0px #000 ;
+    margin-bottom: 40px;
   }
 
   .appname {
@@ -1068,6 +1077,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
+    box-shadow: 0px 0px 30px 0px #000 ;
+    margin-bottom: 40px;
   }
 
   .note {
@@ -1079,7 +1090,8 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 30px 0px #000 ;
   }
 
   .requirements-title {
@@ -1390,8 +1402,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 40%;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 50px 0px #000 ;
     border: 20%;
   }
 
@@ -1412,10 +1424,12 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-
+    box-shadow: 0px 0px 40px 0px #000 ;
     text-transform: uppercase;
     padding: 2px;
     font-size: clamp(1rem, 6vw, 9rem);
+    box-shadow: 0px 0px 40px 0px #000 ;
+    margin-bottom: 50px;
   }
 
   .app-about {
@@ -1427,6 +1441,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
+    box-shadow: 0px 0px 40px 0px #000 ;
+    margin-bottom: 50px;
   }
 
   .note {
@@ -1438,7 +1454,8 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 40px 0px #000 ;
   }
 
   .requirements-title {
@@ -1748,9 +1765,10 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 50%;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 40px 0px #000 ;
     border: 20%;
+
   }
 
   .link {
@@ -1770,7 +1788,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-
+    box-shadow: 0px 0px 40px 0px #000 ;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 6vw, 9rem);
@@ -1785,6 +1803,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
+    box-shadow: 0px 0px 40px 0px #000 ;
+    margin-bottom: 100px;
   }
 
   .note {
@@ -1796,7 +1816,8 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 40px 0px #000 ;
   }
 
   .requirements-title {
@@ -2108,7 +2129,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000 ;
     border: 20%;
   }
 
@@ -2130,7 +2151,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-
+    box-shadow: 0px 0px 40px 0px #000 ;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
@@ -2144,7 +2165,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2.3vw, 10rem);
     animation: app-about 1s ease-in-out infinite;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 40px 0px #000 ;
   }
 
   .note {
@@ -2155,6 +2177,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 2vw, 7rem);
     color: red;
     font-weight: bolder;
+    box-shadow: 0px 0px 40px 0px #000 ;
     margin-bottom: 100px;
   }
 
@@ -2389,7 +2412,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    box-shadow: 0px 0px 50px 0px #000 ;
     border: 20%;
   }
 
@@ -2499,6 +2522,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
+    box-shadow: 0px 0px 50px 0px #000 ;
   }
 
   .app-about {
@@ -2509,7 +2533,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2.3vw, 10rem);
     animation: app-about 1s ease-in-out infinite;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 50px 0px #000 ;
   }
 
   .note {
@@ -2521,6 +2546,8 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
+    box-shadow: 0px 0px 30px 0px #000;
+    
   }
 
   .requirements-title {
