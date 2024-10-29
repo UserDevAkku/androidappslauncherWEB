@@ -311,7 +311,7 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: clamp(1rem,2vw,5rem);
     text-align: center;
@@ -559,7 +559,7 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: clamp(1rem,4vw,5rem);
     text-align: center;
@@ -805,7 +805,7 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1124,7 +1124,7 @@ input[type="checkbox"]:checked {
 
     height: max-content;
     background-color: white;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1442,7 +1442,7 @@ input[type="checkbox"]:checked {
     width: 100%;
       height: max-content;
     background-color: white;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1761,7 +1761,7 @@ input[type="checkbox"]:checked {
 
     height: max-content;
     background-color: white;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -2095,7 +2095,7 @@ input[type="checkbox"]:checked {
     width: 100%;
     height: max-content;
     background-color: white;
-    color: black;
+    color: aqua;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -2179,9 +2179,9 @@ input[type="checkbox"]:checked {
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 9px 0px aqua;
+    box-shadow:  1px 0px 0px 0px #000,-1px 0px 0px 0px #000,0px 1px 0px 0px #000,0px -1px 0px 0px #000;
     width: 100%;
-    background-color: white;
+    background-color: yellow;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
