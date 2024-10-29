@@ -25,10 +25,7 @@ closeWc.addEventListener("click",()=>{
 )
 window.addEventListener("scroll",()=>{
   wc.innerText="welcome to my application";
-},{once:true})
-//
-window.addEventListener("mouseover",()=>{
-  wc.innerText="welcome to my application";
+  wcContainer.style.display="block"
 },{once:true})
 //
 reqEmpty=()=>{

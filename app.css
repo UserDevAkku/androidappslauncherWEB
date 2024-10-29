@@ -303,7 +303,6 @@ input[type="checkbox"]:checked {
     background-color: aquamarine;
   }
   body:hover .wc-container{
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +316,6 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
-    border: 3px solid black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
