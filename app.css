@@ -317,7 +317,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
-    border: 2px dotted aqua;
+    border: 4px dotted aqua;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
