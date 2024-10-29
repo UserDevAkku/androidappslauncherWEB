@@ -334,11 +334,11 @@ input[type="checkbox"]:checked {
     justify-content: center;
     position: relative;
     color: yellow;
-    text-shadow: 0px 3px 1px black;
+    text-shadow: 0px 3px 1px red;
   }
   .close-wc{
     position: absolute;
-    bottom: 88%;
+    bottom: 89%;
     left: 97%;
     color: #393939;
     font-size: clamp(1rem,1rem,2rem);
@@ -354,7 +354,7 @@ input[type="checkbox"]:checked {
         height: 5%;
         width: 90%;
         color: yellow;
-        font-size: clamp(.4rem,4.8vw,8rem);
+        font-size: clamp(.4rem,5.5vw,8rem);
     }
   }
   #cs {
