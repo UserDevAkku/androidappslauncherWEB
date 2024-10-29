@@ -5,35 +5,15 @@ let Rstatus = document.querySelector("#R-status");
 let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
-let closeWc=document.querySelector(".close-wc");
-let wcContainer=document.querySelector(".wc-container");
-let wc=document.querySelector("#wc");
-let welcome=document.querySelector(".welcome")
-console.log(wc,body)
-// dynamically css manipulation on requirements completed by dom
-// alertMsg=()=>{
-//   alert("   ****   WORK IS IN PROGRESS.....   *****")
-//   console.log(body)
-// }
-// window.addEventListener("scroll",()=>{
-// alertMsg();
-// })
+let welcomeBox=document.querySelector(".welcome-box");
 //
-closeWc.addEventListener("click",()=>{
-  wcContainer.style.display="none";
-})
-window.addEventListener("mouseover",()=>{
-  wc.innerText="welcome to my application";
-  wcContainer.style.display="block";
-  welcome.style.display="block"
-  
-},{once:true})
-window.addEventListener("touchstart",()=>{
-  wc.innerText="welcome to my application";
-  wcContainer.style.display="block";
-},{once:true})
+window.addEventListener("load",()=>{
+  welcomeBox.style.display="block";
+  welcomeBox.style.display="flex";
+  welcomeBox.style.alignItems="center"
+  welcomeBox.style.justifyContent="center"
 
-//
+})
 reqEmpty=()=>{
   if(!phone.checked &&
     !pc.checked &&

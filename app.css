@@ -3,47 +3,57 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 @keyframes app-name {
   0% {
-    transform: translateY(-2px);
+   
     color: red;
   }
+
   50% {
-    transform: translateY(2px);
+   
     color: black;
   }
+
   100% {
-    transform: translateY(-2px);
+    
     color: aqua;
   }
 }
+
 body {
   height: 100%;
   width: 100%;
-  background-color: #191919;
+  background-color: #fff;
   position: relative;
 }
+
 :root {
   --shadow-size: clamp(1rem, 1vw, 4rem);
   --shadow-spread: clamp(0.1rem, 0.1vw, 4rem);
   --shadow-blur: clamp(0.2rem, 0.3vw, 4rem);
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @keyframes app-about {
   0% {
     color: blue;
   }
+
   50% {
     color: #32cd32;
   }
+
   100% {
     color: red;
   }
 }
+
 input[type="checkbox"] {
   width: clamp(12px, 5vw, 200px);
   outline: none;
@@ -53,11 +63,13 @@ input[type="checkbox"] {
   margin-top: clamp(0.2rem, 1vw, 1rem);
   margin-bottom: clamp(0.2rem, 1vw, 0.1rem);
 }
+
 input[type="checkbox"]:checked {
   border: none;
   outline: none;
   accent-color: #32cd32;
 }
+
 /* boxes */
 .app-requirements-box {
   display: flex;
@@ -66,6 +78,7 @@ input[type="checkbox"]:checked {
   border-radius: 2%;
   box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
+
 .app-platformtool-box {
   display: flex;
   flex-direction: column;
@@ -73,6 +86,7 @@ input[type="checkbox"]:checked {
   border-radius: 2%;
   box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
+
 .app-adbconnection-box {
   display: flex;
   flex-direction: column;
@@ -80,6 +94,7 @@ input[type="checkbox"]:checked {
   border-radius: 2%;
   box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
+
 .app-termuxadbconnection-box {
   display: flex;
   flex-direction: column;
@@ -87,6 +102,7 @@ input[type="checkbox"]:checked {
   border-radius: 2%;
   box-shadow: 0 0 var(--shadow-size) 2px #000;
 }
+
 /* verification-container*/
 .platformtool-verification {
   width: 100%;
@@ -94,18 +110,21 @@ input[type="checkbox"]:checked {
   align-items: center;
   justify-content: center;
 }
+
 .adbconnection-verification {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .termuxadbconnection-verification {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /* verified */
 /* all box-containers*/
 .app-requirements {
@@ -114,24 +133,28 @@ input[type="checkbox"]:checked {
   align-items: center;
   justify-content: center;
 }
+
 .app-adbconnection {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .app-platformtool {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .app-termuxadbconnection {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /* status-containers*/
 .requirements-completed {
   display: flex;
@@ -139,24 +162,28 @@ input[type="checkbox"]:checked {
   justify-content: center;
   padding: 5px;
 }
+
 .platformtool-installed {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
+
 .adbconnection-connected {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
+
 .termuxadbconnection-connected {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
 }
+
 /*status*/
 #R-status {
   text-transform: uppercase;
@@ -169,6 +196,7 @@ input[type="checkbox"]:checked {
   display: none;
   font-weight: bolder;
 }
+
 #P-status {
   text-transform: uppercase;
   width: fit-content;
@@ -180,6 +208,7 @@ input[type="checkbox"]:checked {
   display: none;
   font-weight: bolder;
 }
+
 #A-status {
   text-transform: uppercase;
   width: fit-content;
@@ -191,6 +220,7 @@ input[type="checkbox"]:checked {
   display: none;
   font-weight: bolder;
 }
+
 #T-status {
   text-transform: uppercase;
   width: fit-content;
@@ -202,42 +232,50 @@ input[type="checkbox"]:checked {
   display: none;
   font-weight: bolder;
 }
+
 /* aestrisk symbol with status */
 #R-status::after {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #R-status::before {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #P-status::after {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #P-status::before {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #A-status::after {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #A-status::before {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #T-status::after {
   content: "*";
   color: black;
   font-size: clamp(0.8rem, 4vw, 6rem);
 }
+
 #T-status::before {
   content: "*";
   color: black;
@@ -249,36 +287,44 @@ input[type="checkbox"]:checked {
   0% {
     box-shadow: 0 0 0px 5px #32cd32;
   }
+
   50% {
     box-shadow: 0 0 0px 2px #32cd32;
   }
+
   100% {
     box-shadow: 0 0 0px 5px #32cd32;
   }
 }
+
 @keyframes Status {
   0% {
     color: blue;
     transform: translateX(-5px);
   }
+
   50% {
     color: blue;
     transform: translateX(5px);
   }
+
   100% {
     color: blue;
     transform: translateX(-5px);
   }
 }
+
 @keyframes NoStatus {
   0% {
     color: red;
     transform: translateX(-5px);
   }
+
   50% {
     color: red;
     transform: translateX(5px);
   }
+
   100% {
     color: red;
     transform: translateX(-5px);
@@ -290,11 +336,11 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
-    font-size: clamp(1rem,2vw,5rem);
+    font-size: clamp(1rem, 2vw, 5rem);
     text-align: center;
-    padding: clamp(.4rem,.8vw,1rem);
+    padding: clamp(.4rem, .8vw, 1rem);
     font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -305,10 +351,11 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(100px,2vw,200px);
-    margin-bottom:1.2rem,1vw,3rem;
+    height: clamp(100px, 2vw, 200px);
+    margin-bottom: 1.2rem, 1vw, 3rem;
     background-color: black;
   }
+
   .contactUs {
     width: 90%;
     height: 80%;
@@ -318,6 +365,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 5px 0px white;
   }
+
   .myAccounts {
     width: 90%;
     height: 90%;
@@ -325,6 +373,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .socialsAccounts {
     width: 100%;
     height: 80%;
@@ -333,6 +382,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     justify-content: space-evenly;
   }
+
   .links {
     text-decoration: none;
     height: max-content;
@@ -344,13 +394,15 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(2rem,10vw,20rem);
+    font-size: clamp(2rem, 10vw, 20rem);
     height: 100%;
     width: 100%;
   }
+
   #fb-logo {
     color: blue;
   }
+
   #ig-logo {
     color: #eb035c
   }
@@ -358,9 +410,11 @@ input[type="checkbox"]:checked {
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: blue;
   }
+
   #yt-logo {
     color: red;
   }
@@ -372,6 +426,7 @@ input[type="checkbox"]:checked {
     border: 2px solid #f4f4f4;
     border: 10%;
   }
+
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
     outline: none;
@@ -380,11 +435,13 @@ input[type="checkbox"]:checked {
     margin-top: clamp(0.2rem, 1vw, 1rem);
     margin-bottom: clamp(0.2rem, 1vw, 0.1rem);
   }
+
   input[type="checkbox"]:checked {
     border: none;
     outline: none;
     accent-color: #32cd32;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -394,6 +451,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(1.2rem, 1.2vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     align-items: center;
@@ -404,23 +462,28 @@ input[type="checkbox"]:checked {
     margin-bottom: 10px;
     font-size: clamp(1rem, 7.2vw, 9rem);
   }
-  .appname{
+
+  .appname {
     animation: app-name 1s ease-in-out infinite both;
   }
+
   @keyframes app-name {
     0% {
-      transform: translateY(-2px);
+     
       color: red;
     }
+
     50% {
-      transform: translateY(2px);
+    
       color: black;
     }
+
     100% {
-      transform: translateY(-2px);
+     
       color: aqua;
     }
   }
+
   .app-about {
     width: 100%;
     display: flex;
@@ -431,6 +494,7 @@ input[type="checkbox"]:checked {
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 10px;
   }
+
   .note {
     width: 100%;
     padding: 5px;
@@ -442,6 +506,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 20px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -467,6 +532,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -479,6 +545,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -491,27 +558,32 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 2.8vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 2.8vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 2.8vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 2.8vw, 5rem);
     color: red;
   }
+
   .yesNo {
     width: clamp(20%, 1vw, 30%);
     border-radius: 10%;
@@ -523,24 +595,28 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 3.942vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 3.79vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 3.56vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 3.28vw, 6rem);
@@ -548,15 +624,16 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
+
 @media (min-width: 480px) and (max-width: 1280px) {
   #cs {
     width: 100%;
     height: max-content;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
-    font-size: clamp(1rem,4vw,5rem);
+    font-size: clamp(1rem, 4vw, 5rem);
     text-align: center;
-    padding: clamp(.4rem,.8vw,1rem);
+    padding: clamp(.4rem, .8vw, 1rem);
     font-weight: bolder;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -567,10 +644,11 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(100px,13vh,200px);
-    margin-bottom:1.2rem,1vw,3rem;
+    height: clamp(100px, 13vh, 200px);
+    margin-bottom: 1.2rem, 1vw, 3rem;
     background-color: black;
   }
+
   .contactUs {
     width: 90%;
     height: 80%;
@@ -580,6 +658,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 5px 0px white;
   }
+
   .myAccounts {
     width: 90%;
     height: 90%;
@@ -587,6 +666,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .socialsAccounts {
     width: 100%;
     height: 80%;
@@ -595,6 +675,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     justify-content: space-evenly;
   }
+
   .links {
     text-decoration: none;
     height: max-content;
@@ -606,13 +687,15 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(2rem,10vw,20rem);
+    font-size: clamp(2rem, 10vw, 20rem);
     height: 100%;
     width: 100%;
   }
+
   #fb-logo {
     color: blue;
   }
+
   #ig-logo {
     color: #eb035c
   }
@@ -620,9 +703,11 @@ input[type="checkbox"]:checked {
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: blue;
   }
+
   #yt-logo {
     color: red;
   }
@@ -634,6 +719,7 @@ input[type="checkbox"]:checked {
     border: 4px solid #f4f4f4;
     border: 20%;
   }
+
   input[type="checkbox"] {
     width: clamp(12px, 6vw, 200px);
     outline: none;
@@ -642,11 +728,13 @@ input[type="checkbox"]:checked {
     margin-top: clamp(0.2rem, 1vw, 1rem);
     margin-bottom: clamp(0.2rem, 1vw, 0.1rem);
   }
+
   input[type="checkbox"]:checked {
     border: none;
     outline: none;
     accent-color: #32cd32;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -656,38 +744,44 @@ input[type="checkbox"]:checked {
     font-size: clamp(2rem, 3vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 4px;
-    box-shadow:  1px 0px 0px 0px red inset,-1px 0px 0px 0px red inset ,0px 1px 0px 0px red inset ,0px -1px 0px 0px red inset;
+    box-shadow: 1px 0px 0px 0px red inset, -1px 0px 0px 0px red inset, 0px 1px 0px 0px red inset, 0px -1px 0px 0px red inset;
     text-transform: uppercase;
     margin-bottom: 22px;
     font-size: clamp(1rem, 6.4vw, 9rem);
-    background-color:yellow;
+    background-color: yellow;
   }
-  .appname{
+
+  .appname {
     animation: app-name 1s ease-in-out infinite both;
   }
+
   @keyframes app-name {
     0% {
-      transform: translateY(-2px);
+      
       color: red;
-      letter-spacing: 1px;
+      
     }
+
     50% {
-      transform: translateY(2px);
+
       color: black;
-      letter-spacing: 3px;
+      
     }
+
     100% {
-      transform: translateY(-2px);
+     
       color: aqua;
-      letter-spacing: 1px;
+      
     }
   }
+
   .app-about {
     width: 100%;
     margin-bottom: 20px;
@@ -698,6 +792,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 4.6vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
+
   .note {
     width: 100%;
     display: flex;
@@ -708,6 +803,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 30px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -733,6 +829,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -745,6 +842,7 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -757,56 +855,65 @@ input[type="checkbox"]:checked {
     padding-top: clamp(0.2rem, 0.2vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 4.1vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 4.1vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 4.1vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 4.1vw, 5rem);
     color: red;
   }
+
   .yesNo {
     width: 20%;
     border-radius: 10%;
     margin: 25px;
     padding: 20px;
     box-shadow: 0 0 12px 1px red;
-    font-size: clamp(.9rem,2.7vw,3rem);
+    font-size: clamp(.9rem, 2.7vw, 3rem);
     border: none;
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 4.23vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 3.83vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 3.65vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 3.2vw, 6rem);
@@ -814,11 +921,12 @@ input[type="checkbox"]:checked {
     padding: 10px;
   }
 }
+
 @media (min-width: 1280px) and (max-width: 1920px) {
   #cs {
     width: 100%;
     height: max-content;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -827,6 +935,7 @@ input[type="checkbox"]:checked {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
@@ -834,6 +943,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: 100px;
   }
+
   .contactUs {
     width: 60%;
     height: 80%;
@@ -843,6 +953,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 1px 0px white;
   }
+
   .myAccounts {
     width: 80%;
     height: 80%;
@@ -850,11 +961,13 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     width: 20%;
     height: 100%;
   }
+
   .socialsAccounts {
     width: 80%;
     height: fit-content;
@@ -862,6 +975,7 @@ input[type="checkbox"]:checked {
     justify-content: space-evenly;
     background-color: black;
   }
+
   .logo {
     font-size: 40px;
     color: black;
@@ -872,18 +986,23 @@ input[type="checkbox"]:checked {
     height: fit-content;
     width: 100%;
   }
+
   #fb-logo {
     color: white;
   }
+
   #ig-logo {
     color: hwb(346 30% 11%);
   }
+
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: #0a61ec;
   }
+
   #yt-logo {
     color: red;
   }
@@ -895,6 +1014,7 @@ input[type="checkbox"]:checked {
     border: 5px solid #f4f4f4;
     border: 20%;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -904,38 +1024,44 @@ input[type="checkbox"]:checked {
     font-size: clamp(1.2rem, 1.6vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:yellow;
-    box-shadow:  0px -15px 0px 0px red inset,-15px 0px 0px 0px red inset,15px 0px 0px 0px red inset,0px 15px 0px 0px red inset;
+    background-color: yellow;
+    box-shadow: 0px -15px 0px 0px red inset, -15px 0px 0px 0px red inset, 15px 0px 0px 0px red inset, 0px 15px 0px 0px red inset;
     width: 100%;
     border: 1px solid #fff;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1rem, 6vw, 9rem);
   }
-  .appname{
+
+  .appname {
     animation: app-name 1s ease-in-out infinite both;
   }
+
   @keyframes app-name {
     0% {
-      transform: translateY(-2px);
+     
       color: red;
-      letter-spacing: 2px;
+      
     }
+
     50% {
-      transform: translateY(2px);
+      
       color: black;
-      letter-spacing: 11px;
+      
     }
+
     100% {
-      transform: translateY(-2px);
+     
       color: aqua;
-      letter-spacing: 2px;
+      
     }
   }
+
   .app-about {
     width: 100%;
     padding: 10px;
@@ -946,6 +1072,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
+
   .note {
     width: 100%;
     padding: 10px;
@@ -957,6 +1084,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 10px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -984,6 +1112,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -997,6 +1126,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -1010,27 +1140,32 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 1.4vw, 5rem);
     color: red;
   }
+
   .yesNo {
     border-radius: 10%;
     margin: 5px;
@@ -1042,30 +1177,35 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 2.12vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 1.9vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.74vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.64vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   #R-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1077,6 +1217,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #P-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1088,6 +1229,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #A-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1099,6 +1241,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #T-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1110,55 +1253,64 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   /* aestrisk symbol with status */
   #R-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #R-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
+
 @media (min-width: 1920px) and (max-width: 2560px) {
   #cs {
     width: 100%;
 
     height: max-content;
     background-color: white;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1167,6 +1319,7 @@ input[type="checkbox"]:checked {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
@@ -1174,6 +1327,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: 100px;
   }
+
   .contactUs {
     width: 60%;
     height: 80%;
@@ -1183,6 +1337,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 1px 0px white;
   }
+
   .myAccounts {
     width: 80%;
     height: 80%;
@@ -1190,11 +1345,13 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     width: 20%;
     height: 100%;
   }
+
   .socialsAccounts {
     width: 80%;
     height: fit-content;
@@ -1202,6 +1359,7 @@ input[type="checkbox"]:checked {
     justify-content: space-evenly;
     background-color: black;
   }
+
   .logo {
     font-size: 40px;
     color: black;
@@ -1212,18 +1370,23 @@ input[type="checkbox"]:checked {
     height: fit-content;
     width: 100%;
   }
+
   #fb-logo {
     color: white;
   }
+
   #ig-logo {
     color: hwb(346 30% 11%);
   }
+
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: #0a61ec;
   }
+
   #yt-logo {
     color: red;
   }
@@ -1235,6 +1398,7 @@ input[type="checkbox"]:checked {
     border: 5px solid #f4f4f4;
     border: 20%;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -1244,18 +1408,20 @@ input[type="checkbox"]:checked {
     font-size: clamp(2rem, 1.6vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:yellow;
-    box-shadow:  4px 0px 0px 0px #000,-4px 0px 0px 0px #000,0px 4px 0px 0px #000,0px -4px 0px 0px #000;
+    background-color: yellow;
+    box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
- 
+
     text-transform: uppercase;
     padding: 2px;
     font-size: clamp(1rem, 6vw, 9rem);
   }
+
   .app-about {
     width: 100%;
     padding: 10px;
@@ -1266,6 +1432,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
+
   .note {
     width: 100%;
     padding: 10px;
@@ -1277,6 +1444,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 10px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -1304,6 +1472,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -1317,6 +1486,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -1330,27 +1500,32 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 1.4vw, 5rem);
     color: red;
   }
+
   .yesNo {
     border-radius: 10%;
     margin: 5px;
@@ -1362,30 +1537,35 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 2.12vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 1.9vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.74vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.64vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   #R-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1397,6 +1577,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #P-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1408,6 +1589,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #A-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1419,6 +1601,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #T-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1430,54 +1613,63 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   /* aestrisk symbol with status */
   #R-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #R-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
+
 @media (min-width: 2560px) and (max-width: 3440px) {
   #cs {
     width: 100%;
-      height: max-content;
+    height: max-content;
     background-color: white;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1486,6 +1678,7 @@ input[type="checkbox"]:checked {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
@@ -1493,6 +1686,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: 100px;
   }
+
   .contactUs {
     width: 60%;
     height: 80%;
@@ -1502,6 +1696,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 1px 0px white;
   }
+
   .myAccounts {
     width: 80%;
     height: 80%;
@@ -1509,11 +1704,13 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     width: 20%;
     height: 100%;
   }
+
   .socialsAccounts {
     width: 80%;
     height: fit-content;
@@ -1521,6 +1718,7 @@ input[type="checkbox"]:checked {
     justify-content: space-evenly;
     background-color: black;
   }
+
   .logo {
     font-size: 40px;
     color: black;
@@ -1531,18 +1729,23 @@ input[type="checkbox"]:checked {
     height: fit-content;
     width: 100%;
   }
+
   #fb-logo {
     color: white;
   }
+
   #ig-logo {
     color: hwb(346 30% 11%);
   }
+
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: #0a61ec;
   }
+
   #yt-logo {
     color: red;
   }
@@ -1554,6 +1757,7 @@ input[type="checkbox"]:checked {
     border: 5px solid #f4f4f4;
     border: 20%;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -1563,18 +1767,20 @@ input[type="checkbox"]:checked {
     font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:yellow;
-    box-shadow:  4px 0px 0px 0px #000,-4px 0px 0px 0px #000,0px 4px 0px 0px #000,0px -4px 0px 0px #000;
+    background-color: yellow;
+    box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-   
+
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 6vw, 9rem);
   }
+
   .app-about {
     width: 100%;
     padding: 14px;
@@ -1585,6 +1791,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
   }
+
   .note {
     width: 100%;
     padding: 10px;
@@ -1596,6 +1803,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 20px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -1623,6 +1831,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -1636,6 +1845,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -1649,27 +1859,32 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 1.4vw, 5rem);
     color: red;
   }
+
   .yesNo {
     border-radius: 10%;
     margin: 10px;
@@ -1681,30 +1896,35 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 2.3vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 2.2vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 2vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.87vw, 6rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   #R-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1716,6 +1936,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #P-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1727,6 +1948,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #A-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1738,6 +1960,7 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   #T-status {
     text-transform: uppercase;
     width: fit-content;
@@ -1749,55 +1972,64 @@ input[type="checkbox"]:checked {
     display: none;
     font-weight: bolder;
   }
+
   /* aestrisk symbol with status */
   #R-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #R-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #P-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #A-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
+
   #T-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.4vw, 4rem);
   }
 }
+
 @media (min-width: 3440px) and (max-width: 3840px) {
   #cs {
     width: 100%;
 
     height: max-content;
     background-color: white;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -1806,6 +2038,7 @@ input[type="checkbox"]:checked {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
@@ -1813,6 +2046,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: 100px;
   }
+
   .contactUs {
     width: 60%;
     height: 80%;
@@ -1822,6 +2056,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 1px 0px white;
   }
+
   .myAccounts {
     width: 80%;
     height: 80%;
@@ -1829,11 +2064,13 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     width: 20%;
     height: 100%;
   }
+
   .socialsAccounts {
     width: 80%;
     height: fit-content;
@@ -1841,6 +2078,7 @@ input[type="checkbox"]:checked {
     justify-content: space-evenly;
     background-color: black;
   }
+
   .logo {
     font-size: 40px;
     color: black;
@@ -1851,18 +2089,23 @@ input[type="checkbox"]:checked {
     height: fit-content;
     width: 100%;
   }
+
   #fb-logo {
     color: white;
   }
+
   #ig-logo {
     color: hwb(346 30% 11%);
   }
+
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: #0a61ec;
   }
+
   #yt-logo {
     color: red;
   }
@@ -1874,6 +2117,7 @@ input[type="checkbox"]:checked {
     border: 5px solid #f4f4f4;
     border: 20%;
   }
+
   .link {
     width: fit-content;
     height: fit-content;
@@ -1883,19 +2127,21 @@ input[type="checkbox"]:checked {
     font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
-    background-color:yellow;
-    box-shadow:  4px 0px 0px 0px #000,-4px 0px 0px 0px #000,0px 4px 0px 0px #000,0px -4px 0px 0px #000;
+    background-color: yellow;
+    box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
- 
+
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
   }
+
   .app-about {
     width: 100%;
     display: flex;
@@ -1906,6 +2152,7 @@ input[type="checkbox"]:checked {
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 70px;
   }
+
   .note {
     width: 100%;
     display: flex;
@@ -1916,6 +2163,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 100px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -1943,6 +2191,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -1956,6 +2205,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -1969,27 +2219,32 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 1.4vw, 5rem);
     color: red;
   }
+
   .yesNo {
     border-radius: 10%;
     margin: 16px;
@@ -2001,30 +2256,35 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 2.3vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 2.1vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.9vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 1.6vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   #R-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2038,6 +2298,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #P-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2051,6 +2312,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #A-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2064,6 +2326,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #T-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2077,42 +2340,50 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   /* aestrisk symbol with status */
   #R-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #R-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #P-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #P-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #A-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #A-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #T-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #T-status::before {
     content: "*";
     color: black;
@@ -2128,11 +2399,12 @@ input[type="checkbox"]:checked {
     border: 5px solid #f4f4f4;
     border: 20%;
   }
+
   #cs {
     width: 100%;
     height: max-content;
     background-color: white;
-    color: aqua;
+    color: black;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -2141,6 +2413,7 @@ input[type="checkbox"]:checked {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .contactsContainer {
     width: 100%;
     display: flex;
@@ -2148,6 +2421,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: 100px;
   }
+
   .contactUs {
     width: 60%;
     height: 80%;
@@ -2157,6 +2431,7 @@ input[type="checkbox"]:checked {
     background-color: #000;
     box-shadow: 0 0 1px 0px white;
   }
+
   .myAccounts {
     width: 80%;
     height: 80%;
@@ -2164,11 +2439,13 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     width: 20%;
     height: 100%;
   }
+
   .socialsAccounts {
     width: 80%;
     height: fit-content;
@@ -2176,6 +2453,7 @@ input[type="checkbox"]:checked {
     justify-content: space-evenly;
     background-color: black;
   }
+
   .logo {
     font-size: 40px;
     color: black;
@@ -2186,18 +2464,23 @@ input[type="checkbox"]:checked {
     height: fit-content;
     width: 100%;
   }
+
   #fb-logo {
     color: white;
   }
+
   #ig-logo {
     color: hwb(346 30% 11%);
   }
+
   #github-logo {
     color: white;
   }
+
   #linkedin-logo {
     color: #0a61ec;
   }
+
   #yt-logo {
     color: red;
   }
@@ -2211,18 +2494,20 @@ input[type="checkbox"]:checked {
     font-size: clamp(2rem, 1.4vw, 10rem);
     display: none;
   }
+
   .app-name {
     display: flex;
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
-    box-shadow:  4px 0px 0px 0px red;
+    box-shadow: 4px 0px 0px 0px red;
     width: 100%;
     background-color: yellow;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
   }
+
   .app-about {
     width: 100%;
     display: flex;
@@ -2233,6 +2518,7 @@ input[type="checkbox"]:checked {
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 70px;
   }
+
   .note {
     width: 100%;
     display: flex;
@@ -2243,6 +2529,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 100px;
   }
+
   .requirements-title {
     color: black;
     font-weight: bold;
@@ -2270,6 +2557,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .adbconnection-title {
     color: black;
     font-weight: bold;
@@ -2283,6 +2571,7 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .termuxadbconnection-title {
     color: black;
     font-weight: bold;
@@ -2296,27 +2585,32 @@ input[type="checkbox"]:checked {
     padding-bottom: clamp(0.2rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   /* title asterisks */
   .requirements-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .platformtool-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .adbconnection-title::after {
     content: "*";
     color: red;
     font-size: clamp(1rem, 1.4vw, 5rem);
   }
+
   .termuxadbconnection-title::after {
     content: "*";
     font-size: clamp(1rem, 1.4vw, 5rem);
     color: red;
   }
+
   .yesNo {
     border-radius: 10%;
     margin: 16px;
@@ -2328,30 +2622,35 @@ input[type="checkbox"]:checked {
     outline: none;
     text-align: center;
   }
+
   .requirements span {
     text-align: left;
     font-size: clamp(0.3rem, 2.6vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .platformtool span {
     text-align: left;
     font-size: clamp(0.3rem, 2.4vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .adbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 2.2vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   .termuxadbconnection span {
     text-align: left;
     font-size: clamp(0.3rem, 2vw, 10rem);
     text-transform: lowercase;
     padding: 10px;
   }
+
   #R-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2365,6 +2664,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #P-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2378,6 +2678,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #A-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2391,6 +2692,7 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   #T-status {
     text-transform: uppercase;
     width: fit-content;
@@ -2404,42 +2706,50 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   /* aestrisk symbol with status */
   #R-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #R-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #P-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #P-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #A-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #A-status::before {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #T-status::after {
     content: "*";
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+
   #T-status::before {
     content: "*";
     color: black;
