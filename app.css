@@ -2183,7 +2183,7 @@ input[type="checkbox"]:checked {
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
-    box-shadow:  4px 0px 0px 0px #000,-4px 0px 0px 0px #000,0px 4px 0px 0px #000,0px -4px 0px 0px #000;
+    box-shadow:  4px 0px 0px 0px red;
     width: 100%;
     background-color: yellow;
     text-transform: uppercase;
