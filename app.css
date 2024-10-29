@@ -321,8 +321,8 @@ input[type="checkbox"]:checked {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     display: none;
     z-index: 0;
   }
