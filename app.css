@@ -304,6 +304,7 @@ input[type="checkbox"]:checked {
   }
   body:hover .wc-container{
     display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -331,8 +332,8 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: black;
-    text-shadow: 0px 3px 1px red;
+    color: red;
+    text-shadow: 0px 3px 1px #191919;
   }
   .close-wc{
     position: absolute;
@@ -633,8 +634,9 @@ input[type="checkbox"]:checked {
     background-color: aquamarine;
   }
   body:hover .wc-container{
-    display: block;
     display: flex;
+    display: none;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -969,7 +971,6 @@ input[type="checkbox"]:checked {
     background-color: aquamarine;
   }
   body:hover .wc-container{
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -980,6 +981,7 @@ input[type="checkbox"]:checked {
     z-index: 5555;
     text-align: center;
     top: 5%;
+    display: none;
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
@@ -1377,7 +1379,6 @@ input[type="checkbox"]:checked {
     background-color: aquamarine;
   }
   body:hover .wc-container{
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1392,6 +1393,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     color:transparent;
     border: 4px dotted aqua;
+    display: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
@@ -1767,7 +1769,7 @@ input[type="checkbox"]:checked {
     background-color: aquamarine;
   }
   body:hover .wc-container{
-    display: block;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1782,6 +1784,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     color:transparent;
     border: 4px dotted aqua;
+    display: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .wc-container{
@@ -2167,6 +2170,7 @@ input[type="checkbox"]:checked {
     z-index: 5555;
     text-align: center;
     top: 5%;
+    display: none;
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;
@@ -2566,6 +2570,7 @@ input[type="checkbox"]:checked {
     z-index: 5555;
     text-align: center;
     top: 5%;
+    display: none;
     font-weight: bolder;
     text-transform: uppercase;
     color:transparent;

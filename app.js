@@ -19,14 +19,17 @@ console.log(wc,body)
 // })
 //
 closeWc.addEventListener("click",()=>{
-  wcContainer.style.display="none"
-
-}
-)
-window.addEventListener("scroll",()=>{
+  wcContainer.style.display="none";
+})
+window.addEventListener("mouseover",()=>{
   wc.innerText="welcome to my application";
-  wcContainer.style.display="block"
+  wcContainer.style.display="block";
 },{once:true})
+window.addEventListener("touchstart",()=>{
+  wc.innerText="welcome to my application";
+  wcContainer.style.display="block";
+},{once:true})
+
 //
 reqEmpty=()=>{
   if(!phone.checked &&
