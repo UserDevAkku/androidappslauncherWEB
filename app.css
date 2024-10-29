@@ -333,7 +333,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: yellow;
+    color: black;
     text-shadow: 0px 3px 1px red;
   }
   .close-wc{
@@ -353,8 +353,8 @@ input[type="checkbox"]:checked {
     100%{
         height: 5%;
         width: 90%;
-        color: black;
-        font-size: clamp(.4rem,5.7w,8rem);
+        color: red;
+        font-size: clamp(.4rem,5.7vw,8rem);
     }
   }
   #cs {
