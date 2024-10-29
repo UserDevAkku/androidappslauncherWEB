@@ -337,10 +337,10 @@ input[type="checkbox"]:checked {
   }
   .close-wc{
     position: absolute;
-    bottom: 85%;
+    bottom: 86%;
     left: 97%;
     color: #393939;
-    text-shadow: 0 2px 1px black;
+    text-shadow: 0 4px 2px yellow;
     font-size: clamp(1rem,1rem,2rem);
   }
   @keyframes wc {
@@ -354,7 +354,7 @@ input[type="checkbox"]:checked {
         height: 5%;
         width: 90%;
         color: yellow;
-        text-shadow: 0 5px 3px red;
+        text-shadow: 0 2px 2px red;
         font-size: clamp(.4rem,4.2vw,8rem);
     }
   }

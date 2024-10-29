@@ -8,6 +8,7 @@ let body=document.getElementsByTagName("body");
 let closeWc=document.querySelector(".close-wc");
 let wcContainer=document.querySelector(".wc-container");
 let wc=document.querySelector("#wc");
+console.log(wc,body)
 // dynamically css manipulation on requirements completed by dom
 // alertMsg=()=>{
 //   alert("   ****   WORK IS IN PROGRESS.....   *****")
@@ -22,7 +23,7 @@ closeWc.addEventListener("click",()=>{
 
 }
 )
-body.addEventListener("mouseover",()=>{
+window.addEventListener("mouseover",()=>{
   wc.innerText="welcome to my application";
 })
 
