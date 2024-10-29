@@ -401,7 +401,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     text-transform: uppercase;
     padding: 2px;
-    box-shadow:  1px 0px 0px 0px #000 inset,-1px 0px 0px 0px #000 inset ,0px 1px 0px 0px #000 inset ,0px -1px 0px 0px #000 inset;
+    box-shadow:  1px 0px 0px 0px red inset,-1px 0px 0px 0px red inset ,0px 1px 0px 0px red inset ,0px -1px 0px 0px red inset;
     margin-bottom: 10px;
     font-size: clamp(1rem, 6.6vw, 9rem);
     animation: app-name 1s ease-in-out infinite both;
@@ -668,7 +668,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     width: 100%;
     padding: 4px;
-    box-shadow:  1px 0px 0px 0px #000 inset,-1px 0px 0px 0px #000 inset ,0px 1px 0px 0px #000 inset ,0px -1px 0px 0px #000 inset;
+    box-shadow:  1px 0px 0px 0px red inset,-1px 0px 0px 0px red inset ,0px 1px 0px 0px red inset ,0px -1px 0px 0px red inset;
     text-transform: uppercase;
     margin-bottom: 22px;
     font-size: clamp(1rem, 7vw, 9rem);
