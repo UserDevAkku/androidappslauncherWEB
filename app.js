@@ -7,6 +7,7 @@ let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
 let closeWc=document.querySelector(".close-wc");
 let wcContainer=document.querySelector(".wc-container");
+let wc=document.querySelector("#wc");
 // dynamically css manipulation on requirements completed by dom
 // alertMsg=()=>{
 //   alert("   ****   WORK IS IN PROGRESS.....   *****")
@@ -18,8 +19,12 @@ let wcContainer=document.querySelector(".wc-container");
 //
 closeWc.addEventListener("click",()=>{
   wcContainer.style.display="none"
+
 }
 )
+body.addEventListener("mouseover",()=>{
+  wc.innerHTML="welcome to my application"
+})
 
 //
 reqEmpty=()=>{
