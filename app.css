@@ -981,7 +981,6 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
   }
 
   .logo {
@@ -996,7 +995,7 @@ input[type="checkbox"]:checked {
   }
 
   #fb-logo {
-    color: white;
+    color: blue;
   }
 
   #ig-logo {
@@ -1004,7 +1003,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color:black;
   }
 
   #linkedin-logo {
@@ -1370,7 +1369,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+ 
   }
 
   .logo {
@@ -1385,7 +1384,7 @@ input[type="checkbox"]:checked {
   }
 
   #fb-logo {
-    color: white;
+    color: black;
   }
 
   #ig-logo {
@@ -1393,7 +1392,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color: black;
   }
 
   #linkedin-logo {
@@ -1734,7 +1733,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+ 
   }
 
   .logo {
@@ -1749,7 +1748,7 @@ input[type="checkbox"]:checked {
   }
 
   #fb-logo {
-    color: white;
+    color: blue;
   }
 
   #ig-logo {
@@ -1757,7 +1756,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color: black;
   }
 
   #linkedin-logo {
@@ -2098,7 +2097,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+ 
   }
 
   .logo {
@@ -2113,7 +2112,7 @@ input[type="checkbox"]:checked {
   }
 
   #fb-logo {
-    color: white;
+    color: blue;
   }
 
   #ig-logo {
@@ -2121,7 +2120,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color: black;
   }
 
   #linkedin-logo {
@@ -2474,7 +2473,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+ 
   }
 
   .logo {
@@ -2489,7 +2488,7 @@ input[type="checkbox"]:checked {
   }
 
   #fb-logo {
-    color: white;
+    color: blue;
   }
 
   #ig-logo {
@@ -2497,7 +2496,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color: white;
+    color: black;
   }
 
   #linkedin-logo {
