@@ -757,7 +757,7 @@ input[type="checkbox"]:checked {
     box-shadow: 1px 0px 0px 0px red inset, -1px 0px 0px 0px red inset, 0px 1px 0px 0px red inset, 0px -1px 0px 0px red inset;
     text-transform: uppercase;
     margin-bottom:clamp(1.5rem, 2.3vw,3rem);
-    font-size: clamp(1rem, 7.2vw, 8rem);
+    font-size: clamp(1rem, 7.5vw, 8rem);
     background-color: yellow;
     box-shadow: 0px 0px 20px 0px #000 ;
   }
