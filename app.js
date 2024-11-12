@@ -6,6 +6,7 @@ let reqCheckbox = document.querySelectorAll(".requirements-checkboxes");
 let link = document.querySelectorAll(".link");
 let body=document.getElementsByTagName("body");
 let welcomeBox=document.querySelector(".welcome-box");
+let aalScript=document.querySelector(".aal-script");
 //
 window.addEventListener("load",()=>{
   welcomeBox.style.display="block";
@@ -532,11 +533,13 @@ Tverified.addEventListener("input", () => {
       TBox.style.border = "2px solid green";
       TBox.style.backgroundColor = "#ccffcc";
       TBox.style.boxShadow = "0 0 20px 2px #32cd32";
+      aalScript.style.display="block";
     } else {
       TBox.style.backgroundColor = "#ffffff";
       Tstatus.style.display = "none";
       TBox.style.border = "none";
       TBox.style.boxShadow = "0 0 12px 1px #000";
+      aalScript.style.display="none";
     }
   }
 });

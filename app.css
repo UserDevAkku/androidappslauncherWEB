@@ -6,17 +6,17 @@
 
 @keyframes app-name {
   0% {
-   
+
     color: red;
   }
 
   50% {
-   
+
     color: black;
   }
 
   100% {
-    
+
     color: aqua;
   }
 }
@@ -353,7 +353,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: clamp(100px, 2vw, 200px);
     margin-bottom: 1.2rem, 1vw, 3rem;
-    background-color:white;
+    background-color: white;
   }
 
   .contactUs {
@@ -423,7 +423,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 12px 0px #000 ;
+    box-shadow: 0px 0px 12px 0px #000;
     border: 10%;
   }
 
@@ -461,7 +461,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: clamp(1rem, 7.2vw, 9rem);
-    box-shadow: 0px 0px 10px 0px #000 ;
+    box-shadow: 0px 0px 10px 0px #000;
   }
 
   .appname {
@@ -470,17 +470,17 @@ input[type="checkbox"]:checked {
 
   @keyframes app-name {
     0% {
-     
+
       color: red;
     }
 
     50% {
-    
+
       color: black;
     }
 
     100% {
-     
+
       color: aqua;
     }
   }
@@ -494,7 +494,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 3.5vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 0px #000 ;
+    box-shadow: 0px 0px 10px 0px #000;
   }
 
   .note {
@@ -507,7 +507,7 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 0px #000 ;
+    box-shadow: 0px 0px 10px 0px #000;
   }
 
   .requirements-title {
@@ -719,7 +719,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: 80px;
-    box-shadow: 0px 0px 20px 0px #000 ;
+    box-shadow: 0px 0px 20px 0px #000;
     border: 20%;
   }
 
@@ -756,10 +756,10 @@ input[type="checkbox"]:checked {
     padding: 4px;
     box-shadow: 1px 0px 0px 0px red inset, -1px 0px 0px 0px red inset, 0px 1px 0px 0px red inset, 0px -1px 0px 0px red inset;
     text-transform: uppercase;
-    margin-bottom:clamp(1.5rem, 3.2vw,4rem);
+    margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
     font-size: clamp(1rem, 7.5vw, 8rem);
     background-color: yellow;
-    box-shadow: 0px 0px 20px 0px #000 ;
+    box-shadow: 0px 0px 20px 0px #000;
   }
 
   .appname {
@@ -768,21 +768,21 @@ input[type="checkbox"]:checked {
 
   @keyframes app-name {
     0% {
-      
+
       color: red;
-      
+
     }
 
     50% {
 
       color: black;
-      
+
     }
 
     100% {
-     
+
       color: aqua;
-      
+
     }
   }
 
@@ -795,8 +795,8 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 4.6vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
-    box-shadow: 0px 0px 20px 0px #000 ;
-    margin-bottom:clamp(1.5rem, 3.2vw,4rem);
+    box-shadow: 0px 0px 20px 0px #000;
+    margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
   }
 
   .note {
@@ -807,8 +807,8 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 3.62vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom:clamp(1.5rem, 3.2vw,4rem);
-    box-shadow: 0px 0px 20px 0px #000 ;
+    margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
+    box-shadow: 0px 0px 20px 0px #000;
   }
 
   .requirements-title {
@@ -1003,7 +1003,7 @@ input[type="checkbox"]:checked {
   }
 
   #github-logo {
-    color:black;
+    color: black;
   }
 
   #linkedin-logo {
@@ -1017,7 +1017,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 50px;
-    box-shadow: 0px 0px 30px 0px #000 ;
+    box-shadow: 0px 0px 30px 0px #000;
     border: 20%;
   }
 
@@ -1042,7 +1042,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1rem, 6vw, 9rem);
-    box-shadow: 0px 0px 30px 0px #000 ;
+    box-shadow: 0px 0px 30px 0px #000;
     margin-bottom: 40px;
   }
 
@@ -1052,21 +1052,21 @@ input[type="checkbox"]:checked {
 
   @keyframes app-name {
     0% {
-     
+
       color: red;
-      
+
     }
 
     50% {
-      
+
       color: black;
-      
+
     }
 
     100% {
-     
+
       color: aqua;
-      
+
     }
   }
 
@@ -1079,7 +1079,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
-    box-shadow: 0px 0px 30px 0px #000 ;
+    box-shadow: 0px 0px 30px 0px #000;
     margin-bottom: 40px;
   }
 
@@ -1093,7 +1093,7 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 30px 0px #000 ;
+    box-shadow: 0px 0px 30px 0px #000;
   }
 
   .requirements-title {
@@ -1369,7 +1369,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
- 
+
   }
 
   .logo {
@@ -1406,7 +1406,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 0px #000 ;
+    box-shadow: 0px 0px 50px 0px #000;
     border: 20%;
   }
 
@@ -1427,11 +1427,11 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     text-transform: uppercase;
     padding: 2px;
     font-size: clamp(1rem, 6vw, 9rem);
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     margin-bottom: 50px;
   }
 
@@ -1444,7 +1444,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     margin-bottom: 50px;
   }
 
@@ -1458,7 +1458,7 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 50px;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
   }
 
   .requirements-title {
@@ -1711,7 +1711,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    box-shadow: 0px 0px  20px 0px  #000;
+    box-shadow: 0px 0px 20px 0px #000;
   }
 
   .myAccounts {
@@ -1733,7 +1733,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
- 
+
   }
 
   .logo {
@@ -1770,7 +1770,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 80px;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     border: 20%;
 
   }
@@ -1792,7 +1792,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 6vw, 9rem);
@@ -1807,7 +1807,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     margin-bottom: 100px;
   }
 
@@ -1821,7 +1821,7 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
   }
 
   .requirements-title {
@@ -2097,7 +2097,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
- 
+
   }
 
   .logo {
@@ -2134,7 +2134,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     border: 20%;
   }
 
@@ -2156,7 +2156,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
@@ -2171,7 +2171,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 2.3vw, 10rem);
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
   }
 
   .note {
@@ -2182,7 +2182,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 2vw, 7rem);
     color: red;
     font-weight: bolder;
-    box-shadow: 0px 0px 40px 0px #000 ;
+    box-shadow: 0px 0px 40px 0px #000;
     margin-bottom: 100px;
   }
 
@@ -2417,7 +2417,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 0px #000 ;
+    box-shadow: 0px 0px 50px 0px #000;
     border: 20%;
   }
 
@@ -2473,7 +2473,7 @@ input[type="checkbox"]:checked {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
- 
+
   }
 
   .logo {
@@ -2528,7 +2528,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
-    box-shadow: 0px 0px 50px 0px #000 ;
+    box-shadow: 0px 0px 50px 0px #000;
   }
 
   .app-about {
@@ -2540,7 +2540,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.8rem, 2.3vw, 10rem);
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 0px #000 ;
+    box-shadow: 0px 0px 50px 0px #000;
   }
 
   .note {
@@ -2553,7 +2553,7 @@ input[type="checkbox"]:checked {
     font-weight: bolder;
     margin-bottom: 100px;
     box-shadow: 0px 0px 30px 0px #000;
-    
+
   }
 
   .requirements-title {
@@ -2781,4 +2781,38 @@ input[type="checkbox"]:checked {
     color: black;
     font-size: clamp(0.7rem, 1.8vw, 7rem);
   }
+}
+
+.aal-script {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.aal-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  text-transform: lowercase;
+  color: red;
+}
+
+.aal-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.aal-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  text-transform: lowercase;
+  color: blue;
 }
