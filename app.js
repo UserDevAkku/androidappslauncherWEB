@@ -534,6 +534,9 @@ Tverified.addEventListener("input", () => {
       TBox.style.backgroundColor = "#ccffcc";
       TBox.style.boxShadow = "0 0 20px 2px #32cd32";
       aalScript.style.display="block";
+      aalScript.style.display="flex";
+      aalScript.style.alignItems="center";
+      aalScript.style.justifyContent="center";
     } else {
       TBox.style.backgroundColor = "#ffffff";
       Tstatus.style.display = "none";
