@@ -2787,8 +2787,7 @@ input[type="checkbox"]:checked {
   display: flex;
   align-items: center;
   justify-content: center;
-background-color: #32cd32;
-  /* display: none; */
+  display: none;
 }
 
 .aal-copy {
@@ -2808,7 +2807,7 @@ background-color: #32cd32;
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: aqua;
+ 
 }
 
 .aal-link {
@@ -2821,7 +2820,6 @@ background-color: #32cd32;
   text-transform: lowercase;
   color: blue;
   width: 100%;
-  background-color: #eb035c;
   white-space: normal; /* Allow text to wrap */
   word-wrap: break-word;
 }
