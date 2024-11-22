@@ -518,7 +518,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.8rem, 1.9vw, 6rem);
+    font-size: clamp(0.8rem, 2.2vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -531,7 +531,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.8rem, 1.9vw, 6rem);
+    font-size: clamp(0.8rem, 2.2vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -544,7 +544,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.8rem, 1.9vw, 6rem);
+    font-size: clamp(0.8rem, 2.2vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -557,7 +557,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(.8rem, 1.9vw, 6rem);
+    font-size: clamp(0.8rem, 2.2vw, 6rem);
     padding-top: clamp(0.3rem, 0.8vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -566,24 +566,24 @@ input[type="checkbox"]:checked {
   .requirements-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 3.3vw, 5rem);
+    font-size: clamp(1rem, 3.8vw, 5rem);
   }
 
   .platformtool-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 3.3vw, 5rem);
+    font-size: clamp(1rem, 3.8vw, 5rem);
   }
 
   .adbconnection-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 3.3vw, 5rem);
+    font-size: clamp(1rem, 3.8vw, 5rem);
   }
 
   .termuxadbconnection-title::after {
     content: "*";
-    font-size: clamp(1rem, 3.3vw, 5rem);
+    font-size: clamp(1rem, 3.8vw, 5rem);
     color: red;
   }
 
@@ -591,9 +591,9 @@ input[type="checkbox"]:checked {
     width: clamp(20%, 1vw, 30%);
     border-radius: 10%;
     margin: 5px;
-    padding: clamp(.3rem,.7vw,1rem);
+    padding: clamp(.3rem,.8vw,1rem);
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: clamp(0.7rem, .9vw, 2rem);
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
     border: none;
     outline: none;
     text-align: center;
