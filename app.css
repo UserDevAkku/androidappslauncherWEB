@@ -24,7 +24,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color:#f3f3f3;
   position: relative;
 }
 
@@ -1039,7 +1039,7 @@ input[type="checkbox"]:checked {
     padding: 5px;
     font-size: clamp(1rem, 6vw, 9rem);
     box-shadow: 0px 0px 30px 0px #000;
-    margin-bottom: 40px;
+    margin-bottom: clamp(.7rem,1.4vw,4rem);
   }
 
   .appname {
@@ -1088,7 +1088,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 40px;
+    margin-bottom: clamp(.4rem,1.2vw,2rem);
   }
 
   .requirements-title {
@@ -1312,7 +1312,6 @@ input[type="checkbox"]:checked {
 @media (min-width: 1920px) and (max-width: 2560px) {
   #cs {
     width: 100%;
-
     height: max-content;
     background-color: white;
     color: black;
@@ -1426,7 +1425,7 @@ input[type="checkbox"]:checked {
     padding: 2px;
     font-size: clamp(1rem, 6vw, 9rem);
     box-shadow: 0px 0px 40px 0px #000;
-    margin-bottom: 50px;
+    margin-bottom: clamp(.4rem,1.2vw,2rem);
   }
 
   .app-about {
@@ -1451,7 +1450,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 50px;
+    margin-bottom: clamp(.4rem,1.2vw,2rem);
   }
 
   .requirements-title {
@@ -1676,12 +1675,11 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    background-color: white;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -1692,8 +1690,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    background-color: #fff;
+    height: 200px;
   }
 
   .contactUs {
@@ -1702,8 +1699,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px 0px #000;
+    box-shadow: 0 0 40px 0px #000;
+    border-radius: 30%;
   }
 
   .myAccounts {
@@ -1729,18 +1726,17 @@ input[type="checkbox"]:checked {
   }
 
   .logo {
-    font-size: 40px;
+    font-size: 60px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     height: fit-content;
     width: 100%;
   }
 
   #fb-logo {
-    color: blue;
+    color: black;
   }
 
   #ig-logo {
@@ -1758,7 +1754,6 @@ input[type="checkbox"]:checked {
   #yt-logo {
     color: red;
   }
-
   .boxes {
     width: 50%;
     margin-bottom: clamp(1.8rem, 5vw, 6rem);
@@ -1788,6 +1783,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 6vw, 9rem);
+    margin-bottom: clamp(.4rem,1.2vw,2rem);
   }
 
   .app-about {
@@ -1812,7 +1808,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 1.8vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 100px;
+    margin-bottom: clamp(.4rem,1.2vw,2rem);
   }
 
   .requirements-title {
@@ -2036,14 +2032,12 @@ input[type="checkbox"]:checked {
 @media (min-width: 3440px) and (max-width: 3840px) {
   #cs {
     width: 100%;
-
     height: max-content;
-    background-color: white;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 60px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -2054,7 +2048,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 300px;
   }
 
   .contactUs {
@@ -2064,8 +2058,8 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color: white;
-    box-shadow: 0 0 13px 0px #000;
-    border-radius: 10%;
+    box-shadow: 0 0 40px 0px #000;
+    border-radius: 30%;
   }
 
   .myAccounts {
@@ -2091,18 +2085,17 @@ input[type="checkbox"]:checked {
   }
 
   .logo {
-    font-size: 40px;
+    font-size: 80px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     height: fit-content;
     width: 100%;
   }
 
   #fb-logo {
-    color: blue;
+    color: black;
   }
 
   #ig-logo {
@@ -2120,7 +2113,6 @@ input[type="checkbox"]:checked {
   #yt-logo {
     color: red;
   }
-
   .boxes {
     width: 50%;
     margin-bottom: clamp(1.8rem, 5vw, 6rem);
@@ -2140,7 +2132,7 @@ input[type="checkbox"]:checked {
 
   .app-name {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: clamp(.4rem,2vw,4rem);
     align-items: center;
     justify-content: center;
     background-color: yellow;
@@ -2172,7 +2164,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 2vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 100px;
+    margin-bottom: clamp(.4rem,2vw,4rem);
   }
 
   .requirements-title {
@@ -2412,12 +2404,11 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    background-color: white;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 60px;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -2428,7 +2419,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 400px;
   }
 
   .contactUs {
@@ -2438,12 +2429,12 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     background-color: white;
-    box-shadow: 0 0 13px 0px #000;
-    border-radius: 10%;
+    box-shadow: 0 0 30px 0px #000;
+    border-radius: 30%;
   }
 
   .myAccounts {
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -2452,7 +2443,7 @@ input[type="checkbox"]:checked {
 
   .links {
     text-decoration: none;
-    width: 20%;
+    width: 40%;
     height: 100%;
   }
 
@@ -2465,18 +2456,17 @@ input[type="checkbox"]:checked {
   }
 
   .logo {
-    font-size: 40px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 100px;
     height: fit-content;
     width: 100%;
   }
 
   #fb-logo {
-    color: blue;
+    color: black;
   }
 
   #ig-logo {
@@ -2494,7 +2484,6 @@ input[type="checkbox"]:checked {
   #yt-logo {
     color: red;
   }
-
   .link {
     width: fit-content;
     height: fit-content;
@@ -2539,7 +2528,7 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 2vw, 7rem);
     color: red;
     font-weight: bolder;
-    margin-bottom: 100px;
+    margin-bottom: clamp(.9rem,3vw,5rem);
   }
 
   .requirements-title {
