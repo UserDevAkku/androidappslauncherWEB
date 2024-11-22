@@ -30,8 +30,8 @@ body {
 
 :root {
   --shadow-size: clamp(1rem, 1vw, 4rem);
-  --shadow-spread: clamp(0.1rem, 0.1vw, 4rem);
-  --shadow-blur: clamp(0.2rem, 0.3vw, 4rem);
+  --shadow-spread: clamp(0.2rem, 0.4vw, 4rem);
+  --shadow-blur: clamp(0.2rem, 0.5vw, 4rem);
 }
 
 header {
@@ -332,7 +332,7 @@ input[type="checkbox"]:checked {
 }
 
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px) {
   #cs {
     width: 100%;
     height: max-content;
@@ -460,7 +460,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-size: clamp(1rem, 7vw, 9rem);
+    font-size: clamp(1rem, 6.8vw, 9rem);
     box-shadow: 0px 0px 10px 0px #000;
   }
 
@@ -757,7 +757,7 @@ input[type="checkbox"]:checked {
     box-shadow: 1px 0px 0px 0px red inset, -1px 0px 0px 0px red inset, 0px 1px 0px 0px red inset, 0px -1px 0px 0px red inset;
     text-transform: uppercase;
     margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
-    font-size: clamp(1rem, 7.5vw, 8rem);
+    font-size: clamp(1rem, 7.3vw, 8rem);
     background-color: yellow;
     box-shadow: 0px 0px 20px 0px #000;
   }
@@ -892,9 +892,9 @@ input[type="checkbox"]:checked {
     width: 20%;
     border-radius: 10%;
     margin: 25px;
-    padding: 20px;
-    box-shadow: 0 0 12px 1px red;
-    font-size: clamp(.9rem, 2.7vw, 3rem);
+    padding: 15px;
+    box-shadow: 0 0 12px 3px red;
+    font-size: clamp(.9rem, 2.9vw, 3rem);
     border: none;
     outline: none;
     text-align: center;
@@ -1181,8 +1181,8 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: 8px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 12px;
+    box-shadow: 0 0  red inset;
+    font-size: clamp(1rem,2vw,3rem);
     width: 12%;
     border: none;
     outline: none;
@@ -1193,7 +1193,7 @@ input[type="checkbox"]:checked {
     text-align: left;
     font-size: clamp(0.3rem, 2.12vw, 6rem);
     text-transform: lowercase;
-    padding: 10px;
+    padding: 6px;
   }
 
   .platformtool span {
