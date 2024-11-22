@@ -460,7 +460,7 @@ input[type="checkbox"]:checked {
     background-color: yellow;
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-size: clamp(1rem, 6.8vw, 9rem);
+    font-size: clamp(1rem, 7.1vw, 9rem);
     box-shadow: 0px 0px 10px 0px #000;
   }
 
@@ -491,7 +491,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: clamp(0.8rem, 3.7vw, 6rem);
+    font-size: clamp(0.8rem, 4vw, 6rem);
     animation: app-about 1s ease-in-out infinite;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px 0px #000;
@@ -503,7 +503,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.6rem, 3.3vw, 7rem);
+    font-size: clamp(0.6rem, 3.5vw, 7rem);
     color: red;
     font-weight: bolder;
     margin-bottom: 20px;
@@ -518,7 +518,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    font-size: clamp(0.9rem, 1.9vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -531,7 +531,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    font-size: clamp(0.9rem, 1.9vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -544,7 +544,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    font-size: clamp(0.9rem, 1.9vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -557,7 +557,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.9rem, 1.7vw, 6rem);
+    font-size: clamp(0.9rem, 1.9vw, 6rem);
     padding-top: clamp(0.2rem, 0.5vw, 0.9rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -566,24 +566,24 @@ input[type="checkbox"]:checked {
   .requirements-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 2.8vw, 5rem);
+    font-size: clamp(1rem, 3vw, 5rem);
   }
 
   .platformtool-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 2.8vw, 5rem);
+    font-size: clamp(1rem, 3vw, 5rem);
   }
 
   .adbconnection-title::after {
     content: "*";
     color: red;
-    font-size: clamp(1rem, 2.8vw, 5rem);
+    font-size: clamp(1rem, 3vw, 5rem);
   }
 
   .termuxadbconnection-title::after {
     content: "*";
-    font-size: clamp(1rem, 2.8vw, 5rem);
+    font-size: clamp(1rem, 3vw, 5rem);
     color: red;
   }
 
@@ -591,7 +591,7 @@ input[type="checkbox"]:checked {
     width: clamp(20%, 1vw, 30%);
     border-radius: 10%;
     margin: 5px;
-    padding: 5px;
+    padding: 8px;
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
     font-size: clamp(0.9rem, 1vw, 2rem);
     border: none;
