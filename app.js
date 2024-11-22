@@ -63,7 +63,7 @@ const reqCompleted = () => {
     Rstatus.style.display = "none";
     reqBox.style.backgroundColor = "#ffffff";
     reqBox.style.border = "none";
-    reqBox.style.border = "clamp(.1rem, .5vw, .4rem) solid #f4f4f4;";
+    reqBox.style.border = "clamp(.1rem, .5vw, .4rem) solid #000;";
     Pstatus.style.display = "block";
     Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     Pstatus.innerHTML = "requirements are mendatory";

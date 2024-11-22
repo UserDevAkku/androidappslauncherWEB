@@ -422,8 +422,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.2rem, 3vw, 4rem);
-    border: clamp(.1rem, .7vw, 1rem) solid #000;
+    margin-bottom: clamp(1.2rem, 4vw, 5rem);
+    border: clamp(.1rem, .2vw, 1rem) solid #000;
     border: 10%;
   }
 
@@ -717,9 +717,9 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.8rem, 4vw, 5rem);
-    border: clamp(.2rem, 1vw, 1.2rem) solid #000;
-    border: 20%;
+    margin-bottom: clamp(1.2rem, 4vw, 5rem);
+    border: clamp(.1rem, .2vw, 1rem) solid #000;
+    border: 10%;
   }
 
   input[type="checkbox"] {
@@ -1014,8 +1014,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 40%;
-    margin-bottom: 50px;
-    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
+    margin-bottom: clamp(1.8rem, 5vw, 8rem);
+    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
   }
 
@@ -1176,13 +1176,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
+    width: clamp(10%, 1vw, 12%);
     border-radius: 10%;
     margin: 5px;
-    padding: 8px;
-    box-shadow: 0 0 red inset;
-    font-size: clamp(1rem, 2vw, 3rem);
-    width: 12%;
-    border: none;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .2vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
   }
@@ -1403,8 +1402,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 40%;
-    margin-bottom: 100px;
-    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
+    margin-bottom: clamp(1.8rem, 5vw, 6rem);
+    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
   }
 
@@ -1541,13 +1540,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
+    width: clamp(10%, 1vw, 12%);
     border-radius: 10%;
     margin: 5px;
-    padding: 8px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 12px;
-    width: 12%;
-    border: none;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .2vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
   }
@@ -1767,8 +1765,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 50%;
-    margin-bottom: 80px;
-    box-shadow: 0px 0px 40px 0px #000;
+    margin-bottom: clamp(1.8rem, 5vw, 6rem);
+    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
 
   }
@@ -1904,13 +1902,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
+    width: clamp(10%, 1vw, 12%);
     border-radius: 10%;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 25px;
-    width: 14%;
-    border: none;
+    margin: 5px;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .2vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
   }
@@ -2131,8 +2128,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 50%;
-    margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 0px #000;
+    margin-bottom: clamp(1.8rem, 5vw, 6rem);
+    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
   }
 
@@ -2266,13 +2263,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
+    width: clamp(10%, 1vw, 12%);
     border-radius: 10%;
-    margin: 16px;
-    padding: 30px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 60px;
-    width: 10%;
-    border: none;
+    margin: 5px;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .2vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
   }
@@ -2414,8 +2410,8 @@ input[type="checkbox"]:checked {
 @media (min-width: 5120px) and (max-width: 6000px) {
   .boxes {
     width: 50%;
-    margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 0px #000;
+    margin-bottom: clamp(1.8rem, 4.4vw, 6rem);
+    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
   }
 
@@ -2636,13 +2632,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
+    width: clamp(10%, 1vw, 12%);
     border-radius: 10%;
-    margin: 16px;
-    padding: 30px;
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: 60px;
-    width: 10%;
-    border: none;
+    margin: 5px;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .2vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
   }
