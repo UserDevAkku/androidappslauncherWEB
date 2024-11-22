@@ -422,7 +422,7 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.2rem,2.3vw,4rem);
+    margin-bottom: clamp(1.2rem, 2.3vw, 4rem);
     box-shadow: 0px 0px 14px 0px #000;
     border: 10%;
   }
@@ -499,7 +499,7 @@ input[type="checkbox"]:checked {
 
   .note {
     width: 100%;
-    padding: clamp(.212rem,.4vw,.8rem);
+    padding: clamp(.212rem, .4vw, .8rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -588,11 +588,11 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
-    width: clamp(15%,1vw,18%);
+    width: clamp(15%, 1vw, 18%);
     border-radius: 10%;
     margin: 5px;
-    padding: clamp(.3rem,.5vw,2rem);
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
+    padding: clamp(.3rem, .5vw, 2rem);
+    border: clamp(.199rem, .3vw, .4rem);
     font-size: clamp(0.7rem, 3.6vw, 5rem);
     border: none;
     outline: none;
@@ -718,7 +718,7 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.8rem,4vw,6rem);
+    margin-bottom: clamp(1.8rem, 4vw, 6rem);
     box-shadow: 0px 0px 20px 0px #000;
     border: 20%;
   }
@@ -889,7 +889,7 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
-    width: clamp(20%,1vw,25%);
+    width: clamp(20%, 1vw, 25%);
     border-radius: 10%;
     margin: 25px;
     padding: 15px;
@@ -1181,8 +1181,8 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: 8px;
-    box-shadow: 0 0  red inset;
-    font-size: clamp(1rem,2vw,3rem);
+    box-shadow: 0 0 red inset;
+    font-size: clamp(1rem, 2vw, 3rem);
     width: 12%;
     border: none;
     outline: none;
@@ -2800,14 +2800,14 @@ input[type="checkbox"]:checked {
   text-transform: lowercase;
   color: red;
   width: 100%;
- 
+
 }
 
 .aal-box {
   display: flex;
   flex-direction: column;
   width: 50%;
- 
+
 }
 
 .aal-link {
@@ -2820,6 +2820,7 @@ input[type="checkbox"]:checked {
   text-transform: lowercase;
   color: blue;
   width: 100%;
-  white-space: normal; /* Allow text to wrap */
+  white-space: normal;
+  /* Allow text to wrap */
   word-wrap: break-word;
 }
