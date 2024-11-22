@@ -888,13 +888,12 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
-    width: clamp(20%, 1vw, 25%);
+    width: clamp(15%, 1vw, 18%);
     border-radius: 10%;
-    margin: 25px;
-    padding: 15px;
-    box-shadow: 0 0 12px 6px red;
-    font-size: clamp(.9rem, 3.2vw, 3rem);
-    border: none;
+    margin: 5px;
+    padding: clamp(.1rem, .3vw, 2rem);
+    border: clamp(.089rem, .3vw, .4rem) solid black;
+    font-size: clamp(0.7rem, 3.6vw, 5rem);
     outline: none;
     text-align: center;
   }
