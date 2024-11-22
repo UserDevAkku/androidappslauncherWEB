@@ -423,7 +423,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: clamp(1.2rem, 2.3vw, 4rem);
-    box-shadow: 0px 0px 14px 0px #000;
+    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
     border: 10%;
   }
 
@@ -717,8 +717,8 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.8rem, 4vw, 6rem);
-    box-shadow: 0px 0px 20px 0px #000;
+    margin-bottom: clamp(1.2rem, 2.3vw, 4rem);
+    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
     border: 20%;
   }
 
@@ -1015,7 +1015,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 50px;
-    box-shadow: 0px 0px 30px 0px #000;
+    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
     border: 20%;
   }
 
@@ -1404,7 +1404,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 50px 0px #000;
+    border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
     border: 20%;
   }
 
