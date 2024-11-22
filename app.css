@@ -588,7 +588,7 @@ input[type="checkbox"]:checked {
   }
 
   .yesNo {
-    width: clamp(20%,1vw,25%);
+    width: clamp(20%,1vw,20%);
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.3rem,.5vw,2rem);
