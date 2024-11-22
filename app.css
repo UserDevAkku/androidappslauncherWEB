@@ -591,9 +591,9 @@ input[type="checkbox"]:checked {
     width: clamp(20%, 1vw, 30%);
     border-radius: 10%;
     margin: 5px;
-    padding: clamp(.3rem,.5vw,1rem);
+    padding: clamp(.3rem,.5vw,2rem);
     box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) red inset;
-    font-size: clamp(0.7rem, 2.1vw, 4rem);
+    font-size: clamp(0.7rem, 2.3vw, 4rem);
     border: none;
     outline: none;
     text-align: center;
