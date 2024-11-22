@@ -893,8 +893,8 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 25px;
     padding: 15px;
-    box-shadow: 0 0 12px 3px red;
-    font-size: clamp(.9rem, 2.9vw, 3rem);
+    box-shadow: 0 0 12px 6px red;
+    font-size: clamp(.9rem, 3.2vw, 3rem);
     border: none;
     outline: none;
     text-align: center;
