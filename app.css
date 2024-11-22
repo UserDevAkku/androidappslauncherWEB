@@ -592,9 +592,8 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.3rem, .5vw, 2rem);
-    border: 2px solid black;
+    border: clamp(.199rem, .3vw, .4rem) solid black;
     font-size: clamp(0.7rem, 3.6vw, 5rem);
-    border: none;
     outline: none;
     text-align: center;
   }
