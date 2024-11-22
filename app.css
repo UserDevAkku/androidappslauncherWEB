@@ -507,7 +507,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 0px #000;
   }
 
   .requirements-title {
@@ -807,7 +806,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
-    box-shadow: 0px 0px 20px 0px #000;
   }
 
   .requirements-title {
@@ -1091,7 +1089,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 30px 0px #000;
   }
 
   .requirements-title {
@@ -1455,7 +1452,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 50px;
-    box-shadow: 0px 0px 40px 0px #000;
   }
 
   .requirements-title {
@@ -1817,7 +1813,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 0px #000;
   }
 
   .requirements-title {
@@ -2177,7 +2172,6 @@ input[type="checkbox"]:checked {
     font-size: clamp(0.7rem, 2vw, 7rem);
     color: red;
     font-weight: bolder;
-    box-shadow: 0px 0px 40px 0px #000;
     margin-bottom: 100px;
   }
 
@@ -2546,8 +2540,6 @@ input[type="checkbox"]:checked {
     color: red;
     font-weight: bolder;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 30px 0px #000;
-
   }
 
   .requirements-title {
@@ -2800,7 +2792,6 @@ input[type="checkbox"]:checked {
   display: flex;
   flex-direction: column;
   width: 50%;
-
 }
 
 .aal-link {
