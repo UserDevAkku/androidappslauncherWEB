@@ -423,7 +423,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: clamp(1.2rem, 4vw, 5rem);
-    border: clamp(.1rem, .2vw, 1rem) solid #000;
+    border: clamp(.1rem, .3vw, 1rem) solid #000;
     border: 10%;
   }
 
@@ -718,7 +718,7 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: clamp(1.2rem, 4vw, 5rem);
-    border: clamp(.1rem, .2vw, 1rem) solid #000;
+    border: clamp(.1rem, .3vw, 1rem) solid #000;
     border: 10%;
   }
 
