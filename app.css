@@ -76,7 +76,7 @@ input[type="checkbox"]:checked {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size) 2px #000;
+  
 }
 
 .app-platformtool-box {
@@ -84,7 +84,7 @@ input[type="checkbox"]:checked {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size) 2px #000;
+  
 }
 
 .app-adbconnection-box {
@@ -92,7 +92,7 @@ input[type="checkbox"]:checked {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size) 2px #000;
+  
 }
 
 .app-termuxadbconnection-box {
@@ -100,7 +100,7 @@ input[type="checkbox"]:checked {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 2%;
-  box-shadow: 0 0 var(--shadow-size) 2px #000;
+  
 }
 
 /* verification-container*/
@@ -717,7 +717,7 @@ input[type="checkbox"]:checked {
 
   .boxes {
     width: 95%;
-    margin-bottom: clamp(1.2rem, 2.3vw, 4rem);
+    margin-bottom: clamp(1.8rem, 3.2vw, 5rem);
     border: clamp(.1rem, .5vw, .4rem) solid #f4f4f4;
     border: 20%;
   }
