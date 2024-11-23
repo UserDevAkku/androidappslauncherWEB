@@ -54,16 +54,16 @@ const reqCompleted = () => {
     Rstatus.style.display = "block";
     Rstatus.style.animation = "Status 555ms ease-in-out infinite";
     reqBox.style.backgroundColor = "#ccffcc";
-    reqBox.style.border = "2px solid green";
-    reqBox.style.boxShadow = "0 0 20px 2px #32cd32";
+    reqBox.style.border = "1px solid green";
+    reqBox.style.boxShadow = "0 0 14px 1px#32cd32";
     Pstatus.style.display = "block";
     Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     Pstatus.innerHTML = "permission is allowed";
   } else {
     Rstatus.style.display = "none";
-    reqBox.style.backgroundColor = "#ffffff";
+    reqBox.style.backgroundColor = "#f4f4f4";
     reqBox.style.border = "none";
-    reqBox.style.border = "clamp(.1rem, .5vw, .4rem) solid #000;";
+    reqBox.style.boxShadow = "0 0 15px 5px #000";
     Pstatus.style.display = "block";
     Pstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     Pstatus.innerHTML = "requirements are mendatory";
@@ -75,10 +75,10 @@ const reqCompleted = () => {
     !termux.checked ||
     !sdk.checked
   ) {
-    plBox.style.backgroundColor = "#ffffff";
+    plBox.style.backgroundColor = "#f4f4f4";
     Pstatus.style.display = "none";
     plBox.style.border = "none";
-    plBox.style.boxShadow = "0 0 12px 1px #000";
+    plBox.style.boxShadow = "0 0 15px 5px #000";
     plCheckbox.forEach((plCheckbox) => {
       plCheckbox.checked = false;
     });
@@ -87,10 +87,10 @@ const reqCompleted = () => {
     } else {
       Pverified.value = "";
     }
-    ABox.style.backgroundColor = "#ffffff";
+    ABox.style.backgroundColor = "#f4f4f4";
     Astatus.style.display = "none";
     ABox.style.border = "none";
-    ABox.style.boxShadow = "0 0 12px 1px #000";
+    ABox.style.boxShadow = "0 0 15px 5px #000";
     ACheckbox.forEach((ACheckbox) => {
       ACheckbox.checked = false;
     });
@@ -99,10 +99,10 @@ const reqCompleted = () => {
     } else {
       Averified.value = "";
     }
-    TBox.style.backgroundColor = "#ffffff";
+    TBox.style.backgroundColor = "#f4f4f4";
     Tstatus.style.display = "none";
     TBox.style.border = "none";
-    TBox.style.boxShadow = "0 0 12px 1px #000";
+    TBox.style.boxShadow = "0 0 15px 5px #000";
     TCheckbox.forEach((TCheckbox) => {
       TCheckbox.checked = false;
     });
@@ -139,13 +139,13 @@ plCheckbox.forEach((plCheckbox) => {
       } else {
         Pverified.value = "";
       }
-      plBox.style.backgroundColor = "#ffffff";
+      plBox.style.backgroundColor = "#f4f4f4";
       Pstatus.style.display = "none";
       plBox.style.border = "none";
-      plBox.style.boxShadow = "0 0 12px 1px #000";
-      ABox.style.backgroundColor = "#ffffff";
+      plBox.style.boxShadow = "0 0 15px 5px #000";
+      ABox.style.backgroundColor = "#f4f4f4";
       ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
+      ABox.style.boxShadow = "0 0 15px 5px #000";
       ACheckbox.forEach((ACheckbox) => {
         ACheckbox.checked = false;
       });
@@ -206,9 +206,9 @@ Pverified.addEventListener("input", () => {
       Astatus.style.display = "block";
       Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
       Astatus.innerHTML = "platformtool is mendatory";
-      ABox.style.backgroundColor = "#ffffff";
+      ABox.style.backgroundColor = "#f4f4f4";
       ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
+      ABox.style.boxShadow = "0 0 15px 5px #000";
       ACheckbox.forEach((ACheckbox) => {
         ACheckbox.checked = false;
       });
@@ -253,22 +253,22 @@ Pverified.addEventListener("input", () => {
       Pstatus.style.animation = "Status 555ms ease-in-out infinite";
       Pstatus.innerHTML = "Platformtool Installed";
       plBox.style.backgroundColor = "#ccffcc";
-      plBox.style.border = "2px solid green";
-      plBox.style.boxShadow = "0 0 20px 2px #32cd32";
+      plBox.style.border = "1px solid green";
+      plBox.style.boxShadow = "0 0 14px 1px#32cd32";
       Astatus.innerHTML = "permission is allowed";
       Astatus.style.display = "block";
       Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
     } else {
       Pstatus.style.display = "none";
-      plBox.style.backgroundColor = "#ffffff";
+      plBox.style.backgroundColor = "#f4f4f4";
       plBox.style.border = "none";
-      plBox.style.boxShadow = "0 0 12px 1px #000";
+      plBox.style.boxShadow = "0 0 15px 5px #000";
       Astatus.innerHTML = "platformtool is mendatory";
       Astatus.style.display = "block";
       Astatus.style.animation = "NoStatus 555ms ease-in-out infinite";
-      ABox.style.backgroundColor = "#ffffff";
+      ABox.style.backgroundColor = "#f4f4f4";
       ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
+      ABox.style.boxShadow = "0 0 15px 5px #000";
       if (Averified.value === "YesNo") {
         Averified.value != "";
       } else {
@@ -302,9 +302,9 @@ ACheckbox.forEach((ACheckbox) => {
       !Acmd.checked ||
       !Aadbdevices.checked
     ) {
-      TBox.style.backgroundColor = "#ffffff";
+      TBox.style.backgroundColor = "#f4f4f4";
       TBox.style.border = "none";
-      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TBox.style.boxShadow = "0 0 15px 5px #000";
       TCheckbox.forEach((TCheckbox) => {
         TCheckbox.checked = false;
       });
@@ -315,10 +315,10 @@ ACheckbox.forEach((ACheckbox) => {
       {
          Tverified.value="";
       }
-      ABox.style.backgroundColor = "#ffffff";
+      ABox.style.backgroundColor = "#f4f4f4";
       Astatus.style.display = "none";
       ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
+      ABox.style.boxShadow = "0 0 15px 5px #000";
       if (Averified.value === "YesNo") {
         Averified.value != "";
       } else {
@@ -367,9 +367,9 @@ Averified.addEventListener("input", () => {
       Averified.value !== "YES" ||
       Averified.value !== "Yes"
     ) {
-      TBox.style.backgroundColor = "#ffffff";
+      TBox.style.backgroundColor = "#f4f4f4";
       TBox.style.border = "none";
-      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TBox.style.boxShadow = "0 0 15px 5px #000";
       TCheckbox.forEach((TCheckbox) => {
         TCheckbox.checked = false;
       });
@@ -419,20 +419,20 @@ Averified.addEventListener("input", () => {
       Astatus.style.display = "block";
       Astatus.innerHTML = "android configuration is completed";
       Astatus.style.animation = "Status 555ms ease-in-out infinite";
-      ABox.style.border = "2px solid green";
-      ABox.style.boxShadow = "0 0 20px 2px #32cd32";
+      ABox.style.border = "1px solid green";
+      ABox.style.boxShadow = "0 0 14px 1px#32cd32";
       Tstatus.style.display = "block";
       Tstatus.innerHTML = "permission is allowed";
       Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
       
     } else {
       Astatus.style.display = "none";
-      ABox.style.backgroundColor = "#ffffff";
+      ABox.style.backgroundColor = "#f4f4f4";
       ABox.style.border = "none";
-      ABox.style.boxShadow = "0 0 12px 1px #000";
-      TBox.style.backgroundColor = "#ffffff";
+      ABox.style.boxShadow = "0 0 15px 5px #000";
+      TBox.style.backgroundColor = "#f4f4f4";
       TBox.style.border = "none";
-      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TBox.style.boxShadow = "0 0 15px 5px #000";
       Tstatus.style.display = "block";
       Tstatus.innerHTML = "android configuration is completed";
       Tstatus.style.animation = "NoStatus 555ms ease-in-out infinite";
@@ -460,10 +460,10 @@ TCheckbox.forEach((TCheckbox) => {
       !IP_noted.checked ||
       !IP_enter.checked
     ) {
-      TBox.style.backgroundColor = "#ffffff";
+      TBox.style.backgroundColor = "#f4f4f4";
       Tstatus.style.display = "none";
       TBox.style.border = "none";
-      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TBox.style.boxShadow = "0 0 15px 5px #000";
       if (Tverified.value === "YesNo") {
         Tverified.value != "";
       } else {
@@ -530,18 +530,18 @@ Tverified.addEventListener("input", () => {
       Tstatus.innerHTML = " Termux configuration is completed";
       Tstatus.style.display = "block";
       Tstatus.style.animation = "Status 555ms ease-in-out infinite";
-      TBox.style.border = "2px solid green";
+      TBox.style.border = "1px solid green";
       TBox.style.backgroundColor = "#ccffcc";
-      TBox.style.boxShadow = "0 0 20px 2px #32cd32";
+      TBox.style.boxShadow = "0 0 14px 1px#32cd32";
       aalScript.style.display="block";
       aalScript.style.display="flex";
       aalScript.style.alignItems="center";
       aalScript.style.justifyContent="center";
     } else {
-      TBox.style.backgroundColor = "#ffffff";
+      TBox.style.backgroundColor = "#f4f4f4";
       Tstatus.style.display = "none";
       TBox.style.border = "none";
-      TBox.style.boxShadow = "0 0 12px 1px #000";
+      TBox.style.boxShadow = "0 0 15px 5px #000";
       aalScript.style.display="none";
     }
   }
