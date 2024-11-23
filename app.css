@@ -329,7 +329,7 @@ input[type="checkbox"]:checked {
 }
 
 /*PHONES*/
-@media (min-width: 320px) and (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 480px) {
   #cs {
     width: 100%;
     height: max-content;
