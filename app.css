@@ -24,7 +24,8 @@
 body {
   height: 100%;
   width: 100%;
-  background-color:#f3f3f3;
+  background-color:#fff;
+  box-shadow: 0 0 400rem 10rem  #ddd inset;
   position: relative;
 }
 
@@ -74,7 +75,6 @@ input[type="checkbox"]:checked {
 .app-requirements-box {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 2%;
   
 }
@@ -82,7 +82,6 @@ input[type="checkbox"]:checked {
 .app-platformtool-box {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 2%;
   
 }
@@ -90,7 +89,6 @@ input[type="checkbox"]:checked {
 .app-adbconnection-box {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 2%;
   
 }
@@ -98,7 +96,6 @@ input[type="checkbox"]:checked {
 .app-termuxadbconnection-box {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 2%;
   
 }
@@ -353,7 +350,6 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: clamp(100px, 2vw, 200px);
     margin-bottom: 1.2rem, 1vw, 3rem;
-    background-color: white;
   }
 
   .contactUs {
@@ -423,7 +419,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: clamp(1.2rem, 4vw, 5rem);
-    border: clamp(.1rem, .3vw, 1rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 10%;
   }
 
@@ -457,7 +454,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: yellow;
+    background-color: white;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: clamp(1.4rem, 7.5vw, 9rem);
@@ -591,7 +588,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .3vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 3.6vw, 5rem);
     outline: none;
     text-align: center;
@@ -647,7 +644,6 @@ input[type="checkbox"]:checked {
     justify-content: center;
     height: clamp(100px, 13vh, 200px);
     margin-bottom: 1.2rem, 1vw, 3rem;
-    background-color: white;
   }
 
   .contactUs {
@@ -656,7 +652,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     box-shadow: 0 0 13px 0px #000;
     border-radius: 10%;
   }
@@ -717,7 +712,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 95%;
     margin-bottom: clamp(1.2rem, 4vw, 5rem);
-    border: clamp(.1rem, .3vw, 1rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 10%;
   }
 
@@ -756,7 +752,7 @@ input[type="checkbox"]:checked {
     text-transform: uppercase;
     margin-bottom: clamp(1.5rem, 3.2vw, 4rem);
     font-size: clamp(1rem, 7.3vw, 8rem);
-    background-color: yellow;
+    background-color: white;
     box-shadow: 0px 0px 20px 0px #000;
   }
 
@@ -890,7 +886,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .3vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 3.6vw, 5rem);
     outline: none;
     text-align: center;
@@ -953,7 +949,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     box-shadow: 0 0 20px 0px #000;
     border-radius: 20%;
   }
@@ -1013,8 +1008,9 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: clamp(1.8rem, 5vw, 8rem);
-    border: clamp(.1rem, .2vw, .4rem) solid #000;
     border: 20%;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
   }
 
   .link {
@@ -1031,7 +1027,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: white;
     box-shadow: 0px -15px 0px 0px red inset, -15px 0px 0px 0px red inset, 15px 0px 0px 0px red inset, 0px 15px 0px 0px red inset;
     width: 100%;
     border: 1px solid #fff;
@@ -1177,7 +1173,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .2vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
@@ -1313,10 +1309,9 @@ input[type="checkbox"]:checked {
   #cs {
     width: 100%;
     height: max-content;
-    background-color: white;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 5px;
     font-weight: bold;
@@ -1329,7 +1324,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 140px;
   }
 
   .contactUs {
@@ -1338,9 +1333,8 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     box-shadow: 0 0 13px 0px #000;
-    border-radius: 10%;
+    border-radius: 30%;
   }
 
   .myAccounts {
@@ -1366,12 +1360,11 @@ input[type="checkbox"]:checked {
   }
 
   .logo {
-    font-size: 40px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 45px;
     height: fit-content;
     width: 100%;
   }
@@ -1399,7 +1392,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 40%;
     margin-bottom: clamp(1.8rem, 5vw, 6rem);
-    border: clamp(.1rem, .2vw, .4rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 20%;
   }
 
@@ -1417,7 +1411,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: white;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
     box-shadow: 0px 0px 40px 0px #000;
@@ -1539,7 +1533,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .2vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
@@ -1757,7 +1751,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: clamp(1.8rem, 5vw, 6rem);
-    border: clamp(.1rem, .2vw, .4rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 20%;
 
   }
@@ -1776,7 +1771,7 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: white;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
     box-shadow: 0px 0px 40px 0px #000;
@@ -1897,7 +1892,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .2vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
@@ -2057,7 +2052,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     box-shadow: 0 0 40px 0px #000;
     border-radius: 30%;
   }
@@ -2116,7 +2110,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: clamp(1.8rem, 5vw, 6rem);
-    border: clamp(.1rem, .2vw, .4rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 20%;
   }
 
@@ -2135,7 +2130,7 @@ input[type="checkbox"]:checked {
     margin-bottom: clamp(.4rem,2vw,4rem);
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: white;
     box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px 4px 0px 0px #000, 0px -4px 0px 0px #000;
     width: 100%;
     box-shadow: 0px 0px 40px 0px #000;
@@ -2253,7 +2248,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .2vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
@@ -2397,7 +2392,8 @@ input[type="checkbox"]:checked {
   .boxes {
     width: 50%;
     margin-bottom: clamp(1.8rem, 4.4vw, 6rem);
-    border: clamp(.1rem, .2vw, .4rem) solid #000;
+    background-color: #f4f4f4; 
+    box-shadow: 0 0 15px 5px #000;
     border: 20%;
   }
 
@@ -2428,7 +2424,6 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     box-shadow: 0 0 30px 0px #000;
     border-radius: 30%;
   }
@@ -2501,7 +2496,7 @@ input[type="checkbox"]:checked {
     justify-content: center;
     box-shadow: 4px 0px 0px 0px red;
     width: 100%;
-    background-color: yellow;
+    background-color: white;
     text-transform: uppercase;
     padding: 5px;
     font-size: clamp(1.2rem, 5vw, 20rem);
@@ -2617,7 +2612,7 @@ input[type="checkbox"]:checked {
     border-radius: 10%;
     margin: 5px;
     padding: clamp(.1rem, .3vw, 2rem);
-    border: clamp(.089rem, .2vw, .4rem) solid black;
+    border: clamp(.03rem, .08vw, .4rem) solid black;
     font-size: clamp(0.7rem, 1vw, 5rem);
     outline: none;
     text-align: center;
